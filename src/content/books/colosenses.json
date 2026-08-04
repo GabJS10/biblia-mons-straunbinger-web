@@ -1,0 +1,680 @@
+{
+  "book": "Colosenses",
+  "slug": "colosenses",
+  "source": "https://bibliastraubinger.com/colosenses/",
+  "chapters": [
+    {
+      "chapter": 1,
+      "sections": [
+        {
+          "title": "Salutación apostólica.",
+          "startVerse": 1
+        },
+        {
+          "title": "Oración del apóstol por los fieles.",
+          "startVerse": 9
+        },
+        {
+          "title": "El misterio de Cristo.",
+          "startVerse": 15
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "Pablo, apóstol de Cristo Jesús, por la voluntad de Dios, y el hermano Timoteo ,",
+          "footnoteRefs": [
+            12142
+          ]
+        },
+        {
+          "number": 2,
+          "text": "a los santos y fieles hermanos en Cristo, que viven en Colosas: gracia a vosotros y paz de parte de Dios nuestro Padre.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 3,
+          "text": "Damos gracias al Dios y Padre de Nuestro Señor Jesucristo, rogando en todo tiempo por vosotros,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 4,
+          "text": "pues hemos oído de vuestra fe en Cristo Jesús y de la caridad que tenéis hacia todos los santos,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 5,
+          "text": "a causa de la esperanza que os está guardada en los cielos y de la cual habéis oído antes por la palabra de la verdad del Evangelio,",
+          "footnoteRefs": [
+            12143
+          ]
+        },
+        {
+          "number": 6,
+          "text": "que ha llegado hasta vosotros, y que también en todo el mundo está fructificando y creciendo como lo está entre vosotros desde el día en que oísteis y (así) conocisteis en verdad la gracia de Dios,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "según aprendisteis de Epafras, nuestro amado consiervo, que es un fiel ministro de Cristo para vosotros,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 8,
+          "text": "y nos ha manifestado vuestro amor en el Espíritu.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 9,
+          "text": "Por esto también nosotros, desde el día en que lo oímos, no cesamos de rogar por vosotros y de pedir que seáis llenados del conocimiento de su voluntad con toda sabiduría e inteligencia espiritual ,",
+          "footnoteRefs": [
+            12144
+          ]
+        },
+        {
+          "number": 10,
+          "text": "para que andéis de una manera digna del Señor, a fin de serle gratos en todo, dando frutos en toda obra buena y creciendo en el conocimiento de Dios,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 11,
+          "text": "confortados con toda fortaleza, según el poder de su gloria, para practicar con gozo toda paciencia y longanimidad,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 12,
+          "text": "dando gracias al Padre, que os capacitó para participar de la herencia de los santos en la luz.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 13,
+          "text": "Él nos ha arrebatado de la potestad de las tinieblas, y nos ha trasladado al reino del Hijo de su amor,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 14,
+          "text": "en quien tenemos la redención, la remisión de los pecados .",
+          "footnoteRefs": [
+            12145
+          ]
+        },
+        {
+          "number": 15,
+          "text": "Él (Cristo) es la imagen del Dios invisible, el primogénito de toda creación ;",
+          "footnoteRefs": [
+            12146
+          ]
+        },
+        {
+          "number": 16,
+          "text": "pues por Él fueron creadas todas las cosas, las de los cielos y las que están sobre la tierra, las visibles y las invisibles, sean tronos, sean dominaciones, sean principados, sean potestades. Todas las cosas fueron creadas por medio de Él y para Él .",
+          "footnoteRefs": [
+            12147
+          ]
+        },
+        {
+          "number": 17,
+          "text": "Y Él es antes de todas las cosas, y en Él subsisten todas.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 18,
+          "text": "Y Él es la cabeza del cuerpo de la Iglesia, siendo Él mismo el principio, el primogénito de entre los muertos, para que en todo sea Él lo primero .",
+          "footnoteRefs": [
+            12148
+          ]
+        },
+        {
+          "number": 19,
+          "text": "Pues plugo (al Padre) hacer habitar en Él toda la plenitud,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 20,
+          "text": "y por medio de Él reconciliar consigo todas las cosas, tanto las de la tierra como las del cielo, haciendo la paz mediante la sangre de su cruz .",
+          "footnoteRefs": [
+            12149
+          ]
+        },
+        {
+          "number": 21,
+          "text": "También a vosotros, que en un tiempo erais extraños y en vuestra mente erais enemigos a causa de las malas obras,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 22,
+          "text": "ahora os ha reconciliado en el cuerpo de la carne de Aquél por medio de la muerte, para que os presente santos e inmaculados e irreprensibles delante de Él.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 23,
+          "text": "Si es que en verdad permanecéis fundados y asentados en la fe e inconmovibles en la esperanza del Evangelio que oísteis, el cual ha sido predicado en toda la creación debajo del cielo y del cual yo Pablo he sido constituido ministro .",
+          "footnoteRefs": [
+            12150
+          ]
+        },
+        {
+          "number": 24,
+          "text": "Ahora me gozo en los padecimientos a causa de vosotros, y lo que en mi carne falta de las tribulaciones de Cristo, lo cumplo en favor del Cuerpo Suyo, que es la Iglesia.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 25,
+          "text": "De ella fui yo constituido siervo, según la misión que Dios me encomendó en beneficio vuestro, de anunciar en su plenitud el divino Mensaje ,",
+          "footnoteRefs": [
+            12151
+          ]
+        },
+        {
+          "number": 26,
+          "text": "el misterio, el que estaba escondido desde los siglos y generaciones, y que ahora ha sido revelado a sus santos .",
+          "footnoteRefs": [
+            12152
+          ]
+        },
+        {
+          "number": 27,
+          "text": "A ellos Dios quiso dar a conocer cuál es la riqueza de la gloria de este misterio entre los gentiles, que es Cristo en vosotros, la esperanza de la gloria.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 28,
+          "text": "A Éste predicamos, amonestando a todo hombre e instruyendo a todo hombre en toda sabiduría, para presentar perfecto en Cristo a todo hombre.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 29,
+          "text": "Por esto es que me afano luchando mediante la acción de Él, la cual obra en mi poderosamente.",
+          "footnoteRefs": []
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "sections": [
+        {
+          "title": "Advertencia contra la sabiduría humana.",
+          "startVerse": 1
+        },
+        {
+          "title": "En el bautismo morimos y resucitamos con Cristo.",
+          "startVerse": 11
+        },
+        {
+          "title": "Falso ascetismo.",
+          "startVerse": 16
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "Porque quiero que sepáis cuán fuertemente tengo que luchar por vosotros y por los de Laodicea, y por cuantos nunca han visto mi rostro en la carne,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 2,
+          "text": "a fin de que sean consolados sus corazones, confirmados en el amor y en toda la riqueza de la plenitud de la inteligencia, de modo de llegar al conocimiento del misterio de Dios, que es Cristo,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 3,
+          "text": "en quien los tesoros de la sabiduría y del conocimiento están todos escondidos .",
+          "footnoteRefs": [
+            12153
+          ]
+        },
+        {
+          "number": 4,
+          "text": "Esto lo digo, para que nadie os seduzca con argumentos de apariencia lógica.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 5,
+          "text": "Pues si bien estoy ausente con el cuerpo, sin embargo en espíritu estoy entre vosotros, gozándome al mirar vuestra armonía y la firmeza de vuestra fe en Cristo.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 6,
+          "text": "Por tanto, tal cual aprendisteis a Cristo Jesús el Señor, así andad en Él,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "arraigados en Él y edificados sobre Él, y confirmados en la fe según fuisteis enseñados, y rebosando de agradecimiento .",
+          "footnoteRefs": [
+            12154
+          ]
+        },
+        {
+          "number": 8,
+          "text": "Mirad, pues, no haya alguno que os cautive por medio de la filosofía y de vana falacia, fundadas en la tradición de los hombres sobre los elementos del mundo, y no sobre Cristo .",
+          "footnoteRefs": [
+            12155
+          ]
+        },
+        {
+          "number": 9,
+          "text": "Porque en Él habita toda la plenitud de la Deidad corporalmente ;",
+          "footnoteRefs": [
+            12156
+          ]
+        },
+        {
+          "number": 10,
+          "text": "y en Él estáis llenos vosotros, y Él es la cabeza de todo principado y potestad.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 11,
+          "text": "En Él también fuisteis circuncidados con circuncisión no hecha por mano de hombre mediante el despojo del cuerpo de la carne, sino con la circuncisión de Cristo ,",
+          "footnoteRefs": [
+            12157
+          ]
+        },
+        {
+          "number": 12,
+          "text": "habiendo sido sepultados con Él en el bautismo, donde así mismo fuisteis resucitados con Él por la fe en el poder de Dios que le resucitó de entre los muertos .",
+          "footnoteRefs": [
+            12158
+          ]
+        },
+        {
+          "number": 13,
+          "text": "Y a vosotros, los que estabais muertos por los delitos y por la incircuncisión de vuestra carne, os dio vida juntamente con Él, perdonándoos todos los delitos ,",
+          "footnoteRefs": [
+            12159
+          ]
+        },
+        {
+          "number": 14,
+          "text": "habiendo cancelado la escritura presentada contra nosotros, la cual con sus ordenanzas nos era adversa. La quitó de en medio al clavarla en la Cruz;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 15,
+          "text": "y despojando (así de aquélla) a los principados y potestades denodadamente los exhibió a la infamia, triunfando sobre ellos en la Cruz.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 16,
+          "text": "Que nadie, pues, os juzgue por comida o bebida, o en materia de fiestas o novilunios o sábados .",
+          "footnoteRefs": [
+            12160
+          ]
+        },
+        {
+          "number": 17,
+          "text": "Estas cosas son sombra de las venideras, mas el cuerpo es de Cristo.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 18,
+          "text": "Que nadie os defraude de vuestro premio con afectada humildad y culto de los ángeles, haciendo alarde de las cosas que pretende haber visto, vanamente hinchado por su propia inteligencia carnal ,",
+          "footnoteRefs": [
+            12161
+          ]
+        },
+        {
+          "number": 19,
+          "text": "y no manteniéndose unido a la cabeza, de la cual todo el cuerpo, alimentado y trabado por medio de coyunturas y ligamentos, crece con crecimiento que viene de Dios .",
+          "footnoteRefs": [
+            12162
+          ]
+        },
+        {
+          "number": 20,
+          "text": "Si con Cristo moristeis a los elementos del mundo ¿por qué, como si vivieseis en el mundo, os sujetáis a tales preceptos:",
+          "footnoteRefs": []
+        },
+        {
+          "number": 21,
+          "text": "“No tomes”, “no busques”, “no toques” –",
+          "footnoteRefs": []
+        },
+        {
+          "number": 22,
+          "text": "cosas todas que han de perecer con el uso– según los mandamientos y doctrinas de los hombres?",
+          "footnoteRefs": []
+        },
+        {
+          "number": 23,
+          "text": "Las cuales cosas tienen ciertamente color de sabiduría, por su afectada piedad, humildad y severidad con el cuerpo; mas no son de ninguna estima: sólo sirven para la hartura de la carne .",
+          "footnoteRefs": [
+            12163
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "sections": [
+        {
+          "title": "Nuestra vida cristiana con Dios en el Espíritu.",
+          "startVerse": 1
+        },
+        {
+          "title": "Vivir para Cristo.",
+          "startVerse": 12
+        },
+        {
+          "title": "Normas para los diversos estados.",
+          "startVerse": 18
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "Si, pues, fuisteis resucitados con Cristo, buscad las cosas que son de arriba, donde Cristo está sentado a la diestra de Dios.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 2,
+          "text": "Pensad en las cosas de arriba, no en las de la tierra;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 3,
+          "text": "porque ya moristeis (con Él) y vuestra vida está escondida con Cristo en Dios .",
+          "footnoteRefs": [
+            12164
+          ]
+        },
+        {
+          "number": 4,
+          "text": "Cuando se manifieste nuestra vida, que es Cristo, entonces vosotros también seréis manifestados con Él en gloria .",
+          "footnoteRefs": [
+            12165
+          ]
+        },
+        {
+          "number": 5,
+          "text": "Por tanto, haced morir los miembros que aun tengáis en la tierra: fornicación, impureza, pasiones, la mala concupiscencia y la codicia, que es idolatría.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 6,
+          "text": "A causa de estas cosas descarga la ira de Dios sobre los hijos de la desobediencia.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "Y en ellas habéis andado también vosotros en un tiempo, cuando vivíais entre aquéllos .",
+          "footnoteRefs": [
+            12166
+          ]
+        },
+        {
+          "number": 8,
+          "text": "Mas ahora, quitaos de encima también vosotros todas estas cosas: ira, enojo, malicia, maledicencia, palabras deshonestas de vuestra boca.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 9,
+          "text": "No mintáis unos a otros. Despojaos del hombre viejo con sus obras ,",
+          "footnoteRefs": [
+            12167
+          ]
+        },
+        {
+          "number": 10,
+          "text": "y vestíos del nuevo, el cual se va renovando para lograr el conocimiento según la imagen de Aquel que lo creó;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 11,
+          "text": "donde no hay griego ni judío, circuncisión ni incircuncisión, ni bárbaro, ni escita, ni esclavo, ni libre, sino que Cristo es todo y en todos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 12,
+          "text": "Vestíos, pues, como elegidos de Dios, santos y amados, de entrañas de misericordia, benignidad, humildad, mansedumbre, longanimidad ,",
+          "footnoteRefs": [
+            12168
+          ]
+        },
+        {
+          "number": 13,
+          "text": "sufriéndoos unos a otros, y perdonándoos mutuamente, si alguno tuviere queja contra otro. Como el Señor os ha perdonado, así perdonad también vosotros.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 14,
+          "text": "Pero sobre todas estas cosas, (vestíos) del amor, que es el vínculo de la perfección.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 15,
+          "text": "Y la paz de Cristo, a la cual habéis sido llamados en un solo cuerpo, prime en vuestros corazones. Y sed agradecidos :",
+          "footnoteRefs": [
+            12169
+          ]
+        },
+        {
+          "number": 16,
+          "text": "La Palabra de Cristo habite en vosotros con opulencia, enseñándoos y exhortándoos unos a otros en toda sabiduría, cantando a Dios con gratitud en vuestros corazones, salmos, himnos y cánticos espirituales .",
+          "footnoteRefs": [
+            12170
+          ]
+        },
+        {
+          "number": 17,
+          "text": "Y todo cuanto hagáis, de palabra o de obra, hacedlo todo en nombre del Señor Jesús, dando por medio de Él las gracias a Dios Padre.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 18,
+          "text": "Mujeres, estad sujetas a vuestros maridos, como conviene en el Señor .",
+          "footnoteRefs": [
+            12171
+          ]
+        },
+        {
+          "number": 19,
+          "text": "Maridos, amad a vuestras mujeres, y no las tratéis con aspereza.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 20,
+          "text": "Hijos, obedeced a vuestros padres en todo, porque esto es lo agradable en el Señor.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 21,
+          "text": "Padres, no exasperéis a vuestros hijos, no sea que se desalienten .",
+          "footnoteRefs": [
+            12172
+          ]
+        },
+        {
+          "number": 22,
+          "text": "Siervos, obedeced en todo a vuestros amos según la carne, no sirviendo al ojo, como para agradar a los hombres, sino con sencillez de corazón, temiendo al Señor .",
+          "footnoteRefs": [
+            12173
+          ]
+        },
+        {
+          "number": 23,
+          "text": "Cuanto hagáis, hacedlo de corazón, como para el Señor, y no para los hombres,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 24,
+          "text": "sabiendo que de parte del Señor recibiréis por galardón la herencia. Es a Cristo el Señor a quien servís.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 25,
+          "text": "Porque el que hace injusticia, recibirá la injusticia que hizo; y no hay acepción de personas.",
+          "footnoteRefs": []
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "sections": [
+        {
+          "title": "Oración y prudencia.",
+          "startVerse": 1
+        },
+        {
+          "title": "Conclusión.",
+          "startVerse": 7
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "Amos, proveed a los que os sirvan, de lo que es según la justicia e igualdad, sabiendo que también vosotros tenéis un Amo en el cielo .",
+          "footnoteRefs": [
+            12174
+          ]
+        },
+        {
+          "number": 2,
+          "text": "Perseverad en la oración, velando en ella y en la acción de gracias,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 3,
+          "text": "orando al mismo tiempo también por nosotros, para que Dios nos abra una puerta para la palabra, a fin de anunciar el misterio de Cristo, por el cual me hallo preso ,",
+          "footnoteRefs": [
+            12175
+          ]
+        },
+        {
+          "number": 4,
+          "text": "para que lo manifieste hablando como debo.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 5,
+          "text": "Comportaos prudentemente con los de afuera; aprovechad bien el tiempo .",
+          "footnoteRefs": [
+            12176
+          ]
+        },
+        {
+          "number": 6,
+          "text": "Sea vuestro hablar siempre con buen modo, sazonado con sal, de manera que sepáis cómo debéis responder a cada uno .",
+          "footnoteRefs": [
+            12177
+          ]
+        },
+        {
+          "number": 7,
+          "text": "En cuanto a mi persona, de todo os informará Tíquico, el amado hermano y fiel ministro y consiervo en el Señor;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 8,
+          "text": "a quien he enviado a vosotros con este mismo fin, para que conozcáis mi situación y para que él conforte vuestros corazones,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 9,
+          "text": "juntamente con Onésimo , el hermano fiel y amado, que es de entre vosotros. Ellos os informarán de todo lo que pasa aquí.",
+          "footnoteRefs": [
+            12178
+          ]
+        },
+        {
+          "number": 10,
+          "text": "Os saluda Aristarco, mi compañero de cautiverio, y Marcos, primo de Bernabé, respecto del cual ya recibisteis avisos –si fuere a vosotros, recibidle–",
+          "footnoteRefs": [
+            12179
+          ]
+        },
+        {
+          "number": 11,
+          "text": "y Jesús, llamado Justo. De la circuncisión son éstos los únicos que colaboran conmigo en el reino de Dios, y han sido para mí un consuelo .",
+          "footnoteRefs": [
+            12180
+          ]
+        },
+        {
+          "number": 12,
+          "text": "Os saluda Epafras, que es uno de vosotros, siervo de Cristo Jesús, el cual lucha siempre a favor vuestro en sus oraciones, para que perseveréis perfectos y cumpláis plenamente toda voluntad de Dios.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 13,
+          "text": "Le doy testimonio de que se afana mucho por vosotros y por los de Laodicea y los de Hierápolis.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 14,
+          "text": "Os saluda Lucas , el médico amado, y Demas.",
+          "footnoteRefs": [
+            12181
+          ]
+        },
+        {
+          "number": 15,
+          "text": "Saludad a los hermanos de Laodicea, a Ninfas, y a la Iglesia que está en su casa.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 16,
+          "text": "Y cuando esta epístola haya sido leída entre vosotros, haced que se la lea también en la Iglesia de los laodicenses; y leed igualmente vosotros la que viene de Laodicea .",
+          "footnoteRefs": [
+            12182
+          ]
+        },
+        {
+          "number": 17,
+          "text": "Y a Arquipo decidle: “Atiende al ministerio que has recibido en el Señor para que lo cumplas.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 18,
+          "text": "El saludo es de mi mano, Pablo. Acordaos de mis cadenas. La gracia sea con vosotros”.",
+          "footnoteRefs": []
+        }
+      ]
+    }
+  ],
+  "divisions": [],
+  "footnotes": {
+    "12142": "El Apóstol escribe esta carta desde Roma donde estaba preso, hacia el año 62, con el fin de explayarles, como a los Efesios, aspectos siempre nuevos del Misterio de Cristo, y de paso desenmascarar a los herejes que se habían introducido en la floreciente comunidad cristiana, “con apariencia de piedad” (2 Tm. 3, 5), inquietándola con doctrinas falsas tomadas del judaísmo y paganismo (necesidad de la Ley, de la observancia de los novilunios y de la circuncisión, culto exagerado de ángeles, gnosticismo, falso ascetismo). A este respecto véase, con sus notas, la Epístola a los Gálatas, especialmente el cap. 2.",
+    "12143": "Sobre esta esperanza véase 3, 4; Tt. 2, 13; Hch. 3, 21; Fil. 3, 20 s. y notas.",
+    "12144": "A pesar de no conocer personalmente a la Iglesia de Colosas, fundada por un discípulo suyo (Epafras), el Apóstol no cesa de recordarla en sus oraciones, deseándole los más altos bienes del espíritu, e insistiendo en hacer notar que ellos nos vienen siempre del conocimiento espiritual de Dios (v. 6 y 10). A esto lo llama “el poder de la gloria” (v. 11), que sostiene nuestra conducta y nuestro gozo en la paciencia. Véase igual concepto en 2 Tm. 3, 16 s. “No se debe hablar de las cosas de Dios según nuestro sentir humano. Nosotros debemos leer lo que está escrito, y comprender lo que leemos. Sólo entonces habremos cumplido con nuestra fe” (S. Hilario). Véase 2, 8 y nota.",
+    "12145": "Algunos añaden como en la Vulgata: por su sangre.",
+    "12146": "15 ss. Los siguientes versículos de esta Epístola, esencialmente cristológica, muestran la singularidad y absoluta majestad de la persona de Jesús. Jesús no es sólo infinitamente superior a los ángeles y otras creaturas sino que Él constituye el principio y fin del universo, por quien Dios lo ha creado todo. Cristo es, por consiguiente, cabeza de todas las cosas y especialmente de la Iglesia. Véase el Prólogo del Evangelio de San Juan (Jn. 1, 1-14). Cf. Hb. 1, 1-15; Ga. 6, 15; 2 Co. 5, 17; Ef. 1, 10 y 22; 5, 23- 32, etc.",
+    "12147": "Según suele entenderse estas expresiones se aplican a distintos órdenes de ángeles (cf. 2, 10 y 15; Rm. 8, 38; Ef. 1, 21) y también de demonios (cf. 2, 15; Ef. 3, 10 y 6, 12).",
+    "12148": "Cf. 2, 19; 1 Co. 15, 20; Ga. 3, 28; Ap. 1, 5. “Si la Iglesia es un cuerpo, necesariamente ha de ser una sola cosa indivisa, según aquello de S. Pablo: “Muchos formamos en Cristo un solo cuerpo” (Rm. 12, 5). Por lo cual se apartan de la verdad divina aquellos que se forjan la Iglesia de tal manera que … muchas comunidades cristianas, aunque separadas mutuamente en la fe, se juntan, sin embargo, por un lazo invisible” (Encíclica de Pío XII “Cuerpo Místico de Cristo”).",
+    "12149": "Véase Ef. 1, 7 y 10; 2, 13 ss.; 1 Jn. 2, 2; 1 Pe. 3, 19; 4, 6. Reconciliar consigo todas las cosas: “Con cuya expresión fácilmente se desliza un sentido restringido exclusivamente al dominio ético. En realidad no se trata solamente de que sean “renovados” los actos morales del hombre por el cumplimiento de la Ley de Cristo sino más bien que el cosmos total, aun en su existencia y actividad, sea “incluido” en Cristo. Así como al final de un libro todos los capítulos antecedentes toman una forma nueva, concentrada, que los abarca todos, en un capítulo final y son “recapitulados” en él, así también el cosmos completo, el espiritual y el material, ha sido realmente construido de nuevo en el Hombre-Dios, Jesucristo” (P. Pinsk).",
+    "12150": "Sobre la esperanza del Evangelio, véase v. 27; Rm. 8, 25; Fil. 3, 20 y nota; Hb. 3, 6; 7, 19; 11, 1, etc. Ha sido predicado… debajo del cielo: Sobre la amplitud de esta expresión, véase Rm. 10, 18 y nota. Ministro: S. Pablo, que poco antes sufría cadenas “por la esperanza de Israel” (Hch. 28, 20), está ahora, desde el rechazo total de los judíos (Hch. 28, 26 ss.), plenamente entregado a la Iglesia cuerpo místico, en que ya no hay judío ni gentil (3, 11), de la cual se llama ministro, en griego diácono. Ahora sus cadenas son “por vosotros, gentiles” (Ef. 3, 1), y por esta Iglesia acepta gozoso (v. 24) lo que en su carne le toque aún, por designio de Dios, padecer con Cristo (Rm. 6, 3 s.; 8, 17 s.; Fil. 3, 10). Lo que en mi carne falta de las tribulaciones de Cristo: “Los sufrimientos de la Iglesia y de cada uno de sus miembros son sufrimientos de Cristo (Hch. 9, 5; Ap. 7, 4)” (Crampon). No quiere decir, pues, que faltase nada en la pasión sobreabundante de Nuestro Señor, “de cuya Sangre habría bastado una gota para redimir a todo el mundo de todo delito” (S. Tomás). Sabido es que “la carne desea contra el espíritu” (Ga. 5, 17); por eso el Apóstol la tiene reducida a servidumbre (1 Co. 9, 27) y acepta con gozo (2 Co. 7, 4), en unión con Jesús (Rm. 8, 17), las tribulaciones que le sobrevienen o puedan sobrevenirle (2 Co. 1, 5), como ministro de la Iglesia (v. 25), y por amor a la misma a ejemplo de Cristo (Ef. 5, 25).",
+    "12151": "Anunciar en su plenitud el divino Mensaje: Otros traducen: Completar la palabra de Dios, es decir revelar el misterio de que habla a continuación, el cual hasta entonces había estado escondido, siendo sin duda una de esas cosas que Jesús no reveló a los Doce porque ellos no estaban preparados para recibirla (Jn. 16, 12). Es muy notable que Dios eligiera para esto a Pablo, que no era de los Doce, “como prototipo de los que después habían de creer en Él” (1 Tm. 1, 16), y que Pablo sólo explayase este misterio en las Epístolas de la cautividad (Ef. cap. 1 y notas), es decir, terminado el periodo de los Hechos de los Apóstoles (Hch. 28, 21 y nota), de modo que la plenitud de su revelación a los gentiles sólo llegó cuando Israel desoyó la predicación apostólica, como había de desoír también la Epístola de los Hebreos. Más tarde el Apóstol hará a Tito una confirmación de lo expuesto aquí. Véase Tt. 1, 2 s.",
+    "12152": "Sobre este misterio escondido, véase Ef. 3, 9 y nota.",
+    "12153": "Escondidos: Cf. 1, 26; Co. 2, 7 y nota. Por lo cual en vano se pretendería investigarlos fuera del estudio de la divina Revelación (v. 4 y 8), para el cual más bien que la agudeza del dialéctico, se requiere la espiritualidad (1 Co. 2, 3) y la simplicidad propia de los humildes (Lc. 10, 21).",
+    "12154": "Jesucristo es la “piedra” sobre la cual el alma está edificada y elevada por encima de sí misma, de los sentidos, de la naturaleza, por encima de los consuelos y de los dolores, por encima de lo que no es únicamente Él. Y allí, en su plena posesión, ella se domina, se supera a sí misma y sobrepuja de este modo todas las cosas (Sor Isabel de la Sma. Trinidad). Véase Ef. 2, 20-22 y notas. Esto dice el mismo Señor refiriéndose al que edifica sobre sus Palabras (Mt. 7, 24).",
+    "12155": "Fundadas en la tradición de los hombres: Es ésta una de las frases más expresivas de S. Pablo. Pone el dedo en la llaga sobre la prudencia de los hombres, y el espíritu meramente humano, como predicador de una doctrina que no sólo es toda sobrenatural y divina, recibida por él de Cristo y “no de los hombres”, “ni según los hombres”, “ni para agradar a los hombres” (Ga. 1, 1-12), sino que, como tal, es contraria a toda sabiduría humana, y tan despreciada y perseguida por los carnales cuanto por los intelectualistas (1 Co. cap. 1-3) y por los que se jactan de sus “virtudes” (Lc. 10, 21; 18, 9, etc.). Todo esto forma lo que Cristo llama “el mundo”, que es necesariamente su enemigo (Jn. 7; 7). Por el solo hecho de no estar con Él, está contra Él (Lc. 11, 23), y no pudiendo recibir la verdadera sabiduría del Espíritu Santo, porque “no lo ve ni lo conoce” (Jn. 14, 17), considera “altamente estimable lo que para Dios es despreciable” (Lc. 16, 15), y se constituye, a veces so capa de piedad y buen sentido, en el más fuerte opositor de las “paradojas” evangélicas, porque le escandalizan (Lc. 7, 23; Mt. 13, 21 y notas). El gran Apóstol que fue burlado en la mayor academia clásica del mundo (Hch. 17, 32 y nota), nos previene aquí contra el más peligroso de todos los virus porque es el más “honorable”. Al terminar la segunda guerra mundial, se anunció que el campo de la cultura, para orientar a la humanidad, se disputará entre dos tendencias: la humanista por una parte, y por otra la pragmatista, utilitarista y positivista. S. Pablo, que otras veces nos previene contra esta última y contra aquéllos “cuyo dios es el vientre” (Fil. 3, 19), señalándonos la inanidad de esta vida efímera (1 Co. 6, 13; 7, 31; 2 Co. 4, 18; Hb. 11, 1, etc.), nos previene aquí también contra la primera, recordándonos que “todo el que se cree algo se engaña, porque es la nada” (Ga. 6, 3), y que “uno solo es nuestro Maestro”: Jesús de Nazaret (Mt. 23, 8), el cual fue acusado precisamente porque “cambiaba las tradiciones” (Hch. 6, 4). Véase Mc. 7, 4; Mt. 15, 3; Ne. 9, 6 y notas. “Si Babel trata de alzar más y más su torre, decía un Santo, cavemos nosotros más profundo aún nuestro pozo, hasta la nada total, basta el infinito no ser, para compensar en cuanto se pueda el desequilibrio”.",
+    "12156": "9 ss. S. Pablo defiende contra los falsos doctores tres grandes verdades: 1º) Cristo es superior a los ángeles, porque en Él reside plenamente la naturaleza divina y no en los ángeles; 2º) nuestros pecados son perdonados por Él, en la circuncisión espiritual, el Bautismo (v. 11), y no por los ángeles (v. 11-13); 3º) Cristo puso término al dominio de Satanás (v. 14 s.).",
+    "12157": "Nótese el contraste con Ef. 2, 11.",
+    "12158": "Sepultados con Él: Fillion hace notar que el mejor comentario de este pasaje lo da el mismo S. Pablo en Rm. 6, 3-5, y que el Bautismo era administrado originariamente por inmersión y figuraba así, primero la muerte y sepultura del hombre viejo, y luego la resurrección del hombre nuevo (cf. Const. Apost. 3, 17). Por la fe, etc.; es decir, que esta fe en la resurrección del Hijo hecha por el Padre ha de ser anterior al Bautismo. Así lo dice el Señor en Mc. 16, 16 y lo vemos en Hch. 2, 41; 8, 36 s., etc. Como observa el Cardenal Goma, el Bautismo es posterior a la profesión de fe, y esta fe viene de la palabra, la cual es, como él dice, “la primera función ministerial”. En el bautismo de los párvulos se supone que éstos piden previamente esa fe a la Iglesia, y luego hacen profesión de ella por medio de los padrinos.",
+    "12159": "13 ss. El argumento de S. Pablo es: Jesús, nuestro divino Campeón humilló hasta la infamia a los espíritus infernales (1, 16 y nota), arrebatándoles la escritura donde constaban nuestras culpas y dejándolos así en descubierto al despojarlos de la prueba en que se fundaban para acusarnos como enemigos nuestros. Manera tan sublime como audaz de presentar todo cuanto debemos a nuestro divino Abogado (1 Jn. 2, 1 s.). Cf. 3, 4; Lc. 21, 28; Jn. 14, 31 y notas; Rm. 8, 23; Ap. 12, 10, etc.",
+    "12160": "Los falsos doctores predicaban muchas prácticas exteriores como indispensables para la salud; ciertos manjares, fiestas, sábado judío, celebración de novilunios, etc. Semejantes cosas no valen más que la sombra en comparación con el sol. Sábados: Aquí se confirma la sustitución del antiguo sábado por el domingo, día de la Resurrección del Señor. Véase 1 Tim. 4, 4 ss. y nota.",
+    "12161": "El culto de los ángeles como otras tantas divinidades menores, semejantes a los “eones” de Valentino que menciona S. Ireneo, era una característica de los gnósticos. Parece que éstos, ya en tiempo de S. Pablo, se infiltraron en las comunidades cristianas del Asia Menor. Cf. Mt. 24, 4.",
+    "12162": "Véase Ef. 4, 16 y nota. “A la manera como en el cuerpo el cerebro es centro de los nervios, los que para él son instrumentos de los sentidos, así también el Cuerpo de la Iglesia recibe del Señor Jesucristo las fuentes de la doctrina y las causas que obran la salud” (Teodoreto).",
+    "12163": "Para la hartura de la carne: Así también el P. Bover. “Las prácticas en cuestión no tienen ningún valor ante Dios, porque provienen del orgullo y carecen de sinceridad; por otra parte, lejos de mortificar y someter a la carne, es decir, la naturaleza caída, le brindan un nuevo pasto, porque ella cree fácilmente que basta infligirse algunas maceraciones para hacer grandes progresos en la virtud” (Fillion). Es de advertir que este versículos ha sido traducido erróneamente por algunos, haciéndole decir, al revés, que en ese falso ascetismo hay algo de verdadera virtud.",
+    "12164": "He aquí la profunda realidad del Cuerpo Místico: estamos ya muertos al mundo por el Bautismo (2, 12; Rm. 6, 3 ss. y notas). No podemos aún salir del mundo, pero necesitamos librarnos de todas las cosas que se oponen al orden sobrenatural (v. 5), porque ya no somos del mundo. “Preceda el corazón al cuerpo. Hazte sordo para no oír. Los corazones, allá arriba” (S. Agustín). Cf. Jn. 17, 14-16; 1 Jn. 2, 15.",
+    "12165": "“La vida de la gracia está escondida en el fondo del alma: así como nuestros ojos mortales no perciben a Cristo en el seno del Padre, nada tampoco manifiesta exteriormente nuestra unión a Cristo y a su Padre. Pero el día en que Cristo vendrá a inaugurar la fase definitiva de su reino, la gracia florecerá en gloria y nosotros seremos asociados a su triunfo” (Pirot). Cf. 1, 5 y nota; 1 Co. 15, 43; Fil. 3, 20; 1 Jn. 3, 2.",
+    "12166": "También vosotros: los gentiles. Cf. Ef. 2, 11 ss. y notas.",
+    "12167": "Debemos cuidar la exactitud de una expresión que suele repetirse, según la cual para el cristianismo todos los hombres son hermanos, como hijos del mismo Padre. Lo son, ciertamente, como creaturas. Pero hijo de Dios, en el sentido sobrenatural, no es sino el que ha “nacido de nuevo” (Jn. 3, 3), es decir, el que vive su fe y su bautismo, convertido totalmente a Cristo, o sea el que ya no es del mundo (v. 3), el que ha renunciado a sí mismo y es un “hombre nuevo” (Ef. 4, 21-24). Quizás nos asombraríamos si pudiéramos ver cuántos son los que realmente viven la ley de gracia que nos hace, no sólo llamarnos hijos de Dios, sino serlo de veras (1 Jn. 3, 1). Estos, dice S. Juan, no pecan más, porque han nacido de Dios y la semilla divina permanece en ellos (1 Jn. 3, 9). Nótese que, según la doctrina central de esta Epístola, nuestro “hombre viejo” se renueva por el conocimiento, el cual no puede ser sustituido por ningún mecanismo, meramente exterior (v. 10; 1, 9 y nota; v. 4, 24, etc.). Es, pues, de trascendental importancia sembrar la Palabra de la cual nace el conocimiento sobrenatural de Dios (Jn. 17, 3 y 17), que es, como dice S. Tomás, una participación al conocimiento que Dios tiene de Sí mismo. Cf. 2 Tm. 2, 19 s. y notas.",
+    "12168": "12 ss. La caridad es algo más que un uniforme con que estamos vestidos: es la señal de nuestra elección. El mundo debe conocernos por las obras de nuestra caridad. Jesús puso como señal para sus discípulos el mutuo amor y enseñó que este espectáculo es el que puede convertir al mundo (Jn. 13, 34; 15, 12; 17, 21). Por eso dice: el vínculo de la perfección (v. 14), es decir, el lazo de unión que vincula y caracteriza a los perfectos (Fil. 3, 3). “En verdad que la caridad es el vínculo de la perfección, porque une con Dios estrechamente a aquellos entre quienes reina, y hace que los tales reciban de Dios la vida del alma, vivan con Dios, y que dirijan y ordenen a Él todas sus acciones” (León XIII, en la Encíclica “Sapientia Christiana”).",
+    "12169": "Véase Rm. 12, 5; 1 Co. 12, 13.",
+    "12170": "Con opulencia: es decir, que nadie puede pretender que conoce bien la Palabra de Dios si ignora el Evangelio y confía en los pocos recuerdos que puedan quedarle del Catecismo de su infancia (cf. 1 Ts. 2, 13 y nota). Santa Paula cuenta que, todavía en su tiempo, “el labriego conduciendo su arado cantaba el “aleluya”; el segador sudando se recreaba con el canto de los salmos, y el vendimiador, manejando la corva podadora, cantaba algún fragmento de las poesías davídicas”.",
+    "12171": "18 ss. De la idea principal de la caridad se desprenden los deberes de cada uno, particularmente los de los padres, hijos, esclavos y amos. Hay un paralelismo entre todo este pasaje y el que empieza en Ef. 5, 22. Véase 4, 16 y nota.",
+    "12172": "La autoridad paterna, por lo mismo que es la más elevada como reflejo de la divina Paternidad (Ef. 3, 15 y nota), ha de tomar ejemplo del Padre celestial, que no quiere movernos como autómatas, ni nos ha dado el espíritu de esclavitud (Ga. 5, 8 y nota), sino de hijos como Jesús (Ga. 4, 6 y nota), y lejos de querer abrumarnos (Ga. 3, 5 y nota), se preocupa especialmente de evitar que caigamos en esa desesperación o pusilanimidad que aquí señala S. Pablo. Cfr. Ef. 6, 4; 5, 21 ss.; 1 Co. 7, 20; 1 Pe. 3, 1. De lo contrarío, la obediencia del hijo nunca se haría consciente y voluntaria, y llegado a ser adulto sacudiría el yugo paterno en vez de asimilarse sus enseñanzas. De ahí que la Iglesia nos lleve a renovar, en la edad adulta, las promesas del Bautismo, que no pudimos formular por nosotros mismos cuando párvulos.",
+    "12173": "Véase sobre este importante punto la nota en Ef. 6, 5 ss. y las citas correspondientes.",
+    "12174": "“Elevemos, pues, los ojos al cielo: es a la luz de este pensamiento cómo amos y siervos han de considerarse iguales ante la faz de su común Amo y Señor” (Pío XII, Alocución del 5-VIII-1943).",
+    "12175": "¡Una puerta para la Palabra! Es todo lo que ambiciona el Apóstol: poder entrar con la Palabra de Dios donde lo escuchen. Véase 1 Co. 16, 9; Hch. 19, 22 y nota; 2 Co. 2, 12; Ef. 6, 18-20; Rm. 12, 12; 1 Ts. 5, 17; 2 Ts. 3, 1.",
+    "12176": "Los de afuera: los que no son miembros de la Iglesia. Nuestra conducta sea tal que el mundo pueda palpar la verdad de nuestra religión, y decir, como de los primeros cristianos: “¡Mirad cómo se aman!” (cf. 3, 12 ss. y nota; 1 Co. 13). Aprovechad bien el tiempo: Literalmente: “redimiendo el tiempo”, aprovechando intensamente los fugaces días de nuestra vida para hacer el bien y edificar a otros. El que antes no lo hubiese hecho, tiene en Jesús el secreto único para recobrarlo con ventaja, pues Él nos descubrió, no sólo en la Parábola del Hijo Pródigo que el Padre celestial, lejos de rechazar al que se arrepiente, o castigarlo o disminuirlo, lo viste con las mejores galas y le da un banquete (Lc. 15), sino también en la Parábola de los Obreros, que al de la última hora se le pagó antes (Mt. 20, 13 s.), porque amará más aquel a quien más se perdonó (Lc. 7, 41 ss.), y S. Pablo enseña que “todas las cosas cooperan al mayor bien de los que aman” (Rm. 8, 28). Meditemos en esta maravilla qué significa poder entregarnos hoy a Dios como si jamás hubiésemos pecado ni perdido un instante. Dios concedió esta gracia a Santa Gertrudis de un modo expreso, pero le mostró que la misma está al alcance de todos, como acabamos de verlo. Véase Sal. 50 y notas.",
+    "12177": "La sal simboliza la sabiduría cristiana (cf. el rito del Bautismo, en que se administra al bautizando “la sal de la sabiduría”).",
+    "12178": "Onésimo, el mismo de quien trata la carta de San Pablo a Filemón.",
+    "12179": "Cf. 1, 5 y nota; Hb. 10, 37; Lc. 21, 37.",
+    "12180": "¡Triste experiencia! Marcos y Jesús “el Justo” son los dos únicos israelitas que quedan fieles al Apóstol de los gentiles cuando se produce el retiro de los demás (Hch. 28, 29 y nota). Por otra parte es hermoso ver la fidelidad de Marcos a pesar del vivo incidente de Hch. 15. 39, y no obstante que Marcos era más bien discípulo de Pedro (1 Pe. 5, 13).",
+    "12181": "Lucas, el médico amado: el Evangelista y acompañante del Apóstol en la prisión. Cf. Hch. 27, 1 y nota. Era sirio (de Antioquía) y vemos que Pablo no lo cuenta entre los de la circuncisión (v. 11).",
+    "12182": "La carta a los de Laodicea, de la que habla S. Pablo, se ha perdido, a no ser que se trate de la carta a los Efesios, la cual, tal vez, estaba dirigida también a los de Laodicea (Ef. 1, 1 y nota). Compréndese aquí el empeño de S. Crisóstomo para que los creyentes lean constantemente las Cartas de S. Pablo (cfr. Hch. 28, 31 y nota) puesto que el mismo Apóstol así lo recomienda (1 Co. 5, 9; 1 Ts. 5, 27; 2 Ts. 2, 15; 3, 14)."
+  }
+}

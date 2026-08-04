@@ -1,0 +1,846 @@
+{
+  "book": "1 Pedro",
+  "slug": "1-pedro",
+  "source": "https://bibliastraubinger.com/1-pedro/",
+  "chapters": [
+    {
+      "chapter": 1,
+      "sections": [],
+      "verses": [
+        {
+          "number": 1,
+          "text": "PEDRO – – – –",
+          "footnoteRefs": []
+        }
+      ]
+    },
+    {
+      "chapter": 1,
+      "sections": [
+        {
+          "title": "Prólogo.",
+          "startVerse": 1
+        },
+        {
+          "title": "Acción de gracias.",
+          "startVerse": 3
+        },
+        {
+          "title": "La voz de los profetas.",
+          "startVerse": 10
+        },
+        {
+          "title": "Sed santos, pues fuisteis redimidos por la sangre de Cristo.",
+          "startVerse": 13
+        },
+        {
+          "title": "Nacidos de Dios.",
+          "startVerse": 22
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "Pedro, apóstol de Jesucristo, a los advenedizos de la diáspora en el Ponto, Galacia, Capadocia, Asia y Bitinia,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 2,
+          "text": "elegidos conforme a la presciencia de Dios Padre, por la santificación del Espíritu, para obedecer a Jesucristo y ser rociados con su sangre: gracia y paz os sean dadas en abundancia .",
+          "footnoteRefs": [
+            12557
+          ]
+        },
+        {
+          "number": 3,
+          "text": "Bendito sea el Dios y Padre de nuestro Señor Jesucristo que, según la abundancia de su misericordia, nos ha engendrado de nuevo para una esperanza viva, mediante la resurrección de Jesucristo de entre los muertos;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 4,
+          "text": "para una herencia que no puede corromperse, ni mancharse, ni marchitarse, y que está reservada en los cielos para vosotros",
+          "footnoteRefs": []
+        },
+        {
+          "number": 5,
+          "text": "los que, por el poder de Dios, sois guardados mediante la fe para la salvación que está a punto de manifestarse en (este) último tiempo .",
+          "footnoteRefs": [
+            12558
+          ]
+        },
+        {
+          "number": 6,
+          "text": "En lo cual os llenáis de gozo, bien que ahora, por un poco de tiempo seáis, si es menester, apenados por varias pruebas ;",
+          "footnoteRefs": [
+            12559
+          ]
+        },
+        {
+          "number": 7,
+          "text": "a fin de que vuestra fe, saliendo de la prueba mucho más preciosa que el oro perecedero –que también se acrisola por el fuego– redunde en alabanza, gloria y honor cuando aparezca Jesucristo .",
+          "footnoteRefs": [
+            12560
+          ]
+        },
+        {
+          "number": 8,
+          "text": "A Él amáis sin haberlo visto; en Él ahora, no viéndolo, pero sí creyendo, os regocijáis con gozo inefable y gloriosísimo ,",
+          "footnoteRefs": [
+            12561
+          ]
+        },
+        {
+          "number": 9,
+          "text": "porque lográis el fin de vuestra fe, la salvación de (vuestras) almas.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 10,
+          "text": "Sobre esta salvación inquirieron y escudriñaron los profetas, cuando vaticinaron acerca de la gracia reservada a vosotros ,",
+          "footnoteRefs": [
+            12562
+          ]
+        },
+        {
+          "number": 11,
+          "text": "averiguando a qué época o cuáles circunstancias se refería el Espíritu de Cristo que profetizaba en ellos, al dar anticipado testimonio de los padecimientos de Cristo y de sus glorias posteriores .",
+          "footnoteRefs": [
+            12563
+          ]
+        },
+        {
+          "number": 12,
+          "text": "A ellos fue revelado que no para sí mismos sino para vosotros, administraban estas cosas que ahora os han sido anunciadas por los predicadores del Evangelio, en virtud del Espirito Santo enviado del cielo; cosas que los mismos ángeles desean penetrar .",
+          "footnoteRefs": [
+            12564
+          ]
+        },
+        {
+          "number": 13,
+          "text": "Por lo cual ceñid los lomos de vuestro espíritu y, viviendo con sobriedad, poned toda vuestra esperanza en la gracia que se os traerá cuando aparezca Jesucristo.",
+          "footnoteRefs": [
+            12565
+          ]
+        },
+        {
+          "number": 14,
+          "text": "Como hijos obedientes, no os conforméis con aquellas anteriores concupiscencias del tiempo de vuestra ignorancia ;",
+          "footnoteRefs": [
+            12566
+          ]
+        },
+        {
+          "number": 15,
+          "text": "sino que, conformes al que os llamó, que es Santo, sed también vosotros santos en toda conducta .",
+          "footnoteRefs": [
+            12567
+          ]
+        },
+        {
+          "number": 16,
+          "text": "Pues escrito está: “Sed santos, porque Yo soy santo” .",
+          "footnoteRefs": [
+            12568
+          ]
+        },
+        {
+          "number": 17,
+          "text": "Y si llamáis Padre a Aquel que, sin acepción de personas, juzga según la obra de cada uno, vivid en temor el tiempo de vuestra peregrinación,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 18,
+          "text": "sabiendo que de vuestra vana manera de vivir, herencia de vuestros padres, fuisteis redimidos, no con cosas corruptibles, plata u oro,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 19,
+          "text": "sino con la preciosa sangre de Cristo, como de cordero sin tacha y sin mancha ,",
+          "footnoteRefs": [
+            12569
+          ]
+        },
+        {
+          "number": 20,
+          "text": "conocido ya antes de la creación del mundo, pero manifestado al fin de los tiempos por amor de vosotros ,",
+          "footnoteRefs": [
+            12570
+          ]
+        },
+        {
+          "number": 21,
+          "text": "los que por Él creéis en Dios que le resucitó de entre los muertos y le dio gloria, de modo que vuestra fe sea también esperanza en Dios .",
+          "footnoteRefs": [
+            12571
+          ]
+        },
+        {
+          "number": 22,
+          "text": "Puesto que con la obediencia a la verdad habéis purificado vuestras almas para un amor fraternal no fingido, amaos unos a otros asiduamente, con sencillo corazón ;",
+          "footnoteRefs": [
+            12572
+          ]
+        },
+        {
+          "number": 23,
+          "text": "ya que estáis engendrados de nuevo, no de simiente corruptible, sino incorruptible, por la Palabra de Dios viva y permanente .",
+          "footnoteRefs": [
+            12573
+          ]
+        },
+        {
+          "number": 24,
+          "text": "Porque “toda carne es como heno, y toda su gloria, como la flor del heno. Secóse el heno y cayó la flor ,",
+          "footnoteRefs": [
+            12574
+          ]
+        },
+        {
+          "number": 25,
+          "text": "mas la Palabra del Señor permanece para siempre”. Y esta Palabra es la que os ha sido predicada por el Evangelio.",
+          "footnoteRefs": []
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "sections": [
+        {
+          "title": "Espiritualidad cristiana.",
+          "startVerse": 1
+        },
+        {
+          "title": "Sois sacerdotes y reyes.",
+          "startVerse": 4
+        },
+        {
+          "title": "El buen ejemplo.",
+          "startVerse": 11
+        },
+        {
+          "title": "Obediencia a las autoridades.",
+          "startVerse": 13
+        },
+        {
+          "title": "Servir, a imitación de Cristo.",
+          "startVerse": 18
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "Deponed, pues, toda malicia y todo engaño, las hipocresías, las envidias y toda suerte de detracciones,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 2,
+          "text": "y, como niños recién nacidos, sed ávidos de la leche espiritual no adulterada, para crecer por ella en la salvación ,",
+          "footnoteRefs": [
+            12575
+          ]
+        },
+        {
+          "number": 3,
+          "text": "si es que habéis experimentado que el Señor es bueno .",
+          "footnoteRefs": [
+            12576
+          ]
+        },
+        {
+          "number": 4,
+          "text": "Arrimándoos a Él, como a piedra viva, reprobada ciertamente por los hombres, mas para Dios escogida y preciosa,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 5,
+          "text": "también vosotros, cual piedras vivas, edificaos (sobre Él) como casa espiritual para un sacerdocio santo, a fin de ofrecer sacrificios espirituales, agradables a Dios por Jesucristo .",
+          "footnoteRefs": [
+            12577
+          ]
+        },
+        {
+          "number": 6,
+          "text": "Por lo cual se halla esto en la Escritura: “He aquí que pongo en Sión una piedra angular escogida y preciosa; y el que en ella cree nunca será confundido” .",
+          "footnoteRefs": [
+            12578
+          ]
+        },
+        {
+          "number": 7,
+          "text": "Preciosa para vosotros los que creéis; mas para los que no creen, “la piedra que rechazaron los constructores ésa misma ha venido a ser cabeza de ángulo”",
+          "footnoteRefs": [
+            12579
+          ]
+        },
+        {
+          "number": 8,
+          "text": "y “roca de tropiezo y piedra de escándalo”; para aquellos que tropiezan por no creer a la Palabra, a lo cual en realidad están destinados.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 9,
+          "text": "Pero vosotros sois un “linaje escogido, un sacerdocio real, una nación santa, un pueblo conquistado , para que anunciéis las grandezas de Aquel que de las tinieblas os ha llamado a su admirable luz”;",
+          "footnoteRefs": [
+            12580
+          ]
+        },
+        {
+          "number": 10,
+          "text": "a los en un tiempo (llamados) “no pueblo”, ahora (se les llama) pueblo de Dios; a los (llamados) “no más misericordia”, ahora “objeto de la misericordia” .",
+          "footnoteRefs": [
+            12581
+          ]
+        },
+        {
+          "number": 11,
+          "text": "Amados míos, os ruego que os abstengáis, cual forasteros y peregrinos, de las concupiscencias carnales que hacen guerra contra el alma .",
+          "footnoteRefs": [
+            12582
+          ]
+        },
+        {
+          "number": 12,
+          "text": "Tened en medio de los gentiles una conducta irreprochable, a fin de que, mientras os calumnian como malhechores, al ver (ahora) vuestras buenas obras, glorifiquen a Dios en el día de la visita.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 13,
+          "text": "A causa del Señor sed sumisos a toda humana institución, sea al rey como soberano ,",
+          "footnoteRefs": [
+            12583
+          ]
+        },
+        {
+          "number": 14,
+          "text": "o a los gobernadores, como enviados suyos para castigar a los malhechores y honrar a los que obran bien.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 15,
+          "text": "Pues la voluntad de Dios es que obrando bien hagáis enmudecer a los hombres insensatos que os desconocen,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 16,
+          "text": "(comportándoos) cual libres, no ciertamente como quien toma la libertad por velo de la malicia, sino como siervos de Dios.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 17,
+          "text": "Respetad a todos, amad a los hermanos, temed a Dios, honrad al rey.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 18,
+          "text": "Siervos, sed sumisos a vuestros amos con todo temor, no solamente a los buenos e indulgentes, sino también a los difíciles.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 19,
+          "text": "Porque en esto está la gracia: en que uno, sufriendo injustamente, soporte penas por consideración a Dios.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 20,
+          "text": "Pues ¿qué gloria es, si por vuestros pecados sois abofeteados y lo soportáis? Pero si padecéis por obrar bien y lo sufrís, esto es gracia delante de Dios.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 21,
+          "text": "Para esto fuisteis llamados. Porque también Cristo padeció por vosotros dejándoos ejemplo para que sigáis sus pasos .",
+          "footnoteRefs": [
+            12584
+          ]
+        },
+        {
+          "number": 22,
+          "text": "“Él, que no hizo pecado, y en cuya boca no se halló engaño”;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 23,
+          "text": "cuando lo ultrajaban no respondía con injurias y cuando padecía no amenazaba, sino que se encomendaba al justo Juez .",
+          "footnoteRefs": [
+            12585
+          ]
+        },
+        {
+          "number": 24,
+          "text": "Él mismo llevó nuestros pecados en su cuerpo sobre el madero, a fin de que nosotros, muertos a los pecados, vivamos para la justicia. “Por sus llagas fuisteis sanados”",
+          "footnoteRefs": []
+        },
+        {
+          "number": 25,
+          "text": "; porque erais como ovejas descarriadas; mas ahora os habéis vuelto al Pastor y Obispo de vuestras almas .",
+          "footnoteRefs": [
+            12586
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "sections": [
+        {
+          "title": "La vida conyugal.",
+          "startVerse": 1
+        },
+        {
+          "title": "Exhortaciones generales.",
+          "startVerse": 8
+        },
+        {
+          "title": "Ejemplo de Cristo.",
+          "startVerse": 18
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "De igual manera, vosotras, mujeres, sed sumisas a vuestros maridos, para que si algunos no obedecen a la predicación sean ganados sin palabra por la conducta de sus mujeres,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 2,
+          "text": "al observar vuestra vida casta y llena de reverencia .",
+          "footnoteRefs": [
+            12587
+          ]
+        },
+        {
+          "number": 3,
+          "text": "Que vuestro adorno no sea de afuera: el rizarse los cabellos, ornarse de joyas de oro o ataviarse de vestidos,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 4,
+          "text": "sino el (adorno) interior del corazón, que consiste en la incorrupción de un espíritu manso y suave, precioso a los ojos de Dios.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 5,
+          "text": "Porque así también se ataviaban antiguamente las santas mujeres que esperaban en Dios, viviendo sumisas a sus maridos;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 6,
+          "text": "como, por ejemplo, Sara era obediente a Abrahán y le llamaba señor. De ella sois hijas vosotras si obráis el bien sin temer ninguna amenaza.",
+          "footnoteRefs": [
+            12588
+          ]
+        },
+        {
+          "number": 7,
+          "text": "Asimismo, vosotros, maridos, vivid en común con vuestras mujeres con toda la discreción, como que son vaso más débil. Tratadlas con honra como a coherederas que son de la gracia de la vida, para que nada estorbe vuestras oraciones .",
+          "footnoteRefs": [
+            12589
+          ]
+        },
+        {
+          "number": 8,
+          "text": "En fin, sed todos de un mismo sentir, compasivos, amantes de los hermanos, misericordiosos, humildes.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 9,
+          "text": "No devolváis mal por mal ni ultraje por ultraje, sino al contrario bendecid, porque para esto fuisteis llamados a ser herederos de la bendición .",
+          "footnoteRefs": [
+            12590
+          ]
+        },
+        {
+          "number": 10,
+          "text": "“Quien quiere amar la vida y ver días felices, aparte su lengua del mal y sus labios de palabras engañosas ;",
+          "footnoteRefs": [
+            12591
+          ]
+        },
+        {
+          "number": 11,
+          "text": "sepárese del mal y obre el bien; busque la paz y vaya en pos de ella;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 12,
+          "text": "porque los ojos del Señor van hacia los justos, y sus oídos están atentos a sus plegarias, pero el rostro del Señor está contra los que obran el mal”.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 13,
+          "text": "¿Y quién habrá que os haga mal si estáis celosamente entregados al bien?",
+          "footnoteRefs": []
+        },
+        {
+          "number": 14,
+          "text": "Aun cuando padeciereis por la justicia, dichosos de vosotros. No tengáis de ellos ningún temor, ni os perturbéis ;",
+          "footnoteRefs": [
+            12592
+          ]
+        },
+        {
+          "number": 15,
+          "text": "antes bien, santificad a Cristo como Señor en vuestros corazones, y estad siempre prontos a dar respuesta a todo el que os pidiere razón de la esperanza en que vivís ;",
+          "footnoteRefs": [
+            12593
+          ]
+        },
+        {
+          "number": 16,
+          "text": "pero con mansedumbre y reserva, teniendo buena conciencia, para que en aquello mismo en que sois calumniados sean confundidos los que difaman vuestra buena conducta en Cristo .",
+          "footnoteRefs": [
+            12594
+          ]
+        },
+        {
+          "number": 17,
+          "text": "Porque mejor es sufrir, si tal es la voluntad de Dios, haciendo el bien que haciendo el mal.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 18,
+          "text": "Pues también Cristo murió una vez por los pecados, el Justo por los injustos, a fin de llevarnos a Dios. Fue muerto en la carne, pero llamado a la vida por el Espíritu ,",
+          "footnoteRefs": [
+            12595
+          ]
+        },
+        {
+          "number": 19,
+          "text": "en el cual fue también a predicar a los espíritus encarcelados ,",
+          "footnoteRefs": [
+            12596
+          ]
+        },
+        {
+          "number": 20,
+          "text": "que una vez fueron rebeldes cuando los esperaba la longanimidad de Dios en los días de Noé, mientras se construía el arca, en la cual algunos pocos, a saber, ocho personas, fueron salvados a través del agua;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 21,
+          "text": "cuyo antitipo, el bautismo –que consiste, no en la eliminación de la inmundicia de la carne, sino en la demanda a Dios de una buena conciencia– os salva ahora también a vosotros por la resurrección de Jesucristo ,",
+          "footnoteRefs": [
+            12597
+          ]
+        },
+        {
+          "number": 22,
+          "text": "el cual subió al cielo y está a la diestra de Dios, hallándose sujetos a Él ángeles, autoridades y poderes .",
+          "footnoteRefs": [
+            12598
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "sections": [
+        {
+          "title": "El ejemplo de los cristianos.",
+          "startVerse": 1
+        },
+        {
+          "title": "El juicio está cerca.",
+          "startVerse": 7
+        },
+        {
+          "title": "Frutos de la persecución.",
+          "startVerse": 12
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "Por tanto, habiendo Cristo padecido en la carne, armaos también vosotros de la misma disposición, a saber, que el que padeció en la carne ha roto con el pecado ,",
+          "footnoteRefs": [
+            12599
+          ]
+        },
+        {
+          "number": 2,
+          "text": "para pasar lo que resta que vivir en carne, no ya según las concupiscencias humanas, sino según la voluntad de Dios;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 3,
+          "text": "pues basta ya el tiempo pasado en que habéis cumplido la voluntad de los gentiles, viviendo en lascivia, concupiscencia, embriaguez, comilonas, orgías y nefaria idolatría.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 4,
+          "text": "Ahora se extrañan de que vosotros no corráis con ellos a la misma desenfrenada disolución y se ponen a injuriar;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 5,
+          "text": "pero darán cuenta a Aquel que está pronto para juzgar a vivos y a muertos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 6,
+          "text": "Pues para eso fue predicado el Evangelio también a los muertos, a fin de que, condenados en la carne, según (es propio de) los hombres, vivan según Dios en el espíritu .",
+          "footnoteRefs": [
+            12600
+          ]
+        },
+        {
+          "number": 7,
+          "text": "El fin de todas las cosas está cerca; sed, pues, prudentes y sobrios para poder dedicaros a la oración .",
+          "footnoteRefs": [
+            12601
+          ]
+        },
+        {
+          "number": 8,
+          "text": "Ante todo, conservad asidua la mutua caridad, porque la caridad cubre multitud de pecados .",
+          "footnoteRefs": [
+            12602
+          ]
+        },
+        {
+          "number": 9,
+          "text": "Ejerced la hospitalidad entre vosotros sin murmurar .",
+          "footnoteRefs": [
+            12603
+          ]
+        },
+        {
+          "number": 10,
+          "text": "Sirva cada uno a los demás con el don que haya recibido, como buenos dispensadores de la gracia multiforme de Dios .",
+          "footnoteRefs": [
+            12604
+          ]
+        },
+        {
+          "number": 11,
+          "text": "Si alguno habla, sea conforme a las palabras de Dios; si alguno ejerce un ministerio, sea por la virtud que Dios le dispensa, a fin de que el glorificado en todo sea Dios por Jesucristo, a quien es la gloria y el poder por los siglos de los siglos . Amén.",
+          "footnoteRefs": [
+            12605
+          ]
+        },
+        {
+          "number": 12,
+          "text": "Carísimos, no os sorprendáis, como si os sucediera cosa extraordinaria, del fuego que arde entre vosotros para prueba vuestra;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 13,
+          "text": "antes bien alegraos, en cuanto sois participantes de los padecimientos de Cristo, para que también en la aparición de su gloria saltéis de gozo .",
+          "footnoteRefs": [
+            12606
+          ]
+        },
+        {
+          "number": 14,
+          "text": "Dichosos de vosotros si sois infamados por el nombre de Cristo, porque el Espíritu de la gloria, que es el espíritu de Dios, reposa sobre vosotros.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 15,
+          "text": "Ninguno de vosotros padezca, pues, como homicida o ladrón o malhechor, o por entrometerse en cosas extrañas ;",
+          "footnoteRefs": [
+            12607
+          ]
+        },
+        {
+          "number": 16,
+          "text": "pero si es por cristiano, no se avergüence; antes bien, glorifique a Dios en este nombre .",
+          "footnoteRefs": [
+            12608
+          ]
+        },
+        {
+          "number": 17,
+          "text": "Porque es ya el tiempo en que comienza el juicio por la casa de Dios. Y si comienza por nosotros, ¿cuál será el fin de los que no obedecen al Evangelio de Dios?",
+          "footnoteRefs": [
+            12609
+          ]
+        },
+        {
+          "number": 18,
+          "text": "Y si “el justo apenas se salva, ¿qué será del impío y pecador?”",
+          "footnoteRefs": [
+            12610
+          ]
+        },
+        {
+          "number": 19,
+          "text": "Así, pues, los que sufren conforme a la voluntad de Dios, confíen sus almas al fiel Creador, practicando el bien .",
+          "footnoteRefs": [
+            12611
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "sections": [
+        {
+          "title": "Exhortación a los presbíteros.",
+          "startVerse": 1
+        },
+        {
+          "title": "Exhortación a todos.",
+          "startVerse": 5
+        },
+        {
+          "title": "Noticias Personales.",
+          "startVerse": 12
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "Exhorto, pues, a los presbíteros que están entre vosotros, yo, (su) copresbítero y testigo de los padecimientos de Cristo, como también, partícipe de la futura gloria que va a ser revelada :",
+          "footnoteRefs": [
+            12612
+          ]
+        },
+        {
+          "number": 2,
+          "text": "Apacentad la grey de Dios que está entre vosotros, velando no como forzados sino de buen grado, según Dios; ni por sórdido interés sino gustosamente ;",
+          "footnoteRefs": [
+            12613
+          ]
+        },
+        {
+          "number": 3,
+          "text": "ni menos como quienes quieren ejercer dominio sobre la herencia (de Dios), sino haciéndoos modelo de la grey .",
+          "footnoteRefs": [
+            12614
+          ]
+        },
+        {
+          "number": 4,
+          "text": "Entonces, cuando se manifieste el Príncipe de los pastores, recibiréis la corona inmarcesible de la gloria.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 5,
+          "text": "Asimismo vosotros, jóvenes, someteos a los ancianos. Y todos, los unos para con los otros, revestíos de la humildad, porque “Dios resiste a los soberbios, pero a los humildes da gracia”.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 6,
+          "text": "Humillaos por tanto bajo la poderosa mano de Dios, para que Él os ensalce a su tiempo.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "“Descargad sobre Él todas vuestras preocupaciones, porque Él mismo se preocupa de vosotros” .",
+          "footnoteRefs": [
+            12615
+          ]
+        },
+        {
+          "number": 8,
+          "text": "Sed sobrios y estad en vela: vuestro adversario el diablo ronda, como un león rugiente, buscando a quien devorar .",
+          "footnoteRefs": [
+            12616
+          ]
+        },
+        {
+          "number": 9,
+          "text": "Resistidle, firmes en la fe, sabiendo que los mismos padecimientos sufren vuestros hermanos en el mundo.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 10,
+          "text": "El Dios de toda gracia, que os ha llamado a su eterna gloria en Cristo, después de un breve tiempo de tribulación, Él mismo os hará aptos, firmes, fuertes e inconmovibles.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 11,
+          "text": "A Él sea el poder por los siglos de los siglos. Amén.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 12,
+          "text": "Os escribo esto brevemente por medio de Silvano, a quien creo hermano vuestro fiel, exhortándoos y testificando que la verdadera gracia de Dios es ésta, en la cual os mantenéis .",
+          "footnoteRefs": [
+            12617
+          ]
+        },
+        {
+          "number": 13,
+          "text": "Os saluda la (Iglesia) que está en Babilonia, partícipe de vuestra elección, y Marcos, mi hijo .",
+          "footnoteRefs": [
+            12618
+          ]
+        },
+        {
+          "number": 14,
+          "text": "Saludaos unos a otros con el ósculo de caridad. Paz a todos vosotros los que vivís en Cristo .",
+          "footnoteRefs": [
+            12619
+          ]
+        }
+      ]
+    }
+  ],
+  "divisions": [],
+  "footnotes": {
+    "12557": "Obsérvese la exposición del misterio de la Santísima Trinidad: el Padre nos eligió, el Hijo nos roció con Su Sangre, y el Espíritu Santo es quien non santifica aplicándonos los méritos Jesús que son la prenda y el germen de nuestra herencia incorruptible (v. 4).",
+    "12558": "La salvación significa para el Apóstol la gloriosa resurrección de entre los muertos que, a semejanza de la Suya (v. 3) nos traerá Jesús el día de su Parusía (vv. 7, 9 y 10 ss.), que Él llama de nuestra redención (Lc. 21, 28), y que nos está reservada en los cielos (v. 4) porque de allí “esperamos al Señor que transformará nuestro vil cuerpo conforme al Suyo glorioso” (Flp. 3, 20 s.).",
+    "12559": "Cf. 5, 1 y 10.",
+    "12560": "Cf. Pr. 17, 3; Sb. 3, 6; Si. 2, 5; Mal. 3, 3; Rm. 2, 7 y 10; Sant. 1, 3; Ap. 1, 1.",
+    "12561": "S. Pedro se dispone a comentarnos el misterio de esa segunda venida de Jesús y nos anticipa el gozo inmenso contenido en esa expectativa que S. Pablo llama la bienaventurada esperanza (Tt. 2, 13). Es, en efecto, propio del hombre el alegrarse de antemano con el pensamiento de los bienes que espera. De ahí que esta esperanza supone el amor, pues nadie puede desear el advenimiento de aquello que no ama.",
+    "12562": "Ya los profetas del Antiguo Testamento habían anunciado la salud que nos vendría por Jesucristo mediante sus padecimientos y glorias posteriores (v. 11), porque el Espíritu de Cristo (el Espíritu Santo), los iluminaba.",
+    "12563": "Cf. Lc. 24, 44; Ef. 1, 10.",
+    "12564": "Cosas que los mismos ángeles desean penetrar: o sea, los misterios de la manifestación de Cristo glorioso (v. 13). La Vulgata dice: en quien los ángeles desean penetrar, como si se tratase de escudriñar los misterios del Espíritu Santo.",
+    "12565": "Imagen tomada de los obreros y combatientes que se ceñían el vestido para trabajar y luchar mejor (Ef. 6, 17). Jesús usa también esta imagen cuando nos dice que esperamos su retorno “ceñidos nuestros lomos” (Lc. 12, 35). Cf. v. 7.",
+    "12566": "Literalmente: hijos de obediencia, expresivo hebraísmo: el que ha conocido a Dios como Padre, no puede sino estar del todo entregado a complacerlo (Rm. 12, 2). Cf. v. 22. El tiempo de vuestra ignorancia parece referirse a los de origen pagano (Hch. 17, 30; Rm. 1, 15 ss.; Ef. 2, 3 y 4, 17 s.). Cf. v. 18; 2, 10.",
+    "12567": "Sobre esta vocación a la santidad, véase 1 Ts. 4, 3 y nota.",
+    "12568": "Véase Lv. 11, 44; 19, 2; 20, 7.",
+    "12569": "Sobre la Preciosa Sangre. cf. 1 Co. 6, 20; 7, 23; Hb. 9, 14; 1 Jn. 1, 7; Ap. 1, 5.",
+    "12570": "Véase Ef. 3, 9 y nota.",
+    "12571": "Que vuestra fe sea también esperanza: Preciosa observación. Lo que se cree bueno se ama, y por tanto se lo espera con ansia.",
+    "12572": "La obediencia a la verdad (v. 14) tiene, pues, la eficacia de purificar las almas (véase el punto opuesto en 2 Ts. 2, 10 y nota), y prepararlas para el verdadero amor al prójimo (cf. 2 Tm. 3, 16 y nota), pues tal es el mandamiento principal, que S. Pablo llama la plenitud de la Ley (Rm. 13, 10; Ga. 5, 14).",
+    "12573": "Viva y permanente: se refiere a la Palabra (v. 25) y no al mismo Dios como en la Vulgata. Véase Sal. 118, 89 y nota; St. 1, 18; Ap. 14, 6.",
+    "12574": "Véase Is. 40, 6 ss.; St. 1, 10 s.",
+    "12575": "La leche espiritual: la pura y verdadera Palabra de Dios (Hb. 5, 12 s.). En 1, 23 nos habló S. Pedro de renacer por la Palabra (cf. St. 1, 18 y nota). Ahora nos habla de crecer en la salud por medio de ella, y nos dice que debernos anhelarla como niños.",
+    "12576": "Nótese el proceso espiritual: primero desear sus dones (v. 2) y luego, si hemos gustado que Él es benigno, allegarnos a Él (cf. 2 Pe. 1, 2 ss. y nota). Es muy natural que el que cree en la bondad de Dios aproveche para pedirle mucho. Pero, al verlo tan bueno y admirable, descubre que Él es también, y sobre todo, atrayente por Sí mismo. Entonces es a Él a quien busca, y cuando va a pedirle, le pide ante todo su amistad, pues ha comprendido que hay mayor felicidad en Él mismo que en todas las cosas que puede dar. S. Pedro nos señala de esta manera el proceso de la sabiduría.",
+    "12577": "La gran casa o templo espiritual, así edificada sobre Él como Piedra viva (vv. 4 y 6; Ef. 2, 20) y cuyas piedras somos nosotros, es la Iglesia (Mt. 16, 18; Hb. 10, 21; Judas 20). Todos somos llamados a ese sacerdocio santo, es decir, los cristianos tenemos el derecho y el deber de ofrecer esos sacrificios espirituales que S. Pablo llama “sacrificios de alabanza, fruto de nuestros labios” (Sal. 115, 8; Hb. 13, 15 y nota). Cf. Ef. 2, 21 s.; Sal. 50, 17.",
+    "12578": "Piedra angular: Jesucristo. Cf. Is. 28, 16 y nota; Rm. 9, 33; 10, 11.",
+    "12579": "Cf. Sal. 117, 22; Is. 8, 14 s.; Mt. 21, 42; Hch. 4, 11; Rm. 9, 32 s.",
+    "12580": "Sacerdocio real: es decir, como Cristo, sacerdotes y reyes. Sacerdotes como Él, injertados por el Bautismo, en el Sumo Sacerdote celestial (Rm. 7, 6 ss.; Sal. 109, 4 y nota) y capaces de ofrecer los sacrificios del v. 5. Y reyes como Él, partícipes de su reino y llamados a juzgar con Él al mundo (1 Co. 6, 2; Ap. 2, 26; 5, 10). Pueblo conquistado: como propio Suyo, según debió serlo Israel (Ex. 19, 4-6). Cf. Mal. 3, 17; Tt. 2, 14.",
+    "12581": "S. Pablo (Rm. 9, 25) hace también libremente esta cita de Os. 2, 24 (2, 25 en hebreo) y la aplica a los cristianos venidos de la gentilidad como ejemplo de la soberana libertad de Dios para hacer misericordia. Las palabras del profeta, según observa Crampon, “en su sentido propio y literal, tratan de las diez tribus (del Norte), corrompidas e idólatras como verdaderos paganos separados de Yahvé y cuya conversión, que les devolverá las prerrogativas de pueblo de Dios, se presenta al espíritu de Pablo como figura de la entrada de los gentiles”. ¿Hace Pedro igual aplicación aquí? ¿O se refiere más bien, como Apóstol de la circuncisión (Ga. 2, 7-9), a la nueva Alianza según Oseas, tal como lo hace Pablo en Hb. 8, 8 ss. con respecto a Jeremías? Los comentadores suelen aplicarlo de un modo genérico a los cristianos, es decir, tanto a los israelitas o judíos a quienes se dirige especialmente la Epístola (1, 1 y nota), como a los de la gentilidad. Cf. 1, 14; Ef. 2, 11 ss.; Hb. 11, 40 y nota.",
+    "12582": "Comentando este pasaje, exhorta S. León Magno: “¿A quién sirven los deleites carnales sino al diablo que intenta encadenar con placeres a las almas que aspiran a lo alto?… Contra tales asechanzas debe vigilar sabiamente el cristiano para que pueda burlar a su enemigo con aquello mismo en que es tentado”. Cf. 5, 8 s.; Mt. 4, 10; Lc. 22, 34; Rm. 13, 14; Ga. 5, 16; Hb. cap. 11 y notas.",
+    "12583": "A pesar de que las autoridades civiles perseguían a los cristianos, predicaban éstos la sumisión a todas ellas, y no sólo por razones humanas (para tapar la boca a los paganos), sino como “siervos de Dios”, de quien viene toda potestad. Véase Rm. 13, 1-7. Es de notar que estas palabras fueron escritas durante el reinado de Nerón.",
+    "12584": "“Esta es la vocación y éste es el carácter propio de los discípulos de Jesucristo: abrazarse con la Cruz de su divino Maestro, copiar fielmente a este divino original, imitarle en la paciencia con que Él su frió todos los agravios y las persecuciones” (S. Cipriano).",
+    "12585": "Al justo Juez, es decir, al Padre celestial, en cuyas manos había puesto Jesús la justicia de su causa. La Vulgata habla, a la inversa, de entregarse al que le sentenciaba injustamente.",
+    "12586": "El Pastor y Obispo de vuestras almas es Jesucristo. Cf. Is. 53, 6; Ez. 34, 5; Mt. 18, 12 ss.; Jn. 10, 11 s. y 16; Hb. 8, 1 ss.; 13, 20; cf. Tt. 2, 5.",
+    "12587": "Como S. Pablo, así también S. Pedro ve la misión de la mujer cristiana más en una vida ejemplar que en palabras y discusiones, tan raras veces fructuosas y a las cuales no está llamada. Come aquí vemos, la misión de la esposa puede alcanzar un extraordinario valor apostólico. Cf. Ef. 5, 22 ss.; 1 Co. cap. 7.",
+    "12588": "Sara era obediente: así quiere Dios que sea el orden del hogar. Dice al respecto la Encíclica “Casti Connubii”: “En cuanto al grado y al modo de esta sujeción de la esposa al marido, puede ella variar según la diversidad de las personas, de los lugares y de los tiempos; más aún, si el hombre viene a menos en el cumplimiento de su deber, pertenece a la esposa suplirlo en la dirección de la familia. Pero en ningún tiempo ni lugar será licito subvertir o transformar la estructura esencial de la familia y de sus leyes firmemente establecidas por Dios”.",
+    "12589": "Sobre el trato que el marido debe dar a la mujer, véase Ef. 5, 28; 1 Ts. 4, 4; 1 Co. 7, 3.",
+    "12590": "La bendición: la vida eterna de Cristo. Véase 1, 4; cf. Pr. 17, 13; Mt. 5, 44; Rm. 12, 14. Ef. 1, 10 y nota; 1 Ts. 5, 17.",
+    "12591": "Cita del Sal. 33, 13-17 según los LXX. Cf. Is. 1, 16; St. 1, 26. Buscar la paz y perseguirla empeñosamente no es pues, ideal de ociosos o egoístas, sino de sabios (cf. Jn. 14. 27). La misma Sabiduría que nos da este consejo, nos enseña a realizarlo “guardando sobre toda cosa el corazón” (Pr. 4, 23). “¿Cuántos hay, por ejemplo, que han perdido buena parte de su paz huyendo de los periódicos que, como una especie de obligación inventada por nosotros mismos, nos llenan de turbación o de ira cada día, con los ecos perversos y dolorosos del mundo, los mejores instantes que podríamos dedicar a leer y escuchar los consuelos de Dios en su Palabra que es continua oración?” (Mons. Keppler).",
+    "12592": "Véase Mt. 5, 10.",
+    "12593": "Es decir, que debemos también estar preparados en la doctrina y en el conocimiento de la Revelación y de las profecías, para satisfacer a cualquiera que nos pida razón, no solamente de la fe, sino también de la esperanza (1, 21; cf. 2 Tm. 3, 16; 1 Ts. 5, 20 y nota). Esto confirma una vez más la grave sentencia de S. jerónimo “Ignorar las Escrituras es ignorar a Cristo”. La esperanza en que vivís es el glorioso advenimiento de Cristo. Cf. 1, 5 ss.; Mt. 24, 30 ; Mc. 14, 62; Hch. 1, 11; 1 Co. 1, 8; 2 Tm. 4, 8; Tt. 2, 13.",
+    "12594": "Con mansedumbre y reserva: la primera, para no tener un celo amargo (St. 3, 14 ss.). La segunda, para conservar “la prudencia de la serpiente” (Mt. 10, 16) y “no dar las perlas a los cerdos” (Mt. 7, 6).",
+    "12595": "Véase 2, 23; Rm. 5, 6; Hb. 9, 28.",
+    "12596": "Es el misterio de que habla el Credo de los Apóstoles al decir “descendió a los infiernos”. Sobre esta predicación del Evangelio (cf. Mc. 1, 15) hecha a los muertos (4, 6; Col. 1, 20 y 23; Is. 42, 7), el Apóstol nombra expresamente a aquellos que en el diluvio fueron castigados con la muerte por su rebeldía ante los anuncios de Noé durante ciento veinte años (Gn. 6, 1 ss.; cf. 1 Co. 5, 5; 11, 30 y notas). A este respecto se han manifestado muy diversas opiniones, sobre lo cual anota Mons. Charue: “En el contexto esta observación debe probar el beneficio de los sufrimientos del Salvador, cosa que debe recordarle cuando se habla sobre el descendimiento a los infiernos, pues es desde luego imposible la interpretación, llamada espiritual, de S. Agustín, de S. Tomás y de todos los occidentales hasta el siglo XIV, según los cuales el Cristo, preexistente, habría intervenido por intermedio de su profeta Noé para predicar a los contemporáneos del diluvio –¿cómo se les puede llamar espíritus?– la verdad que los libraría de la prisión, es decir de las tinieblas de la ignorancia y del pecado”. Según el mismo autor, S. Cirilo de Alejandría expresó en un sermón “que todas las almas fueron salvadas y el diablo quedó solo en su infierno”; pero en otra parte “se contenta con el principio que enunciaron Orígenes y S. Gregorio Nazianceno, de que Cristo salvó a todos los que quisieron, a todos los que creyeron en Él” (cf. Rm. 3, 21-26). Añade que fue necesario esperar el fin del siglo IV para hallar una reacción vigorosa contra la tesis “aún mitigada de la evangelización de los muertos infieles, tesis que continúan profesando muchos críticos no católicos”. S. Agustín y otros padres supusieron la conversión de esas almas en el diluvio (cf. Gn.7, 1-7; Mt. 24, 37 ss.; Lc. 17, 26 ss.; Hb. 11, 7; 2 Pe. 2, 5) y S. Jerónimo y S. Crisóstomo lo aplicaron a las almas de los justos del Antiguo Testamento, a los que Cristo visitó para anunciarles que estaban abiertas las puertas del cielo. Cf. Mt. 27, 52 ss.",
+    "12597": "S. Pedro señala el bautismo como antitipo del diluvio porque en aquél también nos salvamos “a través del agua” (v. 20) que significa una muerte mística. Véase Rm. 6, 4; Ga. 3, 27; Col. 2, 12; Ef. 4, 23, etc.",
+    "12598": "Subió al cielo: la Vulgata añade: después de haber devorado la muerte (en su victoria). Cf. 1Co. 15, 54. Está a la diestra de Dios: cf. Sal. 109, 1.",
+    "12599": "De este v. se colige una vez más que la Carta, en parte por lo menos, va dirigida también a los cristianos que antes eran paganos. Véase 2, 10 y nota. Cf. Ef. 2, 3; Tt. 3, 3.",
+    "12600": "A los muertos: S. Pedro fija aquí el sentido del v. anterior en que usa la expresión vivos y muertos, conservada en el Credo y frecuente en el Nuevo Testamento (cf. 2 Tm. 4, 1; Rm. 14, 9; Hch. 10, 42). “Según diversos comentadores antiguos y modernos (S. Agustín, el Ven. Beda, etc.), el adjetivo muertos debería entenderse en sentido moral y designaría a los que están muertos espiritualmente, los pecadores, y particularmente a los paganos. Pero al fin del v. 5 este adjetivo ha sido tomado en su sentido propio, y no hay manera de creer que se use dos acepciones diferentes en la misma línea” (Fillion). Este pasaje es correlativo de 3, 19 s. Cf. nota.",
+    "12601": "“Con estas palabras da a entender que pasa como un soplo el tiempo de nuestra vida, y que aun el espacio que mediará entre la primera y la segunda venida del Señor es brevísimo si se compara con los días eternos que le han de suceder (1 Co. 7, 29; Flp. 4, 5; St. 5, 7 ss.). Y por esto nos exhorta a que no seamos necios dejando pasar inutilmente este brevísimo lapso que se nos concede para ganar la felicidad eterna, y a que estemos siempre alerta y en vela, para emplear bien todos los momentos de la vida presente” (S. Hilario). El fin… está cerca, pues, como dice S. Pablo, nos hallamos ya al fin de los siglos (1 Co. 10, 11). Lo mismo señala S. Ignacio Mártir en su carta a los Efesios: “Ya estamos en los últimos tiempos”. Cf. Hb. 10, 37; 2 Pe. 3, 12; 1 Jn. 2, 18.",
+    "12602": "La caridad cubre multitud de pecados: cita de Pr. 10, 12 (véase nota). Cf. Col. 3, 14; St. 5, 20. Citando este pasaje agrega Sto. Tomás: “Si alguien ofende a uno y después le ama íntimamente, por el amor perdona la ofensa; así Dios perdona los pecados a los que le aman… Justamente dice “cubre” porque no son considerados por Dios para castigarlos”.",
+    "12603": "Sobre la hospitalidad, cf. Rm. 12, 13; Flp. 2, 14; Hb. 13, 2.",
+    "12604": "Alude a los dones o carismas especiales de los cristianos (Rm. 12, 6 ss.; 1 Co. 12, 4 ss.; Ef. 4, 7 ss.), de los cuales cada uno debe ser un buen dispensador empleándolos para el bien común (cf. 1 Co. 4, 1 s.). No hay piedad egoísta. La verdadera piedad es siempre caritativa y social, aunque trabaje ignoradamente desde el fondo de un desierto.",
+    "12605": "Ya en el Antiguo Testamento reveló Dios a Moisés que “morirá el profeta que se enorgullezca hasta el punto de hablar en mi Nombre una palabra que no le haya mandado decir Yo” (Dt. 18, 20). Y León XIII dijo: “Hablan fuera de tono y neciamente quienes al tratar asuntos religiosos y proclamar los divinos preceptos no proponen casi otra cosa que razones de ciencia y prudencia humanas, fiándose más de sus propios argumentos que de los divinos” (Encíclica Providentissimus Deus). S. Pedro es tanto más severo en esto con los que enseñan, cuanto que también exige conocimiento a los simples creyentes. Véase 3, 15 y nota. Cf. St. 3 ss.",
+    "12606": "Alegraos, etc.: véase Rm. 8, 17; 2 Tm. 2, 12. Como miembros del Cuerpo místico nos gloriamos de tener por Cabeza una ceñida con corona de espinas que nos permite, por la fe, asociamos a Él (Flp. 3, 9 s.) y apropiarnos sus méritos redentores (Ga. 2, 19 ss.). “Lo cual, dice Pio XII, ciertamente es claro testimonio de que todo lo más glorioso y eximio no nace sino de los dolores, y que por tanto hemos de alegramos cuando participamos de la Pasión de Cristo, a fin de que nos gocemos también con júbilo cuando se descubra su gloria” (Encíclica sobre el Cuerpo Místico de Cristo). En la aparición de su gloria: cf. 1, 5-7; 5, 1 y 4; Rm. 2, 5; 8, 21; 1 Co. 1, 7; 2 Ts. 1, 7; Judas 24, etc.",
+    "12607": "Extrañas: a la vocación sobrenatural (v. 11; 2 Tm. 2, 4). Fillion observa que según algunos el término tenía significado político.",
+    "12608": "S. Pedro usa el título de cristianos aludiendo a que entonces era aplicado cómo un oprobio. Cf. Hch. 11, 26 y nota.",
+    "12609": "Comienza por la casa de Dios: “Después de la muerte del Salvador ha comenzado el período escatológico (final)… La casa de Dios, es decir, el conjunto de los justos (cf. 2, 5) es la primera en ser purificada” (Pirot). Así lo anunció el Señor a sus discípulos (Jn. 15, 18-27; 16, 1 ss.), y S. Basilio dice que Dios comienza a juzgar a los cristianos por medio de tribulaciones y persecuciones, por lo cual sería ilusorio que esperasen ahora el triunfo que sólo está anunciado para cuando aparezca la gloria de Jesús (v. 13 y nota).",
+    "12610": "Es una cita tomada de Pr. 11, 31, según los LXX. Cf. Lc. 23, 31; Rm. 11, 21; Jr. 25, 29.",
+    "12611": "19 Notemos el precioso nombre que se da al Padre: es un Creador fiel y un “Dios leal”, como lo llama André de Luján. Cf. 5, 7.",
+    "12612": "S. Pedro, aunque era cabeza de todos, por humildad se llama copresbítero o sea presbítero como los otros. Cf. Ga. 2, 9; 2 Pe. 3, 15.",
+    "12613": "2 ss. Hay aquí una de las más inspiradas enseñanzas pastorales en boca del primer vicario de Jesucristo. Sobre las cualidades que debe tener el pastor de almas, véase Lc. 22, 25 ss.; 1 Co. 4, 9 ss.; 9, 19; 2 Co. 1, 25; 6, 3 ss.; 10, 8; 1 Ts. 2, 11; 1 Tm. 3, 1 ss. y 8; 2 Tm. 2, 24 ss.; Tt. 1, 7 ss.; 3 Jn. 9 ss. Aquí los previene el Apóstol ante todo contra la avaricia, la cual es tan mala como la idolatría (Ef. 5, 5). Empleemos nuestras riquezas, dice S. Pedro Damián, en ganar almas y en adquirir virtudes.",
+    "12614": "Herencia: en griego: clero, esto es, porción; en sentido pastoral, la grey que cada presbítero o prelado tiene que apacentar. Cf. Tt. 2, 7.",
+    "12615": "Entre los privilegios con que Dios colma a los que confían en su divina providencia ¿no es éste uno de los más maravillosos? Él toma sobre sí nuestras preocupaciones y nos anticipa, por medio de la gracia, la fruición de las cosas divinas, frente a las cuales nada son los bienes ni los cuidados de esta vida. Cf. 4, 19 y nota; Sal. 54, 23; Mt. 6, 25-33; 18, 4; Lc. 12, 22; Rm. 8, 28; 1 Co. 3, 22.",
+    "12616": "Palabras del Oficio de Completas para recordar la propia debilidad. Véase Sal. 21, 14; Ef. 6, 12; 1 Ts. 5, 6. El que por primera vez se entera del descubrimiento de Pasteur sobre los gérmenes infecciosos que pululan por todas partes, siente como una reacción que lo hace ponerse a la defensiva, movido por el instinto de conservación. S. Pablo, que ya nos enseñó cómo las cosas de la naturaleza son imágenes de las sobrenaturales (Rm. 1, 20), nos revela en el orden del espíritu, lo mismo que Pasteur en el orden físico, para que podamos vivir a la defensiva de nuestra salud contra esos enemigos infernales, que a la manera de los microbios, no por invisibles son menos reales, y que como ellos nos rondan sin cesar buscando nuestra muerte. Nótese que estos demonios son llamados príncipes y potestades. Jesús los llama ángeles del diablo (Mt. 25, 41). Véase Jn. 12, 31; 14, 30; Col. 1, 13. ¿No es cierto que pensamos pocas veces en la realidad de este mundo de los malos espíritus, donde están nuestros más peligrosos enemigos? Véase 2 Co. 2, 11. La Sagrada Escritura nos enseña que Satanás será juzgado definitivamente al fin de los tiempos (Ap. 20, 9), como también “los ángeles que no conservaron su dignidad” (S. Judas, 6).",
+    "12617": "Silvano probablemente es el mismo Silas mencionado en Hch. 15, 22; 16, 19; Cf. 2 Co. 1, 19; 1 Ts. 1, 1; 2 Ts. 1, 1.",
+    "12618": "Por Babilonia se entiende Roma, que constituía el centro del paganismo. La Roma pagana significaba para los cristianos el mismo peligro que antes Babilonia para los judíos. También S. Juan usa el mismo término para designar a Roma y predice su destrucción (Ap. 14, 8; 17, 5; 18, 2 y 10). Mi hijo Marcos: el evangelista del mismo nombre, que era hijo espiritual de S. Pedro, y fue también uno de los dos únicos discípulos “de la circuncisión” que quedaron fieles a S. Pablo (Col. 4, 10 s.).",
+    "12619": "Sobre el ósculo de caridad, cf. Rm. 16, 16; 1 Co. 16, 20, etc. Mons. Charue se pregunta si este final en las Cartas de S. Pedro y de S. Pablo no insinúa que ellas eran leídas en alguna reunión cultual."
+  }
+}

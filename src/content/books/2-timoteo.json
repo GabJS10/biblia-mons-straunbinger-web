@@ -1,0 +1,609 @@
+{
+  "book": "2 Timoteo",
+  "slug": "2-timoteo",
+  "source": "https://bibliastraubinger.com/2-timoteo/",
+  "chapters": [
+    {
+      "chapter": 1,
+      "sections": [
+        {
+          "title": "Saludo apostólico.",
+          "startVerse": 1
+        },
+        {
+          "title": "Intrepidez en la predicación del Evangelio.",
+          "startVerse": 8
+        },
+        {
+          "title": "El apóstol elogia la casa de Onesíforo.",
+          "startVerse": 15
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "Pablo, apóstol de Cristo Jesús, por la voluntad de Dios, según la promesa de vida en Cristo Jesús ,",
+          "footnoteRefs": [
+            12288
+          ]
+        },
+        {
+          "number": 2,
+          "text": "a Timoteo el hijo amado: gracia, misericordia, paz, de parte de Dios Padre, y de Cristo Jesús nuestro Señor.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 3,
+          "text": "Doy gracias a Dios, a quien sirvo desde mis mayores con conciencia pura, de cómo sin cesar hago memoria de ti en mis oraciones, noche y día,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 4,
+          "text": "anhelando verte, al acordarme de tus lágrimas, para llenarme de gozo;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 5,
+          "text": "porque traigo a la memoria la fe, que en ti no es fingida, la cual habitó primero en tu abuela Loida y en tu madre Eunice y que estoy seguro habita también en ti .",
+          "footnoteRefs": [
+            12289
+          ]
+        },
+        {
+          "number": 6,
+          "text": "Por esto te exhorto a que reavives el carisma de Dios que por medio de la imposición de mis manos está en ti .",
+          "footnoteRefs": [
+            12290
+          ]
+        },
+        {
+          "number": 7,
+          "text": "Porque no nos ha dado Dios espíritu de timidez, sino de fortaleza y de amor y de templanza.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 8,
+          "text": "No te avergüences, pues, del testimonio de nuestro Señor, ni de mí, su prisionero, antes bien comparte mis trabajos por la causa del Evangelio mediante el poder de Dios;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 9,
+          "text": "el cual nos salvó y nos llamó con vocación santa, no en virtud de nuestras obras, sino en virtud de su propio designio y de la gracia que nos dio en Cristo Jesús antes de los tiempos eternos,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 10,
+          "text": "y que ahora ha manifestado por la aparición de nuestro Salvador Cristo Jesús, que aniquiló la muerte e irradió la vida e inmortalidad por medio del Evangelio ,",
+          "footnoteRefs": [
+            12291
+          ]
+        },
+        {
+          "number": 11,
+          "text": "del cual yo fui constituido heraldo y apóstol y doctor.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 12,
+          "text": "Por cuya causa padezco estas cosas, mas no me avergüenzo, puesto que sé a quién he creído , y estoy cierto de que Él es poderoso para guardar mi depósito hasta aquel día.",
+          "footnoteRefs": [
+            12292
+          ]
+        },
+        {
+          "number": 13,
+          "text": "Conserva las palabras saludables en la misma forma que de mí las oíste con fe y amor en Cristo Jesús.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 14,
+          "text": "Guarda el buen depósito por medio del Espíritu Santo que habita en nosotros .",
+          "footnoteRefs": [
+            12293
+          ]
+        },
+        {
+          "number": 15,
+          "text": "Ya sabes que me han abandonado todos los de Asia, de cuyo número son Figelo y Hermógenes.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 16,
+          "text": "Conceda el Señor misericordia a la casa de Onesíforo, porque muchas veces me alivió y no se avergonzó de mis cadenas;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 17,
+          "text": "antes, llegado a Roma, me buscó diligentemente hasta dar conmigo.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 18,
+          "text": "Concédale el Señor que halle misericordia delante del Señor en aquel día. ¡Y cuántos servicios me prestó en Éfeso! Tú lo sabes muy bien.",
+          "footnoteRefs": []
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "sections": [
+        {
+          "title": "Perseverancia en el ministerio apostólico.",
+          "startVerse": 1
+        },
+        {
+          "title": "El ejemplo de Cristo.",
+          "startVerse": 8
+        },
+        {
+          "title": "Advertencia contra los herejes.",
+          "startVerse": 14
+        },
+        {
+          "title": "Reglas pastorales.",
+          "startVerse": 22
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "Tú, pues, hijo mío, vigorízate en la gracia que se halla en Cristo Jesús.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 2,
+          "text": "Y lo que me oíste en presencia de muchos testigos, eso mismo trasmítelo a hombres fieles, los cuales serán aptos para enseñarlo a otros.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 3,
+          "text": "Sufre conmigo los trabajos como buen soldado de Cristo Jesús.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 4,
+          "text": "Ninguno que milita como soldado se deja enredar en los negocios de la vida; así podrá complacer al que le alistó .",
+          "footnoteRefs": [
+            12294
+          ]
+        },
+        {
+          "number": 5,
+          "text": "Asimismo, el que combate como atleta, no es coronado si no combate en regla.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 6,
+          "text": "El labrador que se fatiga debe ser el primero en participar de los frutos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "Entiende lo que digo, ya que el Señor te dará inteligencia en todo.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 8,
+          "text": "Acuérdate de Jesucristo, de la estirpe de David, resucitado de entre los muertos, según mi Evangelio.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 9,
+          "text": "En Él sufro hasta cadenas como malhechor; mas la Palabra de Dios no está en cadenas .",
+          "footnoteRefs": [
+            12295
+          ]
+        },
+        {
+          "number": 10,
+          "text": "Por eso todo lo soporto a causa de los escogidos, para que ellos también alcancen la salvación en Cristo Jesús con gloria eterna.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 11,
+          "text": "Fiel es esta palabra: “Si hemos muerto con Él, también con Él viviremos;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 12,
+          "text": "si sufrimos, con Él también reinaremos; si le negamos, Él nos negará también;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 13,
+          "text": "si somos infieles, Él permanece fiel, pues no puede negarse a sí mismo” .",
+          "footnoteRefs": [
+            12296
+          ]
+        },
+        {
+          "number": 14,
+          "text": "Recuérdales, dando testimonio delante del Señor, que no hagan disputas de palabras; de nada sirven sino para perdición de los oyentes.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 15,
+          "text": "Empéñate en presentarte ante Dios como hombre probado, como obrero que no se avergüenza y que con rectitud dispensa la palabra de la verdad.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 16,
+          "text": "Evita las vanas palabrerías profanas; sólo servirán para mayor impiedad ,",
+          "footnoteRefs": [
+            12297
+          ]
+        },
+        {
+          "number": 17,
+          "text": "y su palabra cundirá cual gangrena. De los tales son Himeneo y Fileto,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 18,
+          "text": "que aberrando de la verdad dicen que la resurrección ya ha sucedido y subvierten así la fe de algunos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 19,
+          "text": "Pero el fundamento de Dios se mantiene sólido y tiene este sello: “Conoce el Señor a los que son suyos” y “Apártese de la iniquidad todo aquel que pronuncia el nombre del Señor” .",
+          "footnoteRefs": [
+            12298
+          ]
+        },
+        {
+          "number": 20,
+          "text": "Es que en una casa grande no hay solamente vasos de oro y de plata, sino también de madera y de barro; y algunos son para uso honroso, otros para uso vil .",
+          "footnoteRefs": [
+            12299
+          ]
+        },
+        {
+          "number": 21,
+          "text": "Si pues uno se purificare de estas cosas será un vaso para uso honroso, santificado, útil al dueño y preparado para toda obra buena.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 22,
+          "text": "Huye de las inclinaciones juveniles; sigue la justicia, la fe, la caridad, la paz con aquellos que de corazón puro invocan al Señor .",
+          "footnoteRefs": [
+            12300
+          ]
+        },
+        {
+          "number": 23,
+          "text": "Rechaza las discusiones necias e indisciplinadas, sabiendo que engendran altercados .",
+          "footnoteRefs": [
+            12301
+          ]
+        },
+        {
+          "number": 24,
+          "text": "El siervo del Señor no debe ser litigioso sino manso para con todos, pronto para enseñar, sufrido,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 25,
+          "text": "que instruya con mansedumbre a los que se oponen, por si acaso Dios les concede arrepentimiento para que conozcan la verdad ,",
+          "footnoteRefs": [
+            12302
+          ]
+        },
+        {
+          "number": 26,
+          "text": "y sepan escapar del lazo del diablo, quien los tenía cautivos para someterlos a su voluntad.",
+          "footnoteRefs": []
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "sections": [
+        {
+          "title": "Corrupción en los últimos tiempos.",
+          "startVerse": 1
+        },
+        {
+          "title": "El ejemplo del apóstol.",
+          "startVerse": 10
+        },
+        {
+          "title": "Recomienda el estudio de la Sagrada Escritura.",
+          "startVerse": 14
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "Has de saber que en los últimos días sobrevendrán tiempos difíciles .",
+          "footnoteRefs": [
+            12303
+          ]
+        },
+        {
+          "number": 2,
+          "text": "Porque los hombres serán amadores de sí mismos y del dinero, jactanciosos, soberbios, maldicientes, desobedientes a sus padres, ingratos, impíos,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 3,
+          "text": "inhumanos, desleales, calumniadores, incontinentes, despiadados, enemigos de todo lo bueno ,",
+          "footnoteRefs": [
+            12304
+          ]
+        },
+        {
+          "number": 4,
+          "text": "traidores, temerarios, hinchados, amadores de los placeres más que de Dios.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 5,
+          "text": "Tendrán ciertamente apariencia de piedad, mas negando lo que es su fuerza. A esos apártalos de ti .",
+          "footnoteRefs": [
+            12305
+          ]
+        },
+        {
+          "number": 6,
+          "text": "Porque de ellos son los que se infiltran en las casas y se ganan mujerzuelas cargadas de pecados, juguetes de las más diversas pasiones ,",
+          "footnoteRefs": [
+            12306
+          ]
+        },
+        {
+          "number": 7,
+          "text": "que siempre están aprendiendo y nunca serán capaces de llegar al conocimiento de la verdad.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 8,
+          "text": "Así como Jannes y Jambres resistieron a Moisés, de igual modo resisten éstos a la verdad; hombres de entendimiento corrompido, réprobos en la fe.",
+          "footnoteRefs": [
+            12307
+          ]
+        },
+        {
+          "number": 9,
+          "text": "Pero no adelantarán nada, porque su insensatez se hará notoria a todos como se hizo la de aquéllos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 10,
+          "text": "Tú, empero, me has seguido de cerca en la enseñanza, en la conducta, en el propósito, en la fe, la longanimidad, la caridad, la paciencia;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 11,
+          "text": "en las persecuciones y padecimientos, como los que me sobrevinieron en Antioquía, en Iconio, en Listra; persecuciones tan grandes como sufrí, y de todas las cuales me libró el Señor.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 12,
+          "text": "Y en verdad todos los que quieren vivir piadosamente en Cristo Jesús serán perseguidos .",
+          "footnoteRefs": [
+            12308
+          ]
+        },
+        {
+          "number": 13,
+          "text": "Por su parte, los hombres malos y los embaucadores irán de mal en peor, engañando y engañándose.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 14,
+          "text": "Pero tú persevera en lo que has aprendido y has sido confirmado, sabiendo de quienes aprendiste ,",
+          "footnoteRefs": [
+            12309
+          ]
+        },
+        {
+          "number": 15,
+          "text": "y que desde la niñez conoces las santas Escrituras que pueden hacerte sabio para la salud mediante la fe en Cristo Jesús.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 16,
+          "text": "Toda la Escritura es divinamente inspirada y eficaz para enseñar, para convencer (de culpa), para corregir y para instruir en justicia ,",
+          "footnoteRefs": [
+            12310
+          ]
+        },
+        {
+          "number": 17,
+          "text": "a fin de que el hombre de Dios sea perfecto, bien provisto para toda obra buena .",
+          "footnoteRefs": [
+            12311
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "sections": [
+        {
+          "title": "Predicar la palabra aunque no la escuchen .",
+          "startVerse": 1,
+          "footnoteRefs": [
+            12312
+          ]
+        },
+        {
+          "title": "El martirio está cerca.",
+          "startVerse": 6
+        },
+        {
+          "title": "Encargos y avisos.",
+          "startVerse": 9
+        },
+        {
+          "title": "Saludos y bendición.",
+          "startVerse": 19
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "Te conjuro delante de Dios y de Cristo Jesús, el cual juzgará a vivos y a muertos, tanto en su aparición como en su reino:",
+          "footnoteRefs": []
+        },
+        {
+          "number": 2,
+          "text": "predica la Palabra, insta a tiempo y a destiempo, reprende, censura, exhorta con toda longanimidad y doctrina .",
+          "footnoteRefs": [
+            12313
+          ]
+        },
+        {
+          "number": 3,
+          "text": "Porque vendrá el tiempo en que no soportarán mas la sana doctrina, antes bien con prurito de oír se amontonarán maestros con arreglo a sus concupiscencias .",
+          "footnoteRefs": [
+            12314
+          ]
+        },
+        {
+          "number": 4,
+          "text": "Apartarán de la verdad el oído, pero se volverán a las fábulas.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 5,
+          "text": "Por tu parte, sé sobrio en todo, soporta lo adverso, haz obra de evangelista, cumple bien tu ministerio.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 6,
+          "text": "Porque yo ya estoy a punto de ser derramado como libación, y el tiempo de mi disolución es inminente.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "He peleado el buen combate, he terminado la carrera, he guardado la fe.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 8,
+          "text": "En adelante me está reservada la corona de la justicia, que me dará el Señor, el Juez justo, en aquel día, y no sólo a mí sino a todos los que hayan amado su venida .",
+          "footnoteRefs": [
+            12315
+          ]
+        },
+        {
+          "number": 9,
+          "text": "Date prisa y ven pronto a mí,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 10,
+          "text": "porque Demas me ha abandonado por amor a este siglo y se ha ido a Tesalónica. Crescente se fue a Galacia, Tito a Dalmacia.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 11,
+          "text": "Sólo Lucas está conmigo. Toma contigo a Marcos y tráelo; me es muy útil para el ministerio.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 12,
+          "text": "A Tíquico le envié a Éfeso.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 13,
+          "text": "Cuando vengas tráeme la capa que dejé en Tróade, en casa de Carpo, y también los libros, sobre todo los pergaminos.",
+          "footnoteRefs": [
+            12316
+          ]
+        },
+        {
+          "number": 14,
+          "text": "Alejandro, el herrero, me causó muchos perjuicios. El Señor le dará el pago conforme a sus obras .",
+          "footnoteRefs": [
+            12317
+          ]
+        },
+        {
+          "number": 15,
+          "text": "Guárdate tú también de él, porque se ha opuesto en gran manera a nuestras palabras.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 16,
+          "text": "En mi primera defensa nadie estuvo de mi parte, sino que me abandonaron todos. No se les cargue en cuenta.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 17,
+          "text": "Mas el Señor me asistió y me fortaleció para que por mí quedase completo el mensaje y lo oyesen todos los gentiles. Y así fui librado de la boca del león .",
+          "footnoteRefs": [
+            12318
+          ]
+        },
+        {
+          "number": 18,
+          "text": "El Señor me librará de toda obra mala y me salvará para su reino celestial. A Él sea la gloria por los siglos de los siglos . Amén.",
+          "footnoteRefs": [
+            12319
+          ]
+        },
+        {
+          "number": 19,
+          "text": "Saluda a Prisca y a Aquila y a la casa de Onesíforo.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 20,
+          "text": "Erasto se quedó en Corinto; a Trófimo le dejé enfermo en Mileto.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 21,
+          "text": "Date prisa para venir antes del invierno. Te saludan Eubulo, Pudente, Lino , Claudia y todos los hermanos.",
+          "footnoteRefs": [
+            12320
+          ]
+        },
+        {
+          "number": 22,
+          "text": "El Señor sea con tu espíritu. La gracia sea con vosotros.",
+          "footnoteRefs": []
+        }
+      ]
+    }
+  ],
+  "divisions": [],
+  "footnotes": {
+    "12288": "El entrañable amor de S. Pablo a su “hijo carísimo” es el móvil ocasional de esta segunda carta, escrita en Roma en el año 66 ó 67, que contiene, podemos decir, el testamento espiritual de Pablo como Apóstol y Mártir. Estaba de nuevo en cadenas, esta vez en la cárcel mamertina, y sentía la proximidad del martirio, por lo cual pide a Timoteo que se llegue a Roma tan pronto como le fuese posible, y con tal motivo exhorta a sus discípulos a la constancia en la fe, les anuncia la apostasía y los previene contra las deformaciones de la doctrina y la defección de muchos pretendidos apóstoles.",
+    "12289": "Desilusionado al ver que “todos buscan sus propios intereses (Fil. 2, 21). Pablo se complace en destacar que al menos en Timoteo la fe no es fingida. A nadie tenía tan unido en espíritu como a él (Fil. 2, 20). Sobre esta defección de los amigos, véase v. 15; 4, 9 ss.",
+    "12290": "Le recuerda el día de su consagración a Dios. Cf. 1 Tm. 4, 14 y nota.",
+    "12291": "Aparición: La Vulgata se refiere a Cristo como iluminación (Jn. 1, 4; 2 Co. 4, 6; Ef. 5, 14; Tt. 2, 12). El Apóstol acalla aquí dos causas de nuestra salvación que son la predestinación o propósito eterno que tuvo Dios de usar con nosotros de misericordia, y la gracia justificante; porque así como Dios quiso nuestra salvación, quiso también el modo con que pudiésemos llegar a lograrla; no precisamente por nuestras obras, sino por la gracia de Jesucristo (S. Tomás).",
+    "12292": "Sé a quién he creído y estoy cierto, etc…. San Pablo nos llama aquí la atención sobre la diferencia entre creer a las palabras de los hombres y creer a las de Dios. La fe es más que una creencia; es un saber. En el lenguaje usual, que ha depravado tantas cosas sagradas, “yo creo”, significa “opino, sospecho, me parece”. En la vida religiosa y espiritual no se podría decir, por ejemplo: opino que el mundo fue creado por Dios, y me parece que la Biblia dice la verdad y que el Padre me envió su Hijo para que fuese mi salvación porque yo estaba perdido, y supongo que Jesús volverá un día, etc. Job (19, 25) dice, con una fuerza inmensa: “Yo sé que vive mi Redentor y que he de resucitar de la tierra en el último día, y de nuevo he de ser revestido de esta piel mía y en mi carne veré a mi Dios, a quien he de ver yo mismo en persona y no otro”. Es decir, no sólo tengo la certeza de esto, sino que lo afirmo exteriormente; lo sé con mayor firmeza que lo que me dicen mis sentidos, pues éstos pueden engañarme, pero la Palabra de Dios no. Y por eso, el saberlo, significa confiarme en ello sin límites, apoyando y arriesgando todo sobre esa verdad. Y el afirmarlo, significa sostenerlo, difundirlo y dar testimonio hasta el fin de la vida y hasta dar la vida (Mt. 10, 22; 24, 13) –mártir significa en griego testigo– puesto que el bien de saber y poseer lo definitivo no puede compararse con ningún otro bien transitorio. Esta certidumbre de la fe es la condición para llegarse a Dios y bien se explica que así sea, pues de lo contrario sería ofender a Dios negándole crédito o dudando de su palabra. De ahí que nada sea más necesario que el examen de conciencia sobre la sinceridad de nuestra fe, que es tal vez el único que nunca hacemos suficientemente. Véase 2 Co. 13, 5 y nota; Hb. 10, 22; Ef. 3, 12; St. 1, 6 s.; Mt. 17, 20; Mc. 11, 23, etc. Cristo habló y sabemos que es fiel y podemos adherirnos sin peligro a todo cuanto Él ha dicho (Tt. 1, 2). Sobre el final del vers. véase Judas 24; Rm. 14, 4; 16, 26; 1 Co. 1, 8. Aquel día: el día de su Advenimiento.",
+    "12293": "Sobre esta fidelidad en guardar el depósito de la tradición tal como vino de los apóstoles (v. 13), cf. 2 Ts. 2, 14; 1 Tm. 6, 20 y notas.",
+    "12294": "Fiel a la exhortación del Apóstol, la Iglesia prohíbe a los sacerdotes los negocios seculares. Por otra parte, los ministros de Dios tienen derecho a ser sustentados por los fieles (v. 6). Ninguno que milita, es decir, ningún soldado o militar puede agradar a su jefe, si con otra clase de asuntos, sean comerciales, políticos, etc., se distrae de la milicia, pues ésta le exige su vida entera. También a este respecto los Pontífices, y singularmente Pío XI, han recordado que la misión de la Jerarquía eclesiástica es para las almas y no para “lo que es del César”, y que aun los laicos de Acción Católica, en su actuación política, no obran en cuanto tales miembros sino en cuanto simples ciudadanos. Por lo demás, es evidente que las cosas “de esta vida” distraen tiempo y atención, y por eso, aunque no sean malas en sí mismas, lo son para aquellos que hacen profesión de dejarlo todo para seguir a Cristo. Véase Lc. 9, 57-62.",
+    "12295": "La palabra de Dios no está en cadenas: ¡Supremo consuelo del alma apostólica! Podrán hacerme cuánto quieran –lo cual será un gran honor para mí (Hch. 5, 41; 1 Pe. 2, 19-25; 4, 12 ss., etc.)–, pero las verdades que yo he dicho, según la Palabra de Dios, ya están obrando en el fondo de los espíritus (3, 16 s.; Hb. 4, 12), como la semilla viva del Evangelio (Mt. 13), y nada ni nadie podrá impedir que esa Palabra “corra y sea glorificada” (2 Ts. 3, 1 y nota) ni separar las almas del amor de Cristo (Rm. 8, 35 ss.; Jn. 10, 28 y 29).",
+    "12296": "Admirable retrato de Dios.",
+    "12297": "Alude a la doctrina de los falsos doctores, dos de los cuales, Himeneo (1 Tm. 1, 20) y Fileto, son mencionados nominalmente. Enseñaban que la resurrección ya pasó (v. 18; cf.: 2 Ts. 2, 2 y nota). No se trata, pues, de la negación de la resurrección, sino de la inversión de su fecha, con lo cual se arrebataba a los cristianos su más cara esperanza (1 Ts. 4, 13-17 y notas). Según la doctrina de S. Pablo, los que son de Cristo, los santos tienen preferencia en el día de la resurrección (1 Co. 15, 23; Ap. 20, 5 y notas), y juzgarán con Cristo al mundo y hasta a los ángeles (1 Co. 6, 2 s. y nota). Por lo cual los cristianos debemos aguardar con paciencia Su venida (4, 8; 2 Ts. 3, 5; Tt. 2, 13, etc.). Himeneo y Fileto negaban esa esperanza y parece que “la reducían a la resurrección espiritual de la muerte del pecado a la vida de la gracia” (Nácar-Colunga), en tanto que S. Pablo, especialmente en la segunda carta a los Tesalonicenses, defiende el carácter futuro y real de semejante privilegio. Cf. 2 Ts. 2, 2 y nota. Acerca del éxito obtenido ya entonces por esos “hombres de mentira”, anota sabiamente Fillion: “El espíritu humano es tan fácil de extraviar, que basta enseñar un error, para que en seguida halle adherentes”. De ahí la insistencia de S. Pablo en 1, 14.",
+    "12298": "El fundamento: La Iglesia (1 Tm. 3, 14 s.). Conoce el Señor, etc.; cita de Nm. 16, 5. Es decir. que a Él no puede engañársele con apariencia como a los hombres (Jn. 10, 14 y 16). Apártese, etc. (cf. Nm. 16, 26; Is. 52, 1). Esto parece complementar la cita anterior. Fillion se adhiere a los que ven aquí la palabra de Jesús: “Apartaos de Mí todos los operarios de la maldad” (Lc. 13, 27, cita del Sal. 6, 9). Cf. Sal. 49, 16 ss.; Col. 3, 9 y notas.",
+    "12299": "Véase Rm. 9, 21 ss. En Mt. 13, 24 se habla de una mezcla semejante que ocurre en el campo del mundo (ibíd. v. 38).",
+    "12300": "“El máximo culto le es dado a Dios por la fe, la esperanza y la caridad” (S. Agustín), Cf. 1 Co. 3, 13.",
+    "12301": "He aquí un programa de pedagogía cristiana: La acumulación de palabras, como medio de la predicación, aunque pueda conseguir éxitos momentáneos y personales, de nada sirve para los fines sobrenaturales del apostolado (Jn. 21, 15 ss. y nota). Lo mismo ha de decirse de las disputas y “contiendas de palabras” (v. 14), porque no dan fruto espiritual, sino que, al contrario, enojan a los oyentes. Hay que dejar caer simplemente la Palabra del Evangelio, puesto que Jesús nos enseña que ésta es una semilla (Mt. 13, 24; Lc. 8, 11).",
+    "12302": "Muestra S. Pablo la grande caridad y prudencia que se debe tener en toda polémica sobre asuntos religiosos, y también cómo lo que parece incomprensión suele venir de que falta el arrepentimiento (Jn. 3, 19), que Jesús declaró indispensable para todos sin excepción. Cf. Mc. 1, 15 y nota. Estos arrepentidos parecen ser los mencionados en el v. 21.",
+    "12303": "1 ss. En los últimas días, esto es, en los tiempos que preceden a la segunda venida del Señor. Es un término que abarca todo el tiempo de la Ley Nueva, porque a nosotros, como dice S. Pablo en 1 Co. 10, 11, nos ha tocado el vivir al fin de las edades. Recuérdese que, según la parábola de los obreros de la última hora (Mt. 20, 6), nosotros, los gentiles, somos los últimos llamados. Es pues, erróneo referir este pasaje solamente a los que vendrán después de nosotros, como si hoy fuéramos mejores que ellos. Véase 1 Tm. 4, 1; 2 Pe. 3, 3: Judas 18.",
+    "12304": "Inhumanos… despiadados: Es impresionante ver aplicado este pasaje al mundo de hoy. En su alocución del 17 de julio de 1940, dice Pio XII: “Es verdad que la fuerza sigue siendo la dominadora indiscutida de la naturaleza irracional de las almas paganas de hoy, semejantes a las que desde su tiempo llamaba el Apóstol S. Pablo: sin corazón y despiadadas hacia los pobres y los débiles (2 Tm. 3, 3)”.",
+    "12305": "Lo que hace más peligrosos a los falsos profetas es precisamente esta característica de que no se presentan como defensores del mal “sino con piel de oveja” (Mt. 7, 15; 1 Tm. 4, 3). S. Pablo enseña que ya está obrando ese “misterio de iniquidad” (2 Ts. 2, 7) que sólo aparecerá sin disimulo cuando se presente triunfante el Anticristo. Cf. 2 Ts. 2, 8; Ap. 13.",
+    "12306": "El Apóstol vuelve sobre este tema en Tt. 1, 11. Véase Mt. 23, 14, donde Jesucristo dice lo mismo de los fariseos.",
+    "12307": "Jannes y Jambres (la Vulgata dice Mambres), dos hechiceros egipcios, que en tiempos de Moisés deslumbraron con sus artificios a Faraón. Véase Ex. 7, 1.",
+    "12308": "No dice por cierto que los amigos de Dios serán desdichados, o enfermos o indigentes; antes bien se les promete el gozo cumplido que tenía el mismo Jesús (Jn. 17, 17), la misma paz de Él (Jn. 14, 27) y aun todo lo necesario por añadidura (Mt. 6, 33). Pero la persecución, consecuencia inevitable del misterio de iniquidad (v. 5; Jn. 16, 1 s.), será siempre el sello propio de los verdaderos discípulos de Cristo (Jn. 15, 18 ss.), y de ahí que el premio sea prometido al que, a pesar de ella, guarda la fe (4, 7 s.) no fingida (1, 5) confesando a Cristo delante de los hombres (Mt. 10, 32 s.), cuya impostura seguirá creciendo de mal en peor (v. 13).",
+    "12309": "De quienes: La Vulgata dice de quien, para expresar que lo fue el mismo Pablo.",
+    "12310": "Este pasaje es un testimonio de que la lectura de la Sagrada Escritura es de suma utilidad para la vida cristiana, principalmente para la formación del espíritu y para la enseñanza de la fe. Es a la vez uno de los textos clásicas para probar la divina inspiración de la Escritura (cf. 2 Pe. 1, 21). El mismo Jesús apelaba constantemente a la autoridad de las Escrituras; y los discursos y libros de los apóstoles “están como tejidos con textos del Antiguo Testamento usados como argumentos firmísimos en favor de la Nueva Ley” (Enc. “Providentissimus Deus” de León XIII). Cf. Hb. 4, 12.",
+    "12311": "He aquí el fruto de la Palabra de Dios en el alma: la perfección interior, en la fe, el amor y la esperanza. Y ello es lo que trae a su vez la disposición para toda obra buena (Ef. 5, 9 y nota). Tanto confiaba la Iglesia en ese poder sobrenatural de la Palabra divina (Rm. 1, 16) que, aun tratándose de personas consideradas fuera de su seno, el Concilio IV de Cartago dispuso en su canon 84 que los Obispos “no prohibieran oír la Palabra de Dios a los gentiles, heréticos y judíos durante la Misa de los Catecúmenos”. El Papa Pío VI, escribiendo en 1769 a Mons. Martini, le manifestaba su deseo de que se excitara “en gran manera a los fieles a la lección de las Santas Escrituras, por ser ellas las fuentes que deben estar abiertas para todos, a fin de que puedan sacar de ahí la santidad de las costumbres y de la doctrina”. De ahí que, como lo hace notar Scio, el Tribunal de la Inquisición española declaraba en 20 de diciembre de 1782 que los deseos de la Iglesia son “que el pan de la divina Palabra sea el alimento cotidiano y común de los fieles”.",
+    "12312": "1 ss. Este célebre pasaje (1-8) se lee como Epístola en la misa de los santos doctores mostrando que su oficio por excelencia es la predicación del Evangelio, y cuán grandes son los obstáculos que se le oponen según tantas veces lo anunció el mismo Jesús (3, 12; Jn. 15, 20 y nota). “Conjura a su discípulo tomando por testigos a Dios y a su Cristo. Este es el Juez de los vivos y de los muertos (cf. 1 Pe. 4, 5; Hch. 10, 42), es decir, no de los justos y de los pecadores, sino de los hombres que estarán aún vivos en el día de su venida y de los que habrán muerto. La fórmula entró en el Símbolo, y es posible que ya S. Pablo la baya tomado de un Kerygma. La manifestación del Señor de que aquí se trata, es la que debe preceder al gran Juicio. Cf. 1 Tm. 6, 14; 2 Tm. 1, 10” (Pirot).",
+    "12313": "Predica la Palabra: el Evangelio. “Los sacerdotes… después de haber investigado ellos por si con diligente estudio las Sagradas Páginas, y haberlas hecho suyas en la oración y la meditación, tomen diligentemente en sus sermones, homilías y exhortaciones las riquezas celestiales de la Palabra divina, confirmen la doctrina cristiana con sentencias tomadas de los Libros Sagrados e ilústrenla con los preclaros ejemplos de la Historia Sagrada y especialmente del Evangelio de Cristo N. Señor” (Pío XII, Encíclica “Divino Afflante Spiritu”). Cf. 1 Co. 2, 4 y nota.",
+    "12314": "Son los maestros que nos ha descrito en 3, 1 ss. Véase 1 Tm. 6, 3 y nota.",
+    "12315": "¡Amar su venida! Cada uno de nosotros puede examinar su corazón a ver si en verdad tiene este amor, con el cual debemos esperar a nuestro Salvador hora por hora, según la expresión de S. Clemente Él vendrá como un verdugo. Véase versículos 1; 1 Co. 15, 23; 2 Ts. 1, 10; Hb. 9, 20; Ap. 1, 7; 19, 11 ss.; 22, 20 y nota.",
+    "12316": "La capa: Detalle íntimo que nos deja suponer la estrechez en que vivía el Apóstol, y los fríos que habrá pasado esperándola.",
+    "12317": "Se trata probablemente de aquel Alejandro que es mencionado en Hch. 19, 33, o del que fue excomulgado por el Apóstol (1 Tm. 1, 20). Nótese el admirable contraste con el v. 16: Cuando se trata de los que dañaron a él personalmente, S. Pablo pide a Dios que los perdone; pero a los que dificultaron su obra apostólica, les anuncia el terrible castigo del Señor.",
+    "12318": "Todos los gentiles; pues los judíos ya se habían apartado de él (Hch. 28, 25 ss. y notas). La boca del león: El sumo peligro en que se hallaba. Todos los testigos que había presentado le desampararon, como los Doce al Señor (Mt. 26, 56). Tomemos nota de esto para librarnos de ilusiones, y desilusiones. Cf. Jn. 2, 24 y nota.",
+    "12319": "Me librará: Lo cual concuerda con Rm. 16, 25; 1 Co. 1, 8; Judas 24, etc., y bastaría por si solo para colmarnos de gozo, gratitud y esperanza. “Si no tuviésemos la revelación escrita y hablada de Dios y de su Hijo Jesucristo, dice un escritor, me bastaría ver mi propia impotencia y miseria espiritual, y mi debilidad física en la enfermedad o en la vejez –que todos palpamos tarde o temprano– para comprender que el Creador no pudo poner en tal situación al hombre, a quien hizo para rey del mundo, sino a causa de una gran caída; y también, que no pudo dejarlo en esa situación sino para redimirlo, pues de lo contrario cuando cayó lo habría destruido y no conservado. Desde entonces me alegro de mi inutilidad, pues cuanto más necesito de Cristo para todo, mayor es su gloria como mi Salvador”. Cf. Sal. 22, 6 y nota.",
+    "12320": "S. Ireneo nos hace saber que este Lino iba a ser el primer sucesor de Pedro, y así lo menciona el Canon de la Misa."
+  }
+}

@@ -1,0 +1,1354 @@
+{
+  "book": "Baruc",
+  "slug": "baruc",
+  "source": "https://bibliastraubinger.com/baruc/",
+  "chapters": [
+    {
+      "chapter": 1,
+      "sections": [
+        {
+          "title": "Baruc y los desterrados",
+          "startVerse": 3
+        },
+        {
+          "title": "Carta de los desterrados a los judíos de Jerusalén",
+          "startVerse": 10
+        },
+        {
+          "title": "Confesión de los pecados",
+          "startVerse": 15
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "Estas son las palabras del libro que escribió Baruc, hijo de Nerías, hijo de Maasías, hijo de Sedecías, hijo de Sedeí, hijo de Helcías, en Babilonia.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 2,
+          "text": "el año quinto, el día siete del mes, en el tiempo que los caldeos se apoderaron de Jerusalén y la incendiaron.",
+          "footnoteRefs": [
+            8451
+          ]
+        },
+        {
+          "number": 3,
+          "text": "Y leyó Baruc las palabras de este libro en presencia de Jeconías, hijo de Joakim, rey de Judá, y delante de todo el pueblo que había venido a oír la lectura del libro,",
+          "footnoteRefs": [
+            8452
+          ]
+        },
+        {
+          "number": 4,
+          "text": "y delante de los magnates e hijos de los reyes, y delante de los ancianos, y delante del pueblo desde el más pequeño hasta el más grande de todos cuantos habitaban en Babilonia, junto al río Sodí;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 5,
+          "text": "los cuales oyéndolo lloraban y ayunaban, y oraban ante el Señor.",
+          "footnoteRefs": [
+            8453
+          ]
+        },
+        {
+          "number": 6,
+          "text": "Hicieron una colecta de dinero, según la posibilidad de cada uno;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "y lo remitieron a Jerusalén, a Joakim, hijo de Helcías, hijo de Salom, sacerdote, y a los sacerdotes, y a todo el pueblo que se hallaba con él en Jerusalén.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 8,
+          "text": "Baruc recobró también los vasos de la Casa del Señor, los robados del Templo, para volverlos al país de Judá, el día diez del mes de Siván: los vasos de plata que había hecho Sedecías, hijo de Josías, rey de Judá.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 9,
+          "text": "Pero Nabucodonosor, rey de Babilonia, había deportado de Jerusalén a Jeconías, a los príncipes, a todos los magnates y al pueblo del país llevándolos cautivos a Babilonia.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 10,
+          "text": "Y dijeron: “He aquí que os enviamos dinero; comprad con él holocaustos y sacrificios expiatorios e incienso, y haced ofrendas, y ofrecedlo todo sobre el altar del Señor, Dios nuestro.",
+          "footnoteRefs": [
+            8454
+          ]
+        },
+        {
+          "number": 11,
+          "text": "Y rogad por la vida de Nabucodonosor, rey de Babilonia, y por la vida de Baltasar su hijo, a fin de que los días de ellos sobre la tierra sean como los del cielo,",
+          "footnoteRefs": [
+            8455
+          ]
+        },
+        {
+          "number": 12,
+          "text": "y el Señor nos conceda fortaleza, y nos haga ver la luz, para que vivamos bajo la sombra de Nabucodonosor, rey de Babilonia, y bajo la sombra de su hijo Baltasar, y les sirvamos a ellos por largo tiempo y seamos gratos a sus ojos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 13,
+          "text": "Rogad también por nosotros mismos al Señor, Dios nuestro; porque hemos pecado contra el Señor, Dios nuestro, y no se ha apartado su ira de sobre nosotros hasta el día presente.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 14,
+          "text": "Y leed este libro que os enviamos, dándole lectura en el Templo del Señor, en un día de fiesta o en un día oportuno.”",
+          "footnoteRefs": []
+        },
+        {
+          "number": 15,
+          "text": "Así diréis: “Del Señor, Dios nuestro, es la justicia, mas de nosotros, la confusión de nuestros rostros, como está sucediendo en este día a todo Judá y a los moradores de Jerusalén,",
+          "footnoteRefs": [
+            8456
+          ]
+        },
+        {
+          "number": 16,
+          "text": "a nuestros reyes y nuestros príncipes, a nuestros sacerdotes y nuestros profetas, y a nuestros padres.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 17,
+          "text": "Hemos pecado en presencia del Señor, Dios nuestro y no le creímos, desconfiando de Él.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 18,
+          "text": "No le estuvimos sumisos, ni quisimos escuchar la voz del Señor, Dios nuestro, para proceder conforme a los mandamientos que Él nos había dado.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 19,
+          "text": "Desde aquel día en que el Señor sacó de la tierra de Egipto a nuestros padres hasta el día de hoy, hemos sido rebeldes al Señor, Dios nuestro, y nos apartamos lejos para no oír su voz.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 20,
+          "text": "Por lo cual se pegaron a nosotros muchos desastres, y las maldiciones —intimadas por el Señor a su siervo Moisés el día en que sacó de la tierra de Egipto a nuestros padres para darnos una tierra que mana leche y miel—, como aparece en este día.",
+          "footnoteRefs": [
+            8457
+          ]
+        },
+        {
+          "number": 21,
+          "text": "No quisimos escuchar la voz del Señor, Dios nuestro, conforme a todo lo que decían los profetas que Él envió a nosotros;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 22,
+          "text": "y cada uno de nosotros nos fuimos tras las inclinaciones de nuestro perverso corazón, para servir a dioses ajenos, obrando el mal delante de los ojos del Señor, Dios nuestro.",
+          "footnoteRefs": []
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "sections": [
+        {
+          "title": "Justicia de los castigos divinos",
+          "startVerse": 1
+        },
+        {
+          "title": "Imploración de misericordia",
+          "startVerse": 11
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "Por eso el Señor, Dios nuestro, cumplió su palabra, que había pronunciado contra nosotros, y contra nuestros jueces, gobernadores de Israel, y contra nuestros reyes y nuestros príncipes, contra todo Israel y Judá,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 2,
+          "text": "de que el Señor traería sobre nosotros grandes males, cuales jamás se han visto debajo del cielo, como los que han sucedido en Jerusalén, conforme a lo que se halla escrito en la Ley de Moisés:",
+          "footnoteRefs": []
+        },
+        {
+          "number": 3,
+          "text": "que comería un hombre la carne de su propio hijo y la carne de su hija.",
+          "footnoteRefs": [
+            8458
+          ]
+        },
+        {
+          "number": 4,
+          "text": "Y los entregó al poder de todos los reyes comarcanos nuestros, como escarnio y objeto de horror entre todas las naciones, entre las que el Señor nos ha dispersado.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 5,
+          "text": "Esclavos hemos venido a ser, en vez de amos, por haber pecado contra el Señor, nuestro Dios, no obedeciendo a su voz.",
+          "footnoteRefs": [
+            8459
+          ]
+        },
+        {
+          "number": 6,
+          "text": "Del Señor, Dios nuestro, es la justicia; de nosotros, empero, y de nuestros padres, la confusión del rostro, como se ve en este día.",
+          "footnoteRefs": [
+            8460
+          ]
+        },
+        {
+          "number": 7,
+          "text": "Todos estos males que el Señor nos había amenazado, han venido sobre nosotros;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 8,
+          "text": "pero nosotros no acudimos al Señor, Dios nuestro, para rogarle y para convertirnos, cada uno, de los designios de nuestro perverso corazón.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 9,
+          "text": "Por esto echó el Señor mano del castigo y lo descargó sobre nosotros; pues justo es el Señor en todas sus obras que nos ha mandado.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 10,
+          "text": "No quisimos escuchar su voz para caminar según sus mandamientos que había puesto delante de nuestros ojos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 11,
+          "text": "Ahora oh Señor, Dios de Israel, que sacaste a tu pueblo del país de Egipto con mano fuerte y por medio de portentos y prodigios, con tu gran poder y con brazo extendido, y te adquiriste el nombre que hoy tienes;",
+          "footnoteRefs": [
+            8461
+          ]
+        },
+        {
+          "number": 12,
+          "text": "hemos pecado, hemos obrado impíamente; nos hemos portado inicuamente, oh Señor, Dios nuestro, contra todos tus mandamientos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 13,
+          "text": "Aléjese de nosotros tu indignación, porque somos pocos los que hemos quedado entre las naciones donde nos dispersaste.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 14,
+          "text": "Escucha, Señor, nuestros ruegos, y nuestras súplicas, y líbranos por amor de Ti mismo, y haz que hallemos gracia a los ojos de aquellos que nos han deportado;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 15,
+          "text": "a fin de que conozca todo el mundo que Tú eres el Señor, Dios nuestro, y que tu nombre ha sido invocado sobre Israel y sobre su linaje.",
+          "footnoteRefs": [
+            8462
+          ]
+        },
+        {
+          "number": 16,
+          "text": "Vuelve, oh Señor, tus ojos hacia nosotros desde tu santa Casa, inclina tus oídos y escúchanos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 17,
+          "text": "Abre tus ojos y mira, porque no son los muertos, que están en el sepulcro y cuyo espíritu ha sido separado de sus entrañas, los que tributan honra al Señor y reconocen su justicia,",
+          "footnoteRefs": [
+            8463
+          ]
+        },
+        {
+          "number": 18,
+          "text": "sino el alma que está afligida por causa de la grandeza del mal que ha cometido, y que anda encorvada y macilenta y con los ojos caídos. El alma hambrienta, ésa es la que te tributa gloria, oh Señor, y (reconoce) tu justicia.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 19,
+          "text": "Pues no apoyados en la justicia de nuestros padres y de nuestros reyes, derramamos nuestras plegarias y pedimos misericordia ante tu acatamiento, oh Señor, Dios nuestro,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 20,
+          "text": "sino porque has descargado sobre nosotros tu indignación y furor, según habías anunciado por medio de tus siervos los profetas, diciendo:",
+          "footnoteRefs": []
+        },
+        {
+          "number": 21,
+          "text": "«Esto dice el Señor: Inclinad vuestro hombro y vuestra cerviz, y servid al rey de Babilonia, y así viviréis tranquilos en la tierra que Yo di a vuestros padres.",
+          "footnoteRefs": [
+            8464
+          ]
+        },
+        {
+          "number": 22,
+          "text": "Pero si no obedeciereis la orden del Señor, Dios nuestro, de servir al rey de Babilonia,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 23,
+          "text": "haré cesar en las ciudades de Judá y en las calles de Jerusalén las voces de alegría y de gozo, y los cantares del esposo y de la esposa, y quedará todo el país un desierto sin habitantes».",
+          "footnoteRefs": []
+        },
+        {
+          "number": 24,
+          "text": "Pero no obedecieron la orden tuya de servir al rey de Babilonia; y por eso cumpliste tus palabras que anunciaste por tus siervos los profetas: que serían sacados de su lugar los huesos de nuestros reyes y los huesos de nuestros padres.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 25,
+          "text": "Y he aquí que han sido arrojados al ardor del sol, y a la escarcha de la noche; y murieron entre crueles dolores, causados por el hambre, por la espada y la peste.",
+          "footnoteRefs": [
+            8465
+          ]
+        },
+        {
+          "number": 26,
+          "text": "Y el Templo sobre el cual había sido invocado tu nombre, lo redujiste al estado en que se halla hoy día, a causa de las maldades de la casa de Israel y de la casa de Judá.",
+          "footnoteRefs": [
+            8466
+          ]
+        },
+        {
+          "number": 27,
+          "text": "Sin embargo, has obrado con nosotros, oh Señor, Dios nuestro, con toda tu bondad, y con toda aquella tu gran misericordia;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 28,
+          "text": "como lo habías declarado por boca de Moisés, siervo tuyo, el día en que le mandaste escribir tu Ley a la vista de los hijos de Israel,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 29,
+          "text": "diciendo: «Si no obedeciereis a mi voz, esta grande muchedumbre de gente será reducida a un muy pequeño número en las naciones, entre las cuales la dispersaré;",
+          "footnoteRefs": [
+            8467
+          ]
+        },
+        {
+          "number": 30,
+          "text": "porque Yo sé que no me escucharán, pues es un pueblo de dura cerviz; pero volverá en sí, cuando esté en la tierra de su cautiverio;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 31,
+          "text": "y conocerán que Yo soy el Dios suyo. Y les daré un corazón, y entenderán; oídos, y oirán.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 32,
+          "text": "Me tributarán alabanza en la tierra de su cautiverio, y se acordarán de mi nombre.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 33,
+          "text": "Ablandarán su dura cerviz y su malignidad; pues se acordarán de lo que sucedió a sus padres por haber pecado contra Mí.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 34,
+          "text": "Entonces los conduciré otra vez a la tierra que prometí con juramento a sus padres, a Abrahán, a Isaac y a Jacob; y serán señores de ella; y los multiplicaré, y no disminuirán.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 35,
+          "text": "Y estableceré con ellos otra alianza eterna para que Yo sea, su Dios, así como ellos serán el pueblo mío; y no removeré jamás a mi pueblo, los hijos de Israel, de la tierra que les he dado».",
+          "footnoteRefs": [
+            8468
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "sections": [
+        {
+          "title": "Continuación de la plegaria",
+          "startVerse": 1
+        },
+        {
+          "title": "Exhortación a la sabiduría",
+          "startVerse": 9
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "Y ahora, Señor todopoderoso, Dios de Israel, un alma angustiada y un espíritu acongojado dirige a Ti sus clamores.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 2,
+          "text": "Atiende, Señor, y ten piedad de nosotros, porque eres un Dios misericordioso; y apiádate de nosotros, porque hemos pecado en tu presencia.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 3,
+          "text": "Tú permaneces eternamente; pero nosotros ¿habremos de perecer para siempre?",
+          "footnoteRefs": []
+        },
+        {
+          "number": 4,
+          "text": "Oh Señor todopoderoso, Dios de Israel, escucha ahora la oración de los muertos de Israel, y de los hijos de aquellos que pecaron ante Ti, y no quisieron escuchar la voz del Señor, su Dios, por lo cual se ha pegado a nosotros el mal.",
+          "footnoteRefs": [
+            8469
+          ]
+        },
+        {
+          "number": 5,
+          "text": "No te acuerdes de las iniquidades de nuestros padres; acuérdate, si, en este tiempo, de tu poder y de tu nombre.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 6,
+          "text": "Porque Tú eres el Señor, Dios nuestro; y nosotros, oh Señor, te tributaremos alabanza.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "Pues por eso has llenado de temor nuestros corazones, a fin de que invoquemos tu nombre y te alabemos en nuestra cautividad, ya que nos hemos alejado de la iniquidad de nuestros padres que pecaron delante de Ti.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 8,
+          "text": "Henos aquí hoy en nuestro cautiverio, en donde nos tienes dispersos para que seamos objeto de escarnio y maldición, y para expiación de todas las maldades de nuestros padres, que se apartaron del Señor, Dios nuestro.”",
+          "footnoteRefs": []
+        },
+        {
+          "number": 9,
+          "text": "Escucha, Israel, los mandamientos de vida; aplica tus oídos para aprender la sabiduría.",
+          "footnoteRefs": [
+            8470
+          ]
+        },
+        {
+          "number": 10,
+          "text": "¿Cuál es el motivo, oh Israel, de que estés en tierra de enemigos?",
+          "footnoteRefs": []
+        },
+        {
+          "number": 11,
+          "text": "¿Y de que hayas envejecido en país extranjero, contaminándote con los muertos, y de que ya se te cuente en el número de los que descienden al sepulcro?",
+          "footnoteRefs": []
+        },
+        {
+          "number": 12,
+          "text": "Porque has abandonado la fuente de la sabiduría.",
+          "footnoteRefs": [
+            8471
+          ]
+        },
+        {
+          "number": 13,
+          "text": "Si hubieses andado por la senda de Dios, vivirías en perpetua paz.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 14,
+          "text": "Aprende dónde está la sabiduría, dónde la fortaleza, dónde la inteligencia, para que sepas también dónde hay longevidad y vida, y dónde está la luz de los ojos y la paz.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 15,
+          "text": "¿Quién halló la morada de la (sabiduría)? ¿Quién penetró en sus tesoros?",
+          "footnoteRefs": [
+            8472
+          ]
+        },
+        {
+          "number": 16,
+          "text": "¿Dónde están los príncipes de las naciones y los dominadores de las bestias de la tierra?",
+          "footnoteRefs": [
+            8473
+          ]
+        },
+        {
+          "number": 17,
+          "text": "¿Aquellos que jugaban con las aves del cielo,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 18,
+          "text": "y atesoraban la plata y el oro en que los hombres ponen su confianza, y en cuya adquisición jamás acaban de saciarse; aquellos que labraban con tanto afán la plata, de modo que sus obras eran sin igual?",
+          "footnoteRefs": []
+        },
+        {
+          "number": 19,
+          "text": "Exterminados fueron y descendieron a los infiernos, y en su lugar se levantaron otros.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 20,
+          "text": "Generaciones jóvenes vieron la luz, y habitaron sobre la tierra, pero desconocieron el camino de la sabiduría;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 21,
+          "text": "no comprendieron sus sendas, ni la abrazaron sus hijos; por eso ella se alejó de su rostro.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 22,
+          "text": "No se oyó palabra de ella en el país de Canaán, ni fue vista en Temán.",
+          "footnoteRefs": [
+            8474
+          ]
+        },
+        {
+          "number": 23,
+          "text": "Asimismo los hijos de Agar, que van en busca de la prudencia que procede de la tierra, los negociantes de Merra y de Temán, los autores de parábolas y los investigadores de la inteligencia, ignoraron igualmente el camino de la sabiduría y olvidaron sus sendas.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 24,
+          "text": "¡Oh Israel, cuán grande es la casa de Dios, y cuan espacioso el lugar de su posesión!",
+          "footnoteRefs": [
+            8475
+          ]
+        },
+        {
+          "number": 25,
+          "text": "Grande es y no tiene término; excelso es e inmenso.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 26,
+          "text": "Allí vivieron los famosos gigantes, que hubo al principio, de elevada estatura, diestros en la guerra.",
+          "footnoteRefs": [
+            8476
+          ]
+        },
+        {
+          "number": 27,
+          "text": "No a éstos eligió el Señor, ni encontraron la senda de la doctrina; por esto perecieron.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 28,
+          "text": "Y por cuanto no tuvieron sabiduría perecieron por su necedad.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 29,
+          "text": "¿Quién subió al cielo y se apoderó de ella, y la hizo descender de las nubes?",
+          "footnoteRefs": [
+            8477
+          ]
+        },
+        {
+          "number": 30,
+          "text": "¿Quién atravesó los mares y la halló, y la trajo por oro purísimo?",
+          "footnoteRefs": []
+        },
+        {
+          "number": 31,
+          "text": "No hay quien pueda conocer los caminos de ella, ni investigar sus sendas.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 32,
+          "text": "Solamente Aquel que sabe todas las cosas, la conoce y la descubrió con su inteligencia; Aquel que fundó la tierra para siempre y la pobló de animales y cuadrúpedos;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 33,
+          "text": "Aquel que envía la luz y ella marcha; la llama y ella obedece temblando.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 34,
+          "text": "Las estrellas difunden su luz en sus atalayas, y lo hacen con alegría.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 35,
+          "text": "Fueron llamadas, y dijeron: “Aquí estamos”; y gozosas dieron luz al que las creó.",
+          "footnoteRefs": [
+            8478
+          ]
+        },
+        {
+          "number": 36,
+          "text": "Éste es nuestro Dios, ningún otro será reputado por tal a su lado.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 37,
+          "text": "Él halló todos los caminos de la sabiduría, y la dio a su siervo Jacob, y a Israel, su amado.",
+          "footnoteRefs": [
+            8479
+          ]
+        },
+        {
+          "number": 38,
+          "text": "Después de esto, se ha dejado ver sobre la tierra, y conversó con los hombres.",
+          "footnoteRefs": [
+            8480
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "sections": [
+        {
+          "title": "El camino de los mandamientos",
+          "startVerse": 1
+        },
+        {
+          "title": "Palabras de consuelo",
+          "startVerse": 5
+        },
+        {
+          "title": "Soportad con paciencia el castigo",
+          "startVerse": 21
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "Éste es el libro de los mandamientos de Dios, y la Ley que permanece eternamente. Todos los que la guardan, llegarán a la vida; mas los que la abandonan, a la muerte.",
+          "footnoteRefs": [
+            8481
+          ]
+        },
+        {
+          "number": 2,
+          "text": "Conviértete, Jacob, y tenla asida; camina al resplandor de su luz.",
+          "footnoteRefs": [
+            8482
+          ]
+        },
+        {
+          "number": 3,
+          "text": "No des tu gloria a otro, ni tu dignidad a una nación extraña.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 4,
+          "text": "Dichosos somos nosotros, los de Israel, porque sabemos lo que agrada a Dios.",
+          "footnoteRefs": [
+            8483
+          ]
+        },
+        {
+          "number": 5,
+          "text": "Ten buen ánimo, oh pueblo de Dios, memorial de Israel.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 6,
+          "text": "Fuisteis vendidos a las naciones, mas no para ruina. Por haber provocado la indignación de Dios, por eso fuisteis entregados a los enemigos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "Pues irritasteis a Aquel que os creó, al Dios eterno, ofreciendo sacrificios a los demonios en lugar de Dios.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 8,
+          "text": "Olvidasteis al Dios, vuestro Creador, y contristasteis a Jerusalén, vuestra nodriza.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 9,
+          "text": "Porque ella vio venir sobre vosotros la ira de Dios, y dijo: “Escuchad, vecinas de Sión; Dios me ha enviado una aflicción grande;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 10,
+          "text": "pues he visto la cautividad de mis hijos y de mis hijas, que hizo venir sobre ellas el Eterno.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 11,
+          "text": "Yo los he criado con gozo, pero con llanto y con dolor los he despedido.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 12,
+          "text": "Ninguno se alegre de mí al verme viuda y desamparada. Muchos me abandonaron por los pecados de mis hijos, por cuanto se desviaron de la Ley de Dios;",
+          "footnoteRefs": [
+            8484
+          ]
+        },
+        {
+          "number": 13,
+          "text": "y no conocieron sus preceptos, ni anduvieron por el camino de los mandamientos de Dios, ni siguieron con justicia por las sendas de su verdad.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 14,
+          "text": "Vengan las vecinas de Sión, y consideren la cautividad que el Eterno hizo venir sobre mis hijos e hijas;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 15,
+          "text": "porque trajo sobre ellos una nación remota, una nación desvergonzada y de otra lengua,",
+          "footnoteRefs": [
+            8485
+          ]
+        },
+        {
+          "number": 16,
+          "text": "que no respeta al anciano, ni se apiada de los niños; que arranca a la viuda sus queridos, dejándola desolada y sin hijos.”",
+          "footnoteRefs": []
+        },
+        {
+          "number": 17,
+          "text": "Y yo, ¿en qué puedo yo ayudaros?",
+          "footnoteRefs": []
+        },
+        {
+          "number": 18,
+          "text": "Aquel que envió sobre vosotros los males, Él mismo os librará de las manos de vuestros enemigos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 19,
+          "text": "Andad, hijos míos, andad; yo me quedo solitaria.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 20,
+          "text": "Me quité el vestido de alegría, y me vestí del saco de rogativa, y clamaré al Altísimo todos los días de mi vida.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 21,
+          "text": "Tened buen ánimo, hijos míos, clamad al Señor, y Él os librará del poder y de las manos de los príncipes enemigos;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 22,
+          "text": "que yo espero del Eterno vuestra salud; pues el Santo me ha consolado por la misericordia que os vendrá de parte del Eterno, Salvador nuestro.",
+          "footnoteRefs": [
+            8486
+          ]
+        },
+        {
+          "number": 23,
+          "text": "Pues con lágrimas y sollozos os dejé ir; mas el Señor os devolverá otra vez a mí con gozo y alegría duradera.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 24,
+          "text": "Porque al modo que las vecinas de Sión vieron cómo fuisteis llevados al cautiverio, así verán muy presto vuestra salud que de Dios vendrá sobre vosotros con grande gloria y resplandor eterno.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 25,
+          "text": "Hijos míos, soportad con paciencia la ira de Dios que ha descargado sobre vosotros. En breve verás la ruina de tu enemigo que te persiguió, y pondrás tu pie sobre su cerviz.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 26,
+          "text": "Mis delicados (hijos) anduvieron por caminos ásperos; porque han sido llevados como un rebaño robado por el enemigo.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 27,
+          "text": "Tened confianza, hijos míos, y clamad al Señor; pues Aquel que os transportó, se acordará de vosotros.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 28,
+          "text": "Porque así como por vuestra voluntad os descarriasteis de Dios, así al convertiros de nuevo le buscaréis con una voluntad diez veces mayor.",
+          "footnoteRefs": [
+            8487
+          ]
+        },
+        {
+          "number": 29,
+          "text": "Pues Aquel que os envió estos males, Él mismo traerá un gozo sempiterno con la salud que os dará.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 30,
+          "text": "Ten confianza, oh Jerusalén, pues te consuela Aquel que te dio el nombre.",
+          "footnoteRefs": [
+            8488
+          ]
+        },
+        {
+          "number": 31,
+          "text": "Perecerán los malos que te han maltratado; serán castigados los que se alegraron en tu ruina.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 32,
+          "text": "Castigadas serán las ciudades a las cuales han servido tus hijos, y aquella que recibió a tus hijos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 33,
+          "text": "Pues como ella se alegró en tu ruina, y saltó de gozo por tu caída, así se verá angustiada en su desolación.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 34,
+          "text": "Yo pondré fin al alborozo de su muchedumbre, y su jactancia se convertirá en llanto.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 35,
+          "text": "Porque el Eterno enviará fuego sobre ella por largos días, y será habitada por demonios durante mucho tiempo.",
+          "footnoteRefs": [
+            8489
+          ]
+        },
+        {
+          "number": 36,
+          "text": "Mira, oh Jerusalén, hacia el oriente y contempla el gozo que Dios te envía.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 37,
+          "text": "He aquí que vuelven tus hijos que tú enviaste dispersos, vienen desde el oriente hasta el occidente, reunidos por la palabra del Santo, gozándose en la gloria de Dios.",
+          "footnoteRefs": [
+            8490
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "sections": [
+        {
+          "title": "Alegría por la vuelta de los desterrados",
+          "startVerse": 1
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "Despójate, Jerusalén, del vestido de tu luto y de tu aflicción, y vístete del esplendor y de la gloria sempiterna que te viene de Dios.",
+          "footnoteRefs": [
+            8491
+          ]
+        },
+        {
+          "number": 2,
+          "text": "Dios te rodeará con el manto doblado de la justicia y pondrá sobre tu cabeza la diadema de la gloria del Eterno.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 3,
+          "text": "Pues Dios mostrará su esplendor en medio de ti a todos los que viven debajo del cielo.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 4,
+          "text": "Porque el nombre que te impondrá Dios para siempre, será éste: “Paz de la justicia y Gloria de la piedad.”",
+          "footnoteRefs": [
+            8492
+          ]
+        },
+        {
+          "number": 5,
+          "text": "Levántate, Jerusalén, sube a lo alto, y dirige tu vista hacia el oriente, y mira cómo se congregan tus hijos, desde el oriente hasta el occidente, en virtud de la palabra del Santo, llenos de gozo porque Dios se ha acordado de ellos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 6,
+          "text": "Partieron de ti a pie, llevados por los enemigos; pero Dios te los devolverá traídos con honor, como en trono real.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "Porque Dios ha decretado abatir todo monte alto y las rocas eternas, y terraplenar los valles hasta el nivel de la tierra, para que Israel camine con seguridad para gloria de Dios.",
+          "footnoteRefs": [
+            8493
+          ]
+        },
+        {
+          "number": 8,
+          "text": "Aun las selvas y todos los árboles aromáticos harán sombra a Israel, por orden de Dios.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 9,
+          "text": "Porque Dios guiará a Israel con alegría, a la luz de su majestad, mediante la misericordia, y la justicia que de Él viene. Copia de la carta que envió Jeremías a los que habían de ser llevados cautivos a Babel por el rey de los babilonios, para anunciarles lo que Dios le había mandado.",
+          "footnoteRefs": [
+            8494
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "sections": [
+        {
+          "title": "Impotencia ridícula de los ídolos",
+          "startVerse": 7
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "Por los pecados que habéis cometido delante de Dios, seréis llevados cautivos a Babilonia por Nabucodonosor, rey de los babilonios.",
+          "footnoteRefs": [
+            8495
+          ]
+        },
+        {
+          "number": 2,
+          "text": "Llegados a Babilonia, permaneceréis allí muchos años y un largo tiempo, hasta siete generaciones; después de lo cual os sacaré de allí en paz.",
+          "footnoteRefs": [
+            8496
+          ]
+        },
+        {
+          "number": 3,
+          "text": "Ahora bien, en Babilonia veréis dioses de oro, de plata, de piedra y de madera, llevados en hombros, que causan temor a las gentes.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 4,
+          "text": "Guardaos, pues, de imitar a los extranjeros, de modo que os amedrentéis y vengáis a concebir temor de ellos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 5,
+          "text": "Cuando veáis, detrás y delante de ellos la turba que los adora, decid en vuestro corazón: “Oh Señor, a Ti se ha de adorar.”",
+          "footnoteRefs": [
+            8497
+          ]
+        },
+        {
+          "number": 6,
+          "text": "Porque mi Ángel estará con vosotros y Yo mismo tendré cuidado de vuestras almas.",
+          "footnoteRefs": [
+            8498
+          ]
+        },
+        {
+          "number": 7,
+          "text": "Pues los (ídolos) tienen una lengua pulida por el artífice, y aunque están dorados y plateados, son un mero engaño e incapaces de hablar.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 8,
+          "text": "Al modo que se hace con una doncella, amiga de galas, así toman el oro que recibieron,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 9,
+          "text": "y aderezan coronas sobre las cabezas de sus dioses; y sucede a veces que los sacerdotes roban a sus dioses el oro y la plata y lo gastan para sí mismos.",
+          "footnoteRefs": [
+            8499
+          ]
+        },
+        {
+          "number": 10,
+          "text": "Aun dan de él a las rameras y adornan a las meretrices, y de nuevo, después de recobrarlo de las rameras engalanan a sus dioses.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 11,
+          "text": "Mas éstos no saben librarse del orín ni de la polilla.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 12,
+          "text": "Los revisten también de púrpura y les limpian el rostro a causa del muchísimo polvo que hay en sus templos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 13,
+          "text": "Uno tiene un cetro en su mano, como el juez de un distrito, mas no puede quitar la vida al que le ofende.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 14,
+          "text": "Otro tiene en su mano una espada, o un hacha; mas no se puede librar a sí mismo de la guerra, ni de los ladrones. Por donde se ve que no son dioses.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 15,
+          "text": "No los temáis. Porque los dioses de ellos son como una vasija de un hombre; si se quiebra, para nada sirve.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 16,
+          "text": "Colocados en los templos, sus ojos se cubren del polvo que levantan los pies de los que entran.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 17,
+          "text": "Y como es encerrado detrás de muchas puertas el que ofendió al rey, y como se practica con uno que es conducido a muerte, así los sacerdotes aseguran las puertas con cerraduras y cerrojos, para que los ladrones no despojen a los dioses.",
+          "footnoteRefs": [
+            8500
+          ]
+        },
+        {
+          "number": 18,
+          "text": "Enciéndenles también lámparas, y en mayor número que para sí mismos, pero ellos no pueden ver ninguna de ellas, porque son como las vigas del templo.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 19,
+          "text": "Dicen que las sierpes que salen de la tierra, les lamen el interior, cuando se los comen juntamente con sus vestiduras sin que ellos mismos lo sientan.",
+          "footnoteRefs": [
+            8501
+          ]
+        },
+        {
+          "number": 20,
+          "text": "Sus caras se vuelven negras por el humo que hay en el templo.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 21,
+          "text": "Sobre su cuerpo y sobre su cabeza vuelan lechuzas, golondrinas, y otras aves, y también los gatos andan sobre ellos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 22,
+          "text": "Por donde podéis conocer que no son dioses; y por lo mismo, no los temáis.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 23,
+          "text": "El oro que tienen es para bien parecer; pero si alguno no los limpia del orín, ya no brillan. Ni aun cuando fueron fundidos, lo sintieron.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 24,
+          "text": "Y a pesar de que no hay en ellos espíritu alguno, fueron comprados a sumo precio.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 25,
+          "text": "Llevados son en hombros, como que no tienen pies; mostrando así a los hombres su vergüenza. Avergonzados sean también aquellos que los adoran.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 26,
+          "text": "Si caen en tierra no pueden levantarse por sí mismos; ni por sí mismos pueden ponerse en movimiento si alguno los pone en pie; y como a los muertos, así les son presentadas ofrendas.",
+          "footnoteRefs": [
+            8502
+          ]
+        },
+        {
+          "number": 27,
+          "text": "Estas ofrendas las venden y malgastan los sacerdotes, y también sus mujeres conservan una parte para sí; no dan nada de ello al pobre ni al desvalido.",
+          "footnoteRefs": [
+            8503
+          ]
+        },
+        {
+          "number": 28,
+          "text": "Tocan los sacrificios de ellos las mujeres parturientas y las menstruantes. Conociendo, pues, por esto que no son dioses, no los temáis.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 29,
+          "text": "Mas, ¿cómo es que los llaman dioses? Es porque las mujeres presentan dones a estos dioses de plata, de oro y de madera;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 30,
+          "text": "y los sacerdotes están sentados en las casas de ellos, rasgadas sus túnicas, rapadas la cabeza y la barba y teniendo descubierta la cabeza;",
+          "footnoteRefs": [
+            8504
+          ]
+        },
+        {
+          "number": 31,
+          "text": "y rugen dando gritos delante de sus dioses, como en un banquete fúnebre:",
+          "footnoteRefs": []
+        },
+        {
+          "number": 32,
+          "text": "Los sacerdotes les quitan parte de sus vestidos, para vestir a sus mujeres y a sus hijos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 33,
+          "text": "Hágaseles mal, o hágaseles bien, no pueden retribuirlo. No pueden poner rey, ni quitarlo.",
+          "footnoteRefs": [
+            8505
+          ]
+        },
+        {
+          "number": 34,
+          "text": "Y asimismo no pueden dar riquezas, ni una pieza de cobre. Si alguno les hace un voto, y no lo cumple, ni de esto se quejan.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 35,
+          "text": "No pueden librar a un hombre de la muerte, ni amparar al débil contra el poderoso.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 36,
+          "text": "No restituyen la vista a ningún ciego, ni libran a nadie de la necesidad.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 37,
+          "text": "No se compadecen de la viuda, ni son bienhechores de los huérfanos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 38,
+          "text": "Semejantes a las piedras del monte son esos sus dioses de madera y piedra, dorados y plateados. Confundidos serán sus adoradores.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 39,
+          "text": "¿Cómo es posible creer y decir que son dioses?",
+          "footnoteRefs": []
+        },
+        {
+          "number": 40,
+          "text": "Aun los mismos caldeos los deshonran. Pues al ver que uno no puede hablar porque es mudo, le presentan a Bel, rogándole que le haga hablar;",
+          "footnoteRefs": [
+            8506
+          ]
+        },
+        {
+          "number": 41,
+          "text": "como si (Bel) pudiera entenderlos. Y ellos mismos, cuando se dan cuenta de su error, los abandonan, porque sus dioses no tienen conocimiento.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 42,
+          "text": "Las mujeres, ceñidas de cordones, se sientan en los caminos, quemando carozos de aceitunas,",
+          "footnoteRefs": [
+            8507
+          ]
+        },
+        {
+          "number": 43,
+          "text": "y si una de ellas, atraída por algún transeúnte, duerme con él, zahiere a su compañera de que ésa no fue apreciada como ella, ni roto su cordón.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 44,
+          "text": "Todas las cosas que se hacen con ellos, no son más que embuste. ¿Cómo es posible creer y decir que son dioses?",
+          "footnoteRefs": []
+        },
+        {
+          "number": 45,
+          "text": "Han sido fabricados por artífices y orfebres. No serán otra cosa que lo que quieran los sacerdotes que sean.",
+          "footnoteRefs": [
+            8508
+          ]
+        },
+        {
+          "number": 46,
+          "text": "Aun los mismos artífices de los ídolos no son longevos. ¿Podrán serlo aquellas cosas que ellos fabrican?",
+          "footnoteRefs": []
+        },
+        {
+          "number": 47,
+          "text": "Superchería y oprobio es lo que dejan a los venideros.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 48,
+          "text": "Porque si sobreviene alguna guerra o desastre, los sacerdotes deliberan consigo dónde guarecerse con ellos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 49,
+          "text": "¿Cómo puede creerse que son dioses aquellos que no pueden librarse de la guerra, ni salvarse de las calamidades?",
+          "footnoteRefs": []
+        },
+        {
+          "number": 50,
+          "text": "Mas un día se conocerá que ellos siendo cosa de madera, dorados y plateados, no son sino un embuste. Todas las naciones y todos los reyes verán claramente que no son dioses, sino obras de la mano de los hombres, y que no hay en ellos nada divino.",
+          "footnoteRefs": [
+            8509
+          ]
+        },
+        {
+          "number": 51,
+          "text": "Pero, ¿de dónde se conoce que no son dioses, sino obra de manos de hombres y que en ellos no hay nada divino?",
+          "footnoteRefs": []
+        },
+        {
+          "number": 52,
+          "text": "Porque ellos no ponen rey en ningún país, ni dan lluvia a los hombres.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 53,
+          "text": "No pueden decidir las causas, ni librar de opresión a región alguna, impotentes como son. Son como cornejas entre el cielo y la tierra.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 54,
+          "text": "Porque cuando se prende fuego en el templo de esos dioses de madera, dorados y plateados, sus sacerdotes ciertamente echan a huir, y se ponen en salvo; pero ellos se queman en el templo, lo mismo que las vigas.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 55,
+          "text": "Ni a un rey ni a los enemigos hacen resistencia. ¿Cómo creer o admitir que son dioses?",
+          "footnoteRefs": []
+        },
+        {
+          "number": 56,
+          "text": "No se libran de ladrones, ni de salteadores, esos dioses de madera y piedra, plateados y dorados; porque aquéllos pueden más que ellos;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 57,
+          "text": "y les quitan el oro y la plata, y el vestido de que están cubiertos, y se marchan, sin que (esos dioses) puedan valerse por sí mismos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 58,
+          "text": "Por manera que un rey; que muestra su poder, o cualquier objeto útil en una casa, del cual se precia el dueño, o la puerta de la casa que guarda lo que hay dentro de ella, valen más que esos falsos dioses.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 59,
+          "text": "El sol, la luna y las estrellas, que alumbran y están puestos para sernos provechosos, obedecen a Dios.",
+          "footnoteRefs": [
+            8510
+          ]
+        },
+        {
+          "number": 60,
+          "text": "Asimismo el relámpago se hace ver bien cuando aparece, y el viento sopla por todas las regiones.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 61,
+          "text": "Iigualmente las nubes, cuando Dios les manda pasar por sobre la tierra, ejecutan lo mandado;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 62,
+          "text": "y el fuego enviado de arriba para abrasar los montes y los bosques, cumple lo que se le ha ordenado. Mas estos (ídolos), ni en la belleza, ni en la fuerza son comparables a ninguna de esas cosas.",
+          "footnoteRefs": [
+            8511
+          ]
+        },
+        {
+          "number": 63,
+          "text": "Por eso no debe creerse ni decirse que sean dioses, cuando no pueden hacer justicia, ni hacer cosa alguna a los hombres.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 64,
+          "text": "Sabiendo que no son dioses, no los temáis.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 65,
+          "text": "Pues no pueden maldecir a los reyes ni bendecirlos;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 66,
+          "text": "tampoco muestran a los pueblos señales en el cielo, ni lucen como el sol, ni alumbran como la luna.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 67,
+          "text": "Más que ellos valen las bestias, porque huyendo pueden refugiarse bajo cubierto, y valerse de sí mismas.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 68,
+          "text": "De ninguna manera son dioses, como es evidente; por tanto no los temáis.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 69,
+          "text": "Porque así como no es buen guarda en el melonar un espantajo, así son sus dioses de madera, dorados y plateados.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 70,
+          "text": "Como el arbusto de espinas en un huerto, sobre el cual vienen a posar toda suerte de pájaros, y como un muerto arrojado al sepulcro tenebroso, así son estos dioses suyos de madera, dorados y plateados.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 71,
+          "text": "También por la púrpura y escarlata que sobre ellos se apolilla, se conocerá claramente que no son dioses. Ellos mismos son al fin carcomidos y serán un oprobio para el país.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 72,
+          "text": "Mejor es, pues, el varón justo, que no tiene ídolos; porque está bien lejos de la ignominia.",
+          "footnoteRefs": []
+        }
+      ]
+    }
+  ],
+  "divisions": [
+    {
+      "title": "Apéndice",
+      "startChapter": 6,
+      "startVerse": 1
+    }
+  ],
+  "footnotes": {
+    "8451": "El año quinto de la destrucción de Jerusalén corresponde al año 582 antes de Cristo.",
+    "8452": "El rey Jeconías (Joaquín) fue llevado a Babilonia en 597, diez años antes de la caída de Jerusalén. Véase IV Reyes 24, 8 ss. Cf. nota introductoria.",
+    "8453": "Lloraban, etc. Nótese el fruto espiritual de la Palabra de Dios leída en público. Véase Jeremías 36, 5 ss. y nota. Cf. el decreto del Concilio Tridentino sobre la enseñanza y predicación de la Sagrada Escritura (Sesión V del 17 de junio de 1546), y el canon 400 del Código Canónico sobre la explicación de la Sagrada Escritura en las Catedrales.",
+    "8454": "Sobre el altar del Señor, es decir, en el lugar donde antes estaba el altar de los holocaustos y donde seguían ofreciendo sacrificios, como se ve en Jeremías 41, 5 y Esdras 2, 68.",
+    "8455": "¡Qué ejemplo tan heroico de amor a los enemigos! Ruega por los reyes perseguidores y es súbdito leal de ellos. Del mismo modo reconoce San Pablo la autoridad de Nerón (Romanos 13, 1 ss.) y manda rogar especialmente por las autoridades “porque esto es bueno y agradable a Dios” (I Timoteo 2, 1-3). Cf. 2, 21. Baltasar, su hijo: quiere decir, su sucesor mediato.",
+    "8456": "Esta oración de Baruc tiene mucha semejanza con la de Daniel (Daniel 9, 7 ss.). Del Señor es la justicia: Cf. 2, 6. La destrucción de Jerusalén y el cautiverio fueron la consecuencia de sus pecados propios (v. 17) y de las prevaricaciones de sus padres (v. 19). No olvidemos el “Mea culpa” en tiempos de calamidad general. Véase la nota sobre la contrición colectiva en Lamentaciones 3, 42.",
+    "8457": "Véase Levítico 26, 14 ss.; Deuteronomio 28, 15; Lamentaciones 2, 17.",
+    "8458": "Véase Levítico 26, 29; Deuteronomio 28, 53; Jeremías 19, 9; Lamentaciones 2, 20 y nota; 4, 10.",
+    "8459": "Véase Lamentaciones 5, 8 y nota.",
+    "8460": "6 ss. Ésta es la característica de la verdadera contrición: el reconocimiento de la justicia con que el Señor nos castiga. Véase la oración de Daniel (Daniel 9, 13-18) y la de Daniel 3, 27 ss., que la Iglesia usa como Introito en el Domingo XX de Pentecostés (Liturgia anterior al Concilio Vaticano II).",
+    "8461": "“Este recurso a la misericordia de Dios y a su propio honor, es frecuente en los profetas y se lee asimismo en la oración de Daniel 9, 19 y en Éxodo 32, 11” (Nácar-Colunga). Véase en el versículo 14 otro recurso, de no menor fuerza: el amor que Dios se tiene a sí mismo.",
+    "8462": "El Señor es Dios de Israel, por lo cual los israelitas se consideran hijos suyos que llevan su nombre y son objeto privilegiado de su poder y misericordia. Cf. Éxodo 4, 22; 19, 5 s.; Deuteronomio 26, 15; Isaías 63, 15 y. la oración del Eclesiástico (Eclesiástico 36).",
+    "8463": "Ese mismo pensamiento aparece en otros pasajes del Antiguo Testamento (Salmo 6, 6 y nota; 87, 11 ss.; 113, 17; Eclesiástico 17, 26; Isaías 38, 18 ss.). Por eso las esperanzas del Antiguo Testamento se concentran más que en la salvación del alma sola, en la resurrección de los cuerpos la cual traerá el Mesías (Job 19, 25 s. y nota).",
+    "8464": "21 ss. Véase Jeremías 27, 8 ss. El cautiverio y la sumisión al rey de Babilonia son las condiciones de la restauración del pueblo judío. Cf. 1, 11 y nota.",
+    "8465": "Por la espada y la peste: Así dice el texto griego. La Vulgata dice destierro en lugar de peste.",
+    "8466": "En el versículo 16 el profeta habla del Templo como si existiera aún. Aquí en el v. 26, vemos claramente que está en ruinas y que Baruc escribió su libro después de su destrucción.",
+    "8467": "29 ss. Véase Levítico 26, 27 a.; Deuteronomio 28, 62 s.; 30, 1 ss, “La conversión del pueblo a su Dios será perfecta; es descrita admirablemente” (Fillion). Esta profecía va más allá de la restauración después del destierro, la cual no fue perfecta ni en sentido material ni espiritual.",
+    "8468": "Estableceré con ellos otra alianza eterna… y no removeré jamás, etc. Esta profecía tendrá su pleno cumplimiento en el reino mesiánico. Véase II Reyes 7, 7-16; Tobías 13, 12; Jeremías 31, 31 ss.; 32, 40; 33, 17-26; Lamentaciones 4, 22 y nota; Oseas 2, 19; Miqueas 4, 7.",
+    "8469": "Los muertos de Israel son los mismos desterrados, puesto que son como una nación muerta y destinada a la perdición si Dios no los salva milagrosamente. Se ha pegado a nosotros el mal: El profeta usa esta expresión gráfica otra vez (la primera en 1, 20), para señalar lo inevitable e inseparable que era el mal para los judíos. Eran casi una misma cosa, ellos y el mal.",
+    "8470": "Escucha, ¡oh Israel!: Este apostrofe, que empieza como el famoso Schma Israel (Deuteronomio 6, 4), es la respuesta suavísima del Padre Celestial a la sincera confesión precedente y contiene uno de los mis sublimes elogios de la Sabiduría.",
+    "8471": "La razón que aquí da el mismo Dios del origen de todos los males, coincide con lo que Israel ha confesado en el versículo 4, y se aplica igualmente a todos los tiempos. Así como la Sabiduría que viene de Dios, trae consigo todos los bienes (Sabiduría 7, 11), la falta de ella es causa de todos los males. “Vemos hoy día males sin número, guerras cada vez más terribles, luchas entre las clases sociales, entre el capital y los trabajadores, la destrucción de la familia del hogar, de la personalidad y de la dignidad humanas. Vemos luchas ideológicas, esfuerzos titánicos para alcanzar fortuna, poder, honor; los cuales, si fracasan, hacen del hombre el ser más infeliz del mundo. Vemos adelantos técnicos y progresos científicos que debieran ser destinados para servir al bienestar de la humanidad y que ton empleados como medios de destrucción. ¡Por qué todo eso? se pregunta el hombre y Dios le contesta por boca del profeta Baruc: «Porque has abandonado la fuente de la sabiduría. Si hubieses andado por la senda de Dios, habitarías en perpetua paz»” (Elpis).",
+    "8472": "15 ss. Demuestra que la sabiduría no se encuentra entre los hombres, porque pertenece a Dios. Sin embargo, Él la pone a la disposición de los hombres en su Palabra revelada y se apresura a prodigarla a todo el que la desea. Véase Sabiduría 6, 14 s.; Santiago 1, 5.",
+    "8473": "16 ss. Observemos aquí las mismas ilusiones que todavía engañan a los hombres de hoy.",
+    "8474": "Enumera pueblos que poseían renombre de sabios. Temán, tribu de Edom, conocido por este concepto (Jeremías 49, 7 y nota). Los hijos de Agar: los árabes. En vez de Merra leen algunos Madián, porque Merra es nombre desconocido. La prudencia que procede de la tierra: ¿No parece ésta una expresión de San Pablo? Cf. Gálatas 1, 11 s.; I Corintios capítulos 1-3. David opone elocuentemente esta sabiduría humana a la que viene de Dios (Salmo 118, 85 y nota).",
+    "8475": "La casa de Dios: el admirable universo, que David celebra en los Salmos 8; 18 y 103.",
+    "8476": "Tampoco los gigantes antediluvianos eran sabios. De lo contrario no habrían perecido en el diluvio. Véase 6, 1 ss.; Job 22, 15; Sabiduría 14, 6; Eclesiástico 16, 8.",
+    "8477": "¿Quién subió? Ciertamente ningún hombre, pero sí Jesús, el que bajó del cielo (Juan 3, 13) donde vio al Padre (Juan 6, 46). Él es quien lo conoce (Juan 1, 18). Véase Proverbios 30, 4 y nota.",
+    "8478": "Véase Isaías 30, 36. Gozosas de servir. Aquí, como en Job 38, 7, se alude a la naturaleza purísima, tal como salió de sus manos antes de la maldición que trajo el pecado (Cf. Génesis 3, 17). Ahora, según San Pablo, ella espera con ansia su restauración junto con la “redención de nuestros cuerpos” (Romanos 8, 19 ss.). Es de notar que está condenada la tesis de que el mundo ha de ser totalmente aniquilado de modo natural (Denz. 717 a.).",
+    "8479": "Se acentúa aquí el privilegio de Israel como depositario de la Sabiduría revelada, privilegio que San Pablo expone en Romanos 9, 1-5. Véase Salmo 147, 8 s. y notas.",
+    "8480": "Los santos Padres entienden este pasaje de la Sabiduría personificada, o sea, del Verbo – Jesús. La Sabiduría que habló por Moisés y los profetas, se manifestará en persona para conversar con los hombres. Véase Juan 1, 14; Tito 2, 11; 3, 4; Hebreos 1, 1 ss. ; Éxodo 33, 11; Proverbios 6, 22; Sabiduría 7, 26 y notas.",
+    "8481": "Éste es el libro etc. Se refiere a la Ley. Y, especialmente, a la Sabiduría, de la cual trata el capítulo 3. Notable texto que es un ardiente llamado a que estudien la divina Escritura cuantos aspiran a ser sabios. Véase Eclesiástico 39, 1 y nota.",
+    "8482": "A este elogio de la Ley de Dios podrían añadirse otros muchos pasajes semejantes, p. ej. Salmo 118, 105, por lo cual el IV Concilio de Constantinopla dispone que el Santo Evangelio que nos trae estas luces, debe venerarse lo mismo que la Cruz y la Imagen de Cristo. “Siempre ve claro en su camino, vaya por donde quiera, el que tiene por antorcha la Ley de Dios” (San Ambrosio).",
+    "8483": "¡Saber lo que agrada a Dios! Sobre esta altísima bienaventuranza véase Eclesiástico 1, 34; 2, 19; 4, 15 y notas.",
+    "8484": "Dios distingue entre los malos hijos y su Jerusalén que sigue siendo su amada. Así también la Iglesia subsistirá santa aunque muchos prevariquen y renieguen de ella.",
+    "8485": "Alusión a los babilonios que hablaban el idioma arameo (caldeo).",
+    "8486": "El Santo: sinónimo de Dios. Aquí puede referirse también al Mesías; pues algunos de los versículos siguientes suenan como vaticinios mesiánicos (versículos 24 y 29). Me ha consolado: En todo este capítulo prevalece la esperanza sobre el miedo, y predomina la confianza en el auxilio divino. Jerusalén espera en el Señor, el Señor será su Libertador y protector; no será confundida (Salmo 24, 20; 25, 1; 30, 25; 55, 5; 60, 4, etc.). La esperanza la hace sufrir con paciencia todas las humillaciones y la conforta en todas las aflicciones. “Sólo la esperanza, Señor, obtiene misericordia ante Ti, dice San Bernardo, y es sólo en el vaso de la esperanza en que pones el bálsamo de tu misericordia” (Sermón III, sobre la Anunciación). Cf. Jeremías 17, 17 y nota.",
+    "8487": "Esta profecía se refiere en primer lugar al regreso del cautiverio; en segundo, a la conversión definitiva del pueblo judío. Véase Deuteronomio 4, 30 y nota. San Juan contiene igual profecía (19, 37), transcribiendo la de Zacarías 12, 10. Cf. Apocalipsis 1, 7.",
+    "8488": "El nombre: El nombre de Jerusalén (Urusalim en la forma más antigua) significa “Ciudad de Paz”. Dios dará a este nombre su pleno sentido, de modo que Jerusalén tiene sobrado motivo para consolarse (véase Salmo 121 y notas).",
+    "8489": "Véase Isaías 13, 21; 34, 14; Jeremías 50, 39.",
+    "8490": "Reunidos por la palabra del Santo: “Esto en sentido alegórico se cumplió, cuando de todas partes del mundo concurrieron las naciones a abrazar la fe de Cristo e incorporarse en el seno saludable de su Iglesia” (Scío).",
+    "8491": "1 ss. Este anuncio de bellísimo lirismo recuerda las profecías de Tobías 13, 11-23; Isaías 60, 1 ss.",
+    "8492": "La paz es el fruto de la justicia, como lo expresa Isaías (32, 17). Sobre el sentido de este concepto véase Salmo 4, 6, donde el salmista habla de los sacrificios de justicia, o sea, de obediencia a la Ley, superiores a los de iniciativa propia. Gloria de la piedad: la gloria que debe ser fruto de la piedad.",
+    "8493": "Las rocas eternas: “Eterno es un epíteto poético que recuerda que estos montes existen desde los tiempos más remotos, desde la creación. Cf. Génesis 49, 26; Deuteronomio 33, 15, etc.” (Fillion). Véase Salmo 67, 16 y nota.",
+    "8494": "Véase nota 4. “Las palabras del profeta rebasando el hecho histórico del retorno a la patria, anuncian la gloria esplendorosa de la edad mesiánica” (Bover pantera).",
+    "8495": "Como prevención contra el contagio de la idolatría, al cual tan propenso estaba Israel. Dios formula en este capítulo el más formidable sarcasmo contra la adoración de las estatuas paganas. Si bien la Iglesia permite y legitima el culto de las imágenes, la lectura de este capítulo significa una elocuente lección para que conservemos la espiritualidad de ese culto, según las palabras de Jesús que nos revelan el deseo del Padre de ser adorado en espíritu y verdad (Juan 4, 23».). Véase Éxodo 20, .4 y nota; Deuteronomio 16, 22; Salmo 105, 19; 113 b, 4; Sabiduría 13, 11 ss. y notas. No han de confundirse con esas imágenes las de la Cruz y del divino Crucificado; pues el mismo Jesús enseñó que este instrumento de nuestra redención sería como la Serpiente de bronce levantada por Moisés para que su vista curase las mordeduras de la Serpiente, en este caso figura del Tentador (Juan 3, 14; Números 21, 9).",
+    "8496": "Siete generaciones: El destierro se extenderá por espacio de 70 años, según Jeremías 29, 10. El profeta quiere aquí seguramente expresar la misma idea. “En el Oriente es común computar la generación en diez años, por ser ésta la edad núbil” (Jünemann).",
+    "8497": "No olvidemos esta jaculatoria enseñada por el mismo Dios, hoy que tanto se alaba a los hombres. Véase Salmo 148, 13 y nota.",
+    "8498": "Dios toma aquí la palabra para confirmar lo que iba diciendo al profeta. Mi Ángel: Véase Éxodo 23, 20s.; 32, 34; 33, 2.",
+    "8499": "Véase a este respecto el episodio de los sacerdotes de Bel (Daniel 14). También en Israel había malos manejos de los fondos del Templo, por lo cual el rey Joás quitó a los sacerdotes la administración de esos dineros y la puso en manos de otros (IV Reyes 12, 1-16), lo cual tuvo que repetir el rey Josías, uno de los dos únicos que la Biblia elogia como santos después de David (Eclesiástico 49, 1 ss.). Véase IV Reyes 22, 3 ss.",
+    "8500": "Se burla aquí el profeta de los ídolos cubiertos de alhajas y exvotos que tientan a los ladrones.",
+    "8501": "Las sierpes. No las serpientes en sentido propio, sino los reptiles e insectos en general, probablemente la carcoma que destruye poco a poco el interior de las estatuas de madera.",
+    "8502": "Véase como ejemplos I Reyes 5, 3 ss.; Daniel 14, 2 ss. Para entender el lenguaje de este capítulo hay que tener presente que es una sátira. “Como es de estilo en la sátira, el autor acentúa los rasgos ridículos, atribuyendo a los gentiles el sentir común de la gente ruda, y en lo que tal vez incurrían los mismos hebreos cuando se dejaban arrastrar a la idolatría” (Nácar-Colunga). Para el profeta se trataba de dar a sus compatriotas una lección popular y fácilmente comprensible sobre el primer mandamiento del Decálogo. “No te fabricarás escultura ni imagen alguna de lo que existe arriba en el cielo, o abajo en la tierra, o por bajo de la tierra en las aguas. No te postrarás ante ellas ni les darás culto” (Éxodo 20, 4 s.).",
+    "8503": "Ya desde el Antiguo Testamento vemos que Dios asocia la idea de los pobres con la del culto, a fin de que ellos sean beneficiarios de las limosnas dadas a los templos. Véase II Macabeos 3, 40 y nota, y la costumbre primitiva cristiana de repartir las ofrendas del altar entre el sacerdote, los pobres y las necesidades del culto. La misma idea, auténticamente cristiana, se expresa en la conducta de San Agustín, San Ambrosio y otros santos obispos que en tiempos de carestía vendían los vasos sagrados de la Iglesia para ayudar a los pobres.",
+    "8504": "Costumbres de luto, que estaban prohibidas a los sacerdotes israelitas (Levítico 19, 27 s.; 21, 5; Deuteronomio 14, 1).",
+    "8505": "De aquí el antiguo dicho que se ha popularizado: Ni quito ni pongo rey. Cf. v. 52.",
+    "8506": "Desprecian a sus dioses pidiéndoles favores que saben que ésos no pueden otorgar. Es decir, que semejante oración, falta de fe, es un escarnio como el que Jesús señala en aquellos que alaban ruidosamente a Dios con los labios, mientras su corazón está lejos de Él (Mateo 15, 8; Isaías 29, 13).",
+    "8507": "Se refiere a la prostitución cultual de las mujeres babilónicas.",
+    "8508": "La impía frase de Voltaire de que no es Dios quien ha hecho al hombre sino el hombre quien se inventó un Dios, tiene aquí una aplicación literal en la segunda parte del versículo. También San Agustín dice que es un falso Cristo aquel que nos forjamos en nuestra mente cuando no conocemos su verdadera fisonomía revelada en el Evangelio.",
+    "8509": "Notable observación en la boca de Dios. Él es también el autor del orden temporal, y los objetos materiales pueden honrarlo, lo mismo que nuestras ocupaciones cotidianas, siempre que todo lo hagamos para su gloria (Colosenses 3, 17).",
+    "8510": "Para sernos provechosas; es decir, hasta las cosas inanimadas son provechosas a los hombres, porque obedecen a Dios que las ha creado para ese fin. Sólo los ídolos son inútiles, son la basura del mundo.",
+    "8511": "Todo esto concuerda con lo expresado en Sabiduría 13, 6, según lo cual es menos reprensible adorar a los astros de Dios que a la obra de nuestras manos. Véase allí la nota."
+  }
+}

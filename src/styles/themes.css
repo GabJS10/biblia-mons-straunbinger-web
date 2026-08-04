@@ -1,0 +1,42 @@
+/*
+ * Sistema de temas — tres modos: claro, oscuro y lectura.
+ * El tema activo se controla con el atributo data-theme en <html>.
+ * El Layout aplica el tema desde localStorage antes del primer render
+ * (ver el script inline en Layout.astro) para evitar el flash of wrong theme.
+ *
+ * Variables por tema:
+ *   --bg              fondo de la página
+ *   --text            texto principal (cuerpo bíblico)
+ *   --text-secondary  texto secundario (metadatos, subtítulos)
+ *   --accent          acento: links y números de versículo
+ *   --note-icon       color de los íconos de nota
+ */
+
+/* Tema claro (por defecto). */
+:root,
+[data-theme='light'] {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --text-secondary: #5c5c5c;
+  --accent: #8a5a2b;
+  --note-icon: #b07d4c;
+}
+
+/* Tema oscuro. */
+[data-theme='dark'] {
+  --bg: #12100e;
+  --text: #e8e3da;
+  --text-secondary: #a49b8d;
+  --accent: #d9a066;
+  --note-icon: #c58f52;
+}
+
+/* Tema lectura — paleta cálida sepia/papel envejecido, bajo contraste,
+   pensada para sesiones de lectura prolongada sin cansar la vista. */
+[data-theme='reading'] {
+  --bg: #f4ecd8;
+  --text: #3b3222;
+  --text-secondary: #6f6244;
+  --accent: #8a5a2b;
+  --note-icon: #9c6b38;
+}

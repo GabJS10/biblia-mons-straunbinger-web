@@ -1,11 +1,112 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import BookPickerModal from "../components/BookPickerModal.astro";
+import type { BookItem } from "../components/BookPickerModal.astro";
+import { bookOrder } from "../data/bookOrder";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+// Cruce en build time: bookOrder (orden canónico) × colección `books` (nombre y
+// nº de capítulos) × colección `intros` (qué libros tienen introducción).
+const booksCol = await getCollection("books");
+const intros = await getCollection("intros");
+
+const byId = new Map(booksCol.map((b) => [b.id, b]));
+const introSlugs = new Set(
+  intros.map((i) => i.data.book).filter((b): b is string => Boolean(b)),
+);
+
+const books: BookItem[] = bookOrder.map((bo) => {
+  const entry = byId.get(bo.slug);
+  if (!entry) {
+    // Si un slug de bookOrder no tiene su JSON, es un bug (rompe el build).
+    throw new Error(`bookOrder: no existe el libro "${bo.slug}" en la colección books`);
+  }
+  return {
+    slug: bo.slug,
+    name: entry.data.book,
+    testament: bo.testament,
+    chapters: entry.data.chapters.length,
+    hasIntro: introSlugs.has(bo.slug),
+  };
+});
 ---
 
 <Layout>
-	<Welcome />
+  <main class="home">
+    <h1>Biblia Straubinger</h1>
+    <p class="lead">
+      Un espacio para leer la Biblia según la traducción del Mons. Juan
+      Straubinger, con sus comentarios y notas originales, pensado para la
+      lectura diaria.
+    </p>
+
+    <div class="actions">
+      <button type="button" class="btn-primary" data-open-picker>Elegir libro</button>
+      <a class="link-secondary" href="/prologo/">Prólogo</a>
+    </div>
+  </main>
+
+  <BookPickerModal books={books} />
 </Layout>
+
+<style>
+  .home {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 5rem 1.5rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: clamp(2rem, 6vw, 3rem);
+    margin: 0 0 1rem;
+    color: var(--text);
+  }
+
+  .lead {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    margin: 0 auto 2.5rem;
+    max-width: 34rem;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .btn-primary {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--bg);
+    background: var(--accent);
+    border: none;
+    border-radius: 999px;
+    padding: 0.85rem 2.5rem;
+    cursor: pointer;
+    transition: transform 0.05s ease, opacity 0.2s ease;
+  }
+  .btn-primary:hover {
+    opacity: 0.9;
+  }
+  .btn-primary:active {
+    transform: scale(0.98);
+  }
+
+  .link-secondary {
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+  }
+  .link-secondary:hover {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+</style>

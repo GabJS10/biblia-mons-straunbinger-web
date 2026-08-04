@@ -1,0 +1,1108 @@
+{
+  "book": "Cantar de los Cantares",
+  "slug": "cantar-de-los-cantares",
+  "source": "https://bibliastraubinger.com/cantar-de-los-cantares/",
+  "chapters": [
+    {
+      "chapter": 1,
+      "sections": [
+        {
+          "title": "Esposa",
+          "startVerse": 1
+        },
+        {
+          "title": "Coro",
+          "startVerse": 3
+        },
+        {
+          "title": "Esposa",
+          "startVerse": 4
+        },
+        {
+          "title": "Esposo o Coro",
+          "startVerse": 7
+        },
+        {
+          "title": "Esposo",
+          "startVerse": 8
+        },
+        {
+          "title": "Esposa",
+          "startVerse": 11
+        },
+        {
+          "title": "Esposo",
+          "startVerse": 14
+        },
+        {
+          "title": "Esposa",
+          "startVerse": 15
+        },
+        {
+          "title": "Esposo",
+          "startVerse": 16
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "¡Béseme él con los besos de su boca! porque tus amores son mejores que el vino.",
+          "footnoteRefs": [
+            6198
+          ]
+        },
+        {
+          "number": 2,
+          "text": "Suave es el olor de tus ungüentos; es tu nombre ungüento derramado; por eso te aman las doncellas.",
+          "footnoteRefs": [
+            6199
+          ]
+        },
+        {
+          "number": 3,
+          "text": "Atráeme en pos de ti. ¡Corramos! Me introdujo el Rey en sus cámaras. Nos gozaremos, nos alegraremos en ti. Celebraremos tus amores más que el vino. Con razón te aman.",
+          "footnoteRefs": [
+            6200
+          ]
+        },
+        {
+          "number": 4,
+          "text": "Morena soy, pero hermosa, oh hijas de Jerusalén, como las tiendas de Cedar, como los pabellones de Salomón.",
+          "footnoteRefs": [
+            6201
+          ]
+        },
+        {
+          "number": 5,
+          "text": "No reparéis en que soy morena; es que me ha quemado el sol. Los hijos de mi madre se airaron contra mí; me pusieron a guardar las viñas; pero mi viña, la mía, no he guardado.",
+          "footnoteRefs": [
+            6202
+          ]
+        },
+        {
+          "number": 6,
+          "text": "Dime, oh tú a quien ama el alma mía, dónde pastoreas, dónde haces sestear las ovejas al mediodía, para que no ande yo vagando alrededor de los rebaños de tus compañeros.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "Si no lo sabes, oh hermosa entre las mujeres, sal siguiendo las huellas del rebaño, y apacienta tus cabritos junto a las cabañas de los pastores.",
+          "footnoteRefs": [
+            6203
+          ]
+        },
+        {
+          "number": 8,
+          "text": "A mi yegua, en las carrozas del Faraón, te comparo, oh amiga mía.",
+          "footnoteRefs": [
+            6204
+          ]
+        },
+        {
+          "number": 9,
+          "text": "Hermosas son tus mejillas entre los pendientes, cuello entre los collares.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 10,
+          "text": "Collares de oro haremos para ti incrustados de plata.",
+          "footnoteRefs": [
+            6205
+          ]
+        },
+        {
+          "number": 11,
+          "text": "Estando el rey en su diván, mi nardo exhala su fragancia.",
+          "footnoteRefs": [
+            6206
+          ]
+        },
+        {
+          "number": 12,
+          "text": "Un manojito de mirra es para mí el amado mío: reposa entre mis pechos.",
+          "footnoteRefs": [
+            6207
+          ]
+        },
+        {
+          "number": 13,
+          "text": "Racimo de cipro es mi amado para mí en las viñas de Engadí.",
+          "footnoteRefs": [
+            6208
+          ]
+        },
+        {
+          "number": 14,
+          "text": "Hermosa eres, amiga mía, eres hermosa; tus ojos son palomas.",
+          "footnoteRefs": [
+            6209
+          ]
+        },
+        {
+          "number": 15,
+          "text": "Hermoso eres, amado mío, ¡y cuan delicioso! y nuestro lecho es de flores.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 16,
+          "text": "De cedro son las vigas de nuestra casa, de ciprés nuestros artesonados.",
+          "footnoteRefs": []
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "sections": [
+        {
+          "title": "Esposa",
+          "startVerse": 1
+        },
+        {
+          "title": "Esposo",
+          "startVerse": 2
+        },
+        {
+          "title": "Esposa",
+          "startVerse": 3
+        },
+        {
+          "title": "Esposo",
+          "startVerse": 7
+        },
+        {
+          "title": "Esposa",
+          "startVerse": 8
+        },
+        {
+          "title": "Esposo",
+          "startVerse": 11
+        },
+        {
+          "title": "Esposa",
+          "startVerse": 15
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "Yo soy el lirio de Sarón, la azucena de los valles.",
+          "footnoteRefs": [
+            6210
+          ]
+        },
+        {
+          "number": 2,
+          "text": "Como una azucena entre los espinos, así, es -mi amiga entre las doncellas.",
+          "footnoteRefs": [
+            6211
+          ]
+        },
+        {
+          "number": 3,
+          "text": "Como el manzano entre los árboles silvestres, tal es mi amado entre los mancebos. A su sombra anhelo sentarme, y su fruto es dulce a mi paladar.",
+          "footnoteRefs": [
+            6212
+          ]
+        },
+        {
+          "number": 4,
+          "text": "Me introdujo en la celda del vino, y su bandera sobre mí es el amor.",
+          "footnoteRefs": [
+            6213
+          ]
+        },
+        {
+          "number": 5,
+          "text": "¡Confortadme con pasas! ¡Restauradme con manzanas! porque languidezco de amor.",
+          "footnoteRefs": [
+            6214
+          ]
+        },
+        {
+          "number": 6,
+          "text": "Su izquierda está debajo de mi cabeza, y su derecha me abraza.",
+          "footnoteRefs": [
+            6215
+          ]
+        },
+        {
+          "number": 7,
+          "text": "Os conjuro, oh hijas de Jerusalén, por las gacelas y las ciervas del campo, que no despertéis ni inquietéis a la amada, hasta que ella quiera.",
+          "footnoteRefs": [
+            6216
+          ]
+        },
+        {
+          "number": 8,
+          "text": "¡La voz de mi amado! Helo aquí que viene, saltando por los montes, brincando sobre los collados.",
+          "footnoteRefs": [
+            6217
+          ]
+        },
+        {
+          "number": 9,
+          "text": "Es mí amado como el gamo, o como el cervatillo. Ve dio ya detrás de nuestra pared, mirando por las ventanas, atisbando por las celosías.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 10,
+          "text": "Habla mi amado, y me dice: Levántate, amiga mía; hermosa mía, ven.",
+          "footnoteRefs": [
+            6218
+          ]
+        },
+        {
+          "number": 11,
+          "text": "Porque, mira, ha pasado ya el invierno, la lluvia ha cesado y se ha ido;",
+          "footnoteRefs": [
+            6219
+          ]
+        },
+        {
+          "number": 12,
+          "text": "aparecen ya las flores en la tierra; llega el tiempo de la poda, y se oye en nuestra tierra la voz de la tórtola.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 13,
+          "text": "Ya echa sus brotes la higuera, esparcen su fragancia las viñas en flor. ¡Levántate, amiga mía; hermosa mía, ven!",
+          "footnoteRefs": [
+            6220
+          ]
+        },
+        {
+          "number": 14,
+          "text": "Paloma mía, que anidas en las grietas de la peña, en los escondrijos de los muros escarpados, hazme ver tu rostro, déjame oír tu voz; porque tu voz es dulce, y tu rostro es encantador.",
+          "footnoteRefs": [
+            6221
+          ]
+        },
+        {
+          "number": 15,
+          "text": "Cazadnos las raposas, las raposillas que devastan las viñas, porque nuestras viñas están en flor.",
+          "footnoteRefs": [
+            6222
+          ]
+        },
+        {
+          "number": 16,
+          "text": "Mi amado es mío, y yo soy suya; él apacienta entre azucenas.",
+          "footnoteRefs": [
+            6223
+          ]
+        },
+        {
+          "number": 17,
+          "text": "Mientras sopla la brisa, y se alargan las sombras, ¡vuélvete, amado mío! ¡Aseméjate al gamo, o al cervatillo, sobre los montes escarpados!",
+          "footnoteRefs": [
+            6224
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "sections": [
+        {
+          "title": "Esposa",
+          "startVerse": 1
+        },
+        {
+          "title": "Esposo (¿o Pastor?)",
+          "startVerse": 5
+        },
+        {
+          "title": "Coro",
+          "startVerse": 6
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "En mi lecho, de noche, busqué al que ama mi alma; le busqué y no le hallé.",
+          "footnoteRefs": [
+            6225
+          ]
+        },
+        {
+          "number": 2,
+          "text": "Me levantaré, pues, y giraré por la ciudad, por las calles y las plazas; buscaré al que ama mi alma. Le busqué y no le hallé.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 3,
+          "text": "Me encontraron los guardias que hacen la ronda por la ciudad: “¿Habéis visto al que ama mi alma?”",
+          "footnoteRefs": [
+            6226
+          ]
+        },
+        {
+          "number": 4,
+          "text": "Apenas me había apartado de ellos, encontré al que ama mi alma. Lo así y no lo soltaré hasta introducirlo en la casa de mi madre, y en la cámara de la que me dio el ser.",
+          "footnoteRefs": [
+            6227
+          ]
+        },
+        {
+          "number": 5,
+          "text": "Os conjuro, oh hijas de Jerusalén, por las gacelas y las ciervas del campo, que no despertéis ni inquietéis a la amada, hasta que ella quiera.",
+          "footnoteRefs": [
+            6228
+          ]
+        },
+        {
+          "number": 6,
+          "text": "¿Qué cosa es esta que sube del desierto, como columna de humo perfumada de mirra e incienso con todos los aromas del mercader?",
+          "footnoteRefs": [
+            6229
+          ]
+        },
+        {
+          "number": 7,
+          "text": "Mirad, es su litera, la de Salomón; sesenta valientes la rodean, de entre los héroes de Israel.",
+          "footnoteRefs": [
+            6230
+          ]
+        },
+        {
+          "number": 8,
+          "text": "Todos ellos manejan la espada, son adiestrados para el combate; todos llevan la espada ceñida, a causa de los peligros de la noche.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 9,
+          "text": "De maderas del Líbano se hizo el rey Salomón un cenáculo.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 10,
+          "text": "Hizo de plata sus columnas, de oro el dosel, de púrpura su asiento; su interior está recamado de amor, por las hijas de Jerusalén.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 11,
+          "text": "Salid, oh hijas de Sión, a contemplar al rey Salomón con la corona que le tejió su madre en el día de sus desposorios, el día del gozo de su corazón.",
+          "footnoteRefs": [
+            6231
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "sections": [
+        {
+          "title": "Esposo",
+          "startVerse": 1
+        },
+        {
+          "title": "Esposa",
+          "startVerse": 6
+        },
+        {
+          "title": "Esposo",
+          "startVerse": 7
+        },
+        {
+          "title": "Esposa",
+          "startVerse": 15
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "¡Qué hermosa eres, amiga mía! ¡Cuán hermosa eres tú! Tus ojos son palomas, detrás de tu velo. Tu cabellera es como un rebaño de cabras, que va por la montaña de Galaad.",
+          "footnoteRefs": [
+            6232
+          ]
+        },
+        {
+          "number": 2,
+          "text": "Son tus dientes como hatos de ovejas esquiladas, que suben del lavadero, todas con crías mellizas, sin que haya entre ellas una estéril.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 3,
+          "text": "Como cinta de púrpura son tus labios, y graciosa es tu boca. Como mitades de granada son tus mejillas, detrás de tu velo.",
+          "footnoteRefs": [
+            6233
+          ]
+        },
+        {
+          "number": 4,
+          "text": "Tu cuello es cual la torre de David, construida para armería, de la que penden mil escudos, todos ellos arneses de valientes.",
+          "footnoteRefs": [
+            6234
+          ]
+        },
+        {
+          "number": 5,
+          "text": "Como dos mellizos de gacela que pacen entre azucenas, son tus dos pechos.",
+          "footnoteRefs": [
+            6235
+          ]
+        },
+        {
+          "number": 6,
+          "text": "Mientras sopla la brisa y se alargan las sombras, me iré al monte de la mirra, y al collado del incienso.",
+          "footnoteRefs": [
+            6236
+          ]
+        },
+        {
+          "number": 7,
+          "text": "Eres toda hermosa, amiga mía, y no hay en ti defecto alguno.",
+          "footnoteRefs": [
+            6237
+          ]
+        },
+        {
+          "number": 8,
+          "text": "¡Ven del Líbano, esposa mía! ¡Ven conmigo del Líbano! ¡Mira de la cima del Amaná, de la cumbre del Senir y del Hermón, de las guaridas de los leones, de las montañas de los leopardos!",
+          "footnoteRefs": [
+            6238
+          ]
+        },
+        {
+          "number": 9,
+          "text": "Me has arrebatado el corazón, hermana mía. esposa. Me has arrebatado el corazón con una de tus miradas, con una perla de tu collar.",
+          "footnoteRefs": [
+            6239
+          ]
+        },
+        {
+          "number": 10,
+          "text": "¡Cuán dulce son tus amores, hermana mía, esposa! ¡Cuánto más dulces son tus caricias que el vino; y la fragancia de tus perfumes que todos los bálsamos!",
+          "footnoteRefs": []
+        },
+        {
+          "number": 11,
+          "text": "Miel destilan tus labios, esposa mía, miel y leche hay debajo de tu lengua; y el perfume de tus vestidos es como el olor del Líbano.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 12,
+          "text": "Un huerto cerrado es mi hermana esposa, manantial cerrado, fuente sellada.",
+          "footnoteRefs": [
+            6240
+          ]
+        },
+        {
+          "number": 13,
+          "text": "Tus renuevos son un vergel de granados, con frutas exquisitas; cipro y nardo;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 14,
+          "text": "nardo y azafrán, canela y cinamomo, con todos los árboles de incienso; mirra y áloes. con todos los aromas selectos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 15,
+          "text": "La fuente del jardín es pozo de aguas vivas, y los arroyos fluyen del Líbano.",
+          "footnoteRefs": [
+            6241
+          ]
+        },
+        {
+          "number": 16,
+          "text": "¡Levántate, oh Aquilón, ven, oh Austro! ¡Qué se esparzan sus aromas! ¡Venga mi amado a su jardín y coma de sus exquisitas frutas!",
+          "footnoteRefs": []
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "sections": [
+        {
+          "title": "Esposo",
+          "startVerse": 1
+        },
+        {
+          "title": "Esposa",
+          "startVerse": 2
+        },
+        {
+          "title": "Esposo Esposa",
+          "startVerse": 3
+        },
+        {
+          "title": "Coro",
+          "startVerse": 9
+        },
+        {
+          "title": "Esposa",
+          "startVerse": 10
+        },
+        {
+          "title": "Coro",
+          "startVerse": 17
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "Vine a mi jardín, hermana mía, esposa; tomé de mi mirra y de mi bálsamo; comí mi panal con mi miel; bebí mi vino y mi leche. ¡Comed, amigos; bebed y embriagaos, mis bien amados!",
+          "footnoteRefs": [
+            6242
+          ]
+        },
+        {
+          "number": 2,
+          "text": "Yo dormía, pero mi corazón estaba despierto. ¡Una voz! Es mi amado que golpea. Ábreme, hermana mía, amiga mía, paloma mía, perfecta mía, pues mi cabeza está llena de rocío, y mis cabellos de las gotas de la noche.",
+          "footnoteRefs": [
+            6243
+          ]
+        },
+        {
+          "number": 3,
+          "text": "Ya me he quitado la túnica; ¿cómo ponérmela de nuevo? Ya me he lavado los pies; ¿cómo ensuciarlos?",
+          "footnoteRefs": [
+            6244
+          ]
+        },
+        {
+          "number": 4,
+          "text": "Mi amado introdujo la mano por el cerrojo, y mis entrañas todas se conmovieron.",
+          "footnoteRefs": [
+            6245
+          ]
+        },
+        {
+          "number": 5,
+          "text": "Me levanté para abrir a mi amado, y mis manos gotearon mirra; de mirra exquisita se impregnaron mis dedos en la manecilla de la cerradura.",
+          "footnoteRefs": [
+            6246
+          ]
+        },
+        {
+          "number": 6,
+          "text": "Abrí a mi amado, pero mi amado, volviéndose, había desaparecido. Mi alma desfalleció al oír su voz. Lo busqué y no lo hallé; lo llamé, mas no me respondió.",
+          "footnoteRefs": [
+            6247
+          ]
+        },
+        {
+          "number": 7,
+          "text": "Me encontraron los guardias que hacen la ronda en la ciudad; me golpearon, me hirieron; y los que custodian las murallas me quitaron el manto.",
+          "footnoteRefs": [
+            6248
+          ]
+        },
+        {
+          "number": 8,
+          "text": "Os conjuro, oh hijas de Jerusalén, si halláis a mi amado, decidle que yo desfallezco de amor.",
+          "footnoteRefs": [
+            6249
+          ]
+        },
+        {
+          "number": 9,
+          "text": "¿Qué es tu amado más que otro amado, oh hermosa entre las mujeres? ¿Qué es tu amado más que los demás amados, para que así nos conjures?",
+          "footnoteRefs": []
+        },
+        {
+          "number": 10,
+          "text": "Mi amado es blanco y rubio, se distingue entre millares.",
+          "footnoteRefs": [
+            6250
+          ]
+        },
+        {
+          "number": 11,
+          "text": "Su cabeza es oro puro; sus rizos, racimos de palma, negros como el cuervo.",
+          "footnoteRefs": [
+            6251
+          ]
+        },
+        {
+          "number": 12,
+          "text": "Sus ojos, palomas junto a los arroyos de agua, bañadas en leche, en pleno reposo.",
+          "footnoteRefs": [
+            6252
+          ]
+        },
+        {
+          "number": 13,
+          "text": "Sus mejillas son eras de balsameras, macizos de perfumadas flores; sus labios son lirios que destilan mirra purísima.",
+          "footnoteRefs": [
+            6253
+          ]
+        },
+        {
+          "number": 14,
+          "text": "Sus manos son barras de oro esmaltadas con piedras de Tarsis; su pecho, una obra de marfil cuajada de zafiros.",
+          "footnoteRefs": [
+            6254
+          ]
+        },
+        {
+          "number": 15,
+          "text": "Sus piernas son columnas de mármol, asentadas en basas de oro puro; su aspecto es como el del Líbano, esbelto como los cedros.",
+          "footnoteRefs": [
+            6255
+          ]
+        },
+        {
+          "number": 16,
+          "text": "Su voz es la dulzura misma, y todo él es amable. Tal es mi amado, tal es mi amigo, oh hijas de Jerusalén.",
+          "footnoteRefs": [
+            6256
+          ]
+        },
+        {
+          "number": 17,
+          "text": "¿Adónde se ha ido tu amado, oh hermosa entre las mujeres? ¿Hacia dónde se ha vuelto tu amado, para que le busquemos contigo?",
+          "footnoteRefs": [
+            6257
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "sections": [
+        {
+          "title": "Esposa",
+          "startVerse": 1
+        },
+        {
+          "title": "Esposo",
+          "startVerse": 3
+        },
+        {
+          "title": "Coro",
+          "startVerse": 9
+        },
+        {
+          "title": "Esposa",
+          "startVerse": 10
+        },
+        {
+          "title": "Coro",
+          "startVerse": 12
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "Mi amado bajó a su jardín, a las eras de bálsamo, para pastorear en los jardines, y juntar azucenas.",
+          "footnoteRefs": [
+            6258
+          ]
+        },
+        {
+          "number": 2,
+          "text": "Yo soy de mi amado; y mi amado es mío, el pastor entre azucenas.",
+          "footnoteRefs": [
+            6259
+          ]
+        },
+        {
+          "number": 3,
+          "text": "Hermosa eres, amiga mía, como Tirsá, amable como Jerusalén, temible como batallones de guerra.",
+          "footnoteRefs": [
+            6260
+          ]
+        },
+        {
+          "number": 4,
+          "text": "Aparta de mí tus ojos, porque ellos me conturban. Es tu cabellera, como una manada de cabras que va por las laderas de Galaad.",
+          "footnoteRefs": [
+            6261
+          ]
+        },
+        {
+          "number": 5,
+          "text": "Tus dientes son como un rebaño de ovejas que suben del lavadero, todas con crías gemelas, y no hay entre ellas una estéril.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 6,
+          "text": "Como mitades de granada son tus mejillas, detrás de tu velo.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "Sesenta son las reinas, ochenta las concubinas, e innumerables las doncellas.",
+          "footnoteRefs": [
+            6262
+          ]
+        },
+        {
+          "number": 8,
+          "text": "Pero una es mi paloma, mi perfecta; única para su madre, la predilecta de aquella que la engendró. Las jóvenes la vieron, y la proclamaron dichosa; la vieron las reinas y concubinas, y la alabaron.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 9,
+          "text": "¿Quién es ésta que avanza como la aurora, hermosa como la luna, pura como el sol, temible como batallones de guerra?",
+          "footnoteRefs": [
+            6263
+          ]
+        },
+        {
+          "number": 10,
+          "text": "He bajado al nogueral, para mirar las flores del valle, para ver si ha brotado la vid, si florecen los granados.",
+          "footnoteRefs": [
+            6264
+          ]
+        },
+        {
+          "number": 11,
+          "text": "No reconozco mi alma; ¡me ha puesto en los carros de Aminadib!",
+          "footnoteRefs": [
+            6265
+          ]
+        },
+        {
+          "number": 12,
+          "text": "¡Vuelve, vuelve, Sulamita! ¡Vuelve, vuelve, para que te miremos!",
+          "footnoteRefs": [
+            6266
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "sections": [
+        {
+          "title": "Esposa",
+          "startVerse": 1
+        },
+        {
+          "title": "Esposo (¿Rey?)",
+          "startVerse": 2
+        },
+        {
+          "title": "Esposo (¿o Pastor?)",
+          "startVerse": 6
+        },
+        {
+          "title": "Esposa",
+          "startVerse": 10
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "¿Por qué miráis a la Sulamita como las danzas de Mahanaim? ¡Qué hermosos son tus pies en las sandalias, hija de príncipe! Los contornos de tus caderas son como joyas, obra de manos de artista.",
+          "footnoteRefs": [
+            6267
+          ]
+        },
+        {
+          "number": 2,
+          "text": "Tu seno es un tazón torneado, en que no falta el vino sazonado. Tu vientre es un montón de trigo rodeado de azucenas.",
+          "footnoteRefs": [
+            6268
+          ]
+        },
+        {
+          "number": 3,
+          "text": "Como dos cervatillos son tus pechos, gemelos de gacela.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 4,
+          "text": "Tu cuello es una torre de marfil, tus ojos como las piscinas de Hesebón, junto a la puerta de Bat-Rabim, tu nariz como la torre del Líbano que mira hacia Damasco.",
+          "footnoteRefs": [
+            6269
+          ]
+        },
+        {
+          "number": 5,
+          "text": "Tu cabeza está asentada como el Carmelo, y tu cabellera es como la púrpura: un rey está preso en sus trenzas.",
+          "footnoteRefs": [
+            6270
+          ]
+        },
+        {
+          "number": 6,
+          "text": "¡Qué hermosa eres y qué encantadora, oh amor, con tus delicias!",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "Ese tu talle parece una palmera, y tus pechos, racimos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 8,
+          "text": "Subiré, dije yo, a la palmera, y me asiré de sus ramas. ¡Séanme tus pechos como racimos de uvas! Tu aliento es como manzanas,",
+          "footnoteRefs": [
+            6271
+          ]
+        },
+        {
+          "number": 9,
+          "text": "y tu boca como vino generoso… que fluye suavemente para mi amado, deslizándose entre mis labios y mis dientes.",
+          "footnoteRefs": [
+            6272
+          ]
+        },
+        {
+          "number": 10,
+          "text": "Yo soy de mi amado y hacia mí tienden sus deseos.",
+          "footnoteRefs": [
+            6273
+          ]
+        },
+        {
+          "number": 11,
+          "text": "¡Ven, amado mío, salgamos al campo, pasemos la noche en las aldeas!",
+          "footnoteRefs": [
+            6274
+          ]
+        },
+        {
+          "number": 12,
+          "text": "Madrugaremos para ir a las viñas; veremos si la vid está en cierne, si se abrieron los brotes, si han florecido los granados. Allí te daré mi amor.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 13,
+          "text": "Ya despiden su fragancia las mandrágoras; junto a nuestras puertas hay toda clase de frutas exquisitas; las nuevas y las pasadas he guardado, amado mío, para ti.",
+          "footnoteRefs": [
+            6275
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "sections": [
+        {
+          "title": "Esposa",
+          "startVerse": 1
+        },
+        {
+          "title": "Esposo",
+          "startVerse": 4
+        },
+        {
+          "title": "Coro",
+          "startVerse": 5
+        },
+        {
+          "title": "Esposo Esposa",
+          "startVerse": 6
+        },
+        {
+          "title": "Coro",
+          "startVerse": 8
+        },
+        {
+          "title": "Esposa (¿O Hermana?)",
+          "startVerse": 10
+        },
+        {
+          "title": "Coro",
+          "startVerse": 11
+        },
+        {
+          "title": "Esposa",
+          "startVerse": 12
+        },
+        {
+          "title": "Esposo",
+          "startVerse": 13
+        },
+        {
+          "title": "Esposa",
+          "startVerse": 14
+        }
+      ],
+      "verses": [
+        {
+          "number": 1,
+          "text": "¡Quién me diera que fueses hermano mío, amamantado a los pechos de mi madre! Al encontrarte afuera te besaría, y no me despreciarían.",
+          "footnoteRefs": [
+            6276
+          ]
+        },
+        {
+          "number": 2,
+          "text": "Yo te llamaría y te introduciría en la casa de mi madre; tú me enseñarías, y yo te daría a beber vino aromático del zumo de granados.",
+          "footnoteRefs": [
+            6277
+          ]
+        },
+        {
+          "number": 3,
+          "text": "Su izquierda debajo de mi cabeza, y su derecha me abraza.",
+          "footnoteRefs": [
+            6278
+          ]
+        },
+        {
+          "number": 4,
+          "text": "Os conjuro, hijas de Jerusalén, que no despertéis ni inquietéis a la amada, hasta que ella quiera.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 5,
+          "text": "¿Quién es ésta que sube del desierto, apoyada sobre su amado? Yo te suscitaré debajo del manzano, allí donde murió tu madre. donde pereció la que te dio a luz.",
+          "footnoteRefs": [
+            6279
+          ]
+        },
+        {
+          "number": 6,
+          "text": "¡Ponme cual sello sobre tu corazón, cual marca sobre tu brazo! Porque es fuerte el amor como la muerte, e inflexibles los celos como el infierno. Sus flechas son flechas de fuego, llamas del mismo Yahvé.",
+          "footnoteRefs": [
+            6280
+          ]
+        },
+        {
+          "number": 7,
+          "text": "No valen muchas aguas para apagar el amor, ni los ríos pueden ahogarlo. Si un hombre diera todos los bienes de su casa por el amor, sería sin embargo sumamente despreciado.",
+          "footnoteRefs": [
+            6281
+          ]
+        },
+        {
+          "number": 8,
+          "text": "Tenemos una hermana pequeña; no tiene pechos todavía. ¿Qué haremos con nuestra hermana en el día en que se trate de su boda?",
+          "footnoteRefs": [
+            6282
+          ]
+        },
+        {
+          "number": 9,
+          "text": "Si es muro, levantaremos sobre ella almenas de plata; si es puerta, le formaremos un tablado de cedro.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 10,
+          "text": "Muro soy, y mis pechos son como torres. Así he venido a ser a los ojos de él como quien ha hallado la paz.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 11,
+          "text": "Una viña tenía Salomón en Baal-Hamón, entregó la viña a los guardas; cada uno había de darle por sus frutos mil monedas de plata.",
+          "footnoteRefs": [
+            6283
+          ]
+        },
+        {
+          "number": 12,
+          "text": "Tengo delante mi viña, la mía. Para ti los mil (siclos), oh Salomón, y doscientos para los guardas de su fruto.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 13,
+          "text": "Oh tú que habitas en los jardines, los amigos desean oír tu voz. ¡Házmela oír!",
+          "footnoteRefs": [
+            6284
+          ]
+        },
+        {
+          "number": 14,
+          "text": "Corre, amado mío, y sé como la gacela y el cervatillo sobre los montes de los bálsamos.",
+          "footnoteRefs": [
+            6285
+          ]
+        }
+      ]
+    }
+  ],
+  "divisions": [
+    {
+      "title": "Introducción",
+      "startChapter": 1,
+      "startVerse": 1
+    }
+  ],
+  "footnotes": {
+    "6198": "Béseme (él, en tercera persona) y luego (en segunda persona). Tus amores (San Jerónimo traduce: tus pechos). Según la interpretación de Orígenes, Israel, la “Iglesia de la Antigua Alianza”, suspiraría aquí por el Mesías, anhelando que el beso de la Palabra divina, que había recibido de la boca de los profetas, le sea dado ya directamente por la misma boca de Él. Y así San Pablo empieza diciendo a los Hebreos en su Epístola (1, 1 ss.): “Dios que habló a nuestros padres por los profetas, nos ha hablado últimamente por medio de su Hijo. Él es el resplandor de su gloria y la imagen de su substancia.” Ahora bien, es frecuente en la Escritura un paralelismo entre Israel y la Iglesia, como lo hay entre los anuncios del Antiguo Testamento y los del Nuevo, y como los profetas, y el mismo Jesús, señalan paralelamente los acontecimientos de la destrucción de Jerusalén y los del fin de los tiempos (cf. p. ej. Mateo 24). De ahí que, como expresa Fillion, es sobre todo la Iglesia cristiana quien exhala este suspiro, expresando aquí el mismo anhelo con que termina el Apocalipsis: “Y el Espíritu y la Esposa dicen: ¡Ven!… ¡Así sea! ¡Ven oh Señor Jesús!” (Apocalipsis 22, 17 y 20). También se aplica este concepto al alma cristiana, y el Apocalipsis extiende a cada una la misma invitación de la Iglesia que antes recordamos: “Diga también quien escucha: ¡Ven!” (Apocalipsis 22, 17). A este respecto dice el Catecismo Romano: “Toda la Sagrada Escritura está llena de testimonios que a cada paso se ofrecerán a los párrocos, no solamente para confirmar esta Venida, sino aún también para ponerla bien patente a la consideración de los fieles; para que así, como aquel día del Señor en que tomó carne humana, fue muy deseado de todos los justos de la Ley antigua desde el principio del mundo, porque en aquel misterio tenían puesta toda la esperanza de su libertad, así también, después de la muerte del Hijo de Dios y su Ascensión al cielo, deseemos nosotros con vehementísimo anhelo el otro día del Señor esperando el premio eterno, y «la gloriosa venida del gran Dios»” (Tito 2, 13).",
+    "6199": "Muy difícil es saber, en este primer pasaje, quién habla en cada verso, y con quién habla. La enseñanza que de todas maneras se extrae de aquí es la contenida en la idea del ungüento, como en 4. 10 y 15. El ungüento, muy usado en oriente como perfume, y conservado en la liturgia sacramental cristiana, es el gran símbolo de la divina gracia, don gratuito por excelencia. Nada podemos tener, dice el Bautista, que no nos sea dado del cielo (Juan 3, 27). Aun cuando se trata de María Inmaculada, vemos que el Ángel no le elogia nada propio de Ella, sino que la llama llena de la gracia, y le repite que ha hallado gracia a los ojos de Dios (Lucas 1, 28-30). Y Ella, no obstante reconocer que ha sido objeto de grandeza (ibíd. 49), se llama esclava y reconoce ser nada (ibíd. 38 y 48), y sólo explica su elección por esa característica contradictoria, que algunos santos solían llamar «el mal gusto de Dios», según el cual Él se complace en escoger a los más vacíos, levantando a los bajos y rebajando a los altos. Tal es el contenido del Magníficat de María y tal es lo que aquí aprendemos (cf. 4, 15 y nota). La Iglesia tiene a este respecto definiciones capitales para dejar bien sentada la doctrina paulina según la cual aún el amar a Dios es un don de Dios. Él, que nos ama sin ser amado (de nosotros), nos dio el don de amarlo. No pudiendo agradar, fuimos amados para ser hechos agradables. Véase Romanos 5, 5; Denz. 198 s.",
+    "6200": "Me introdujo el rey: Otros: ¡introdúceme, oh rey! Según esto anota Nácar-Colunga: “El coro de doncellas que forma, en las solemnidades nupciales, la corte de la Esposa, que aquí representa a las naciones, pide tener parte en el amor de la Esposa por el Esposo, como en Isaías 2, 2 ss.; Zacarías 8, 20 ss. y expresa sus deseos de tener parte en las bendiciones mesiánicas.” Atráeme: “Amad, dice San Agustín, y seréis atraídos”, y añade el -mismo Doctor: “El amor es una palanca tan fuerte, que levanta los pesos más enormes, porque el amor es el contrapeso de todos los pesos” (De Civitate Dei, II, 28). Fillion, interpretando el atráeme como dirigido por la Esposa al Esposo “cuyo nombre es ungüento derramado” (versículo 2), reitera aquí la doctrina que hemos expuesto en la nota anterior, y expresa: “Yo los atraeré con cuerdas de amor, dirá Jehovah al pueblo israelita (Oseas 11, 4; cf. Jeremías 2, 2). Nadie puede venir a Mí si el Padre que me ha enviado no lo atrae, exclamará también Jesús (Juan 6, 44; 12, 32). En esta unión asombrosa es menester que Dios haga, digámoslo así, los primeros pasos.” De aquí que, entre los muchos modos de encarar este difícil comienzo del Cántico, algunos hayan considerado que en el segundo hemistiquio del versículo 2 habla el Esposo que, apenas la Amada le abre los brazos, se precipita hacia Ella elogiando sus amores más que el vino, porque “sus delicias son estar con los hijos de los hombres” (Proverbios 8, 31). Y ese estado de deseo, en la Esposa, no es sino un don del mismo Espíritu Santo ya que nadie puede decir siquiera “Jesús es el Señor” sin una moción previa del divino Espíritu (1 Corintios 12, 3). “¡Atráeme!, esta sola palabra basta”, dice Santa Teresita (Historia de un alma, capítulo X). “Ya sea pues que lo apliquemos a Israel, o a la Iglesia escogida, o al alma fiel, el fruto de este estudio será siempre el mismo: descubrir y alabar las excelencias y delicadezas del Corazón del Esposo. Para conocer un corazón hay que verlo en lides de amor, así como el brazo se prueba en el combate”. Con razón te aman: la Vulgata: los rectos te aman. San Gregorio Niseno y Teodoreto refieren esto a la Esposa.",
+    "6201": "Cedar: desierto que se extiende al este de Transjordania. En vez de Salomón leen algunos Salma. Cedar representa las tribus nómades cuyas tiendas se hacían de pelo de cabra negra. Tienen su belleza esas tiendas negras y se mueven como los rebaños de cabras, que recorren el desierto al compás de las estaciones, buscando un poco de pasto.",
+    "6202": "Según la alegoría yahvística, la Esposa bronceada por el sol, es esa escogida nación israelita que, no obstante su cautiverio, su idolatría contagiada por los paganos, y su infidelidad, conserva siempre una grande y divina vocación, porque “los dones y la vocación de Dios son irrevocables” (Romanos 11, 29). El sentido de la viña es aquí harto misterioso, y los comentadores, nada concordes, no alcanzan a explicarlo. De todos modos, es cosa cierta que Israel no cultivó la viña que Dios le encomendara (cf. Mateo 21, 33; Marcos 12, 1 ss.; Lucas 20, 9 ss.). Véase, con su nota, 8, 11 y 12, donde la Esposa recupera su viña, en lo cual se anuncia quizá la futura conversión de Israel profetizada por San Pablo. Cf. Romanos 11.",
+    "6203": "Como expresa Vaccari, la respuesta del Esposo puede sintetizarse diciendo: “hazte pastora”. Cf. 7, 12 y nota. En efecto, Dios dice en sus promesas a Israel: “Así la atraeré y la llevaré al desierto y le hablaré al corazón; y desde allí le devolveré sus viñas y el valle de Acor como puerta de esperanza; y allí cantará como en los días de su juventud, como en los días en que subió de la tierra de Egipto. Entonces, dice Yahvé, me llamará Esposo mío” (Oseas 2, 14 ss.). Cf. 8, 5 y nota.",
+    "6204": "Según Vaccari es ésta la voz de la tentación, en que el monarca rival quiere atraer a la Esposa con promesas de ricos adornos, contrastando con la precedente invitación del pastor. Fillion admite también estos contrastes, pues se trata del Mesías-Rey y del Buen Pastor por excelencia.",
+    "6205": "Llama la atención que el oro aparezca como adornado por la plata, que es inferior a él. En la interpretación espiritual ven aquí algunos una hermosa figura de la virtud cristiana, que es toda interior y al revés de la ostentación mundana. Véase Mateo 6, 1-6 y 16-18.",
+    "6206": "En su diván: es decir, en su triclinio o lecho en que se recostaban durante los convites. Esta escena recuerda naturalmente la cena de Betania en que María ungió los pies de Jesús con precioso ungüento de nardo, cuya fragancia llenó toda la casa (Juan 12, 1-3). Su sentido sería sin embargo muy otro si la Esposa, mientras el rey la tienta con su festín, exhala, como fragancia de nardo, los acentos de su fidelidad para con el pastor, cuyo amor elogia (versículo 13 s.) con delicados símiles agrestes. Según los santos Padres alude este versículo a la Encarnación del Verbo, al cual la Iglesia alegró con el nardo de sus virtudes.",
+    "6207": "La mirra era una resina olorosa que no sólo servía para embalsamar cadáveres sino también para llevarla sobre el pecho en bolsitas como perfume. Es la fragancia que exhalan los vestidos del Esposo en Salmo 44, 9. Cf. 4, 6 y nota.",
+    "6208": "El cipro o alheña de los árabes, es la lawsonia alba, de flores pequeñas y blancas en racimo, muy perfumadas como reseda, y cuyas hojas son también usadas en la perfumería de los orientales. El oasis de Engadí, situado a la orilla occidental del Mar Muerto, tenía fama por sus viñas, sus palmeras y sus plantas aromáticas. Hoy toda aquella región es un desierto.",
+    "6209": "Empieza un exquisito intercambio de requiebros entre los enamorados, que inicia el Esposo y que, como hace notar Fillion, son los que la Biblia suele emplear para referirse a los amores del divino Esposo. ¿Es éste aquí el Pastor, como lo quiere Vaccari? Así podría deducirse por el tono bucólico del idilio. No debemos sin embargo olvidar que en el Salmo 44, que es otro epitalamio ofrecido por la Biblia como paralelo al presente, se trata expresamente del Mesías-Rey, y en tal carácter se enamora Él de la Esposa (cf. Salmo 44. 11 ss. y notas). Ambas cosas pueden sin duda conciliarse distinguiendo entre los misterios pasados y los futuros: “Nova et vetera”. Esto mismo explica por qué el Amado prodiga tales elogios a la Esposa en su estado actual, no obstante lo que veremos en el capítulo 5, 3. Es éste uno de los misterios mil veces admirables del corazón generoso de Dios que, sabiendo lo que hemos de ser en lo futuro, “nos ama. no tal cual somos por nuestros méritos, sino tal como llegaremos a ser por don Suyo” (San Próspero). Véase Denz. 185. Cf. 4, 1 ss.; 6, 9; 7, 7 ss. Para poder escuchar y entender y gozar la dicha inefable de este lenguaje, hay que grabar para siempre en el alma este sello femenino de esposa, y no pretender invertir los papeles asumiendo con celo indiscreto el papel de esposo (véase 2, 6; 4, 1 y notas, y el artículo “Hermana y Esposa” en nuestro libro “Espiritualidad Bíblica”). Tus ojos son palomas: Cf. 2, 14; 5, 12 y notas. En el versículo 4 la Esposa se desprecia a sí misma, llamándose morena, y alaba al Esposo por su hermosura. “Y Él, porque tiene de costumbre de ensalzar al que se humilla, poniendo en ella los ojos como ella se lo ha pedido, en la Canción que se sigue, se emplea en alabarla, llamándola no morena, sino blanca paloma” (San Juan de la Cruz, Cántico Espiritual XXXIV). La paloma representa al alma recta y sencilla. Véase las palabras de Jesús en Mateo 10, 6.",
+    "6210": "Algunos traducen rosa de Sarón y hacen hablar aquí al Esposo. Como observa Fillion, este lirio, citado hasta siete veces en el Cántico, es figura aplicada al pueblo de Israel según se ve en Oseas 14, 5 (cf. Isaías 35, 2). Se trata, no de un autoelogio que se hiciera la Esposa, sino de una imagen modesta, que podría señalar quizá el origen humilde de Israel en su primer encuentro con Yahvé, y el origen pastoril de sus primeros años patriarcales.",
+    "6211": "El Esposo, al llamarla azucena, confirma delicadamente lo que Ella misma acaba de decir, y agrega entre los espinos, lo cual parece referirse a la pre excelencia de Israel sobre todos los demás pueblos, si bien puede aplicarse con gran elocuencia a los sinsabores que le costó al Esposo haberla elegido, siendo tan ingrata. Cada uno de nosotros es para Jesús un lirio entre espinas, que le costó todas las espinas de su corona y que es sin embargo tanto más amado cuanto mayor fue ese precio que por él pagó el Hijo, y el que antes había pagado el Padre al entregar ese Hijo. Cf. I Corintios 6, 20; 7, 23. San Bernardo ve en la azucena un símbolo de la bondad y pureza de nuestras acciones y agrega: “Con la blancura de su alma el justo es una azucena y perfuma a su prójimo.”",
+    "6212": "Como el manzano: véase versículo 5; 7, 8; 8, 5 y nota. A su sombra… y su fruto es dulce: He aquí un pasaje que podrían tener a la vista cuantos se sientan, con la divina Escritura en las manos, a buscar el dulce fruto de la Palabra, como al manzano entre los zarzales de la ciencia humana (cf. Salmo 118, 85 y nota), eligiendo, como María, !a mejor parte: “A veces cuando leo ciertos tratados en los que el camino de la perfección se presenta sembrado de mil obstáculos, mi pobre pequeñito espíritu se fatiga muy pronto; cierro el libro que me rompe la cabeza y me seca el corazón, y tomo la Sagrada Escritura. Entonces todo me parece luminoso; una sola palabra descubre a mi alma horizontes infinitos; la perfección me parece fácil; veo que basta reconocer su nada y abandonarse como un niño en los brazos de Dios… Pero el Santo Evangelio, más que ningún otro libro, mantiene mi oración; en él bebe a su sabor mi pobrecita alma. Cada vez descubro nuevas luces, ocultos y misteriosos significados” (Santa Teresita).",
+    "6213": "Ambos textos —hebreo y Vulgata— expresan una idea de la más alta poesía. La Esposa, admitida a la más estrecha intimidad del Esposo, goza de un deleite pacífico (versículo 3) en que la sabiduría (cf. Salmo 50, 8 y nota), simbolizada por el vino, es inseparable del amor, como la intimidad con Cristo es inseparable del Espíritu Santo (véase la introducción al Libro1 de la Sabiduría). La bandera —que solía enarbolarse en las posadas— está puesta como símbolo o pendón (el altar que Moisés levantó después del triunfo contra Amalec, en Éxodo 17, 15, fue llamado en hebreo “Yahvé nesi”, que quiere decir: Dios es mi bandera). “Y puesto que Dios es amor (I Juan 4, 8 y 16), es evidente que su mensaje a los hombres, enviado por medio del propio Hijo, víctima de amor, no puede ser sino un mensaje de amor. Por donde se ve que no entenderá nunca ese mensaje, ni podrá salir de la dura vida purgativa, quien se resista a creer en ese «loco amor» de Dios y se empeñe en hallar en Él a una especie de funcionario de policía.” En la Vulgata reza el segundo hemistiquio, ordinavit in me caritatem. «Ordinare, dice el Cardenal Gomá, es aquí disponer en orden de batalla; in me es acusativo, «contra mí». Equivale la frase a decir que Dios ha alzado las banderas de su amor para conquistarnos. Se presta este sentido a bellísimas aplicaciones. Como acomodación verbal puede admitirse lo que se hace en ascética sobre la jerarquía de la caridad bien ordenada” (Biblia y Predicación, pág. 273).",
+    "6214": "Con manzanas: cf. versículo 3 y nota. Otros traducen: con azahares. Según un explorador de Palestina, tal sería la costumbre de las novias en Oriente, y de allí vendría el ramo de azahares que llevan en la mano las desposadas de hoy.",
+    "6215": "Véase 8, 3, donde este versículo y el siguiente están repetidos. Por el contexto deducen algunos (Ricciotti, Budde Dalman, etc.) que allí habrían sido interpolados. El carácter literario de epitalamio que presenta el Cantar de los Cantares no puede sorprender al hombre espiritual (cf. I Corintios 2, 10). Para hacernos entender cosas de su amor. Dios elige, a manera de parábola, el relato de una unión entre esposos, utilizando como imagen de insuperable vigor la atracción entre los sexos, precisamente porque Él sabe muy bien cuánta es su fuerza natural en el ser humano. Así como la desmayada Esposa descansa en los brazos del Esposo, así el alma herida del amor divino, no encuentra recreo ni medicina para su dolencia sino en el divino Esposo Jesucristo. Se describe aquí el íntimo abrazo (1, 4), que el alma cristiana puede gozar también en la Comunión Eucarística con una plenitud de unión, aunque invisible, que nos identifica con Jesús haciéndonos vivir de su misma vida como Él vive del Padre (Juan 6, 57 ss. y notas) y nos da un anticipo de la unión definitiva “hasta que Él venga” (I Corintios 11, 26). Nuestra conformidad con el Verbo en el amor, dice San Bernardo, une con él nuestra alma como la esposa está unida a su esposo.",
+    "6216": "Cf. 3, 5 y 8, 4. No despertéis… a la amada; literalmente: al amor, y algunos lo aplican al Esposo. Difícil de explicar en su sentido histórico profético, con relación a Israel o a la Iglesia, este pasaje ofrece un hondo sentido espiritual para nuestra alma, como suprema lección de quietud interior. No es la Esposa apasionada la que gusta al Esposo, sino la que sabe dejarle a él la iniciativa; la que se deja conducir por el Espíritu santificador (Romanos 8, 14) y reposa dulcemente confiada en el Esposo, sin pretender, como Eva. “la ciencia del bien y del mal”, que nos haga rivales de Dios. El Espíritu Santo obra en esas almas dóciles toda suerte de maravillas que Él sólo conoce (Romanos 8, 26 ss.). Hemos de creer en ellas con todas nuestras fuerzas, sin desear analizarlas, ni siquiera ser testigos conscientes de ese divino drama que se opera en el teatro de nuestra alma, ya se trate de la pura oración y grado de unión en el amor, o ya de esas pruebas o purificaciones pasivas por las cuales sabemos que Dios nos va santificando, sean ellas interiores, o exteriores, como aquéllas en las que Job mereció por querer comprenderlas, el único reproche de Dios (cf. Job capítulo 38 ss.). Bueno es, pues, dormir como la Esposa del Cantar, confiada en saber que todo sucede para nuestro mayor bien (Romanos 8, 28). “En la quietud y en la confianza, dice Dios a Israel, está tu fortaleza” (Isaías 30, 15): Y si en esto reside lo más alto de la vida espiritual, y son tan pocos los que lo siguen, hemos de comprender que tal abandono exige mucha más fe y mayor negación de sí mismo, porque nada cuesta más que renunciar a conducir personalmente un negocio que tanto nos interesa. Y es también harto contrario a nuestro orgullo natural el remitir totalmente a Dios el juicio sobre el valor de nuestra vida espiritual (véase I Corintios 4, 3 ss. y nota), en vez de cultivar, como el fariseo del templo, esas formas disimuladas del amor propio, que el mundo suele disfrazar de virtud con el nombre de “la propia estimación”, o “la satisfacción del deber cumplido”. Poned constantemente vuestra confianza en Dios, dice el Doctor de Hipona, y confiadle todo lo que tenéis; porque Él no dejará de levantaros hasta sí, y no permitirá que os suceda más que lo que puede seros útil, hasta sin que lo sepáis vosotros mismos. El alma cristiana, dice un autor moderno, ha sido definida como “la que está ansiosa de recibir y de darse”. Es decir, ante todo alma receptiva, femenina por excelencia, como la que el varón desea encontrar para esposa. Tal es también la que busca —con más razón que nadie— el divino Amante, para saciar su ansia de dar. Por eso el tipo de suma perfección está en María: en la de Betania, que estaba sentada, pasiva, escuchando, es decir, recibiendo; y está sobre todo en María Inmaculada, igualmente receptiva y pasiva, que dice Fiat: hágase en mí.",
+    "6217": "Los versículos 8 a 17 los leemos en la Epístola de la fiesta de la Visitación, aplicados en sentido acomodaticio a los primeros pasos del Salvador en el seno de su Santísima Madre y a la primera manifestación del Amor divino en el corazón de María y en la casa de Zacarías donde Ella entonó el Magníficat (Lucas 1, 46 ss.). ¡Helo aquí que viene! “Se siente palpitar el corazón de la Iglesia bajo estas palabras plenas de emoción. He aquí que viene por fin el Cristo, tan impacientemente esperado. Durante el sueño de la Esposa (versículo 7) Él había desaparecido; ahora vuelve a Ella amorosamente” (Fillion). Digámosle como en la antigua Liturgia y como en la primera antífona del Adviento: Veniet ecce Rex! y: Regem venturum, Dominum, venite adoremus!",
+    "6218": "La excelencia que el enamorado ve y atribuye a la persona amada reside, más que en ésta, en la imaginación de aquél, el cual ve en ella cosas que otros no ven, y que tal vez no existen. Este fenómeno adquiere su máxima verdad en Dios Padre, y en Jesús, igual a Él: Ambos nos aman con un amor infinito que es propio de la esencia divina y que, no pudiendo fundarse en ninguna excelencia peculiar del hombre caído y miserable, sólo puede explicarse por el carácter misericordioso de ese divino Amor que se complace en inclinarse sobre la miseria (cf. Mons. Guerry: “Hacia el Padre”).",
+    "6219": "Habrá pasado ya el invierno cuando lleguen las Bodas del Cordero (Apocalipsis 19, 7 s.) y se haya consumado la pasión del Cuerpo Místico de Cristo, cuyos discípulos han de ser ahora perseguidos como Él lo fue. Aparecen ya las flores: “La Palestina se cubre literalmente de flores en el mes de abril, como por encanto. También según Isaías (35, 1 ss.), la campaña florida es un símbolo de la Era mesiánica y de sus gracias” (Fillion). El tiempo de la poda: otros traducen: el tiempo de los cantares. Véase sobre esto el Salmo 136, 4 en que los cautivos de Israel se resisten a entonar, durante el destierro, los gozosos cánticos de Sión.",
+    "6220": "Esta imagen de la higuera es la misma que usa Jesús en Mateo 24, 32 s. para señalar la proximidad de su segunda Venida, la higuera es generalmente mirada en el Evangelio como figura del pueblo de Israel.",
+    "6221": "Es éste uno de los versos más substanciosos para la oración, y de ahí que los místicos lo hayan explotado grandemente, si bien no siempre hemos de compartir los simbolismos que algunos imaginan. Y así, las grietas de la peña y los escondrijos de los muros son considerados por algunos como agujeros de la piedra y abertura de la pared, que representarían las llagas de Cristo y la herida de su costado, en tanto que generalmente se reconoce a esas expresiones el sentido de habitaciones precarias, de las cuales la Esposa es invitada a salir por el amantísimo Esposo que le habla compadecido, como Dios a Israel en Isaías 51, 21; 54, 11, etc. Claro está que no puede negarse una gran fuerza al símil anterior, en cuanto el alma unida a Cristo comparte aquí abajo sus persecuciones, y no tiene más refugio contra el mundo que ocultarse en su divino Corazón. Todo está en comprender que estas aplicaciones del texto sagrado son de sentido puramente acomodaticio y que no puede pretenderse ver en ellas una interpretación (cf. Introducción), que quedase así librada a la imaginación de cada uno como un verdadero libre examen (véase 3, 11 y nota). Déjame oír tu voz: véase 8, 13 y nota. Santo Tomás refiere también esto a “la voz de la predicación y de la divina alabanza, por las cuales hagas adelantar a otros”. El Papa Pío XII acaba de decirnos que “no se pueden obtener abundantes frutos de apostolado” si los sacerdotes “mientras moraron en los seminarios no se empaparon de activo y perenne amor hacia las Sagradas Escrituras” (Encíclica “Divino Afflante Spiritu”). Tu rostro es encantador, para el que no ha olvidado la insondable miseria propia y de toda la humanidad caída, nada hay más difícil que convencerse seriamente de que estos elogios son dirigidos a él mismo por Aquel que es la infinita Santidad y Sabiduría. Sólo puede entenderlo el que está familiarizado con el Evangelio, es decir, con esas preferencias desconcertantes que Jesús manifiesta en favor de los miserables, de los pecadores, de los publicanos, de Zaqueo, del ladrón, de la Magdalena sobre la cual hace la asombrosa revelación de que “ama menos aquel a quien menos se le perdona”. La Virgen María es el ejemplo para enseñarnos cómo se puede unir la más baja opinión de sí mismo (“ha visto la nada de su sierva”), con el más alto aprecio del don de Dios.",
+    "6222": "Por las raposas suele entenderse los enemigos del pueblo escogido, que es la viña de Dios. San Gregorio Magno las refiere a las faltas y defectos que son causas de la ruina del alma; es decir, a los afectos engañosos y transitorios del mundo, que nos distraen de lo único que interesa (véase nota 6). Algunos ven también aquí las herejías; pero en el periodo actual de la Iglesia, que no es todavía el del triunfo (cf. 8, 1 y nota), no pueden suprimirse esos tropiezos, como lo enseña Jesús en la parábola de la cizaña (Mateo 13, 28 ss. y 40 s.) y en Mateo 18, 7. San Pablo afirma expresamente la necesidad de esas disensiones para que se distingan los de probada fidelidad. Véase I Corintios 11, 19; Santiago 1, 12; Lucas 18, 8; Mateo 24, 12.",
+    "6223": "El Amado es como un pastor que apacienta su rebaño. Figura de Dios que guardaba al pueblo elegido, y también imagen de Cristo, que es el Buen Pastor por excelencia (véase Salmo 22; Juan 10). La grandeza del amor de Jesucristo, que sobrepuja a todo amor creado, consiste en que no se fija sobre un objeto amable, sino que lo hace amable por su amor. Según la interpretación de Vaccari, que señalamos en la introducción, se confirmaría aquí la preferencia de la Esposa por el pastor antes que por el rey.",
+    "6224": "Montes escarpados, o también: de los bálsamos (cf. 8, 14). La Vulgata dice: montes de Beter (tal vez Baiter, hoy día Bittir, al sudoeste de Jerusalén). Mientras sopla la brisa, etc.: pasaje muy diversamente traducido e interpretado. Nótese ante todo la diferencia con la Vulgata. donde estas palabras continúan el versículo anterior, diciendo que el Esposo apacienta hasta la caída del día. Aquí, en cambio, tales palabras se ligan a las que siguen, esto es, a la vuelta del Esposo, y de ahí que algunos las interpreten como una urgencia de la Iglesia por la segunda Venida de Cristo. Pero ese concepto, que aparece indudable en 8, 14. no es .confirmado aquí por el contexto, y más bien parece vincularse con el sentido de 4, 6 (véase allí la nota), donde el autor sagrado usa esta misma expresión. Según esto, la Iglesia, próxima a recibir el soplo del Espíritu Santo, anunciado por Cristo como promesa del divino Padre (Lucas 24, 49; Hechos 1, 4; Juan 14, 16 y 26; 16, 13), se resignaría gozosa a la vuelta de Cristo al Padre el día de la Ascensión (Lucas 24, 52; Juan 14, 28), porque le conviene que Él se vaya para enviarle el Espíritu Santo (Juan 16, 7) y prepararle entre tanto un lugar en la Jerusalén celestial (Juan 14, 2; Lucas 19, 12), hasta que vuelva para tomarla con Él (Juan 14, 3 y 18). Con esta dichosa esperanza (Tito 2, 13) la Iglesia afronta la noche que va a seguir (capítulo 3), o sea el tiempo presente, que San Pablo llama “siglo malo” (Gálatas 1, 4) y “tiempos difíciles” (II Timoteo 3, 1). Vemos así que este misterioso poema, no obstante sus grandes obscuridades que se entenderán “a su tiempo”, brinda asimismo grandes luces espirituales y proféticas sobre la vida de la Iglesia en sus distintos momentos, cosa que en vano ha querido buscarse interpretando con criterio histórico el Apocalipsis, libro cuyo carácter esencialmente escatológico se admite cada día más como indiscutible (Sickenberger).",
+    "6225": "De noche: otros: por las noches. Esta pérdida del Esposo, durante la noche, suele interpretarse como imagen del pueblo de Israel que pierde a su Dios en la noche de la idolatría, y sobre todo que busca al Mesías y no lo halla (Juan 7, 34-36) hasta que, arrepentido, vuelve a Él (cf. 5, 2 ss. y notas; Isaías 54, 1; Oseas 5, 15; Ezequiel 6, 9; 20, 7 ss.; 36, 31). Los místicos, aplicando la imagen a la vida espiritual, llaman a este período la noche obscura del sentido, en que el alma, no habiendo pasado aún por la vía iluminativa, carece de un conocimiento propio y experimental de Dios, que es Él que nos hace hallarlo definitivamente por medio del amor. San Jerónimo explica esto, diciendo: “Ora leáis, ora escribáis, ora veléis o durmáis, siempre toque a vuestros oídos la bocina del amor de Dios. Esta trompeta despierte vuestra alma y buscad vuestro jergón alborozado con este amor que vuestra alma desea, y cantad confiado: Yo duermo, mas mi corazón está velando” (San Jerónimo, A Pamaquio). La ansiosa búsqueda, a través de las tinieblas, hasta que hayamos llegado a despreciar por amor suyo nuestra soberbia racionalista (II Corintios 10, 5; I Corintios 3, 18 ss.; Judit 8, 10; Job 42, 3 y notas), está maravillosamente expresada en Eclesiástico 4, 18 ss., que llama a esta etapa de prueba “la tribulación de la doctrina” (véase Salmo 118, 38 ss. y nota). En análogo sentido, Fillion lo aplica a la vida actual de la Iglesia “mientras el Esposo prolonga su ausencia con miras de probar y acrecentar en Ella el amor”. Le busqué y no le hallé: Hay aquí una triste pero saludable meditación para el pueblo de Israel, cuya religiosidad actual, según lo declararon sus propios escritores, se ha desprendido aún de la sobrenatural esperanza mesiánica, para reducirse a un simple ideal histórico. Como decíamos en otro lugar: “La misma cultura talmúdica y rabínica de los Raschí, de los Maimónides, de los ben Gabirol, de los Yehuda ha-Levi, de los ben Ezra… ha sido ridiculizada por escritores de nota como Abrahamowitsch y Gordon en el siglo pasado… y la reforma de Moisés Mendelsohn ha tendido a destruirlo todo… Pero la verdadera reparación de Israel sólo puede traerla Cristo.” No hallará Israel al Amado por las calles y plazas, sino cuando Dios la llame a la soledad y le hable al corazón (véase 1, 8 y nota). Entonces caerá el velo que les oculta, no ya el Evangelio, sino las antiguas profecías (II Corintios 3, 14-16). Entonces se apartarán de los falsos pastores (versículo 3 s). Véase a este respecto la admirable alusión al capítulo 34 de Ezequiel que San Pablo hace a los hebreos cuando les dice que su alianza eterna ha de ser en el gran Pastor resucitado (Hebreos 13, 20).",
+    "6226": "Véase 5, 7. Los guardias representan aquí a los príncipes del pueblo judío que no supieron mostrar a Israel la llegada del Mesías (véase Juan 1, 26; 7, 52; 8, 14; 9. 30; Lucas 12, 56; 19, 44; Mateo 21, 34, etc.). También hoy podemos aplicar la lección a los “sabios y prudentes” (Lucas 10, 21), a quienes es inútil preguntarles dónde está Dios. Unos predican un Dios inaccesible y sin corazón de Padre; otros dudan de su existencia y le disputan la creación del mundo; y otros admiten su existencia, pero viven como si no existiese. Cf. 8, 7 y nota.",
+    "6227": "Apenas me había apartado… encontré: vemos así confirmado lo expuesto sobre el versículo 1 s. Cuando el alma se aparta del mundo y sus maestros (véase I, 8 y nota), no tarda en hallar a Cristo, porque la Sabiduría se anticipa amorosamente a los que la buscan (Sabiduría 6, 13 ss.), y Él mismo nos dice: “Al que viene a Mí no lo echaré fuera” (Juan 6, 37), porque vino a cumplir la amorosa voluntad del Padre que lo envió para que Él sea nuestra salvación (Juan 6, 38 40). Entonces el alma, hecha pequeña (Proverbios 9, 4 y nota), descubre que se le ha dado esa sabiduría inaccesible para los sabios (Mateo 11, 25) y repite, tan gozosa como asombrada, la exclamación de David (véase Salmo 118, 99 s.). La casa de mi madre: San Bernardo acentúa la trascendencia escatológica del Cántico, al ver en la Esposa a la Iglesia de los elegidos ya congregados (véase Juan 11, 52; Romanos 11, 25; Lucas 21, 24). Comentando el presente versículo, el Doctor Melifluo ve en Israel a la madre de la Iglesia y dice: “ciertamente la caridad de la Iglesia es bien grande, pues que no envidia sus delicias a su misma rival, que es la Sinagoga. ¡Qué mayor bondad que estar dispuesta a compartir con su enemiga Aquel que ama su alma! No debe, empero extrañarnos —puesto que la salud viene de los judíos (Juan 4, 22)— que el Salvador vuelva de donde partió a fin de salvar a los restos de Israel… que las ramas no envidien a la raíz la savia que de ella bebieron, ni los hijos a su madre la leche que mamaron de sus pechos. Que la Iglesia, pues, conserve firmemente la salud que Israel perdió, hasta que la plenitud de las naciones haya entrado y que así Israel sea salvo. Más aún, ella le desea el nombre y la belleza de la Esposa”.",
+    "6228": "Véase 2, 6 s.; 8, 6 y nota. Hasta que ella quiera: Según la interpretación de San Bernardo, que hemos visto (cf. versículo 4). tendríamos aquí el misterio anunciado por San Pablo (Romanos 11) del retorno de Israel, a quien el apóstol llama muy amada todavía a causa de sus padres (Romanos 11, 28), si bien se hizo enemiga a causa de nosotros los gentiles, es decir, para que su caída —¡oh misterio de amor!— fuese ocasión de nuestro llamado a la Iglesia. Ese despertar de Israel no habrá de ser forzado, sino pura obra de la gracia (Romanos 11, 6; Jeremías 30, 13 y nota) que mudará su corazón (Ezequiel 11, 19; 36, 26; II Corintios 3, 14-16). De ahí sin duda la falta de un apostolado actual y permanente de predicación entre los judíos (Hebreos 5, 11 s.; Romanos 11, 7-10; Hechos 13, 45 s.). En otro sentido, hay aquí también una gran luz sobre la doctrina de San Agustín que combate el falso celo violento, diciendo: “Nadie debe ser llevado a la fe por la fuerza” (véase Santiago 3, 13 ss.). Esta verdad fue ya expuesta por San Atanasio diciendo que “es propio de la Religión no constreñir sino persuadir”. Es lo que Alcuino mostró a Carlomagno cuando pretendió, por motivos políticos, que los sajones optasen por el bautismo o la muerte: “La fe es asunto de la voluntad no de la coacción.” Lo mismo expone Santo Tomás; y Federico Ozanam en una hermosa carta a un profesor de la Sorbona, sobre la caridad en el apostolado, hace resaltar que no ha de buscarse el triunfo propio sobre el adversario humillado, sino exponer las excelencias de nuestro Dios y su Hijo Jesucristo, de tal manera que el oyente, aún antes de convertirse a nuestra fe, ya lo ame, con lo cual su conducta irá luego en pos de lo que conoció y amó. “Si alguna vez aconteciese que, en oposición a la constante doctrina de la Sede apostólica alguien es llevado contra su voluntad a abrazar la fe católica, Nos conscientes de nuestro oficio, no podemos menos de reprobarlo” (Pío XII, Encíclica sobre el Cuerpo Místico de Cristo).",
+    "6229": "Este versículo se aplica en la Liturgia a la Virgen, rica en todas las virtudes y exenta de la maldición del pecado. Según Vaccari, habla aquí el coro hasta el fin del capítulo, describiendo “al rey Salomón en todo su esplendor” (Mateo 6, 29). Columna de humo: recuerda la columna de fuego que condujo al pueblo de Israel desde el desierto hasta la tierra prometida, o según otros, alusión a los inciensos que se ofrecían delante del Arca de la Alianza.",
+    "6230": "7 ss. Según algunos, Salomón sería figura del divino Esposo: la litera (el trono) simbolizaría el Arca (I Reyes 4, 4; II Reyes 6, 2); y los sesenta compañeros figurarían a los sacerdotes y ancianos. Sobre la interpretación de Vaccari, véase la Introducción.",
+    "6231": "Salid… a contemplar: Según Bover-Cantera, es la Iglesia, esposa de Cristo, la que invita a sus hijos a salir del tumulto del siglo para contemplar a Salomón, esto es, al verdadero rey pacífico, Jesucristo. Según Nácar-Colunga, sería “la entrada del rey en Jerusalén. inspirada en la ceremonia de la entronización de Salomón, que se narra en III Reyes 1, 11 ss. La corona tal vez se toma de la solemnidad de las bodas (Isaías 61, 10). Todo ello significa la entrada triunfal del Rey-Mesías en su ciudad”. Hijas de Sión: El P. Arintero ve aquí figuradas “a las almas piadosas que ya tienen su morada junto al sagrado Tabernáculo”. En cambio, según otra interpretación, “deben entenderse las almas débiles en la virtud, que aun cuando se resignen con sus trabajos, quieren verse libres de ellos”. Este ejemplo de abierta oposición nos muestra, una vez más, cuan prudentes hemos de andar en materia de interpretaciones y aún de aplicaciones que no puedan fundarse en los datos de la misma divina Revelación, que ya nos da sobrada substancia espiritual y además nos asegura contra las desviaciones del sentimentalismo. Véase 2, 14 y nota.",
+    "6232": "Comienza el Esposo exaltando la hermosura de la Esposa. La descripción de ésta se hace sobre el modelo de las canciones nupciales de Oriente, de las cuales hoy todavía poseemos paralelos en la literatura oriental. Según Vaccari. no es el Rey quien habla aquí, sino el Pastor, que en gran parte toma sus símiles de la vida campestre (véase 6, 4 ss.). Esto no haría sino aumentar nuestra admiración de que Dios se atribuyese a Sí mismo este papel humilde frente a la suntuosidad de su rival, que representaría los oropeles del mundo engañoso y fugaz. Como en Eclesiastés 12, los órganos corporales que aquí figuran (ojos, dientes, cabellos, etc.), son muy diversamente entendidos por los autores. De todas maneras hemos de creer con toda la fuerza de nuestro ser que son para cada uno de nosotros los sublimes afectos de amor que aquí prodiga el Esposo a la Esposa. Así fue como Santa Teresa de Lisieux descubrió su doctrina sobre el amor misericordioso del Padre, en los afectos paternales que Él. Yahvé, dirige a Israel por boca de Isaías (véase Isaías 49, 15; 66, 13 y notas). Muy convencidos necesitamos estar de tal verdad, si queremos gozar y aprovechar con fruto este divino Libro. Por eso conviene entender bien que, si la elección de Israel era colectiva como pueblo, la del cristiano es perfectamente individual, sin perjuicio de la unidad del Cuerpo Místico y la rica comunicación de bienes espirituales que existe entre sus miembros según el dogma de la Comunión de los Santos. Jesús nos muestra que es Él quien elige a cada uno (Juan 15, 16) para hacerlo hijo de Dios por la fe (Juan 1, 12) y hacerlo vivir de su propia vida por la Eucaristía, como Él vive de la vida del Padre (Juan 6, 57; Vulgata 6, 58); prometiéndole resucitarlo (Lucas 14, 14; 20, 35; Juan 6, 54) hasta reunir en uno a todos esos hijos de Dios (Juan 11, 52) y celebrar las Bodas del Cordero con la Iglesia; “a la cual habrá sido dado vestirse de tela de hilo finísimo brillante y blanco” (Apocalipsis 19, 8).",
+    "6233": "Detrás de tu velo: Otros vierten: en medio de tus rizos.",
+    "6234": "Escudos: alusión a los aros y monedas con que las mujeres solían adornar su cuello. Este versículo se aplica en la Liturgia a la Santísima Virgen. Podría entenderse que el lenguaje usado aquí es propio del Rey.",
+    "6235": "Aquí parecería que habla nuevamente el Pastor y que en el versículo 6 le responde ella como en 2, 17 y en 8, 14. Estos dos pechos, dice Scío, son figuras del amor a Dios y del amor al prójimo. “Alimentados entre las hermosas y blancas azucenas de los divinos misterios, procuran por todos los modos posibles dar a Dios lo que es Suyo, y no defraudar al prójimo nada de lo que le corresponde. Son semejantes entre sí como suelen serlo los mellizos.”",
+    "6236": "Por el monte de la mirra y el collado del incienso algunos entienden el monte donde estaba el Templo. Mirra e incienso también son símbolos de la devoción espiritual (cf. 1, 13 y nota). “Ahora, dice Fray Luis de León, la quiere llevar (a la Esposa) consigo de monte en monte, esto es, de virtud en virtud, subiendo siempre de una en otra sin temor de tropiezo andando con tal compañía. Porque es verdad que todos los que caminan por Cristo, van altos y van sin tropiezos.” Según otros expositores, sería la Esposa quien habla en este verso (cf. 2, 17 y nota) y mientras sopla el espíritu de Pentecostés y se extienden al mismo tiempo en el mundo las sombras de la apostasía, se retira a la soledad del monte y ansiosa escucha allí del Esposo el sumo amor que Él le expresa en los versos siguientes.",
+    "6237": "Eres toda hermosa: “Lo es la Iglesia, porque a los ojos de Cristo son bellos no solamente los doctores y religiosos que descuellan por su profunda ciencia y virtud, sino los simples fieles que caminan por la senda de la verdadera fe y apartados de pecados graves” (Bover-Cantera). San Agustín observa que la Iglesia en este siglo necesita limpiarse cada día para ser presentada al fin sin mancha alguna a su Esposo Jesucristo. Así lo vemos en Efesios 5. 25-27 y Apocalipsis 19, 6-9. Lo mismo puede decirse del alma del justo, según II Corintios 11, 2; Col. 1, 22. Las palabras se aplican en la Liturgia a la Santísima Virgen.",
+    "6238": "Ven conmigo, etc. Según Vaccari: Me reclamas, como si el Esposo se dijera atraído por ella desde el Líbano donde Él está, y conducido al Amaná desde las alturas del Senir y del Hermón y desde las guaridas donde Él mora como pastor (véase 2, 8), porque ella le ha robado el corazón (versículo 9). Amaná: parte del Antilíbano, cerca de Damasco; Senir o Sanir: nombre amorreo del Hermón o Antilíbano. Leones y leopardos eran para los judíos figuras de los pueblos paganos circunvecinos.",
+    "6239": "Al nombre de esposa, que por primera vez le da en el vers. 8, añade el de hermana, poniendo así en este apasionado amor un sello de altísima pureza.",
+    "6240": "Huerto cerrado y fuente sellada: bellas imágenes de la Iglesia cerrada y sellada para el mundo y reservada únicamente, como debía serlo Israel separado de las naciones, al amor de su divino Esposo. En ella debe conservarse intacto el tesoro recibido de Dios en depósito: la sana doctrina, la Sagrada Escritura, los sacramentos (cf. I Timoteo 6, 20). Véase versículo 15 y nota. Muchos Padres entienden figurada aquí la virginidad como en 2, 1 (azucena del valle). A imitación de la bienaventurada Virgen María cada virgen es un jardín cerrado, una fuente sellada por el Todopoderoso con la gracia de la virginidad, de la pureza, del pudor, de la modestia. Una virgen, dice San Ambrosio, es un jardín inaccesible a los ladrones; se parece a una viña en flor, derrama el perfume de sus virtudes y es bella como la rosa.",
+    "6241": "Los mejores autores reconocen que la Esposa toma la palabra aquí, y no solamente en el versículo 16. Es por cierto una de las lecciones más preciosas del Cantar, ya se lo aplique a Israel, a la Iglesia o a cada alma, y ya sea con visión pasada o profética, pues en todos los casos la humilde Esposa al verse de tal modo colmada por los elogios del Esposo, después de haberse sentido colmada por sus dones, no puede sino exclamar, como aquí lo hace, que nada de eso le pertenece sino que todo es sólo el depósito (cf. versículo 12) de dones y favores que Él mismo ha puesto en ella. Y así pide que soplen en toda su plenitud los vientos del Espíritu Santo para que ella, no obstante su propia nada (recuérdese el Magníficat de María: Lucas 1. 48), pueda agradar al Esposo con los aromas y los frutos que Él le prodigó con su generosidad toda divina. Un pasaje análogo encontramos en el Apocalipsis, donde los veinticuatro ancianos, al verse colmados de dicha por los méritos del divino Cordero, se empeñan en destacar que es a Él a quien corresponde toda la gloria de esa hazaña: “y cantaban un cántico nuevo, diciendo: Digno eres, Señor, de recibir el libro y de abrir sus sellos, porque Tú has sido entregado a la muerte y con tu sangre nos has rescatado para Dios de todas las tribus, y lenguas, y pueblos, y naciones. Nos hiciste para nuestro Dios reyes y sacerdotes, y reinaremos sobre la tierra” (Apocalipsis 5, 9 y 10). San Gregorio Magno hace notar aquí, en igual sentido, que las aguas puras y vivas que la Iglesia Católica envía a las iglesias particulares y a las almas fieles, “son las Sagradas Escrituras, que corren impetuosamente del Monte Líbano, esto es, de la boca de Jesucristo”.",
+    "6242": "He aquí la visión anticipada de lo que anhelan, al final del Cántico, tanto la Esposa como los amigos del Esposo. Véase 8, 13 s. y notas.",
+    "6243": "Los versículos 2 a 8 encierran una alusión a la infidelidad de Israel para con Dios, el cual por eso se retiró de su pueblo (versículo 6). Yo dormía: en hebreo el yo indica aquí femenino, como el ábreme indica masculino. Algunos piensan que toda esta escena es un monólogo de la Esposa que relata un sueño. “Durmiendo sueña con su Amado; y en este estado siente que llega a la puerta y llama. La Esposa le responde en sueños excusándose (cf. Lucas 11, 6 s.). Son juegos del poeta para hallar una nueva forma de expresar los sentimientos de mutuo amor entre los dos Esposos” (Nácar-Colunga).",
+    "6244": "Hay aquí una enseñanza altamente sobrenatural: el objeto del amor ha de ser el Esposo en Sí mismo, en su Persona, y no los obsequios que Él nos haga, ni menos la complacencia en las propias virtudes. Mientras el Esposo llama a la puerta (Apocalipsis 3, 20), soportando la intemperie de la noche — Jesús las pasaba así, orando en la montaña (Lucas 6, 12) — la Esposa piensa en conservar limpios sus pies como otro Narciso que quiere complacerse en la propia belleza. San Pablo, que nos enseña a vivir según el espíritu, como el único modo de superar los atractivos de la carne (Gálatas 5, 16), nos libra también de una ascética egocéntrica, para llevarnos a vivir la espiritualidad cristocéntrica, conservando los ojos de nuestra atención siempre fijos en Aquel que es el autor y consumador de nuestra fe (Hebreos 12, 2); el único digno de admiración, porque “es el más hermoso entre los hombres” (Salmo 44, 3); el único digno de amor, porque “todo Él es amable” (versículo 16); el único que no desilusiona ni traiciona, porque “su amor es fuerte como la muerte” (8, 6). Véase Salmo 118, 37 y nota.",
+    "6245": "Se conmovieron: Otros añaden: a causa de él. La Vulgata dice a su tacto, o a su toque o llamado (véase nota 5). El Esposo había llamado a la puerta, y trata ahora de abrir el cerrojo con su mano, que introduce por el agujero de la cerradura. Son sus manos, que siempre destilan lo más exquisito, las que dejan el cerrojo impregnado de la mirra que luego halla la Esposa. Es que Dios, como señala Fray Luis de León, cuando los suyos están más olvidados de Él, por su grande amor los ampara y los rodea aún con mayor cuidado, porque sabe que más lo necesitan.",
+    "6246": "Mirra exquisita: así también la Vulgata. Otros traducen: mirra líquida. Otros: mirra colada. El sentido es que las manos del Esposo habían dejado colarse esa mirra a través de la cerradura. Este gesto del Amado es quizá lo que llena a la Esposa de emoción (versículo 4) al ver con qué delicadeza responde Él a su ingratitud. “Había oído la voz del Esposo; supo que era Él que estaba en la puerta, pues conocía su voz; y sin embargo no le abrió. Le parecía más dulce entregarse al sueño que levantarse para seguir a su llamado; más dulce soñar con Él que abrirle la puerta. Y Él se fue dejando mirra en la puerta, mirra que a pesar de su amargura exhala fragancia suave. La mirra la acompañó después cuando iba en busca del Amado; la acompañó la amargura, pero también la fragancia que había despertado en ella el amor y el ansia de encontrar al que amaba su alma. Fue golpeada, herida y le fue quitado el manto (versículo 7). Anduvo errante en la oscuridad como una oveja perdida, y todo por culpa suya, por no haber abierto la puerta cuando Él llamó” (Elpis).",
+    "6247": "Lo busqué: Los autores místicos ven en esta otra búsqueda, lo que llaman la noche oscura del alma. Es la última purificación que, a través de la experiencia de nuestra total incapacidad y maldad, nos enseña la humildad plena. Sólo en esta disposición de espíritu descubrimos en el Esposo los encantos irresistibles que la Esposa enumera en los versículos 10-16, y que nos enamoran de Él hasta llevarnos al matrimonio espiritual (véase 3, 1; 6, 3 y notas).",
+    "6248": "Aquí no sólo se ve ignorancia como en 3, 4, sino también maltrato. No sería quizás ajeno a esto lo que San Pedro anuncia de los burladores (III Pedro 3, 3 s.; Ezequiel 12, 22 y 27). En sentido espiritual: los que buscan a Jesús son perseguidos, como lo fue el Maestro y como anunció Él mismo muchas veces y también los apóstoles. Dios ejercita y prueba a sus servidores y amigos por medio de las persecuciones, para conservar su alma, para purificarlos, perfeccionarlos y elevarlos al honor imperecedero de la gloria. Véase Romanos 8, 18; II Timoteo 3, 12; Juan 16, 1 ss.; Lucas 21, 12, etc.",
+    "6249": "Decidle: otros traducen: ¿qué le diréis? Que yo desfallezco de amor. Es propio del verdadero amor crecer más y encenderse más cuanto más y mayores dificultades y peligros se le ofrecen y ponen delante (Fray Luis de León). El amor, observa San Agustín, es una palanca tan fuerte, que levanta los pesos más enormes; porque el amor es el contrapeso de todos los pesos.",
+    "6250": "La Esposa describe la belleza del Amado (versículo 10 a 16), como antes éste había pintado la hermosura de aquélla (4, 1-5). Todo esto conviene en sentido místico a los atractivos incontables que el divino Esposo Jesucristo nos descubre cuando lo estudiamos en el Evangelio. Entre millares: Otros: entre diez mil.",
+    "6251": "Racimos de palma: Otros: racimos de dátiles. Otros simplemente: palmas.",
+    "6252": "En pleno reposo: Otros: a la orilla de aguas abundantes. Preferimos nuestra versión que, además de la vivísima figura de los ojos en sus distintas partes, ofrece una imagen fiel de la paz inefable que irradiará la mirada de Jesús diciendo a cada uno, como en el Evangelio: “No se turbe vuestro corazón… Os doy la paz mía” (Juan 14, 27).",
+    "6253": "De perfumadas flores: Otros: de plantas aromáticas. Sus labios son lirios: en los que estaba derramada la gracia (Salmo 44, 3); de ellos salían como mirra purísima (otros traducen mirra líquida) las palabras de vida (Juan 6, 68; Vulgata 6, 69) que “nunca hombre alguno habló como aquel Hombre” (Juan 7, 46).",
+    "6254": "Barras: se refiere sin duda a la redondez de los dedos. Esmaltadas con piedras de Tarsis. Vulgata: torneadas, llenas de jacinto. Piedras de Tarsis se llamaban los topacios, jacintos y ónices que procedían de Tarsis (España).",
+    "6255": "En las basas de oro podemos ver la fe que nos hace admirar a Dios, y la esperanza que nos hace desear sus promesas. Sobre ambas basas se levantan, como sendas columnas de mármol, el amor a Dios y al prójimo, doble aspecto de la caridad (Mateo 22, 36 ss.) que se eleva hasta el cielo y permanecerá eternamente cuando hayan pasado las otras dos. Véase I Corintios 13, 8-13.",
+    "6256": "Su voz: literalmente su paladar. Todos convienen en que este elogio se refiere a la dulzura de las divinas palabras, que tanto exalta David en el Salmo 118. Amable: La Vulgata dice bellamente: todo deseable. Se usa aquí el adjetivo amable en su verdadera acepción, que significa digno de amor, y que es generalmente deformado por el uso que lo aplica más bien a la inversa, llamando amable al que se muestra complaciente o afectuoso.",
+    "6257": "Es de notar que apenas la Esposa proclama el elogio del Esposo, ellas (las naciones) se sienten atraídas a buscarlo también. Cf. Salmo 95, 3 y nota sobre la vocación apostólica de Israel.",
+    "6258": "Pastorear: así también Ricciotti, Vaccari, Crampón, etc. La Vulgata dice a la inversa: apacentarse. Otros: recrearse. Consideramos más exacta nuestra versión, que podría referirse al actual período o dispensación evangélica, en que Jesús “Pastor y Obispo de nuestras almas” (I Pedro, 2, 25; Hebreos 13, 20; Juan 10, 11), nos apacienta con los ricos manjares de la gracia (Juan 1, 16 s.), y dones del Espíritu Santo, que Él nos conquistó con los méritos de su vida y de su muerte (Juan 7, 38 s.), y junta azucenas, esto es, va reuniendo en uno a los hijos de Dios (Juan 11, 52). Por otra parte, el sentido del texto vulgata: .alimentarse, concordaría con el contexto de 4, 16 y 5, 1.",
+    "6259": "Véase 2, 16; 4, 1; 5, 6; 7, 11; 8, 5 y notas. Es, en mística, el matrimonio espiritual (II Corintios 11, 2; Gálatas 2, 20), y, en escatología, la consumación de la unidad, semejante a la de Jesús con el Padre (Juan 17, 22 ss.). “En vano soñarán los poetas una plenitud de unión entre el Creador y la creatura, como ésta que nos asegura nuestra fe y que desde ahora poseemos «en esperanza». Es misterio propio de la naturaleza divina, que desafía y supera todas las audacias de la imaginación, y que sería increíble si Él no lo revelase. ¿Qué atractivos puede hallar Él en nosotros? ¡Y sin embargo, al remediar el pecado de Adán, en vez de rechazarnos de su intimidad (mirabilius reformasti) buscó un pretexto para unirnos del todo a Él, como si no pudiese vivir sin nosotros!”",
+    "6260": "Temible (cf. versículo 9). Crampón traduce: pero terrible, lo cual destaca el contraste con lo anterior, y podría quizá referirse a esa característica de dura cerviz que la Escritura señala frecuentemente en Israel (Éxodo 32, 9; Deuteronomio 9, 6 y passim; Isaías 48, 4, etc.). La referencia al pueblo hebreo parece acentuarse especialmente en este verso, pues Tirsá fue (con Siquem y Samaría) la segunda de las tres capitales sucesivas del reino de Israel (las diez tribus del norte), y Jerusalén era la capital del reino de Judá. Entre ambas representan, pues, la totalidad del pueblo escogido (cf. Jeremías 3, 18). Según Nácar-Colunga se trataría aquí de Israel ya purificado y “hermoseado con la santidad y la justicia de su Dios, según que los profetas anunciaban para la época mesiánica”. Otros, como Scío, suponen que el último hemistiquio significa que la Esposa tiene enemigos y ha de estar siempre lista para el combate. Sobre el elogio de la Esposa, véase 4, 1 ss.",
+    "6261": "Me conturban: literalmente: me confunden, es decir, me encantan demasiado (cf. 4. 9).",
+    "6262": "Sesenta, etc.: expresión que corresponde a las costumbres reales en aquellos tiempos de poligamia, como la practicaba Salomón (cf. II Reyes 15, 16; III Reyes 11, 2 s.). Se ve aquí la preferencia de Dios por Israel, escogido entre todos los pueblos (Deuteronomio 7, 6-8). El Salmo 44 ofrece un- cuadro análogo de la preferida entre muchas doncellas, por lo cual se ha visto en él la llave del Cantar en cuanto presenta anticipadamente la cena de las Bodas del Cordero. Concubinas; es decir esposas de segunda categoría. “Pero esto no pertenece más que a la figura, pues el autor sagrado nos describe las bellezas del Israel de Dios en comparación de las demás naciones, que serán admitidas a participar de los amores del Mesías. El Salmo 44, 10 ss. había ya hecho uso de la misma imagen” (Nácar-Colunga).",
+    "6263": "Avanza: Otros: tiende la vista. Algunos ponen este verso en boca del Esposo. Según otros, siguiendo el sentido del versículo anterior. El coro, al ver acercarse a los Esposos, prorrumpe en expresiones de admiración a la belleza de la Esposa. Ella les responde con algo que parece referirse a la inauguración del Reino mesiánico, la Iglesia, cuya belleza es comparada a la aurora y a la luna; pues así como éstas reciben su luz mediante el sol, así la belleza de la Iglesia proviene del sol Jesucristo.",
+    "6264": "He bajado, etc.: Según algunos, estas palabras serían del Esposo. Pero ellas no tienen aquí el sentido de dominación que vemos en 5, 1, donde se repite insistentemente el posesivo: mi jardín, mi mirra, etc. Parece más exacto ver aquí la respuesta de la Esposa al versículo 9. Vaccari la interpreta diciendo: “la Sulamita protesta que no ama la fastuosa vida de corte y prefiere los simples y puros goces de su nativa campiña (véase 1, 8; 4, 16; 5, 1). En su transporte de entusiasmo, ella corre veloz (versículo 11) como los carros de Aminadib (Vulgata: Aminadab), nombre simbólico que significa: «mi pueblo es voluntario», o sea, celoso por el honor de su Dios (véase Jueces 5, 2 y 9; Éxodo 35, 5, 22 y 29)”. Puede verse también Oseas 3, 5 y Salmo 125, 1, que coincidirían con el sentido profético expresado por Nácar-Colunga, quien compara este pasaje con Isaías 43, 5 ss.; 49, 22 s.; 60, 8 s.; 66, 18 ss. y Baruc 4, 37 ss., y añade: “Se habla de la vuelta de Israel de su cautiverio, ayudado por los mismos gentiles que lo tienen a gran honor, maravillados como están de ver las grandezas de Yahvé sobre su pueblo, y deseosos de tener parte en ellas”. Véase Isaías 66, 20.",
+    "6265": "Mi alma: Algunos traducen amor o deseo en vez de alma. Se trataría de ese gozo que pone a Israel fuera de sí al sentirse objeto de tantos favores gratuitos, es decir, por pura bondad de Dios (véase Jeremías 30, 13 y nota). El mismo gozo expresa el Salmista en el Salmo 125, 1, diciendo que parece un sueño. Buscando en este pasaje un sentido -místico lo comenta San Juan de la Cruz de esta manera: “Está el alma en este puesto en cierta manera como Adán en la inocencia, que no sabía qué cosa era mal; porque está tan inocente, que no entiende el mal ni cosa juzga a mal.”",
+    "6266": "Algunos ponen este versículo en 6, 13. La Vulgata se retrasa también en un versículo durante todo este capítulo. Vuelve: según otros: detente.",
+    "6267": "Sulamita: “Parece ser un denominativo patronímico derivado de Sulam o Sunam, villa de la llanura de Esdrelón. Podría también aludir al nombre de Salomón, y, además, evoca en nosotros el recuerdo de Abisag, la Sunamita, que caldeó al viejo rey David (III Reyes 1, 3). El nombre que aquí se da a la Esposa habría sido escogido, como tantos otros del Cantar, por su valor musical y poético, como indica Buzy” (Bover-Cantera). Como las danzas de Mahanaim (cf. Génesis 32, 2). Vulgata: como coros de escuadrones. Otros: como la dama de dos campos. Pasaje muy difícil. Según la concepción general que elige Vaccari, Israel respondería aquí desdeñando algún uso cortesano, por mantenerse fiel a su amado, el pastor. ¡Qué hermosos…! etc. La misma interpretación antes referida ve aquí los elogios lisonjeros del rey o del rival, contrastando con los contenidos en los versículos 6-9, que serían del Esposo-pastor. No nos escandalicemos de las comparaciones que siguen. Son las acostumbradas en Oriente y corresponden al estilo ardiente de aquellos pueblos.",
+    "6268": "Un montón de trigo: según San Jerónimo, alusión a la admirable fecundidad de la Esposa, acompañada de la más rara pureza, simbolizada por las azucenas.",
+    "6269": "El marfil es símbolo de la pureza. La torre de marfil representaría, según Fray Luis de León, la rectitud y firmeza de los limpios de corazón, que no dejan de decir claramente lo que deben, ni obscurecen con palabras afectadas la pureza y la sencillez del Evangelio. Hesebón, antigua ciudad de Transjordania. El Líbano se compara a una torre por su gran altura. Bat-Rabim: nombre propio cuyo sentido traduce la Vulgata, como de costumbre, en una perífrasis.",
+    "6270": "El Carmelo es figura de la belleza y majestad. El segundo hemistiquio dice en la Vulgata: tu cabellera es como púrpura de rey puesta en flecos.",
+    "6271": "Tus pechos: en sentido místico suelen tomarse por los dos Testamentos y los dos amores que miran a Dios y al prójimo. Véase 1, 1; 4, 5 y notas.",
+    "6272": "Texto muy discutido. Parece suspenderse el discurso del Esposo en el primer hemistiquio (después de vino generoso) y la Esposa lo interrumpe diciendo, que fluye suavemente para mi amado, etc.; plausible versión que sigue en parte también la Vulgata. Mis labios y mis dientes: Otros: los labios delos que se adormecen. Según la interpretación espiritual, ese vino es la misma palabra del Evangelio que, a las almas que se han llenado de él, escuchando al Señor como María, les produce una santa embriaguez, por la cual se elevan sobre las cosas de la tierra para buscar las del cielo. “Este es aquel vino excelente, que salía de la boca de los apóstoles, cuando en un principio hablaban un lenguaje tan nuevo, y anunciaban una doctrina tan desconocida a la falsa sabiduría de los mundanos” (Scío).",
+    "6273": "San Juan de la Cruz comenta este versículo diciendo: “Las virtudes y las gracias de la Esposa alma, y las magnificencias y gracias del Esposo Hijo de Dios salen a luz y se ponen en plato para que se celebren las bodas de este desposorio, comunicándose los bienes y deleites de sabroso amor en el Espíritu Santo” (Cantico Espiritual XXX). Hacia mí, etc.: La Vulgata dice literalmente: Él está vuelto hacia mí, en lo cual podemos ver el dogma de la amorosa Providencia (véase Salmo 138 y notas) que parece olvidarse de todo el universo para pensar sólo en nosotros al punto de tener contados, como dice Jesús (Lucas 12, 7), todos los cabellos de nuestra cabeza. Según el hebreo vemos más aún: que somos el objeto de todos los divinos deseos del Esposo. Al que quiere vivir la fe —cosa indispensable para poder ser justo ante Dios (Romanos 1, 17) — no se le puede dar ciertamente una noticia más asombrosa que la de que, no solamente Dios Padre lo está mirando con el amor inalterable de un padre a su hijo (véase Salmo 102, 13), sino también que Jesús lo está mirando como el enamorado a la doncella en quien tiene puesto todo su amor (véase 1, 6 y nota). Y este asombro se transforma en la más inmensa e inconmovible felicidad cuando se descubre y se cree que esta realidad del amor que nos tienen el Padre y el Hijo es una situación ya existente, y no algo que nosotros debamos crear, ya que todos nuestros esfuerzos serían absolutamente incapaces para inspirar ni merecer ese amor, que existe en Dios como una necesidad de su propio Ser (I Juan 4, 8 y 16) y que precede a todos nuestros actos según la maravillosa revelación de San Juan: Dios nos amó primero (I Juan 4, 10). De ahí la exclamación que San Pablo deja escapar en Romanos 11, 35 en medio del himno de admiración que entona precisamente con motivo del indecible amor que revelan los designios de Dios sobre Israel.",
+    "6274": "Véase 1, 8 y nota. Fray Luis de León, autor él mismo del célebre elogio de la vida retirada, refiriendo este versículo a las almas que buscan ansiosamente la soledad, dice: “Las almas perfectas en el estar a solas con Dios viven, y en el destierro de todas las cosas descansan… Porque en esta pureza hallan junta así la pureza de Dios, y los resplandores de su santa luz reverberan luego en espejo tan limpio.” Véase también al respecto Salmo 54, 7 ss. y nota.",
+    "6275": "A las mandrágoras se atribuía una virtud fecundante. Véase Génesis 30, 14, donde Raquel las pide a su hermana Lía. Alusión profética a la fecundidad de la Esposa.",
+    "6276": "No es fácil explicar este discutido pasaje según el cual la Esposa anhela ser hermana del Esposo (cf. 4, 9 y nota). Joüon trata de demostrar que se refiere a los suspiros de Israel por el Mesías, en quien el Verbo se hizo carne para ser nuestro hermano. Ricciotti se inclina a ver este voto de Israel como un deseo de sentirse purificada para no merecer ya los reproches que tantas veces le ha hecho su divino Esposo como adúltera y mal nacida (véase Ezequiel 16). Según Fillion, sería más bien la Iglesia quien expresa estos anhelos de una unión sin palabras, que sólo podría realizarse bajo “el techo maternal” (véase 2, 15; 3, 4 y notas). San Juan de la Cruz ve en este deseo de la Esposa la unión del alma con Dios, “que por eso desea ella diciendo que quién le dará al Amado que sea su hermano, lo cual significa y hace igualdad, y que mame él los pechos de su madre, que es consumirle todas las imperfecciones y apetitos de su naturaleza que tiene de su madre Eva; y le halle solo afuera, esto es, se una con él solo afuera de todas las cosas”.",
+    "6277": "Tú me enseñarías: Otros: a la casa de la que me educaba. Otros: a la habitación de la que me dio el ser.",
+    "6278": "Véase 2, 6 y nota.",
+    "6279": "Apoyada sobre su amado: Es la plenitud de la felicidad en Dios. Para Israel, según la alegoría yahvística, la nueva Jerusalén anunciada por los profetas. Para la Iglesia, las Bodas del Cordero y la Jerusalén celestial, anunciadas por el Apocalipsis (19, 6ss.; 21, 9ss.), o sea, el Reinado eterno de Cristo y del Padre (I Corintios 15, 24 ss.), es decir, una plenitud que sólo puede concebirse como realidad escatológica, para después de la presente dispensación, según la expresión de San Bernardo, pues en ésta siempre tendrá que haber cizaña mezclada con el trigo (Mateo 13, 24 ss.). Para el alma cristiana, esta paz del reposo en Dios puede existir desde ahora (cf. 6, 3 y nota), como un anticipo de aquellos goces futuros, y aún en medio de las persecuciones (Juan 16, 1 ss.) y de las apreturas (ibíd. 33). Como observa Santo Tomás, si la gracia es ya una participación a la naturaleza divina (II Pedro 1, 4) hay algo más aún: la caridad, considerada como estado de amistad con Dios —esto es “con el Padre y con su Hijo Jesucristo” (I Juan 1, 3) — y que el mismo Espíritu Santo derrama en nuestros corazones (Romanos 5, 5), es una participación a la felicidad divina. Es la paz de Cristo, el cual “no la da como la da el mundo” (Juan 14, 27); es la serenidad toda interior de la sabiduría, la felicidad del abandono confiado que practicó Santa Teresa del Niño Jesús. Todo está en comprender, como ella, que no es la Esposa quien abraza al Esposo, sino que es abrazada por Él (véase 2, 6 s. y notas). Es la bienaventuranza de los pequeños, que creen en el amor con que son amados (I Juan 4, 16); que saben que al que va a Jesús Él no lo echa fuera (Juan 6, 37), y que nada ni nadie podrá separarnos de ese amor que Él nos tiene (Romanos 8, 35 ss.), ni arrancarnos de las manos del Hijo (Juan 10, 28), ni de las del Padre (Juan 10, 29), que así nos abrazan porque nos aman con amor de misericordia; es decir, aunque nosotros nunca podríamos merecerlo, como el abrazo y el beso que recibió cuando menos lo pensaba, el hijo pródigo que sólo iba a pedir a su padre un puesto de peón (véase Lucas 15). Yo te suscitaré, etc.: puede traducirse también: bajo el manzano te desperté, y allí te concibió tu madre; allí tuvo dolores de parto la que te engendró. Preferimos nuestra versión, que coincide aquí con la de Nácar Colunga, y que se funda también en el texto siríaco, según el cual quien habla es el Esposo, a diferencia del texto masorético cuya puntuación de los pronombres en sentido masculino significaría que habla aquí la Esposa, lo cual parece sin sentido, según los mejores autores. Algunos consideran que el manzano sería un árbol cualquiera que recordase el bajo nacimiento de Israel según el texto de Ezequiel que hemos citado en la nota al versículo 1. Otros, que se trataría del árbol de la Cruz, a cuya sombra habría nacido la Iglesia al tiempo que defeccionaba la Sinagoga. Dejando de lado la idea de que hubiese aquí una simple referencia ocasional al primer encuentro de los amantes donde el Esposo mismo es comparado a un manzano (2, 3 s.), podría también pensarse en el árbol de la caída original, cuyo fruto suele llamarse la manzana de Adán y bajo el cual nació la muerte como consecuencia del pecado (véase Sabiduría 2, 24 y nota). En tal caso, el Esposo anunciaría aquí la reparación que ha de quitar a la muerte, según revela San Pablo en I Corintios 15, 52-57, tanto su victoria ya obtenida sobre los muertos, cuanto el aguijón con- que mata a los vivos.",
+    "6280": "Cual sello: La Esposa tiembla ante la idea de que pudiera separarse del Amado, sea del amor de su corazón, o de la protección de su brazo. La imagen del sello procede de una costumbre común en Oriente (Génesis 41, 42; Jeremías 22, 24; Ageo 2, 24). La aplicación al alma la hace San Jerónimo en la Carta a Santa Eustoquia, donde escribe: “Siempre que os deleitare y tentare la vana ambición del siglo; siempre que viereis en el mundo algo aparentemente glorioso, trasladaos con vuestra mente al paraíso. Empezad a ser lo que en lo porvenir seréis, y oiréis a vuestro Esposo decir: «Ponme cual sello sobre tu corazón, cual marca sobre tu brazo.» Y así, fortalecida de cuerpo y de espíritu, clamaréis diciendo: «Las -muchas aguas no han podido apagar el amor, y los ríos no podrán ahogarlo.»” Porque es fuerte el amor, etc.: Dice San Agustín a prepósito de estas palabras: Es imposible expresar con mayor magnificencia la fuerza del amor. Porque ¿quién es el que resiste a la muerte? Podemos resistir al fuego, al furor de las olas, a la espada, a los poderes, a los reyes; pero viene la muerte, y ¿quién puede presentarle resistencia? Ella es más fuerte que todas las cosas (De laude caritatis). Sin embargo, dice aquí el Espíritu Santo: El amor es fuerte como muerte. Hay, en este pasaje una estupenda revelación que nos hace penetrar en el abismo del amor de Dios: en el abismo de sus dones, que llegan hasta la Cruz en que muere su Hijo unigénito, y también en el abismo de las venganzas del amor despreciado y celoso (Santiago 4, 4 s.; I Juan 2, 15; Sabiduría 5, 18; Hebreos 10, 27-31; Deuteronomio 32, 21). De ahí que el Dante, cuya autoridad teológica encomia altamente Benedicto XV en una encíclica especial, coloque como inscripción en la puerta del infierno: “me hizo… el primer Amor”. Es que “el gran misterio del Cristianismo es el misterio del corazón de Dios” (Pío XII). Por eso —hace notar el Salterio de Babuty—, un concepto puramente intelectual de Dios, que no se moldease según los datos que Él nos hace conocer sobre sí mismo a la luz de la Revelación, nos llevaría a la negación de ésta. Pues la simple idea del Ser infinitamente perfecto e inmutable según la concepción de nuestra razón, es superada por lo que nos narra la Biblia sobre “el corazón de Dios, y que se sintetiza en la suprema y esencial definición de San Juan: “Dios es amor” (I Juan, 4, 8 y 16), y se comprueba en todos los actos de la vida de Jesús, cuyo corazón nos mostró toda la gama de los afectos: desde la compasión infinita, las lágrimas, el perdón sin límites y la tristeza mortal (Marcos 14, 33-34). hasta la indignación más airada contra los fariseos de pretendida virtud y ciencia, a los cuales se esconde lo que se revela a los niños (Lucas 10, 21). Siendo Cristo el retrato perfectísimo del Padre (Hebreos 1, 3; Juan 14, 9), y Persona siempre exclusivamente divina como el Padre, es indudable que si el mismo Padre se hubiese encarnado, habría manifestado idénticos afectos que su Hijo, y habría adoptado esas mismas actitudes que tantas veces nos parecen paradójicas en el Evangelio (véase Salmo 112, 7’ss. y nota). Vemos, pues, que, como señala el referido autor, hay un abismo entre la fórmula abstracta de un Ser perfecto, y la realidad de un Ser soberanamente libre y “dominado por el amor” (Pío XII), tal cual nos lo revela Cristo en la parábola del hijo pródigo (Lucas 15, 20 ss.) o en Juan 3, 16, o en el pago al obrero de la última hora (Mateo 20, 8 ss.), etc. Véase Salmo 91, 6 y nota.",
+    "6281": "Si un hombre, etc.; Este pasaje final y culminante tiene dos versiones que expresan ambas una inmensa verdad, en un triple aspecto. Según la Vulgata, si un hombre diera todas las riquezas de su casa por el amor, las reputaría por nada, esto es: para el que descubre el bien supremo del amor, como el tesoro escondido del Evangelio, todo lo demás es como nada (como estiércol, dice San Pablo en Filipenses 3, 8), y nunca se le ocurrirá que ha hecho una hazaña con haber dado la nada por el todo. En lugar de “las reputaría por nada” de la Vulgata, dice el hebreo: sería sumamente despreciado. Y aquí caben dos sentidos, también profundos: a) el amor se da, no se vende. El que creyese poder comprarlo con su oro propio, sería despreciable. Tal sentido (que eligen los expositores en general) muestra cuan miserable es el que pretende conquistar méritos por su propia suficiencia, prescindiendo del misterio del amor infinito de un Dios que entrega su Hijo gratis (Juan 3, 16), como Redentor, para que lo aprovechemos usando de sus méritos y de la gracia y dones del Espíritu Santo que Él nos conquistó, y sin los cuales no podemos nada, b) Volviendo al sentido de la Vulgata, es verdad también que aquel hombre, que como Pablo menospreciase sus riquezas por ir tras del amor, sería despreciado, es decir, mirado como un pobre loco por los hombres “razonables”, o sea, por el mundo, que nada entiende en las cosas de espíritu (Juan 14, 17 y 22; 15, 19; 17, 9 y 14; I Corintios 2, 14).",
+    "6282": "8 ss. En realidad, el Cantar propiamente dicho parece terminado con el epifonema del verso anterior. Tenemos ahora, a manera de apéndice, dos pequeñas parábolas, nada fáciles de descifrar, y luego (versículos 13 y 14) el suspiro final de ambos amantes. En la parábola de la hermanita (versículos 8-10) se discute si habla la Esposa con respecto a una hermana menor, o si hablan los hermanos con respecto a la Esposa, y si tales hermanos serían o no los de 1, 6. En el primer caso se propone las más variadas interpretaciones acerca de la Iglesia, de la Sinagoga, de Israel en su conversión final, etc. En el segundo caso, parece más difícil aún descifrar quién es esa hermana a quien se trata de preparar para el matrimonio. Lo único más o menos inteligible son las imágenes del -muro y de la puerta, pues ambas muestran la preocupación de aislar a la hermanita, quizá de una posible seducción: el muro significaría que ella ya está aislada y defendida, por lo cual sólo le harían un hermoso coronamiento de plata; la puerta, en cambio, expuesta a abrirse, requeriría ser reforzada. Por las palabras del versículo 10 vemos que la interesada debe ser muro y hallarse bien custodiada, por lo cual se siente en paz ante el Amado. Se encierra aquí tal vez algún misterio futuro que aún no nos es dado penetrar (cf. Introducción).",
+    "6283": "Tampoco ha sido explicada satisfactoriamente esta parábola de la viña, a la cual se proponen innumerables soluciones. Vaccari, consecuente con su interpretación, entiende que la Esposa desprecia en el versículo 12 las riquezas de Salomón, feliz de poder entregarse a su Esposo el pastor y cultivar la propia viña (quizá la que antes no pudo cultivar según 1, 6). Acaso por eso se la llama habitadora de jardines (versículo 13). Según otros, esta viña seria la misma de que se habla en Isaías 5, 1 ss.; 27, 2; Salmo 79, 9 ss.; Jeremías 2, 21; 12, 10; Ezequiel 15, 1 ss., como “plantada por Dios en medio de la multitud de los pueblos”.",
+    "6284": "¡Házmela oír! Por imposible que nos parezca semejante amor y encanto de parte del divino Príncipe para con la Esposa y con nuestra alma, que se siente ante Él como una tosca labradora, insanablemente indigna, sucia, nula, ingrata y perversa. Jesús nos ha dicho en el Evangelio palabras de amor que sobrepasan a todas las del Cantar, porque nos declaran simplemente un amor sin límites. “Como mi Padre me ama a Mí, así Yo os amo a vosotros” (Juan 15, 9). Sabemos que el Padre tiene en Él todas sus delicias (Mateo 17, 5), y que todo se lo ha dado (Juan 3, 35). Así es, por lo tanto, el amor que Jesús nos tiene, y de ahí qué sus delicias sean en estar con nosotros (Proverbios 8, 31) y que no sólo nos promete cuanto le pidamos. confiando en Él, sino que ya cumplió dándonos lo máximo, y así nos lo dijo claramente: “Nadie tiene amor más grande que el que da la vida por sus amigos” (Juan 15, 13). En cuanto al amor del Padre, el mismo Jesús nos revela en una palabra su extensión y al mismo tiempo su prueba: “Tanto amó Dios al mundo, que dio su Hijo Unigénito” (Juan 3, 16). Habitas en los jardines: véase 4, 12 y 16; 5, 1; 6, 2 y 11. Los amigos del Esposo, según la expresión de San Juan Bautista en Juan 3, 29, parecen ser aquellos santos que, como él, se gozarán en las Bodas del Cordero con su Esposa la Iglesia. Véase Apocalipsis 19, 7; 21, 2 y 9.",
+    "6285": "Corre: Joüon, de acuerdo con la versión siríaca, traduce con mayor precisión: acude, esto es, ven, como en 2, 17. Algunos se inclinan a interpretarlo como huye, pues los Esposos aparecen juntos en ese momento. Pero reconocen que tal sentido resulta inexplicable, y así lo dice claramente Fillion. La dificultad apuntada se resuelve fácilmente considerando este versículo como separado del anterior, o sea, como un estribillo en que la Esposa repite actualmente, después de tan maravillosas visiones, el suspiro con que empezó el poema anhelando el beso del Esposo. En efecto, así lo ha visto la tradición cristiana, según lo expresa uno de sus ilustres representantes al decir que “es una voz secreta que, aguzada por el movimiento oculto del Espíritu Santo, suena de continuo en los pechos y corazones de los ánimos justos y amados de Cristo, como lo certifica San Juan diciendo: El Espíritu y la Esposa dicen: ¡Ven (Señor)! (Apocalipsis 22, 17). Y poco después dice el mismo, en persona suya como uno de los más justos: ¡Así sea, ven, Señor Jesús! (Apocalipsis 22, 20; Mateo 6, 10)” (Fray Luis de León). Como la gacela y el cervatillo: esto es, velozmente. Jesús anunció, en efecto, que su regreso sería con la rapidez del relámpago (Mateo 24, 27; Lucas 17. 24; Apocalipsis 1, 1 y 22, 20). Este ansioso deseo y dichosa esperanza de su Venida, por parte de la Esposa, ha sido justamente llamado “la plenitud de la fe”, pues sabemos por San Pablo que quien cree de veras obra por amor (Gálatas 5, 6), y al que se ama se le desea en visión y posesión plena (Fil. 3, 20 s.; I Corintios 16, 22; Tito 2, 13-15). Tan santo deseo, cuya feliz realización hemos de esperar “cada hora” (San Clemente Romano), resulta así como una piedra de toque del verdadero amor a Jesús, pues no se concebiría que lo amásemos y no deseásemos presenciar su triunfo glorioso, verlo aparecer sobre las nubes (Apocalipsis 1, 7) y ser arrebatados a su encuentro en los aires (I Tesalonicenses 4, 16 s.). De ahí lo que San Juan enseña sobre el carácter santificador de este voto con que empieza y termina el divino Cántico, paralelamente con el Apocalipsis: “Sabemos que cuando aparezca seremos semejantes a Él porque lo veremos tal cual es. Entretanto, todo el que tiene esta esperanza en Él se hace santo como es santo Él” (I Juan 3, 2 s.)."
+  }
+}
