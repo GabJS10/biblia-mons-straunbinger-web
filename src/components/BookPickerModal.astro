@@ -253,6 +253,7 @@ const nt = books.filter((b) => b.testament === "NT");
 
   .tab {
     flex: 1;
+    min-height: 2.75rem; /* área táctil cómoda en móvil (~44px) */
     padding: 0.6rem 0.5rem;
     font: inherit;
     font-size: 0.95rem;
@@ -299,8 +300,8 @@ const nt = books.filter((b) => b.testament === "NT");
   .btn-close {
     display: grid;
     place-items: center;
-    width: 2.25rem;
-    height: 2.25rem;
+    width: 2.75rem; /* área táctil cómoda en móvil (~44px) */
+    height: 2.75rem;
     flex: none;
     font-size: 1rem;
     color: var(--text-secondary);

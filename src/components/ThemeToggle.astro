@@ -1,0 +1,130 @@
+---
+/**
+ * Botón flotante de cambio de tema (visible en todo el sitio).
+ *
+ * Cicla claro → oscuro → lectura → claro… actualizando `data-theme` en <html>
+ * y `localStorage.theme` (LA MISMA clave que usa el script anti-parpadeo de
+ * Layout.astro).
+ *
+ * El ícono correcto se muestra ya en el primer render vía CSS
+ * (`html[data-theme=…]`), de modo que coincide con el tema aplicado por el
+ * script anti-parpadeo sin depender de JS (sin flash de ícono). El JS solo
+ * cicla el tema y mantiene el `aria-label` describiendo el PRÓXIMO tema.
+ *
+ * Cuando el BookPickerModal está abierto con `.showModal()`, el <dialog> ocupa
+ * el top layer y su ::backdrop cubre este botón (que es contenido normal),
+ * además de dejar el resto de la página inerte: el toggle no se superpone ni es
+ * enfocable mientras el modal está abierto. No requiere lógica extra.
+ */
+---
+
+<button type="button" class="theme-toggle" aria-label="Cambiar tema">
+  <svg class="icon icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <circle cx="12" cy="12" r="4"></circle>
+    <line x1="12" y1="2" x2="12" y2="4.5"></line>
+    <line x1="12" y1="19.5" x2="12" y2="22"></line>
+    <line x1="2" y1="12" x2="4.5" y2="12"></line>
+    <line x1="19.5" y1="12" x2="22" y2="12"></line>
+    <line x1="4.9" y1="4.9" x2="6.7" y2="6.7"></line>
+    <line x1="17.3" y1="17.3" x2="19.1" y2="19.1"></line>
+    <line x1="4.9" y1="19.1" x2="6.7" y2="17.3"></line>
+    <line x1="17.3" y1="6.7" x2="19.1" y2="4.9"></line>
+  </svg>
+  <svg class="icon icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"></path>
+  </svg>
+  <svg class="icon icon-reading" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M12 5.5C10.4 4.4 7.9 3.8 5.5 3.8c-1 0-2 .1-2.5.4v14c.5-.3 1.5-.4 2.5-.4 2.4 0 4.9.6 6.5 1.7"></path>
+    <path d="M12 5.5c1.6-1.1 4.1-1.7 6.5-1.7 1 0 2 .1 2.5.4v14c-.5-.3-1.5-.4-2.5-.4-2.4 0-4.9.6-6.5 1.7"></path>
+    <line x1="12" y1="5.5" x2="12" y2="19.5"></line>
+  </svg>
+</button>
+
+<script>
+  const THEMES = ['light', 'dark', 'reading'] as const;
+  type Theme = (typeof THEMES)[number];
+
+  // Texto legible del tema al que se CAMBIARÍA (para el aria-label).
+  const NEXT_LABEL: Record<Theme, string> = {
+    light: 'Cambiar a modo claro',
+    dark: 'Cambiar a modo oscuro',
+    reading: 'Cambiar a modo lectura',
+  };
+
+  const btn = document.querySelector<HTMLButtonElement>('.theme-toggle');
+  if (btn) {
+    const current = (): Theme => {
+      const t = document.documentElement.dataset.theme;
+      return t === 'dark' || t === 'reading' ? t : 'light';
+    };
+    const next = (t: Theme): Theme => THEMES[(THEMES.indexOf(t) + 1) % THEMES.length];
+
+    // El aria-label anuncia la ACCIÓN (el próximo tema), no el actual.
+    const syncLabel = () => btn.setAttribute('aria-label', NEXT_LABEL[next(current())]);
+
+    // Lee el tema ya aplicado por el script anti-parpadeo (no asume 'light').
+    syncLabel();
+
+    btn.addEventListener('click', () => {
+      const target = next(current());
+      document.documentElement.dataset.theme = target;
+      localStorage.setItem('theme', target);
+      syncLabel();
+    });
+  }
+</script>
+
+<style>
+  .theme-toggle {
+    position: fixed;
+    top: 0.75rem;
+    right: 0.75rem;
+    z-index: 50;
+    display: grid;
+    place-items: center;
+    width: 2.75rem; /* área táctil ≥ 44px */
+    height: 2.75rem;
+    padding: 0;
+    color: var(--text);
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    border: 1px solid color-mix(in srgb, var(--text-secondary) 35%, transparent);
+    border-radius: 50%;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  }
+  .theme-toggle:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+  .theme-toggle:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .icon {
+    width: 1.35rem;
+    height: 1.35rem;
+    /* Por defecto ocultos; el tema activo muestra el suyo (regla global). */
+    display: none;
+  }
+
+  /* El ícono visible se decide por el tema aplicado a <html> ANTES de que corra
+     el JS, para que coincida de inmediato con el fondo (sin flash de ícono). */
+  :global(html[data-theme='light']) .icon-light,
+  :global(html[data-theme='dark']) .icon-dark,
+  :global(html[data-theme='reading']) .icon-reading {
+    display: block;
+  }
+  /* Fallback: si aún no hay data-theme, mostrar el ícono claro. */
+  :global(html:not([data-theme])) .icon-light {
+    display: block;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .theme-toggle {
+      transition: none;
+    }
+  }
+</style>

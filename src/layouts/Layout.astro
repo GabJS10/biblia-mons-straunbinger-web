@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import ThemeToggle from '../components/ThemeToggle.astro';
 
 interface Props {
   title?: string;
@@ -26,6 +27,7 @@ const { title = 'Biblia Straubinger' } = Astro.props;
     </script>
   </head>
   <body>
+    <ThemeToggle />
     <slot />
   </body>
 </html>

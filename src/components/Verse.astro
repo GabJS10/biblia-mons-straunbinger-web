@@ -67,9 +67,18 @@ const toSup = (n: number) =>
     font-size: 0.85em;
     color: var(--note-icon);
     text-decoration: none;
-    padding: 0 0.05em;
+    /* Superíndice pequeño pero con área de toque ampliada: el padding vertical
+       agranda la caja clickeable sin cambiar el tamaño visible del marcador ni
+       el interlineado de la prosa. */
+    padding: 0.5em 0.35em;
+    margin: 0 -0.15em;
   }
   .footnote-ref:hover {
     color: var(--accent);
+  }
+  .footnote-ref:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+    border-radius: 3px;
   }
 </style>

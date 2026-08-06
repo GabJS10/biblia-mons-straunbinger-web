@@ -90,13 +90,22 @@ const toSup = (n: number) =>
 
   .footnote-back {
     align-self: start;
+    display: inline-grid;
+    place-items: center;
+    min-width: 2.75rem; /* área táctil cómoda en móvil (~44px) */
+    min-height: 2.75rem;
+    margin: -0.5rem -0.5rem 0 0; /* compensa el tamaño extra para no desalinear */
     text-decoration: none;
     color: var(--note-icon);
     font-size: 1.1rem;
     line-height: 1;
-    padding: 0 0.25rem;
   }
   .footnote-back:hover {
     color: var(--accent);
+  }
+  .footnote-back:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 4px;
   }
 </style>
