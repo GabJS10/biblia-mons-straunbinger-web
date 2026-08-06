@@ -1,0 +1,102 @@
+---
+/**
+ * Sección de notas al pie del capítulo.
+ *
+ * Solo se renderiza si el capítulo tiene al menos una nota EFECTIVAMENTE
+ * referenciada (por un verso o una sección); no lista todo el diccionario
+ * `footnotes` del libro. Las notas llegan ya ordenadas por primera aparición y
+ * con su número local resuelto (ver `buildChapterFlow`).
+ */
+import type { ReferencedNote } from '../lib/chapterFlow';
+
+interface Props {
+  notes: ReferencedNote[];
+}
+
+const { notes } = Astro.props;
+
+const SUP = ['⁰', '¹', '²', '³', '⁴', '⁵', '⁶', '⁷', '⁸', '⁹'];
+const toSup = (n: number) =>
+  String(n)
+    .split('')
+    .map((d) => SUP[Number(d)])
+    .join('');
+---
+
+{
+  notes.length > 0 && (
+    <section class="footnotes" aria-label="Notas del capítulo">
+      <h2 class="footnotes-title">Notas de Mons. Straubinger</h2>
+      <ol class="footnotes-list">
+        {notes.map((note) => (
+          <li class="footnote" id={`footnote-${note.globalId}`}>
+            <span class="footnote-num" aria-hidden="true">
+              {toSup(note.localNum)}
+            </span>
+            <span class="footnote-text">{note.text}</span>
+            <a class="footnote-back" href={`#verse-${note.firstVerse}`} aria-label="Volver al texto">
+              ↑
+            </a>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )
+}
+
+<style>
+  .footnotes {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid color-mix(in srgb, var(--text-secondary) 30%, transparent);
+  }
+
+  .footnotes-title {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin: 0 0 1rem;
+  }
+
+  .footnotes-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  .footnote {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    scroll-margin-top: 5rem;
+    border-radius: 6px;
+  }
+
+  .footnote-num {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  .footnote-text {
+    line-height: 1.5;
+  }
+
+  .footnote-back {
+    align-self: start;
+    text-decoration: none;
+    color: var(--note-icon);
+    font-size: 1.1rem;
+    line-height: 1;
+    padding: 0 0.25rem;
+  }
+  .footnote-back:hover {
+    color: var(--accent);
+  }
+</style>

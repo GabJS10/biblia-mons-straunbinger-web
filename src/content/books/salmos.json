@@ -639,6 +639,7 @@
     },
     {
       "chapter": 9,
+      "label": "9a",
       "sections": [
         {
           "title": "El juicio de las naciones",
@@ -773,6 +774,7 @@
     },
     {
       "chapter": 9,
+      "label": "9b",
       "sections": [],
       "verses": [
         {
@@ -13200,6 +13202,7 @@
     },
     {
       "chapter": 113,
+      "label": "113a",
       "sections": [
         {
           "title": "Majestad del Libertador de Israel",
@@ -13263,6 +13266,7 @@
     },
     {
       "chapter": 113,
+      "label": "113b",
       "sections": [
         {
           "title": "Israel alabe a su Dios",

@@ -15,6 +15,10 @@ const books = defineCollection({
     chapters: z.array(
       z.object({
         chapter: z.number(),
+        // Identificador del capítulo para ruta y visualización cuando difiere del
+        // número (Salmos dobles: 9a/9b, 113a/113b, por la numeración Vulgata vs.
+        // hebrea). Ausente -> se usa String(chapter).
+        label: z.string().optional(),
         sections: z
           .array(
             z.object({

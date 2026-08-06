@@ -1,0 +1,75 @@
+---
+/**
+ * Un versículo del capítulo.
+ *
+ * - `id="verse-{number}"` en el contenedor: destino de los enlaces de retorno
+ *   "↑" de las notas al pie.
+ * - Número de versículo visible (color `--accent`).
+ * - Superíndices de nota con el NÚMERO LOCAL del capítulo; el `href` usa el ID
+ *   global para que el ancla `#footnote-<idGlobal>` sea única.
+ */
+import type { NoteRef } from '../lib/chapterFlow';
+
+interface Props {
+  number: number;
+  text: string;
+  notes: NoteRef[];
+}
+
+const { number, text, notes } = Astro.props;
+
+// Superíndices en dígitos Unicode (¹²³…) para el marcador local.
+const SUP = ['⁰', '¹', '²', '³', '⁴', '⁵', '⁶', '⁷', '⁸', '⁹'];
+const toSup = (n: number) =>
+  String(n)
+    .split('')
+    .map((d) => SUP[Number(d)])
+    .join('');
+---
+
+<span class="verse" id={`verse-${number}`}>
+  <sup class="verse-num" aria-hidden="true">{number}</sup>
+  <span class="verse-text">{text}</span>
+  {
+    notes.map((note) => (
+      <a
+        class="footnote-ref"
+        href={`#footnote-${note.globalId}`}
+        aria-label={`Nota ${note.localNum}`}
+      >
+        {toSup(note.localNum)}
+      </a>
+    ))
+  }
+</span>
+
+<style>
+  .verse {
+    /* Flujo de prosa: los versículos van uno tras otro en el mismo párrafo. */
+    scroll-margin-top: 5rem;
+  }
+
+  .verse-num {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 0.7em;
+    color: var(--accent);
+    margin-right: 0.15em;
+    vertical-align: super;
+    line-height: 0;
+  }
+
+  .verse-text {
+    /* El texto se trata como prosa continua. */
+  }
+
+  .footnote-ref {
+    font-size: 0.85em;
+    color: var(--note-icon);
+    text-decoration: none;
+    padding: 0 0.05em;
+  }
+  .footnote-ref:hover {
+    color: var(--accent);
+  }
+</style>

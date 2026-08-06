@@ -1,0 +1,61 @@
+---
+/**
+ * Introducción de un libro: `/[slug]/introduccion/`.
+ *
+ * Solo se genera para los libros que tienen una entrada en la colección `intros`
+ * con `book === slug`. El Markdown se renderiza con `render()` de content
+ * collections. El prólogo general (intro sin `book`) vive en `/prologo/`.
+ */
+import { getCollection, render } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+import ReaderHeader from '../../../components/ReaderHeader.astro';
+import { getAdjacent } from '../../../lib/readingSequence';
+
+export async function getStaticPaths() {
+  const intros = await getCollection('intros');
+  return intros
+    .filter((entry) => Boolean(entry.data.book))
+    .map((entry) => ({
+      params: { slug: entry.data.book! },
+      props: { entry },
+    }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { prev, next } = await getAdjacent(Astro.url.pathname);
+---
+
+<Layout title={`${entry.data.title} — Biblia Straubinger`}>
+  <div class="reader">
+    <ReaderHeader
+      eyebrow="Introducción"
+      title={entry.data.title}
+      prev={prev}
+      next={next}
+    />
+
+    <main class="reader-body prose">
+      <Content />
+    </main>
+  </div>
+</Layout>
+
+<style>
+  .reader {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 5rem;
+  }
+
+  /* Cuerpo en serif para lectura prolongada. */
+  .prose {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text);
+  }
+  .prose :global(a) {
+    color: var(--accent);
+  }
+</style>

@@ -263,9 +263,6 @@ y al
 señor Pbro.
 Juan Carlos Ruta, a cuyo cargo estuvo la corrección de
 las pruebas.
-Sit laus Deo!
-Juan Straubinger.
 
-_(Contenido de ejemplo. El prólogo general definitivo se redactará a mano más
-adelante. Al no declarar un campo `book` en el frontmatter, esta introducción
-corresponde a toda la Biblia y no a un libro en particular.)_
+- Sit laus Deo!
+  Juan Straubinger.

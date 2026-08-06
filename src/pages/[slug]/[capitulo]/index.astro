@@ -1,0 +1,52 @@
+---
+/**
+ * Página de lectura de un capítulo: `/[slug]/[capitulo]/`.
+ *
+ * `getStaticPaths` genera una página por cada capítulo de cada libro de la
+ * colección `books`. El `slug` de la ruta es el id de la entrada (nombre de
+ * archivo), consistente con los links del BookPickerModal.
+ */
+import { getCollection } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+import ChapterReader from '../../../components/ChapterReader.astro';
+import ReaderHeader from '../../../components/ReaderHeader.astro';
+import { getAdjacent } from '../../../lib/readingSequence';
+
+export async function getStaticPaths() {
+  const books = await getCollection('books');
+  return books.flatMap((entry) =>
+    entry.data.chapters.map((chapter) => ({
+      // El id de ruta es `label` si existe (Salmos 9a/9b…), si no el número.
+      params: { slug: entry.id, capitulo: chapter.label ?? String(chapter.chapter) },
+      props: { book: entry.data, chapter },
+    })),
+  );
+}
+
+const { book, chapter } = Astro.props;
+const chapterId = chapter.label ?? String(chapter.chapter);
+const { prev, next } = await getAdjacent(Astro.url.pathname);
+---
+
+<Layout title={`${book.book} ${chapterId} — Biblia Straubinger`}>
+  <div class="reader">
+    <ReaderHeader
+      eyebrow={book.book}
+      title={`Capítulo ${chapterId}`}
+      prev={prev}
+      next={next}
+    />
+
+    <main class="reader-body">
+      <ChapterReader book={book} chapter={chapter} />
+    </main>
+  </div>
+</Layout>
+
+<style>
+  .reader {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 5rem;
+  }
+</style>

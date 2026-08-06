@@ -1,0 +1,51 @@
+---
+/**
+ * Prólogo general de la Biblia: `/prologo/`.
+ *
+ * Corresponde a la entrada de `intros` que NO tiene `book` definido. Si no
+ * existe ninguna, se muestra un mensaje simple en vez de romper el build.
+ */
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import ReaderHeader from '../../components/ReaderHeader.astro';
+
+const intros = await getCollection('intros');
+const prologue = intros.find((entry) => !entry.data.book);
+const rendered = prologue ? await render(prologue) : null;
+const Content = rendered?.Content;
+const title = prologue?.data.title ?? 'Prólogo';
+---
+
+<Layout title={`${title} — Biblia Straubinger`}>
+  <div class="reader">
+    <ReaderHeader eyebrow="Prólogo" title={title} />
+
+    <main class="reader-body prose">
+      {Content ? <Content /> : <p class="placeholder">Prólogo próximamente.</p>}
+    </main>
+  </div>
+</Layout>
+
+<style>
+  .reader {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 5rem;
+  }
+
+  .prose {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text);
+  }
+  .prose :global(a) {
+    color: var(--accent);
+  }
+
+  .placeholder {
+    color: var(--text-secondary);
+    text-align: center;
+    font-style: italic;
+  }
+</style>

@@ -1,34 +1,10 @@
 ---
-import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import BookPickerModal from "../components/BookPickerModal.astro";
-import type { BookItem } from "../components/BookPickerModal.astro";
-import { bookOrder } from "../data/bookOrder";
+import { getBookCatalog } from "../lib/bookCatalog";
 
-// Cruce en build time: bookOrder (orden canónico) × colección `books` (nombre y
-// nº de capítulos) × colección `intros` (qué libros tienen introducción).
-const booksCol = await getCollection("books");
-const intros = await getCollection("intros");
-
-const byId = new Map(booksCol.map((b) => [b.id, b]));
-const introSlugs = new Set(
-  intros.map((i) => i.data.book).filter((b): b is string => Boolean(b)),
-);
-
-const books: BookItem[] = bookOrder.map((bo) => {
-  const entry = byId.get(bo.slug);
-  if (!entry) {
-    // Si un slug de bookOrder no tiene su JSON, es un bug (rompe el build).
-    throw new Error(`bookOrder: no existe el libro "${bo.slug}" en la colección books`);
-  }
-  return {
-    slug: bo.slug,
-    name: entry.data.book,
-    testament: bo.testament,
-    chapters: entry.data.chapters.length,
-    hasIntro: introSlugs.has(bo.slug),
-  };
-});
+// Catálogo compartido: bookOrder × colección `books` × colección `intros`.
+const books = await getBookCatalog();
 ---
 
 <Layout>

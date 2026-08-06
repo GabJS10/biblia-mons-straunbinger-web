@@ -1,0 +1,87 @@
+---
+/**
+ * Renderiza el contenido de un capítulo fusionando divisiones del libro,
+ * secciones editoriales y versículos en un único flujo (ver `buildChapterFlow`),
+ * seguido de la sección de notas al pie del capítulo.
+ *
+ * Niveles de encabezado: las divisiones (estructurales) son más prominentes
+ * (`h2`) que las secciones (subtítulos editoriales, `h3`).
+ *
+ * Todo el texto se trata como prosa por ahora (sin formato poético).
+ */
+import { buildChapterFlow, type BookData, type Chapter } from '../lib/chapterFlow';
+import Verse from './Verse.astro';
+import FootnotesSection from './FootnotesSection.astro';
+
+interface Props {
+  book: BookData;
+  chapter: Chapter;
+}
+
+const { book, chapter } = Astro.props;
+const { items, referencedNotes } = buildChapterFlow(book, chapter);
+---
+
+<article class="chapter">
+  {
+    items.map((item) => {
+      if (item.kind === 'division') {
+        return <h2 class="division">{item.title}</h2>;
+      }
+      if (item.kind === 'section') {
+        return <h3 class="section">{item.title}</h3>;
+      }
+      return <Verse number={item.verse.number} text={item.verse.text} notes={item.notes} />;
+    })
+  }
+
+  <FootnotesSection notes={referencedNotes} />
+</article>
+
+<style>
+  .chapter {
+    /* Prosa continua: los versículos fluyen dentro del mismo bloque. */
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text);
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  /* Los versículos son inline dentro del flujo de prosa, separados por espacio. */
+  .chapter :global(.verse) {
+    display: inline;
+  }
+  .chapter :global(.verse) + :global(.verse)::before {
+    content: ' ';
+  }
+
+  /* División: encabezado estructural prominente (números romanos del libro). */
+  .division {
+    font-family: var(--font-sans);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text);
+    text-align: left;
+    margin: 2.5rem 0 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  }
+  .division:first-child {
+    margin-top: 0;
+  }
+
+  /* Sección: subtítulo editorial menor. */
+  .section {
+    font-family: var(--font-sans);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-align: left;
+    margin: 1.75rem 0 0.75rem;
+  }
+  .section:first-child {
+    margin-top: 0;
+  }
+</style>

@@ -24,6 +24,8 @@
 html {
   /* Sin salto brusco al cambiar de tema. */
   transition: background-color 0.2s ease, color 0.2s ease;
+  /* Scroll suave al saltar a una nota o de vuelta al versículo (anclas #). */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -40,4 +42,35 @@ body {
 
 a {
   color: var(--accent);
+}
+
+/* Destello breve al saltar a un versículo o a una nota vía ancla (#...).
+   El pseudo-selector :target marca el elemento cuyo id coincide con el hash.
+   Se define aquí (sin scope) para que aplique a los elementos .verse y
+   .footnote renderizados por los componentes. */
+@keyframes target-flash {
+  from {
+    background-color: color-mix(in srgb, var(--accent) 30%, transparent);
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+.verse:target,
+.footnote:target {
+  animation: target-flash 2s ease-out;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* Sin animación: solo un cambio de color estático mientras es el objetivo. */
+  .verse:target,
+  .footnote:target {
+    animation: none;
+    background-color: color-mix(in srgb, var(--accent) 18%, transparent);
+  }
+  html {
+    scroll-behavior: auto;
+  }
 }

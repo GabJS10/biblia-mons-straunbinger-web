@@ -9,13 +9,9 @@
  * Los capítulos NO se renderizan de antemano (Salmos tiene 152): se construyen
  * en el cliente al pulsar un libro, a partir de los data-attributes del botón.
  */
-export interface BookItem {
-  slug: string;
-  name: string;
-  testament: "AT" | "NT";
-  chapters: number;
-  hasIntro: boolean;
-}
+// El tipo vive en el catálogo compartido; se re-exporta por conveniencia.
+import type { BookItem } from "../lib/bookCatalog";
+export type { BookItem };
 
 interface Props {
   books: BookItem[];
@@ -57,7 +53,7 @@ const nt = books.filter((b) => b.testament === "NT");
               class="book-btn"
               data-slug={b.slug}
               data-name={b.name}
-              data-chapters={b.chapters}
+              data-chapters={b.chapterIds.join(",")}
               data-intro={b.hasIntro ? "1" : "0"}
             >
               {b.name}
@@ -73,7 +69,7 @@ const nt = books.filter((b) => b.testament === "NT");
               class="book-btn"
               data-slug={b.slug}
               data-name={b.name}
-              data-chapters={b.chapters}
+              data-chapters={b.chapterIds.join(",")}
               data-intro={b.hasIntro ? "1" : "0"}
             >
               {b.name}
@@ -149,12 +145,15 @@ const nt = books.filter((b) => b.testament === "NT");
         chapterGrid.appendChild(link);
       }
 
-      const total = Number(chapters);
-      for (let n = 1; n <= total; n++) {
+      // `chapters` es la lista de ids separada por comas ("1,2,…" o con
+      // etiquetas como "9a,9b"). Cada id es a la vez el texto de la celda y el
+      // segmento de la ruta /[slug]/[id]/.
+      const ids = (chapters ?? "").split(",").filter(Boolean);
+      for (const id of ids) {
         const link = document.createElement("a");
-        link.href = `/${slug}/${n}/`;
+        link.href = `/${slug}/${id}/`;
         link.className = "chapter-cell";
-        link.textContent = String(n);
+        link.textContent = id;
         chapterGrid.appendChild(link);
       }
 
