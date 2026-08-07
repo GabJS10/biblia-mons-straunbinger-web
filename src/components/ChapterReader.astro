@@ -20,18 +20,30 @@ interface Props {
 
 const { book, chapter } = Astro.props;
 const { items, referencedNotes } = buildChapterFlow(book, chapter);
+
+// Índice del PRIMER versículo del flujo: recibe la letra capitular, aunque antes
+// haya encabezados de división/sección (la versal va en el primer versículo, no
+// en el primer carácter visible de la página).
+const firstVerseIndex = items.findIndex((item) => item.kind === 'verse');
 ---
 
 <article class="chapter">
   {
-    items.map((item) => {
+    items.map((item, index) => {
       if (item.kind === 'division') {
         return <h2 class="division">{item.title}</h2>;
       }
       if (item.kind === 'section') {
         return <h3 class="section">{item.title}</h3>;
       }
-      return <Verse number={item.verse.number} text={item.verse.text} notes={item.notes} />;
+      return (
+        <Verse
+          number={item.verse.number}
+          text={item.verse.text}
+          notes={item.notes}
+          dropcap={index === firstVerseIndex}
+        />
+      );
     })
   }
 
@@ -41,8 +53,8 @@ const { items, referencedNotes } = buildChapterFlow(book, chapter);
 <style>
   .chapter {
     /* Prosa continua: los versículos fluyen dentro del mismo bloque. */
-    font-family: var(--font-serif);
-    font-size: 1.15rem;
+    font-family: var(--font-body);
+    font-size: 1.25rem;
     line-height: 1.8;
     color: var(--text);
     text-align: justify;
@@ -59,14 +71,14 @@ const { items, referencedNotes } = buildChapterFlow(book, chapter);
 
   /* División: encabezado estructural prominente (números romanos del libro). */
   .division {
-    font-family: var(--font-sans);
-    font-size: 1.3rem;
+    font-family: var(--font-display);
+    font-size: 1.55rem;
     font-weight: 600;
     color: var(--text);
     text-align: left;
-    margin: 2.5rem 0 1rem;
-    padding-bottom: 0.4rem;
-    border-bottom: 2px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    margin: 2.75rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
   }
   .division:first-child {
     margin-top: 0;
@@ -74,9 +86,10 @@ const { items, referencedNotes } = buildChapterFlow(book, chapter);
 
   /* Sección: subtítulo editorial menor. */
   .section {
-    font-family: var(--font-sans);
-    font-size: 1.05rem;
-    font-weight: 600;
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: italic;
     color: var(--text-secondary);
     text-align: left;
     margin: 1.75rem 0 0.75rem;

@@ -9,6 +9,7 @@
 import { getCollection } from 'astro:content';
 import Layout from '../../../layouts/Layout.astro';
 import ChapterReader from '../../../components/ChapterReader.astro';
+import ChapterNav from '../../../components/ChapterNav.astro';
 import ReaderHeader from '../../../components/ReaderHeader.astro';
 import { getAdjacent } from '../../../lib/readingSequence';
 
@@ -30,16 +31,15 @@ const { prev, next } = await getAdjacent(Astro.url.pathname);
 
 <Layout title={`${book.book} ${chapterId} — Biblia Straubinger`}>
   <div class="reader">
-    <ReaderHeader
-      eyebrow={book.book}
-      title={`Capítulo ${chapterId}`}
-      prev={prev}
-      next={next}
-    />
+    <ReaderHeader eyebrow={book.book} title={`Capítulo ${chapterId}`} />
 
     <main class="reader-body">
       <ChapterReader book={book} chapter={chapter} />
     </main>
+
+    {/* Navegación de lectura: flechas fijas (desktop) + barra final tras las
+        notas (móvil). Ver ChapterNav. */}
+    <ChapterNav prev={prev} next={next} />
   </div>
 </Layout>
 

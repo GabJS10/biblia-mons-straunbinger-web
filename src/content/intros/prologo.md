@@ -2,267 +2,182 @@
 title: Prólogo general
 ---
 
-No sin cierta inquietud presenta el autor una nueva versión de la
-Biblia, y en vez de congratularse por ello se siente más bien
-obligado a justificar el esfuerzo intentado, que muchos consideraban
-imposible.
+# Prólogo de la traducción
 
-Casi al acaso comenzó esta edición. Después de haber publicado
-los cinco tomos de la Biblia Vulgata, el que esto escribe pensaba
-descansar de sus tareas de publicista. Fue entonces cuando una gran
-editorial argentina, deseando mostrar su adhesión al IV Congreso
-Eucarístico Nacional, quiso ofrecer al público una traducción directa
-de los Evangelios según el texto original griego.
+## I. Origen de la traducción
 
-Rechazada la demanda por creerla superior a sus fuerzas, hubo al
-fin de acceder ante la insistencia de los editores.
+El autor presenta esta nueva traducción de la Biblia con humildad, consciente de la enorme dificultad que supone emprender una obra de esta magnitud.
 
-En septiembre, de 1944, prologada por Su Em. el Cardenal
-Santiago L. Copello, vió la luz la
-1° traducción argentina de los
-Evangelios. Víctor Rebuffo iluminó el texto con 186 xilografías.
-El Cardenal Primado, en una emotiva ceremonia, bendijo el 4 de
-octubre del mismo año la edición que se presentaba en tres tipos
-distintos, a los que se sumaba un ejemplar único impreso en
-pergamino, destinado a S. S. Pío XII.
+El proyecto comenzó de manera casi accidental. Tras publicar los cinco tomos de la **Biblia Vulgata**, pensaba retirarse de su labor editorial. Sin embargo, una importante editorial argentina le solicitó una traducción directa de los **Evangelios** desde el texto griego original para conmemorar el **IV Congreso Eucarístico Nacional**.
 
-Muy pronto la Pía Sociedad de San Pablo, en sano afán de
-difundir la palabra de Dios, hizo varias ediciones populares del
-mismo texto, las que pasaron el medio millón de ejemplares
-vendidos en toda América. Chile y Venezuela encargaron y
-obtuvieron una edición propia. El grano de mostaza crecía.
-El éxito logrado por la bendición de Dios, impulsaba al autor y a
-los editores a proseguir la obra emprendida. En el año 1945 se puso
-en venta una lujosa edición de los
-Hechos de los Apóstoles.
+Aunque inicialmente rechazó la propuesta por considerarla superior a sus fuerzas, finalmente aceptó ante la insistencia de los editores.
 
-Dos años más tarde le siguieron, en dos tomos, las
-Cartas de San Pablo.
-Ambos libros tuvieron también sus ediciones populares.
-En el año 1948, la casa editora Desclée, de Brouwer y Cía.
-publicaba la
-traducción íntegra del Nuevo Testamento.
-Esta edición, aparte de la más favorable acogida, le valió al
-traductor el título de Doctor
-honoris causa, conferido por la
-Facultad Teológica de la Universidad de Míinster (Alemania).
-Quedaba concluida así, la primera parte de la obra emprendida.
-Maduraba entretanto la segunda, a saber, la
-traducción del Antiguo
-Testamento según el texto hebreo.
+### Desarrollo de la obra
 
-Fueron primicias de éste trabajo,los Salmos publicados en 1949 por la misma casa editora Desclée, de
-Brouwer y Cía.
-Llega ahora el momento de entregar al público esta flamante
-traducción del
-Antiguo Testamento. De este modo la nueva versión
-se presenta en cuatro tomos, a los que se agregará un quinto,
-conteniendo una Concordancia actualmente en preparación, y un
-sexto comprendiendo un Atlas Bíblico.
-Tal es, en brevísimos rasgos, el origen y el desarrollo de esta
-traducción. Siete años de ímproba labor, llenadas todas las horas
-con persistente trabajo. Siete años son pocos si se considera la
-magnitud de la obra. Pero son muchos para quien tiene que
-realizarla.
+- **1944:** publicación de la primera traducción argentina de los **Evangelios**, prologada por el cardenal **Santiago L. Copello** e ilustrada con **186 xilografías** de **Víctor Rebuffo**.
+- La edición fue bendecida el **4 de octubre de 1944**, incluyendo un ejemplar en pergamino destinado al papa **Pío XII**.
+- La **Pía Sociedad de San Pablo** publicó posteriormente varias ediciones populares que superaron el **medio millón de ejemplares** distribuidos por América.
+- Chile y Venezuela publicaron ediciones propias.
+- **1945:** publicación de los **Hechos de los Apóstoles**.
+- **1947:** publicación de las **Cartas de San Pablo**, en dos tomos.
+- **1948:** la editorial **Desclée de Brouwer** publicó el **Nuevo Testamento completo**, cuya favorable acogida llevó a que el traductor recibiera el título de **Doctor honoris causa** por la Universidad de **Münster (Alemania)**.
+- **1949:** publicación de los **Salmos**, como anticipo del Antiguo Testamento.
+- Finalmente se publica la traducción completa del **Antiguo Testamento**, prevista en cuatro tomos, con un quinto destinado a una **Concordancia** y un sexto a un **Atlas Bíblico**.
 
-## II
+El autor resume la obra como el fruto de **siete años de intenso trabajo**, dedicados casi por completo a la traducción de la Sagrada Escritura.
 
-### CARACTERÍSTICAS DE LA NUEVA VERSIÓN
+---
 
-1. Si no andamos equivocados, es ésta la
-   primera versión católica
-   americana, hecha sobre los textos primitivos. Hasta el presente,
-   dentro del campo católico, América no ha conocido la impresión de
-   una Biblia traducida a base del texto original. Verdad es que los
-   católicos de Estados Unidos han comenzado a traducirla y es de
-   esperar que en pocos años poseerán su traducción de la Biblia, mas
-   el caso es que apenas se encuentran en los comienzos.
-   En Sudamérica el panorama bíblico presenta un aspecto
-   desconocido quizá por los escriturístas europeos y por muchos de
-   los mismos autores americanos. Nos referimos a la Biblia castellana,
-   traducida por el Pbro.
-   Guillermo Jünemann, sacerdote de la
-   Arquidiócesis de Concepción (Chile). Jünemann, excelente
-   conocedor de la lengua griega y formado en la escuela de San
-   Crisóstomo, cuyos escritos eran su lectura predilecta, pudo atreverse
-   a traducir toda la
-   Sagrada Escritura del griego, tomando para el
-   Antiguo Testamento el texto de los Setenta. Apareció el
-   Nuevo
-   Testamento en 1928 en Concepción de Chile; la versión del
-   Antiguo
-   Testamento, en cambio, quedó sin publicar. Consérvase en 32
-   cuadernos y espera a un editor benévolo que la edite para honor de
-   Dios y en memoria de Jünemann (muerto en 1938), que merece tal
-   monumento, siendo como es el primer traductor de la Biblia en la
-   América católica. Sin embargo, siendo su versión la de los Setenta,
-   podemos decir que la presente es la primera completa hecha entre
-   los católicos americanos sobre el texto hebreo del Antiguo
-   Testamento.
+# II. Características de la nueva versión
 
-2. La segunda característica de esta traducción consiste en haber
-   sido realizada por
-   un solo traductor, el cual es, simultáneamente, su
-   único comentador.
-   Las versiones modernas españolas, francesas, italianas, alemanas,
-   y
-   también la norteamericana que se está preparando, son el resultado
-   de un trabajo realizado en común por varios autores. A nuestro
-   modesto parecer, es conveniente que se trabaje así. Verter roda la
-   Biblia en un idioma moderno, y comentarla al mismo tiempo,
-   significa un esfuerzo tan grande que nos permitimos, habiendo
-   escarmentado en cabeza propia, aconsejar a los demás no seguir
-   nuestro ejemplo.
-   Los que están al tanto de la vida intelectual de este continente
-   saben perfectamente cuán difícil sería reunir un núcleo de
-   traductores de la Biblia. Con todo, quisiéramos evitar a otros lo que
-   hemos sufrido en estos últimos años, cuando temíamos nos
-   acaeciese lo que a Jünemann. La mano bondadosa de. Dios ha
-   bendecido la obra, dándonos las fuerzas físicas e intelectuales
-   necesarias para llevar a buen término la tarea comenzada.
+## 1. Primera traducción católica americana desde los textos originales
 
-3. La tercera característica consiste en las
-   notas, que, a la vez,
-   revisten el carácter de comentarios o pequeños artículos. No nos
-   toca a nosotros hablar de su valor —juzguen de ellas los críticos—,
-   pero sí del método adoptado en la explicación del texto sagrado.
-   Atribuyese no sin razón a nuestra época, una fecundísima
-   restauración de los estudios bíblicos, que es semejante a una
-   primavera floreciente, a la que ha de seguir una rica cosecha de
-   frutos espirituales.
-   Presenciamos, en verdad, una primavera bíblica. Los Sumos
-   Pontífices, desde León XIII, no se han cansado de recomendar al
-   pueblo cristiano la lectura de la Biblia.
-   El Papa
-   Pío X dice al respecto: “Queriendo renovarlo todo en
-   Jesucristo, nada deseamos más que el acostumbrarse nuestros hijos a
-   tener la Sagrada Escritura para la lección cotidiana. Por ella se puede
-   conocer mejor el modo de renovar todas las cosas en Jesucristo."
-   Benedicto XV alaba de modo especial a los que se dedican al
-   apostolado bíblico y dice que "este apostolado ha sido por cierto
-   singularmente fecundo para la Iglesia de Dios, puesto que así un
-   gran número de almas se acercan desde entonces a esta mesa de
-   doctrina celestial que Nuestro Señor ha hecho poner para el
-   universo cristiano, por medio de sus profetas, apóstoles y doctores".
-   La encíclica
-   Divino Afflante Spiritu de
-   Pío XII, es el coronamiento de
-   los esfuerzos pontificios que tienden a hacer de la Biblia la lectura
-   cotidiana de los fieles. "Favorezcan, dice el Papa a los Prelados, y
-   presten su auxilio a todas aquellas pías asociaciones que tengan por
-   fin editar y difundir entre los fieles, ejemplares impresos de las
-   Sagradas Escrituras, principalmente de los Evangelios, y procurar con
-   todo empeño que en las familias cristianas se tenga ordenada y
-   santamente cotidiana lectura de ellas."
-   Por todo esto se ve que los Sumos Pontífices desean que la Biblia
-   llegue al pueblo, y no solamente a los sacerdotes y laicos cultos.
-   Síguese de esto la inmensa responsabilidad de los comentaristas,
-   sobre quienes pesa la divina misión de explicar al pueblo la palabra
-   que tiene el poder de salvar las almas (Sant., 1, 21;
-   cf. Rom., 1, 16).
-   No negamos la necesidad de la crítica textual, ni tampoco el valor
-   de las notas filológicas, históricas, geográficas, arqueológicas, y
-   gracias a Dios tenemos ese aparato científico en muchas ediciones;
-   mas no olvidemos que en las publicaciones bíblicas que se dirigen al
-   pueblo, no debe faltar el método patrístico, que ante todo busca en
-   la Escritura las verdades doctrinales y las enseñanzas prácticas para
-   llevar una vida de más en más cristiana.
-   En la revista "Cultura Bíblica'' (febrero de 1950, n° 69, págs. 34-35)
-   encontramos algunas observaciones tomadas de un artículo de la
-   revista "Civiltà Cattolica" que enfocan acertadamente la dificultad
-   que hoy día se presenta al exégeta católico. El articulista cita las
-   palabras de von Dobschütz, quien dice que la Biblia no es una
-   colección de documentos importantes para la historia o la lengua; es
-   un producto de la piedad religiosa, por lo cual sólo un hombre
-   piadoso puede explicar bien este libro; "será buena únicamente
-   aquella exégesis que avive la caridad y sentido religioso, que
-   enfervorice la piedad, embebida en el afecto piadoso del autor, que
-   se transfunde a los lectores". Se sobreentiende la inspiración de la
-   Biblia.
-   A más de sumamente sencillo, nuestro método no es nada nuevo.
-   Teniendo en cuenta el ambiente en que vivimos y para el cual
-   escribimos, damos preferencia a la explicación práctica, destacando
-   las ideas fundamentales de la Biblia y mostrando su aplicación en la
-   vida.
-   Sobre todo hemos procurado mostrar la armonía que existe entre
-   los dos Testamentos y la coincidencia de los pasajes paralelos, a fin
-   de que el lector tenga siempre a la vista la unidad viva de las
-   Escrituras, desde el Génesis hasta el Apocalipsis, pudiendo así
-   deleitarse con las luces que el Nuevo Testamento arroja sobre el
-   Antiguo.
-   Este método no excluye las notas científicas y técnicas, porque la
-   interpretación práctica sólo tiene valor cuando se funda sobre una
-   ciencia exegética precisa.
-   No fué posible comentar detalladamente todos los libros. Esto
-   hubiese exigido algunos tomos más de los que el editor había
-   proyectado. Por eso nos hemos concentrado especialmente sobre el
-   Génesis, los Salmos, el Cantar de los Cantares y los Profetas, vale
-   decir, sobre aquellos libros que oponen más problemas o son de
-   especial importancia para la vida religiosa.
+El autor sostiene que ésta es la **primera traducción católica americana realizada directamente sobre los textos originales**.
 
-# III
+Reconoce, sin embargo, el precedente del sacerdote chileno **Guillermo Jünemann**, quien tradujo toda la Biblia desde la versión griega de los **Setenta**.
 
-La versión misma no pretende hacer competencia a ninguna de las
-que hasta ahora han sido hechas sobre los textos originales. Al
-contrario, reconocemos los valores tanto de la traducción de Nácar-
-Colunga, como de la de Bover-Cantera, teniendo ambas sus
-particularidades bien definidas. En muchísimos pasajes los hemos
-consultado, así como también hemos acudido a otras traducciones
-en lenguas modernas. Confesamos, agradecidos, que nos han
-prestado grandes servicios.
-En un solo punto esta versión difiere esencialmente de las demás,
-y es en los libros deutero-canónicos, es decir, en aquellos libros que
-no están en la Biblia hebrea. Nácar-Colunga y Bover-Cantera los
-traducen del texto griego actual, que no siempre es el mejor,
-mientras esta versión los presenta en la versión de la Vulgata, cosa
-que hemos indicado en la introducción respectiva de cada libro
-deuterocanónico.
-No poca dificultad ofrecen al traductor los nombres propios.
-Bover-Cantera los transcribe en exacta fonética hebrea y con el
-acento que tienen en el hebreo, en tanto que Nácar-Colunga y otros
-se toman la libertad de adaptarlos a la Vulgata o a una ortografía
-moderna.
-Nosotros no hemos seguido estrictamente ninguno de estos dos
-sistemas. Hemos hecho una distinción entre los nombres propios
-muy conocidos, usados ya como los modernos, y los otros que no
-han sido asimilados. Los de la primera categoría van con la forma
-que recibieran en la Vulgata: por ejemplo, Eva, Abel, Sara, Rebeca,
-Elias, Elíseo. Los de la segunda, en cambio, llevan el acento hebreo,
-aunque en parte han sido asimilados a la Vulgata.
+- El **Nuevo Testamento** de Jünemann fue publicado en **1928**.
+- Su traducción del **Antiguo Testamento** permaneció inédita.
 
-# IV
+Por ello, considera que su obra constituye la primera traducción católica americana completa realizada directamente desde el **texto hebreo** del Antiguo Testamento.
 
-Mucho más podríamos decir sobre nuestra nueva versión, pero no
-queremos adelantarnos a la crítica.
-Sea cual fuere el juicio que nuestro trabajo merezca, queremos, en
-todo caso, rogar a los críticos tengan en cuenta las enormes
-dificultades que se presentan a quien intenta traducir solo la Biblia,
-con los pocos recursos científicos de que dispone Sudamérica, los
-cuales, a lo menos en lo que hace a las ciencias bíblicas, son muy
-inferiores a los que tienen a mano los traductores europeos.
-Damos gracias al Padre de las luces (Sant. 1, 17) por habernos
-concedido la inmensa satisfacción espiritual de terminar en avanzada
-edad la obra más importante que pensar se pueda.
-Que el mensaje celestial de la divina Escritura, inspirada por el
-Espíritu Santo, ilumine a todos los de buena voluntad. Es antorcha
-para nuestros pies y luz para nuestra senda (S. 118, 105); es palabra
-viva y eficaz, más penetrante que una espada de dos filos (Hebr. 4,
-12); es fuente de sabiduría (Eclo. 1, 5); semilla que, sembrada en
-buena tierra, da frutos, al ciento por uno (Mat. 13, 23). Pero esta
-Palabra es, al mismo tiempo, fuego que quema, martillo que tritura
-la roca (Jer. 23, 29).
-De la disposición espiritual del lector depende el fruto de la lectura
-de la Biblia. ¿Será fruto del Espíritu Santo, luz y vida? ¿O será fuego
-y martillo? Rogamos a Dios que para todos sea luz y antorcha y que
-no haya ninguno que no experimente "el consuelo de las Escrituras"
-(Rom., 15. 4).
-Agradecemos a todos los que nos han ayudado directa o
-indirectamente, en especial a la casa en donde se hizo esta
-traducción: el Seminario Arquidiocesano San José de La Plata,
-y al
-señor Pbro.
-Juan Carlos Ruta, a cuyo cargo estuvo la corrección de
-las pruebas.
+---
 
-- Sit laus Deo!
-  Juan Straubinger.
+## 2. Obra realizada por un solo traductor
+
+Una segunda característica es que toda la traducción y sus comentarios fueron realizados por **una sola persona**.
+
+Mientras que las grandes traducciones modernas suelen ser fruto del trabajo de numerosos especialistas, el autor asumió personalmente toda la tarea.
+
+Reconoce que este método resulta extremadamente exigente y recomienda que futuras traducciones sean realizadas por equipos de trabajo.
+
+Atribuye únicamente a la ayuda de Dios el haber podido concluir la obra.
+
+---
+
+## 3. Las notas y comentarios
+
+La tercera característica reside en las abundantes **notas explicativas**, concebidas como pequeños comentarios o artículos.
+
+Su finalidad no es únicamente ofrecer información:
+
+- Filológica.
+- Histórica.
+- Geográfica.
+- Arqueológica.
+
+Sino, sobre todo, ayudar al lector a descubrir el sentido espiritual y práctico de la Escritura.
+
+---
+
+# El método de interpretación
+
+El autor afirma que la interpretación bíblica debe inspirarse también en el método de los **Padres de la Iglesia**, buscando principalmente:
+
+- Las verdades doctrinales.
+- La enseñanza moral.
+- La aplicación práctica para la vida cristiana.
+
+La explicación científica conserva toda su importancia, pero debe ponerse al servicio de la vida espiritual.
+
+---
+
+# El impulso de los Papas
+
+El autor recuerda cómo los Sumos Pontífices han promovido constantemente la lectura de la Biblia.
+
+Entre ellos destacan:
+
+### San Pío X
+
+Deseaba que la Sagrada Escritura fuera lectura cotidiana de todos los cristianos.
+
+### Benedicto XV
+
+Alabó especialmente el apostolado bíblico, considerando que acerca innumerables almas a la Palabra de Dios.
+
+### Pío XII
+
+En la encíclica **Divino Afflante Spiritu** exhortó a los obispos a fomentar la difusión de las Sagradas Escrituras y su lectura diaria en las familias cristianas.
+
+---
+
+# Método seguido en las notas
+
+Las notas procuran:
+
+- Explicar el sentido espiritual del texto.
+- Mostrar la unidad entre el Antiguo y el Nuevo Testamento.
+- Relacionar los pasajes paralelos de la Biblia.
+- Facilitar la aplicación práctica de la Escritura a la vida cristiana.
+
+Al mismo tiempo, conservan el rigor exegético necesario para fundamentar adecuadamente esa interpretación.
+
+Debido a las limitaciones editoriales, algunos libros recibieron comentarios más extensos que otros.
+
+Especial atención se dedicó a:
+
+- Génesis.
+- Salmos.
+- Cantar de los Cantares.
+- Los Profetas.
+
+---
+
+# III. Criterios de traducción
+
+El autor declara que su propósito no es competir con otras excelentes traducciones, especialmente:
+
+- **Nácar-Colunga**.
+- **Bover-Cantera**.
+
+Reconoce haberlas consultado frecuentemente junto con otras versiones modernas.
+
+La principal diferencia aparece en los **libros deuterocanónicos**.
+
+Mientras otras traducciones los realizan a partir del texto griego, esta edición sigue principalmente la **Vulgata**, circunstancia explicada en la introducción de cada libro.
+
+---
+
+# Los nombres propios
+
+Respecto a los nombres bíblicos, el autor adopta un criterio intermedio.
+
+Los nombres ampliamente conocidos conservan la forma tradicional de la Vulgata, por ejemplo:
+
+- Eva.
+- Abel.
+- Sara.
+- Rebeca.
+- Elías.
+- Eliseo.
+
+Los menos conocidos se aproximan más a la pronunciación hebrea.
+
+---
+
+# IV. Conclusión
+
+El autor deja el juicio definitivo de su trabajo a la crítica especializada, pero pide que se tengan presentes las dificultades de realizar una traducción bíblica completa prácticamente en solitario y con recursos científicos mucho más limitados que los disponibles en Europa.
+
+Da gracias a Dios por haber podido concluir, ya en edad avanzada, la obra más importante de su vida.
+
+Finalmente expresa su deseo de que la Sagrada Escritura produzca abundantes frutos espirituales en todos sus lectores.
+
+Recordando diversos textos bíblicos, presenta la Palabra de Dios como:
+
+- Antorcha para el camino (Salmo 119,105).
+- Palabra viva y eficaz (Hebreos 4,12).
+- Fuente de sabiduría (Eclesiástico 1,5).
+- Semilla que produce abundante fruto (Mateo 13,23).
+- Fuego y martillo que purifican (Jeremías 23,29).
+
+Concluye rogando que todos experimenten el **"consuelo de las Escrituras"** (Romanos 15,4).
+
+El autor agradece especialmente:
+
+- Al **Seminario Arquidiocesano San José de La Plata**, donde se realizó la traducción.
+- Al **Pbro. Juan Carlos Ruta**, responsable de la corrección de pruebas.
+
+> **Sit laus Deo!**  
+> **Juan Straubinger.**

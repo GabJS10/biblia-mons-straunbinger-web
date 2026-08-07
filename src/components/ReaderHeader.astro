@@ -4,74 +4,56 @@
  * prólogo). Reemplaza el header mínimo ad-hoc del Paso 3.
  *
  * Incluye el `BookPickerModal` (alimentado con el catálogo completo) para que
- * el botón "Elegir libro" pueda reabrirlo desde cualquier página del lector.
+ * el botón "Elegir libro" pueda reabrirlo desde cualquier página del lector, y
+ * un botón de inicio que enlaza a `/`.
  *
- * `prev`/`next` son opcionales: si no se pasan (o son null) el botón
- * correspondiente no se renderiza —no queda deshabilitado ni deja hueco—. El
- * prólogo usa esta cabecera sin `prev`/`next`.
+ * La navegación anterior/siguiente ya NO vive aquí: se movió a `ChapterNav`
+ * (Paso 6c), que las páginas de capítulo/introducción renderizan aparte.
  */
 import BookPickerModal from './BookPickerModal.astro';
 import { getBookCatalog } from '../lib/bookCatalog';
-import type { SequenceNode } from '../lib/readingSequence';
 
 interface Props {
   eyebrow: string;
   title: string;
-  prev?: SequenceNode | null;
-  next?: SequenceNode | null;
 }
 
-const { eyebrow, title, prev = null, next = null } = Astro.props;
+const { eyebrow, title } = Astro.props;
 const books = await getBookCatalog();
 ---
 
 <header class="reader-header">
   <div class="reader-topline">
-    <div class="reader-heading">
-      <p class="reader-eyebrow">{eyebrow}</p>
-      <h1 class="reader-title">{title}</h1>
+    <div class="reader-lead">
+      <div class="reader-heading">
+        <p class="reader-eyebrow">{eyebrow}</p>
+        <h1 class="reader-title">{title}</h1>
+      </div>
     </div>
+    <a class="btn-home" href="/" aria-label="Ir al inicio">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 10.5 12 3l9 7.5" />
+          <path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5" />
+        </svg>
+      </a>
     <button type="button" class="btn-picker" data-open-picker>Elegir libro</button>
   </div>
-
-  {
-    (prev || next) && (
-      <nav class="reader-nav" aria-label="Navegación de lectura">
-        {prev ? (
-          <a class="nav-btn nav-prev" href={prev.url} rel="prev">
-            <span class="nav-arrow" aria-hidden="true">←</span>
-            <span class="nav-label">{prev.label}</span>
-          </a>
-        ) : (
-          <span class="nav-spacer" aria-hidden="true" />
-        )}
-        {next ? (
-          <a class="nav-btn nav-next" href={next.url} rel="next">
-            <span class="nav-label">{next.label}</span>
-            <span class="nav-arrow" aria-hidden="true">→</span>
-          </a>
-        ) : (
-          <span class="nav-spacer" aria-hidden="true" />
-        )}
-      </nav>
-    )
-  }
 </header>
 
 <BookPickerModal books={books} />
 
 <style>
   .reader-header {
-    margin-bottom: 2rem;
-    padding-bottom: 1.25rem;
-    border-bottom: 1px solid color-mix(in srgb, var(--text-secondary) 25%, transparent);
+    margin-bottom: 2.75rem;
+    padding-bottom: 1.75rem;
+    border-bottom: 1px solid var(--border);
   }
 
   .reader-topline {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   /* En pantallas donde el contenido ocupa casi todo el ancho, el botón "Elegir
@@ -81,6 +63,40 @@ const books = await getBookCatalog();
     .reader-topline {
       padding-right: 3rem;
     }
+  }
+
+  /* Cluster izquierdo: botón de inicio + encabezado, agrupados. */
+  .reader-lead {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
+  /* Botón de inicio: ícono de contorno, sin recuadro; área táctil ~44px. El
+     margen negativo alinea ópticamente el ícono con el borde de la columna. */
+  .btn-home {
+    flex: none;
+    display: inline-grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-left: -0.6rem;
+    color: var(--text-secondary);
+    transition: color 0.15s ease;
+  }
+  .btn-home:hover {
+    color: var(--accent);
+  }
+  .btn-home:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+  .btn-home svg {
+    width: 1.4rem;
+    height: 1.4rem;
   }
 
   .reader-heading {
@@ -99,13 +115,15 @@ const books = await getBookCatalog();
   }
 
   .reader-title {
-    font-family: var(--font-sans);
-    font-size: clamp(1.6rem, 5vw, 2.2rem);
+    font-family: var(--font-display);
+    font-size: clamp(1.9rem, 5.5vw, 2.6rem);
     font-weight: 600;
+    line-height: 1.1;
     color: var(--text);
     margin: 0;
   }
 
+  /* Botón de acción con estilo de CONTORNO (no píldora rellena). */
   .btn-picker {
     flex: none;
     display: inline-flex;
@@ -114,82 +132,28 @@ const books = await getBookCatalog();
     font-family: var(--font-sans);
     font-size: 0.85rem;
     font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     color: var(--accent);
     background: transparent;
-    border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
-    border-radius: 999px;
-    padding: 0.45rem 1.1rem;
+    border: 1px solid var(--accent);
+    border-radius: 2px;
+    padding: 0.5rem 1.1rem;
     cursor: pointer;
-    transition: background 0.15s ease, border-color 0.15s ease;
+    transition: background 0.15s ease, color 0.15s ease;
   }
   .btn-picker:hover {
-    background: color-mix(in srgb, var(--accent) 12%, transparent);
-    border-color: var(--accent);
+    background: var(--accent);
+    color: var(--bg);
   }
-  .btn-picker:focus-visible,
-  .nav-btn:focus-visible {
+  .btn-picker:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 2px;
   }
 
-  /* --- Navegación anterior/siguiente --- */
-  .reader-nav {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    gap: 0.75rem;
-    margin-top: 1.25rem;
-  }
-
-  /* Reserva el lado vacío cuando falta prev o next, para que el botón presente
-     quede en su extremo sin ocupar todo el ancho. */
-  .nav-spacer {
-    flex: 1 1 0;
-  }
-
-  .nav-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.45rem;
-    flex: 1 1 0;
-    min-width: 0;
-    min-height: 2.75rem; /* área táctil cómoda en móvil (~44px) */
-    max-width: 50%;
-    font-family: var(--font-sans);
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--text);
-    background: color-mix(in srgb, var(--text-secondary) 8%, transparent);
-    border: 1px solid color-mix(in srgb, var(--text-secondary) 25%, transparent);
-    border-radius: 8px;
-    padding: 0.6rem 0.9rem;
-    transition: background 0.15s ease, border-color 0.15s ease;
-  }
-  .nav-btn:hover {
-    background: color-mix(in srgb, var(--accent) 12%, transparent);
-    border-color: var(--accent);
-  }
-  .nav-next {
-    margin-left: auto;
-    justify-content: flex-end;
-    text-align: right;
-  }
-
-  /* La flecha siempre visible; el nombre se trunca con ellipsis si no cabe. */
-  .nav-arrow {
-    flex: none;
-    color: var(--accent);
-  }
-  .nav-label {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
   @media (prefers-reduced-motion: reduce) {
     .btn-picker,
-    .nav-btn {
+    .btn-home {
       transition: none;
     }
   }

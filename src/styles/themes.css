@@ -4,39 +4,47 @@
  * El Layout aplica el tema desde localStorage antes del primer render
  * (ver el script inline en Layout.astro) para evitar el flash of wrong theme.
  *
+ * Dirección visual (refactor Paso 6): editorial moderno, tipografía
+ * protagonista, mucho blanco/negro, acento dorado/ocre litúrgico y un modo
+ * oscuro en negro real (no gris oscuro).
+ *
  * Variables por tema:
  *   --bg              fondo de la página
  *   --text            texto principal (cuerpo bíblico)
- *   --text-secondary  texto secundario (metadatos, subtítulos)
- *   --accent          acento: links y números de versículo
- *   --note-icon       color de los íconos de nota
+ *   --text-secondary  texto secundario (metadatos, subtítulos, notas)
+ *   --accent          acento: links, números de versículo, acciones
+ *   --border          líneas finas / hairlines (divisores, contornos)
+ *   --bg-raised       superficies elevadas sutiles (celdas, botones neutros)
  */
 
 /* Tema claro (por defecto). */
 :root,
 [data-theme='light'] {
-  --bg: #ffffff;
-  --text: #1a1a1a;
-  --text-secondary: #5c5c5c;
-  --accent: #8a5a2b;
-  --note-icon: #b07d4c;
+  --bg: #fafaf7;
+  --text: #17140f;
+  --text-secondary: #6b6558;
+  --accent: #8a5d12;
+  --border: #e4e0d5;
+  --bg-raised: #f1ede3;
 }
 
-/* Tema oscuro. */
+/* Tema oscuro — negro real, no gris oscuro. */
 [data-theme='dark'] {
-  --bg: #12100e;
-  --text: #e8e3da;
-  --text-secondary: #a49b8d;
-  --accent: #d9a066;
-  --note-icon: #c58f52;
+  --bg: #000000;
+  --text: #f2f0e8;
+  --text-secondary: #938f82;
+  --accent: #d4a72c;
+  --border: #1c1c1a;
+  --bg-raised: #0d0d0c;
 }
 
 /* Tema lectura — paleta cálida sepia/papel envejecido, bajo contraste,
    pensada para sesiones de lectura prolongada sin cansar la vista. */
 [data-theme='reading'] {
   --bg: #f4ecd8;
-  --text: #3b3222;
-  --text-secondary: #6f6244;
+  --text: #2b2013;
+  --text-secondary: #6b5d45;
   --accent: #8a5a2b;
-  --note-icon: #9c6b38;
+  --border: #e0d3b8;
+  --bg-raised: #eee3c9;
 }

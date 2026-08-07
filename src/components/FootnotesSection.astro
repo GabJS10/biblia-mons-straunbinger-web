@@ -46,17 +46,19 @@ const toSup = (n: number) =>
 
 <style>
   .footnotes {
-    margin-top: 3rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid color-mix(in srgb, var(--text-secondary) 30%, transparent);
+    margin-top: 3.5rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--border);
   }
 
   .footnotes-title {
     font-family: var(--font-sans);
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     color: var(--text-secondary);
-    margin: 0 0 1rem;
+    margin: 0 0 1.25rem;
   }
 
   .footnotes-list {
@@ -72,7 +74,7 @@ const toSup = (n: number) =>
     display: grid;
     grid-template-columns: auto 1fr auto;
     gap: 0.5rem;
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     color: var(--text-secondary);
     scroll-margin-top: 5rem;
     border-radius: 6px;
@@ -96,7 +98,7 @@ const toSup = (n: number) =>
     min-height: 2.75rem;
     margin: -0.5rem -0.5rem 0 0; /* compensa el tamaño extra para no desalinear */
     text-decoration: none;
-    color: var(--note-icon);
+    color: var(--accent);
     font-size: 1.1rem;
     line-height: 1;
   }

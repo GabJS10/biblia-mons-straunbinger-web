@@ -7,6 +7,13 @@
  * - Número de versículo visible (color `--accent`).
  * - Superíndices de nota con el NÚMERO LOCAL del capítulo; el `href` usa el ID
  *   global para que el ancla `#footnote-<idGlobal>` sea única.
+ *
+ * `dropcap`: cuando es el PRIMER versículo de un capítulo, su primera letra se
+ * renderiza como versal (letra capitular). En ese caso se omite el número de
+ * versículo visible (el "1" es redundante frente a la versal que abre el
+ * capítulo; el ancla `#verse-1` se conserva en el contenedor). La versal se
+ * separa como texto real —no `aria-hidden`— para que los lectores de pantalla
+ * lean "E" + "n el principio…" de corrido, sin perder la palabra.
  */
 import type { NoteRef } from '../lib/chapterFlow';
 
@@ -14,9 +21,10 @@ interface Props {
   number: number;
   text: string;
   notes: NoteRef[];
+  dropcap?: boolean;
 }
 
-const { number, text, notes } = Astro.props;
+const { number, text, notes, dropcap = false } = Astro.props;
 
 // Superíndices en dígitos Unicode (¹²³…) para el marcador local.
 const SUP = ['⁰', '¹', '²', '³', '⁴', '⁵', '⁶', '⁷', '⁸', '⁹'];
@@ -25,11 +33,25 @@ const toSup = (n: number) =>
     .split('')
     .map((d) => SUP[Number(d)])
     .join('');
+
+// Para la versal: separar la primera letra (ignorando espacios iniciales) del
+// resto del versículo. Ambas partes quedan como texto dentro de `.verse-text`.
+const trimmed = text.replace(/^\s+/, '');
+const initial = trimmed.charAt(0);
+const rest = trimmed.slice(1);
 ---
 
 <span class="verse" id={`verse-${number}`}>
-  <sup class="verse-num" aria-hidden="true">{number}</sup>
-  <span class="verse-text">{text}</span>
+  {
+    dropcap ? (
+      <span class="verse-text"><span class="dropcap">{initial}</span>{rest}</span>
+    ) : (
+      <Fragment>
+        <sup class="verse-num" aria-hidden="true">{number}</sup>
+        <span class="verse-text">{text}</span>
+      </Fragment>
+    )
+  }
   {
     notes.map((note) => (
       <a
@@ -63,9 +85,24 @@ const toSup = (n: number) =>
     /* El texto se trata como prosa continua. */
   }
 
+  /* Letra capitular (versal) del primer versículo del capítulo. Sin ornamento:
+     solo tamaño y color —el `float` la saca del flujo para que el texto envuelva
+     ~2-3 líneas a su derecha—. Los valores (font-size / line-height / margin)
+     están ajustados al ritmo de EB Garamond (cuerpo 1.25rem, line-height 1.8);
+     si se cambia ese ritmo, reajustar aquí. */
+  .dropcap {
+    float: left;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 0.8;
+    color: var(--accent);
+    margin: 0.1rem 0.12em 0 0;
+  }
+
   .footnote-ref {
     font-size: 0.85em;
-    color: var(--note-icon);
+    color: var(--accent);
     text-decoration: none;
     /* Superíndice pequeño pero con área de toque ampliada: el padding vertical
        agranda la caja clickeable sin cambiar el tamaño visible del marcador ni
@@ -75,6 +112,7 @@ const toSup = (n: number) =>
   }
   .footnote-ref:hover {
     color: var(--accent);
+    text-decoration: underline;
   }
   .footnote-ref:focus-visible {
     outline: 2px solid var(--accent);

@@ -1,0 +1,302 @@
+---
+/**
+ * Isla flotante de sesión (visible en todo el sitio, junto al ThemeToggle).
+ *
+ * Mismo patrón que ThemeToggle: TypeScript vanilla + position:fixed, sin
+ * frameworks. Toda la auth corre en el cliente porque el sitio es estático:
+ *   - Sin sesión → botón "Iniciar sesión con Google" (ícono neutro de acceso,
+ *     no el logo de Google, para no replicar marca registrada).
+ *   - Con sesión → avatar (imagen de Google si existe, o la inicial del nombre/
+ *     correo) que abre un menú con "Cerrar sesión".
+ *
+ * El widget arranca oculto (`hidden`) y se revela al resolverse la sesión, para
+ * no parpadear entre "iniciar sesión" y el avatar en usuarios ya autenticados.
+ * `onAuthStateChange` mantiene el estado sin recargar la página.
+ *
+ * El callback de OAuth no necesita ruta propia: con `detectSessionInUrl` (ver
+ * src/lib/supabase.ts) supabase-js intercambia el `?code=…` al volver de Google
+ * y limpia la URL automáticamente.
+ */
+---
+
+<div class="auth-widget" data-auth hidden>
+  <!-- Sin sesión -->
+  <button type="button" class="auth-signin" data-signin hidden>
+    <svg class="auth-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+      <polyline points="10 17 15 12 10 7"></polyline>
+      <line x1="15" y1="12" x2="3" y2="12"></line>
+    </svg>
+    <span class="auth-label">Iniciar sesión con Google</span>
+  </button>
+
+  <!-- Con sesión -->
+  <div class="auth-account" data-account hidden>
+    <button type="button" class="auth-avatar" data-avatar aria-haspopup="menu" aria-expanded="false" aria-label="Cuenta">
+      <!-- Contenido (imagen o inicial) inyectado por el script. -->
+    </button>
+    <div class="auth-menu" data-menu role="menu" hidden>
+      <p class="auth-email" data-email></p>
+      <button type="button" class="auth-signout" data-signout role="menuitem">Cerrar sesión</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  import { supabase } from '../lib/supabase';
+  import type { Session } from '@supabase/supabase-js';
+
+  const root = document.querySelector<HTMLElement>('[data-auth]');
+  if (root) {
+    const signinBtn = root.querySelector<HTMLButtonElement>('[data-signin]')!;
+    const account = root.querySelector<HTMLElement>('[data-account]')!;
+    const avatarBtn = root.querySelector<HTMLButtonElement>('[data-avatar]')!;
+    const menu = root.querySelector<HTMLElement>('[data-menu]')!;
+    const emailEl = root.querySelector<HTMLElement>('[data-email]')!;
+    const signoutBtn = root.querySelector<HTMLButtonElement>('[data-signout]')!;
+
+    const initialOf = (s: string) => (s.trim()[0] || '?').toUpperCase();
+
+    const closeMenu = () => {
+      menu.hidden = true;
+      avatarBtn.setAttribute('aria-expanded', 'false');
+    };
+    const openMenu = () => {
+      menu.hidden = false;
+      avatarBtn.setAttribute('aria-expanded', 'true');
+    };
+
+    function render(session: Session | null) {
+      const user = session?.user ?? null;
+
+      if (user) {
+        const meta = (user.user_metadata ?? {}) as Record<string, string>;
+        const name = meta.full_name || meta.name || user.email || '';
+        const avatarUrl = meta.avatar_url || meta.picture || '';
+
+        avatarBtn.replaceChildren();
+        if (avatarUrl) {
+          const img = document.createElement('img');
+          img.src = avatarUrl;
+          img.alt = '';
+          img.className = 'auth-avatar-img';
+          img.referrerPolicy = 'no-referrer';
+          // Si la imagen no carga, caer a la inicial.
+          img.addEventListener('error', () => {
+            avatarBtn.textContent = initialOf(name);
+          });
+          avatarBtn.appendChild(img);
+        } else {
+          avatarBtn.textContent = initialOf(name);
+        }
+
+        emailEl.textContent = user.email ?? '';
+        signinBtn.hidden = true;
+        account.hidden = false;
+      } else {
+        closeMenu();
+        account.hidden = true;
+        signinBtn.hidden = false;
+      }
+
+      // Revelar solo tras resolver el estado, sin parpadeo.
+      root!.hidden = false;
+    }
+
+    signinBtn.addEventListener('click', async () => {
+      await supabase.auth.signInWithOAuth({
+        provider: 'google',
+        // Volver a la misma página desde la que se inició sesión.
+        options: { redirectTo: window.location.href },
+      });
+    });
+
+    avatarBtn.addEventListener('click', (event) => {
+      event.stopPropagation();
+      menu.hidden ? openMenu() : closeMenu();
+    });
+
+    // Cerrar el menú al hacer click fuera o con Escape.
+    document.addEventListener('click', (event) => {
+      if (!account.hidden && !account.contains(event.target as Node)) closeMenu();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') closeMenu();
+    });
+
+    signoutBtn.addEventListener('click', async () => {
+      closeMenu();
+      await supabase.auth.signOut();
+    });
+
+    // Estado inicial (lee localStorage) + suscripción a cambios.
+    supabase.auth.getSession().then(({ data }) => render(data.session));
+    supabase.auth.onAuthStateChange((_event, session) => render(session));
+  }
+</script>
+
+<style>
+  .auth-widget {
+    position: fixed;
+    top: 0.75rem;
+    /* A la izquierda del ThemeToggle (2.75rem de ancho + 0.75rem del borde),
+       en el mismo eje vertical, con una separación de 0.5rem. */
+    right: calc(0.75rem + 2.75rem + 0.5rem);
+    z-index: 50;
+    font-family: var(--font-sans);
+  }
+
+  /* El atributo `hidden` debe ganar sobre los `display` explícitos de abajo
+     (inline-flex/grid), que si no lo anularían y dejarían visible el botón de
+     login aun con `signinBtn.hidden = true`. */
+  [data-auth][hidden],
+  [data-auth] [hidden] {
+    display: none !important;
+  }
+
+  /* ---------- Botón: iniciar sesión ---------- */
+  .auth-signin {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 2.75rem; /* alinea con el ThemeToggle */
+    padding: 0 0.85rem;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  }
+  .auth-signin:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+  .auth-signin:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .auth-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    flex: none;
+  }
+
+  /* En pantallas estrechas, dejar solo el ícono (aria-label da el contexto). */
+  @media (max-width: 30rem) {
+    .auth-label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    .auth-signin {
+      padding: 0;
+      width: 2.75rem;
+      justify-content: center;
+    }
+  }
+
+  /* ---------- Con sesión: avatar + menú ---------- */
+  .auth-account {
+    position: relative;
+  }
+
+  .auth-avatar {
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    overflow: hidden;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    transition: border-color 0.2s ease, color 0.2s ease;
+  }
+  .auth-avatar:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+  .auth-avatar:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .auth-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .auth-menu {
+    position: absolute;
+    top: calc(100% + 0.4rem);
+    right: 0;
+    min-width: 12rem;
+    padding: 0.4rem;
+    background: color-mix(in srgb, var(--bg) 94%, transparent);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .auth-email {
+    margin: 0;
+    padding: 0.4rem 0.5rem;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .auth-signout {
+    width: 100%;
+    margin-top: 0.3rem;
+    padding: 0.55rem 0.5rem;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    text-align: left;
+    color: var(--text);
+    background: transparent;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: color 0.15s ease, background 0.15s ease;
+  }
+  .auth-signout:hover {
+    color: var(--accent);
+    background: var(--bg-raised);
+  }
+  .auth-signout:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .auth-signin,
+    .auth-avatar,
+    .auth-signout {
+      transition: none;
+    }
+  }
+</style>

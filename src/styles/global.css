@@ -2,16 +2,24 @@
 @import './themes.css';
 
 /* Tipografías self-hosted (@fontsource).
-   Lora: serif para el cuerpo del texto bíblico (lectura prolongada).
-   Inter: sans-serif para UI y navegación. */
-@import '@fontsource/lora/400.css';
-@import '@fontsource/lora/400-italic.css';
-@import '@fontsource/lora/600.css';
+   Fraunces (variable, con óptica): serif de carácter histórico para títulos y
+     encabezados de capítulo/sección → --font-display.
+   EB Garamond: serif para el cuerpo del texto bíblico (versículos, notas,
+     introducciones, prólogo), lectura prolongada → --font-body.
+   Inter: sans-serif para UI, botones y navegación → --font-sans.
+   El paquete `standard` de Fraunces expone los ejes wght (100–900) y opsz
+   (optical), suficiente para los pesos 400/500/600 e itálica que se usan. */
+@import '@fontsource-variable/fraunces/standard.css';
+@import '@fontsource-variable/fraunces/standard-italic.css';
+@import '@fontsource/eb-garamond/400.css';
+@import '@fontsource/eb-garamond/400-italic.css';
+@import '@fontsource/eb-garamond/500.css';
 @import '@fontsource/inter/400.css';
 @import '@fontsource/inter/600.css';
 
 :root {
-  --font-serif: 'Lora', Georgia, 'Times New Roman', serif;
+  --font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
+  --font-body: 'EB Garamond', Georgia, 'Times New Roman', serif;
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 
@@ -33,7 +41,7 @@ body {
   min-height: 100vh;
   background-color: var(--bg);
   color: var(--text);
-  font-family: var(--font-serif);
+  font-family: var(--font-body);
   line-height: 1.6;
   transition: background-color 0.2s ease, color 0.2s ease;
   -webkit-font-smoothing: antialiased;
