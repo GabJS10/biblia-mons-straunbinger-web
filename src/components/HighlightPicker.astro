@@ -1,0 +1,568 @@
+---
+/**
+ * Selector de resaltado de versículo (Paso 7b).
+ *
+ * `<dialog>` nativo (mismo patrón que BookPickerModal), incluido UNA vez en las
+ * páginas de capítulo. Arranca vacío: su contenido se puebla por JS cada vez que
+ * se abre para un versículo concreto.
+ *
+ * El script también:
+ *   - Al cargar el capítulo (con sesión), trae los resaltados de ESE capítulo y
+ *     las colecciones del usuario, y pinta `.is-highlighted` en los versículos.
+ *   - Delega el click en el contenedor de versículos: abre el picker (con
+ *     sesión) o lanza el login de Google (sin sesión), ignorando clicks en las
+ *     notas al pie y en la letra capitular.
+ *   - Hace upsert/delete optimista contra Supabase, revirtiendo si falla.
+ *
+ * El contexto (book_slug / chapter / nombre del libro) se lee de los
+ * data-attributes que `ChapterReader` pone en `.chapter`.
+ */
+---
+
+<dialog id="highlight-picker" class="hp" aria-label="Resaltar versículo">
+  <div class="hp-shell">
+    <header class="hp-header">
+      <h2 class="hp-title" data-hp-title></h2>
+      <button type="button" class="hp-close" data-hp-close aria-label="Cerrar">✕</button>
+    </header>
+
+    <p class="hp-error" data-hp-error hidden></p>
+
+    <div class="hp-body">
+      <button type="button" class="hp-remove" data-hp-remove hidden>Quitar resaltado</button>
+
+      <div class="hp-options" data-hp-options>
+        {/* "Sin colección" + colecciones del usuario, inyectadas por JS. */}
+      </div>
+
+      <form class="hp-create" data-hp-create>
+        <input
+          type="text"
+          class="hp-name"
+          data-hp-name
+          placeholder="Nueva colección…"
+          autocomplete="off"
+          maxlength="80"
+        />
+        <button type="submit" class="hp-create-btn">Crear y asignar</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  import { signInWithGoogle } from '../lib/supabase';
+  import {
+    getCollections,
+    createCollection,
+    getChapterHighlights,
+    upsertHighlight,
+    deleteHighlight,
+    clearCollectionsCache,
+    type Highlight,
+  } from '../lib/highlights';
+  import { supabase } from '../lib/supabase';
+
+  const container = document.querySelector<HTMLElement>('.chapter');
+  const dialog = document.querySelector<HTMLDialogElement>('#highlight-picker');
+
+  // Solo actúa en páginas de capítulo (donde existe el contenedor y el diálogo).
+  if (container && dialog) {
+    const bookSlug = container.dataset.bookSlug ?? '';
+    const bookName = container.dataset.bookName ?? '';
+    const chapterId = container.dataset.chapterId ?? '';
+
+    const titleEl = dialog.querySelector<HTMLElement>('[data-hp-title]')!;
+    const errorEl = dialog.querySelector<HTMLElement>('[data-hp-error]')!;
+    const removeBtn = dialog.querySelector<HTMLButtonElement>('[data-hp-remove]')!;
+    const optionsEl = dialog.querySelector<HTMLElement>('[data-hp-options]')!;
+    const createForm = dialog.querySelector<HTMLFormElement>('[data-hp-create]')!;
+    const nameInput = dialog.querySelector<HTMLInputElement>('[data-hp-name]')!;
+
+    // Estado de sesión de navegación.
+    let userId: string | null = null;
+    let currentVerse: number | null = null;
+    const highlightsByVerse = new Map<number, Highlight>();
+
+    // ---------- Pintado de versículos ----------
+    const verseEl = (n: number) =>
+      container.querySelector<HTMLElement>(`#verse-${n}`);
+
+    function markVerse(n: number, on: boolean) {
+      verseEl(n)?.classList.toggle('is-highlighted', on);
+    }
+    function clearAllMarks() {
+      container!
+        .querySelectorAll('.verse.is-highlighted')
+        .forEach((el) => el.classList.remove('is-highlighted'));
+    }
+    function paintFromMap() {
+      clearAllMarks();
+      for (const n of highlightsByVerse.keys()) markVerse(n, true);
+    }
+
+    // ---------- Carga de datos del capítulo ----------
+    async function loadChapter() {
+      try {
+        const [highlights] = await Promise.all([
+          getChapterHighlights(bookSlug, chapterId),
+          getCollections(), // calienta el caché de colecciones
+        ]);
+        highlightsByVerse.clear();
+        for (const h of highlights) highlightsByVerse.set(h.verse_number, h);
+        paintFromMap();
+      } catch (err) {
+        console.error('No se pudieron cargar los resaltados del capítulo', err);
+      }
+    }
+
+    // ---------- Apertura / poblado del diálogo ----------
+    async function openPicker(n: number, errorMsg?: string) {
+      currentVerse = n;
+      titleEl.textContent = `${bookName} ${chapterId}:${n}`;
+
+      const existing = highlightsByVerse.get(n) ?? null;
+      removeBtn.hidden = !existing;
+
+      if (errorMsg) {
+        errorEl.textContent = errorMsg;
+        errorEl.hidden = false;
+      } else {
+        errorEl.hidden = true;
+      }
+
+      // Opciones: "Sin colección" + una por colección del usuario.
+      optionsEl.replaceChildren();
+      optionsEl.appendChild(
+        makeOption('Sin colección', null, existing !== null && existing.collection_id === null, true),
+      );
+      let collections: Awaited<ReturnType<typeof getCollections>> = [];
+      try {
+        collections = await getCollections();
+      } catch (err) {
+        console.error('No se pudieron cargar las colecciones', err);
+      }
+      for (const c of collections) {
+        optionsEl.appendChild(
+          makeOption(c.name, c.id, existing?.collection_id === c.id, false),
+        );
+      }
+
+      nameInput.value = '';
+      if (!dialog!.open) dialog!.showModal();
+    }
+
+    function makeOption(
+      label: string,
+      collectionId: string | null,
+      active: boolean,
+      loose: boolean,
+    ): HTMLButtonElement {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'hp-option' + (loose ? ' hp-option--loose' : '');
+      btn.classList.toggle('is-active', active);
+      if (collectionId === null) btn.dataset.none = '1';
+      else btn.dataset.collectionId = collectionId;
+      if (active) btn.setAttribute('aria-current', 'true');
+
+      const check = document.createElement('span');
+      check.className = 'hp-check';
+      check.setAttribute('aria-hidden', 'true');
+      check.textContent = active ? '✓' : '';
+
+      const text = document.createElement('span');
+      text.className = 'hp-option-label';
+      text.textContent = label;
+
+      btn.append(check, text);
+      return btn;
+    }
+
+    // ---------- Acciones (optimistas) ----------
+    async function assign(collectionId: string | null) {
+      if (currentVerse == null || !userId) return;
+      const verse = currentVerse;
+      const prev = highlightsByVerse.get(verse) ?? null;
+
+      // Optimista: marca visual + entrada provisional en el mapa, y cierra.
+      highlightsByVerse.set(verse, {
+        ...(prev ?? ({} as Highlight)),
+        verse_number: verse,
+        collection_id: collectionId,
+      } as Highlight);
+      markVerse(verse, true);
+      dialog!.close();
+
+      try {
+        const saved = await upsertHighlight({
+          userId,
+          bookSlug,
+          chapter: chapterId,
+          verseNumber: verse,
+          collectionId,
+        });
+        highlightsByVerse.set(verse, saved);
+      } catch (err) {
+        console.error('No se pudo guardar el resaltado', err);
+        revert(verse, prev);
+        void openPicker(verse, 'No se pudo guardar. Revisa tu conexión e inténtalo de nuevo.');
+      }
+    }
+
+    async function removeHighlight() {
+      if (currentVerse == null) return;
+      const verse = currentVerse;
+      const prev = highlightsByVerse.get(verse);
+      if (!prev) {
+        dialog!.close();
+        return;
+      }
+      highlightsByVerse.delete(verse);
+      markVerse(verse, false);
+      dialog!.close();
+
+      try {
+        await deleteHighlight(prev.id);
+      } catch (err) {
+        console.error('No se pudo quitar el resaltado', err);
+        highlightsByVerse.set(verse, prev);
+        markVerse(verse, true);
+        void openPicker(verse, 'No se pudo quitar. Revisa tu conexión e inténtalo de nuevo.');
+      }
+    }
+
+    function revert(verse: number, prev: Highlight | null) {
+      if (prev) {
+        highlightsByVerse.set(verse, prev);
+        markVerse(verse, true);
+      } else {
+        highlightsByVerse.delete(verse);
+        markVerse(verse, false);
+      }
+    }
+
+    // ---------- Listeners ----------
+    // Delegación en el contenedor de versículos.
+    container.addEventListener('click', (event) => {
+      const target = event.target as HTMLElement;
+      if (target.closest('.footnote-ref')) return; // la nota sigue navegando
+      if (target.closest('.dropcap')) return; // la versal no abre el picker
+      const verse = target.closest<HTMLElement>('.verse');
+      if (!verse) return;
+      const n = Number(verse.id.replace('verse-', ''));
+      if (!Number.isFinite(n)) return;
+
+      if (!userId) {
+        void signInWithGoogle(); // sin sesión: mismo login que AuthWidget
+        return;
+      }
+      void openPicker(n);
+    });
+
+    // Selección de colección / "Sin colección".
+    optionsEl.addEventListener('click', (event) => {
+      const btn = (event.target as HTMLElement).closest<HTMLElement>(
+        '[data-collection-id], [data-none]',
+      );
+      if (!btn) return;
+      const collectionId = btn.dataset.none ? null : (btn.dataset.collectionId ?? null);
+      void assign(collectionId);
+    });
+
+    removeBtn.addEventListener('click', () => void removeHighlight());
+
+    // Crear colección nueva y asignar en la misma acción.
+    createForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const name = nameInput.value.trim();
+      if (!name || currentVerse == null || !userId) return;
+      try {
+        const col = await createCollection(name, userId);
+        await assign(col.id); // assign cierra el diálogo y hace el optimista
+      } catch (err) {
+        console.error('No se pudo crear la colección', err);
+        errorEl.textContent = 'No se pudo crear la colección. Inténtalo de nuevo.';
+        errorEl.hidden = false;
+      }
+    });
+
+    // Cierre por click en el backdrop (fuera del contenido).
+    dialog.addEventListener('click', (event) => {
+      if (event.target === dialog) dialog.close();
+    });
+    // Al cerrar, limpiar estado efímero (Escape/X/backdrop van todos por aquí).
+    dialog.addEventListener('close', () => {
+      currentVerse = null;
+      errorEl.hidden = true;
+    });
+
+    // ---------- Sesión ----------
+    function applySession(uid: string | null) {
+      userId = uid;
+      if (uid) {
+        void loadChapter();
+      } else {
+        highlightsByVerse.clear();
+        clearAllMarks();
+        clearCollectionsCache();
+      }
+    }
+
+    supabase.auth.getSession().then(({ data }) => applySession(data.session?.user?.id ?? null));
+    supabase.auth.onAuthStateChange((_event, session) =>
+      applySession(session?.user?.id ?? null),
+    );
+  }
+</script>
+
+<style>
+  /* ---------- Diálogo / backdrop (mismo patrón que BookPickerModal) ---------- */
+  .hp {
+    padding: 0;
+    border: none;
+    background: transparent;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    color: var(--text);
+  }
+  .hp::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  .hp-shell {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 30rem;
+    max-height: 100%;
+    margin: auto;
+    background: var(--bg);
+    font-family: var(--font-sans);
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  @media (min-width: 40rem) {
+    .hp {
+      padding: 2rem 1rem;
+    }
+    .hp-shell {
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+    }
+  }
+  @media (max-width: 40rem) {
+    /* En móvil ocupa la parte inferior como hoja, con borde superior. */
+    .hp-shell {
+      margin-top: auto;
+      margin-bottom: 0;
+      border-top: 1px solid var(--border);
+    }
+  }
+
+  .hp[open]::backdrop {
+    opacity: 1;
+  }
+  .hp[open] .hp-shell {
+    opacity: 1;
+    transform: none;
+  }
+  @starting-style {
+    .hp[open]::backdrop {
+      opacity: 0;
+    }
+    .hp[open] .hp-shell {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+  }
+
+  /* ---------- Cabecera ---------- */
+  .hp-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .hp-title {
+    flex: 1;
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .hp-close {
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    flex: none;
+    font-size: 1rem;
+    color: var(--text-secondary);
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, color 0.2s ease;
+  }
+  .hp-close:hover {
+    color: var(--text);
+    border-color: var(--text-secondary);
+  }
+
+  /* ---------- Cuerpo ---------- */
+  .hp-error {
+    margin: 0;
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+    color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 10%, transparent);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hp-body {
+    padding: 0.5rem 0.75rem 0.85rem;
+    overflow-y: auto;
+  }
+
+  .hp-remove {
+    width: 100%;
+    padding: 0.7rem 0.5rem;
+    margin-bottom: 0.25rem;
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    text-align: left;
+    color: var(--text-secondary);
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    transition: color 0.15s ease;
+  }
+  .hp-remove:hover {
+    color: var(--accent);
+  }
+
+  .hp-options {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hp-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.7rem 0.5rem;
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: left;
+    color: var(--text);
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    transition: color 0.15s ease;
+  }
+  .hp-option:last-child {
+    border-bottom: none;
+  }
+  .hp-option:hover {
+    color: var(--accent);
+  }
+  .hp-option.is-active {
+    color: var(--accent);
+  }
+  .hp-option--loose {
+    font-style: italic;
+    color: var(--text-secondary);
+  }
+  .hp-option--loose.is-active {
+    color: var(--accent);
+  }
+  .hp-check {
+    width: 1rem;
+    flex: none;
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: var(--accent);
+  }
+  .hp-option-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* ---------- Crear colección ---------- */
+  .hp-create {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+  }
+  .hp-name {
+    flex: 1;
+    min-width: 0;
+    padding: 0.55rem 0.6rem;
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: var(--text);
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+  }
+  .hp-name:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+  }
+  .hp-name::placeholder {
+    color: var(--text-secondary);
+  }
+  .hp-create-btn {
+    flex: none;
+    padding: 0.55rem 0.8rem;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+  .hp-create-btn:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .hp-close:focus-visible,
+  .hp-option:focus-visible,
+  .hp-remove:focus-visible,
+  .hp-create-btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hp-shell,
+    .hp::backdrop,
+    .hp-option,
+    .hp-remove,
+    .hp-close,
+    .hp-create-btn {
+      transition: none;
+    }
+  }
+</style>

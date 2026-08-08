@@ -1,0 +1,607 @@
+---
+/**
+ * Gestor de "Mis resaltados" (Paso 7c).
+ *
+ * Isla que agrupa los versículos resaltados del usuario por colección y permite
+ * crear/renombrar/borrar colecciones y mover/quitar resaltados. Toda la lógica
+ * de datos reutiliza `src/lib/highlights.ts` (no duplica fetch a Supabase).
+ *
+ * El mapa slug → nombre visible del libro llega como prop desde la ruta (build
+ * time) y se serializa a un data-attribute para que el script cliente arme las
+ * referencias legibles ("Génesis 1:3").
+ */
+interface Props {
+  bookNames: Record<string, string>;
+}
+const { bookNames } = Astro.props;
+---
+
+<section class="hm" data-hm data-book-names={JSON.stringify(bookNames)}>
+  {/* Sin sesión */}
+  <div class="hm-signedout" data-hm-signedout hidden>
+    <p class="hm-signedout-text">
+      Inicia sesión para ver y organizar los versículos que has resaltado.
+    </p>
+    <button type="button" class="hm-btn-primary" data-hm-signin>
+      Iniciar sesión con Google
+    </button>
+  </div>
+
+  {/* Cargando */}
+  <p class="hm-loading" data-hm-loading>Cargando tus resaltados…</p>
+
+  {/* Error de carga */}
+  <p class="hm-loaderror" data-hm-error hidden>
+    No se pudieron cargar tus resaltados. Revisa tu conexión y recarga la página.
+  </p>
+
+  {/* Con sesión */}
+  <div class="hm-content" data-hm-content hidden>
+    <form class="hm-create" data-hm-create>
+      <input
+        type="text"
+        class="hm-input"
+        data-hm-newname
+        placeholder="Nueva colección…"
+        autocomplete="off"
+        maxlength="80"
+      />
+      <button type="submit" class="hm-btn">Crear colección</button>
+    </form>
+
+    <div class="hm-groups" data-hm-groups></div>
+
+    <p class="hm-empty" data-hm-empty hidden>
+      Aún no tienes versículos resaltados. Abre un capítulo en el lector y toca un
+      versículo para resaltarlo.
+    </p>
+  </div>
+</section>
+
+<script>
+  import { signInWithGoogle, supabase } from '../lib/supabase';
+  import {
+    getAllHighlights,
+    getCollections,
+    createCollection,
+    renameCollection,
+    deleteCollection,
+    moveHighlight,
+    deleteHighlight,
+    type Collection,
+    type Highlight,
+  } from '../lib/highlights';
+
+  const root = document.querySelector<HTMLElement>('[data-hm]');
+  if (root) {
+    const bookNames: Record<string, string> = JSON.parse(root.dataset.bookNames ?? '{}');
+
+    const signedoutEl = root.querySelector<HTMLElement>('[data-hm-signedout]')!;
+    const loadingEl = root.querySelector<HTMLElement>('[data-hm-loading]')!;
+    const errorEl = root.querySelector<HTMLElement>('[data-hm-error]')!;
+    const contentEl = root.querySelector<HTMLElement>('[data-hm-content]')!;
+    const groupsEl = root.querySelector<HTMLElement>('[data-hm-groups]')!;
+    const emptyEl = root.querySelector<HTMLElement>('[data-hm-empty]')!;
+    const signinBtn = root.querySelector<HTMLButtonElement>('[data-hm-signin]')!;
+    const createForm = root.querySelector<HTMLFormElement>('[data-hm-create]')!;
+    const newNameInput = root.querySelector<HTMLInputElement>('[data-hm-newname]')!;
+
+    // Estado local.
+    let userId: string | null = null;
+    let collections: Collection[] = [];
+    let highlights: Highlight[] = [];
+
+    const reference = (h: Highlight) =>
+      `${bookNames[h.book_slug] ?? h.book_slug} ${h.chapter}:${h.verse_number}`;
+    const verseHref = (h: Highlight) =>
+      `/${h.book_slug}/${h.chapter}/#verse-${h.verse_number}`;
+
+    type View = 'signedout' | 'loading' | 'error' | 'content';
+    function setView(view: View) {
+      signedoutEl.hidden = view !== 'signedout';
+      loadingEl.hidden = view !== 'loading';
+      errorEl.hidden = view !== 'error';
+      contentEl.hidden = view !== 'content';
+    }
+
+    // ---------- Render ----------
+    function render() {
+      groupsEl.replaceChildren();
+      const hasAny = collections.length > 0 || highlights.length > 0;
+      emptyEl.hidden = hasAny;
+      if (!hasAny) return;
+
+      for (const c of collections) {
+        const items = highlights.filter((h) => h.collection_id === c.id);
+        groupsEl.appendChild(renderCollection(c, items));
+      }
+      const loose = highlights.filter((h) => h.collection_id === null);
+      if (loose.length > 0) {
+        groupsEl.appendChild(renderLoose(loose));
+      }
+    }
+
+    function renderCollection(collection: Collection, items: Highlight[]): HTMLElement {
+      const section = document.createElement('section');
+      section.className = 'hm-group';
+
+      const header = document.createElement('div');
+      header.className = 'hm-group-header';
+
+      const title = document.createElement('h2');
+      title.className = 'hm-group-title';
+      title.textContent = collection.name;
+
+      const actions = document.createElement('div');
+      actions.className = 'hm-group-actions';
+
+      const renameBtn = document.createElement('button');
+      renameBtn.type = 'button';
+      renameBtn.className = 'hm-textbtn';
+      renameBtn.textContent = 'Renombrar';
+      renameBtn.addEventListener('click', () => startRename(collection, title));
+
+      const deleteBtn = document.createElement('button');
+      deleteBtn.type = 'button';
+      deleteBtn.className = 'hm-textbtn';
+      deleteBtn.textContent = 'Borrar colección';
+      deleteBtn.addEventListener('click', () => void removeCollection(collection));
+
+      actions.append(renameBtn, deleteBtn);
+      header.append(title, actions);
+      section.appendChild(header);
+      section.appendChild(renderItems(items));
+      return section;
+    }
+
+    function renderLoose(items: Highlight[]): HTMLElement {
+      const section = document.createElement('section');
+      section.className = 'hm-group';
+      const header = document.createElement('div');
+      header.className = 'hm-group-header';
+      const title = document.createElement('h2');
+      title.className = 'hm-group-title hm-group-title--loose';
+      title.textContent = 'Sin colección';
+      header.appendChild(title);
+      section.appendChild(header);
+      section.appendChild(renderItems(items));
+      return section;
+    }
+
+    function renderItems(items: Highlight[]): HTMLElement {
+      const list = document.createElement('ul');
+      list.className = 'hm-items';
+      if (items.length === 0) {
+        const empty = document.createElement('li');
+        empty.className = 'hm-item-empty';
+        empty.textContent = 'Sin versículos todavía.';
+        list.appendChild(empty);
+        return list;
+      }
+      for (const h of items) list.appendChild(renderItem(h));
+      return list;
+    }
+
+    function renderItem(h: Highlight): HTMLElement {
+      const li = document.createElement('li');
+      li.className = 'hm-item';
+
+      const link = document.createElement('a');
+      link.className = 'hm-ref';
+      link.href = verseHref(h);
+      link.textContent = reference(h);
+
+      const controls = document.createElement('div');
+      controls.className = 'hm-item-controls';
+      controls.append(moveSelect(h), removeButton(h));
+
+      li.append(link, controls);
+      return li;
+    }
+
+    function moveSelect(h: Highlight): HTMLSelectElement {
+      const sel = document.createElement('select');
+      sel.className = 'hm-select';
+      sel.setAttribute('aria-label', `Mover ${reference(h)} a otra colección`);
+      sel.appendChild(new Option('Sin colección', ''));
+      for (const c of collections) sel.appendChild(new Option(c.name, c.id));
+      sel.value = h.collection_id ?? '';
+
+      sel.addEventListener('change', async () => {
+        const target = sel.value || null;
+        const prev = h.collection_id;
+        sel.disabled = true;
+        try {
+          await moveHighlight(h.id, target);
+          h.collection_id = target;
+          render(); // reubica el item en el grupo correcto
+        } catch (err) {
+          console.error('No se pudo mover el resaltado', err);
+          sel.value = prev ?? '';
+          sel.disabled = false;
+          alert('No se pudo mover el resaltado. Revisa tu conexión.');
+        }
+      });
+      return sel;
+    }
+
+    function removeButton(h: Highlight): HTMLButtonElement {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'hm-textbtn hm-remove';
+      btn.textContent = 'Quitar';
+      btn.setAttribute('aria-label', `Quitar resaltado de ${reference(h)}`);
+      btn.addEventListener('click', async () => {
+        if (!confirm(`¿Quitar el resaltado de ${reference(h)}?`)) return;
+        try {
+          await deleteHighlight(h.id);
+          highlights = highlights.filter((x) => x.id !== h.id);
+          render();
+        } catch (err) {
+          console.error('No se pudo quitar el resaltado', err);
+          alert('No se pudo quitar el resaltado. Revisa tu conexión.');
+        }
+      });
+      return btn;
+    }
+
+    // ---------- Renombrar inline ----------
+    function startRename(collection: Collection, titleEl: HTMLElement) {
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.className = 'hm-rename-input';
+      input.value = collection.name;
+      input.maxLength = 80;
+      titleEl.replaceWith(input);
+      input.focus();
+      input.select();
+
+      let done = false;
+      const commit = async () => {
+        if (done) return;
+        done = true;
+        const name = input.value.trim();
+        if (!name || name === collection.name) {
+          render();
+          return;
+        }
+        try {
+          await renameCollection(collection.id, name);
+          collection.name = name;
+        } catch (err) {
+          console.error('No se pudo renombrar la colección', err);
+          alert('No se pudo renombrar la colección. Revisa tu conexión.');
+        }
+        render();
+      };
+      const cancel = () => {
+        if (done) return;
+        done = true;
+        render();
+      };
+
+      input.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+          event.preventDefault();
+          void commit();
+        } else if (event.key === 'Escape') {
+          event.preventDefault();
+          cancel();
+        }
+      });
+      input.addEventListener('blur', () => void commit());
+    }
+
+    // ---------- Borrar colección ----------
+    async function removeCollection(collection: Collection) {
+      if (
+        !confirm(
+          `¿Borrar la colección "${collection.name}"? Sus versículos quedarán sin colección (no se borran).`,
+        )
+      )
+        return;
+      try {
+        await deleteCollection(collection.id);
+        collections = collections.filter((c) => c.id !== collection.id);
+        for (const h of highlights) {
+          if (h.collection_id === collection.id) h.collection_id = null;
+        }
+        render();
+      } catch (err) {
+        console.error('No se pudo borrar la colección', err);
+        alert('No se pudo borrar la colección. Revisa tu conexión.');
+      }
+    }
+
+    // ---------- Crear colección ----------
+    createForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const name = newNameInput.value.trim();
+      if (!name || !userId) return;
+      try {
+        const col = await createCollection(name, userId);
+        collections.push(col);
+        newNameInput.value = '';
+        render();
+      } catch (err) {
+        console.error('No se pudo crear la colección', err);
+        alert('No se pudo crear la colección. Revisa tu conexión.');
+      }
+    });
+
+    signinBtn.addEventListener('click', () => void signInWithGoogle());
+
+    // ---------- Sesión ----------
+    async function applySession(uid: string | null) {
+      userId = uid;
+      if (!uid) {
+        setView('signedout');
+        return;
+      }
+      setView('loading');
+      try {
+        const [hs, cs] = await Promise.all([getAllHighlights(), getCollections()]);
+        highlights = hs;
+        collections = cs.slice(); // copia local (no aliasear el caché del módulo)
+        render();
+        setView('content');
+      } catch (err) {
+        console.error('No se pudieron cargar los resaltados', err);
+        setView('error');
+      }
+    }
+
+    supabase.auth.getSession().then(({ data }) => applySession(data.session?.user?.id ?? null));
+    supabase.auth.onAuthStateChange((_event, session) =>
+      applySession(session?.user?.id ?? null),
+    );
+  }
+</script>
+
+<style>
+  .hm {
+    font-family: var(--font-sans);
+    color: var(--text);
+  }
+
+  /* El atributo `hidden` debe ganar sobre los `display` explícitos (flex) de las
+     vistas; si no, la vista "sin sesión" quedaría visible aun con hidden=true. */
+  [data-hm] [hidden] {
+    display: none !important;
+  }
+
+  /* ---------- Estados sin contenido ---------- */
+  .hm-signedout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding: 2rem 0;
+  }
+  .hm-signedout-text,
+  .hm-loading,
+  .hm-loaderror,
+  .hm-empty {
+    margin: 0;
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+  .hm-loading,
+  .hm-loaderror,
+  .hm-empty {
+    padding: 2rem 0;
+  }
+  .hm-empty {
+    max-width: 32rem;
+  }
+
+  /* Botón primario (contorno, como btn-picker de ReaderHeader). */
+  .hm-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    padding: 0.5rem 1.1rem;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: transparent;
+    border: 1px solid var(--accent);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .hm-btn-primary:hover {
+    background: var(--accent);
+    color: var(--bg);
+  }
+
+  /* ---------- Crear colección ---------- */
+  .hm-create {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .hm-input {
+    flex: 1;
+    min-width: 0;
+    padding: 0.6rem 0.7rem;
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    color: var(--text);
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+  }
+  .hm-input::placeholder {
+    color: var(--text-secondary);
+  }
+  .hm-btn {
+    flex: none;
+    padding: 0.6rem 1rem;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+  .hm-btn:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  /* ---------- Grupos (colecciones) ---------- */
+  .hm-group {
+    margin-bottom: 2.75rem;
+  }
+  .hm-group-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .hm-group-title {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .hm-group-title--loose {
+    font-style: italic;
+    color: var(--text-secondary);
+  }
+  .hm-group-actions {
+    display: flex;
+    gap: 1rem;
+    flex: none;
+  }
+
+  /* Renombrado inline: el input hereda el tamaño del título. */
+  .hm-rename-input {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text);
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--accent);
+    padding: 0 0 0.15rem;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .hm-rename-input:focus-visible {
+    outline: none;
+  }
+
+  /* Botón de texto (renombrar / borrar / quitar): sin recuadro, hairline visual
+     por hover en color de acento. */
+  .hm-textbtn {
+    padding: 0.25rem 0;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: var(--text-secondary);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.15s ease;
+  }
+  .hm-textbtn:hover {
+    color: var(--accent);
+  }
+  .hm-textbtn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /* ---------- Items (versículos) ---------- */
+  .hm-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .hm-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .hm-item:last-child {
+    border-bottom: none;
+  }
+  .hm-item-empty {
+    padding: 0.7rem 0;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--text-secondary);
+  }
+
+  .hm-ref {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+  .hm-ref:hover {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+  .hm-ref:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  .hm-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex: none;
+  }
+  .hm-select {
+    padding: 0.4rem 0.5rem;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    color: var(--text);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    cursor: pointer;
+    max-width: 11rem;
+  }
+  .hm-select:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+  }
+  .hm-remove:hover {
+    color: var(--accent);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hm-btn,
+    .hm-btn-primary,
+    .hm-textbtn,
+    .hm-ref {
+      transition: none;
+    }
+  }
+</style>

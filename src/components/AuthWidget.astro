@@ -27,7 +27,7 @@
       <polyline points="10 17 15 12 10 7"></polyline>
       <line x1="15" y1="12" x2="3" y2="12"></line>
     </svg>
-    <span class="auth-label">Iniciar sesión con Google</span>
+    <span class="auth-label">Iniciar sesión</span>
   </button>
 
   <!-- Con sesión -->
@@ -37,13 +37,14 @@
     </button>
     <div class="auth-menu" data-menu role="menu" hidden>
       <p class="auth-email" data-email></p>
+      <a class="auth-menu-link" href="/mis-resaltados/" role="menuitem">Mis resaltados</a>
       <button type="button" class="auth-signout" data-signout role="menuitem">Cerrar sesión</button>
     </div>
   </div>
 </div>
 
 <script>
-  import { supabase } from '../lib/supabase';
+  import { supabase, signInWithGoogle } from '../lib/supabase';
   import type { Session } from '@supabase/supabase-js';
 
   const root = document.querySelector<HTMLElement>('[data-auth]');
@@ -103,12 +104,8 @@
       root!.hidden = false;
     }
 
-    signinBtn.addEventListener('click', async () => {
-      await supabase.auth.signInWithOAuth({
-        provider: 'google',
-        // Volver a la misma página desde la que se inició sesión.
-        options: { redirectTo: window.location.href },
-      });
+    signinBtn.addEventListener('click', () => {
+      void signInWithGoogle();
     });
 
     avatarBtn.addEventListener('click', (event) => {
@@ -269,7 +266,9 @@
     white-space: nowrap;
   }
 
+  .auth-menu-link,
   .auth-signout {
+    display: block;
     width: 100%;
     margin-top: 0.3rem;
     padding: 0.55rem 0.5rem;
@@ -281,12 +280,15 @@
     border: none;
     border-radius: 2px;
     cursor: pointer;
+    text-decoration: none;
     transition: color 0.15s ease, background 0.15s ease;
   }
+  .auth-menu-link:hover,
   .auth-signout:hover {
     color: var(--accent);
     background: var(--bg-raised);
   }
+  .auth-menu-link:focus-visible,
   .auth-signout:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: -2px;

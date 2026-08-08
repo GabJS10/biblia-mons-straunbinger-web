@@ -16,9 +16,13 @@ import FootnotesSection from './FootnotesSection.astro';
 interface Props {
   book: BookData;
   chapter: Chapter;
+  /** Slug de la ruta (`entry.id`) y id del capítulo — los usa el script de
+   *  resaltado para saber en qué libro/capítulo está parado. */
+  bookSlug: string;
+  chapterId: string;
 }
 
-const { book, chapter } = Astro.props;
+const { book, chapter, bookSlug, chapterId } = Astro.props;
 const { items, referencedNotes } = buildChapterFlow(book, chapter);
 
 // Índice del PRIMER versículo del flujo: recibe la letra capitular, aunque antes
@@ -27,7 +31,12 @@ const { items, referencedNotes } = buildChapterFlow(book, chapter);
 const firstVerseIndex = items.findIndex((item) => item.kind === 'verse');
 ---
 
-<article class="chapter">
+<article
+  class="chapter"
+  data-book-slug={bookSlug}
+  data-book-name={book.book}
+  data-chapter-id={chapterId}
+>
   {
     items.map((item, index) => {
       if (item.kind === 'division') {
@@ -67,6 +76,21 @@ const firstVerseIndex = items.findIndex((item) => item.kind === 'verse');
   }
   .chapter :global(.verse) + :global(.verse)::before {
     content: ' ';
+  }
+
+  /* Versículo resaltado: lavado translúcido de acento (funciona en los 3 temas
+     vía color-mix sobre --accent). `box-decoration-break: clone` reparte el
+     fondo y el padding por cada fragmento de línea, sin cajas rotas al envolver.
+     La versal (float) queda fuera del fondo inline: el acento fuerte de la letra
+     capitular ya lee como parte del resaltado, sin ensuciarse. */
+  .chapter :global(.verse.is-highlighted) {
+    background: color-mix(in srgb, var(--accent) 15%, transparent);
+    padding: 0.05em 0.12em;
+    margin: 0 -0.12em;
+    border-radius: 2px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    cursor: pointer;
   }
 
   /* División: encabezado estructural prominente (números romanos del libro). */

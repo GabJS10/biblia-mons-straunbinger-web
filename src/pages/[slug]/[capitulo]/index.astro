@@ -11,6 +11,7 @@ import Layout from '../../../layouts/Layout.astro';
 import ChapterReader from '../../../components/ChapterReader.astro';
 import ChapterNav from '../../../components/ChapterNav.astro';
 import ReaderHeader from '../../../components/ReaderHeader.astro';
+import HighlightPicker from '../../../components/HighlightPicker.astro';
 import { getAdjacent } from '../../../lib/readingSequence';
 
 export async function getStaticPaths() {
@@ -25,6 +26,7 @@ export async function getStaticPaths() {
 }
 
 const { book, chapter } = Astro.props;
+const slug = Astro.params.slug!;
 const chapterId = chapter.label ?? String(chapter.chapter);
 const { prev, next } = await getAdjacent(Astro.url.pathname);
 ---
@@ -34,13 +36,16 @@ const { prev, next } = await getAdjacent(Astro.url.pathname);
     <ReaderHeader eyebrow={book.book} title={`Capítulo ${chapterId}`} />
 
     <main class="reader-body">
-      <ChapterReader book={book} chapter={chapter} />
+      <ChapterReader book={book} chapter={chapter} bookSlug={slug} chapterId={chapterId} />
     </main>
 
     {/* Navegación de lectura: flechas fijas (desktop) + barra final tras las
         notas (móvil). Ver ChapterNav. */}
     <ChapterNav prev={prev} next={next} />
   </div>
+
+  {/* Selector de resaltado: una sola instancia por página de capítulo. */}
+  <HighlightPicker />
 </Layout>
 
 <style>

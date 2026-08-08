@@ -15,6 +15,7 @@
  *   - flowType 'pkce': flujo recomendado para clientes públicos (por defecto).
  */
 import { createClient } from '@supabase/supabase-js';
+import type { Database } from '../types/supabase';
 
 const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL;
 const supabaseAnonKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY;
@@ -28,7 +29,7 @@ if (!supabaseUrl || !supabaseAnonKey) {
   );
 }
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
+export const supabase = createClient<Database>(supabaseUrl, supabaseAnonKey, {
   auth: {
     persistSession: true,
     autoRefreshToken: true,
@@ -36,3 +37,15 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
     flowType: 'pkce',
   },
 });
+
+/**
+ * Lanza el login de Google (mismo flujo en todo el sitio: AuthWidget y el
+ * resaltado del lector lo comparten en vez de duplicar `signInWithOAuth`).
+ * Redirige a Google y de vuelta a la misma página desde la que se invocó.
+ */
+export function signInWithGoogle() {
+  return supabase.auth.signInWithOAuth({
+    provider: 'google',
+    options: { redirectTo: window.location.href },
+  });
+}
