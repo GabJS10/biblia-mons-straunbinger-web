@@ -272,6 +272,9 @@
 
     removeBtn.addEventListener('click', () => void removeHighlight());
 
+    // Botón X de la cabecera (mismo cierre que backdrop/Escape).
+    dialog.querySelector('[data-hp-close]')?.addEventListener('click', () => dialog.close());
+
     // Crear colección nueva y asignar en la misma acción.
     createForm.addEventListener('submit', async (event) => {
       event.preventDefault();
@@ -457,14 +460,18 @@
     flex-direction: column;
   }
 
-  .hp-option {
+  /* Las opciones se crean por JS (makeOption) y NO reciben el atributo de scope
+     de Astro; se de-scopean con `.hp-options :global(...)` —mismo idiom que
+     `ChapterReader` con `.chapter :global(.verse)`— para que los estilos apliquen
+     manteniendo la encapsulación por el contenedor (que sí está en el template). */
+  .hp-options :global(.hp-option) {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     width: 100%;
-    padding: 0.7rem 0.5rem;
-    font-family: var(--font-display);
-    font-size: 1.1rem;
+    padding: 0.85rem 0.5rem;
+    font-family: var(--font-sans);
+    font-size: 1rem;
     font-weight: 500;
     text-align: left;
     color: var(--text);
@@ -474,33 +481,35 @@
     cursor: pointer;
     transition: color 0.15s ease;
   }
-  .hp-option:last-child {
+  .hp-options :global(.hp-option:last-child) {
     border-bottom: none;
   }
-  .hp-option:hover {
+  .hp-options :global(.hp-option:hover),
+  .hp-options :global(.hp-option.is-active) {
     color: var(--accent);
   }
-  .hp-option.is-active {
-    color: var(--accent);
-  }
-  .hp-option--loose {
+  .hp-options :global(.hp-option--loose) {
     font-style: italic;
     color: var(--text-secondary);
   }
-  .hp-option--loose.is-active {
+  .hp-options :global(.hp-option--loose.is-active) {
     color: var(--accent);
   }
-  .hp-check {
+  .hp-options :global(.hp-check) {
     width: 1rem;
     flex: none;
     font-family: var(--font-sans);
     font-size: 0.9rem;
     color: var(--accent);
   }
-  .hp-option-label {
+  .hp-options :global(.hp-option-label) {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+  .hp-options :global(.hp-option:focus-visible) {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
   }
 
   /* ---------- Crear colección ---------- */
@@ -548,7 +557,6 @@
   }
 
   .hp-close:focus-visible,
-  .hp-option:focus-visible,
   .hp-remove:focus-visible,
   .hp-create-btn:focus-visible {
     outline: 2px solid var(--accent);
@@ -558,10 +566,12 @@
   @media (prefers-reduced-motion: reduce) {
     .hp-shell,
     .hp::backdrop,
-    .hp-option,
     .hp-remove,
     .hp-close,
     .hp-create-btn {
+      transition: none;
+    }
+    .hp-options :global(.hp-option) {
       transition: none;
     }
   }

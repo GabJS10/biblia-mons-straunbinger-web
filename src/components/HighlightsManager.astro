@@ -457,39 +457,43 @@ const { bookNames } = Astro.props;
     border-color: var(--accent);
   }
 
-  /* ---------- Grupos (colecciones) ---------- */
-  .hm-group {
-    margin-bottom: 2.75rem;
+  /* ---------- Grupos (colecciones) ----------
+     Todo lo que vive dentro de `.hm-groups` se renderiza por JS y NO recibe el
+     atributo de scope de Astro; se de-scopea con `.hm-groups :global(...)` (mismo
+     idiom que `ChapterReader` con `.chapter :global(.verse)`) para que los
+     estilos apliquen sin perder la encapsulación por el contenedor del template. */
+  .hm-groups :global(.hm-group) {
+    margin-bottom: 3.25rem;
   }
-  .hm-group-header {
+  .hm-groups :global(.hm-group-header) {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 1rem 1.25rem;
     flex-wrap: wrap;
-    margin-bottom: 0.75rem;
-    padding-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
     border-bottom: 1px solid var(--border);
   }
-  .hm-group-title {
+  .hm-groups :global(.hm-group-title) {
     margin: 0;
     font-family: var(--font-display);
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--text);
   }
-  .hm-group-title--loose {
+  .hm-groups :global(.hm-group-title--loose) {
     font-style: italic;
     color: var(--text-secondary);
   }
-  .hm-group-actions {
+  .hm-groups :global(.hm-group-actions) {
     display: flex;
     gap: 1rem;
     flex: none;
   }
 
   /* Renombrado inline: el input hereda el tamaño del título. */
-  .hm-rename-input {
+  .hm-groups :global(.hm-rename-input) {
     font-family: var(--font-display);
     font-size: 1.5rem;
     font-weight: 600;
@@ -501,106 +505,132 @@ const { bookNames } = Astro.props;
     min-width: 0;
     max-width: 100%;
   }
-  .hm-rename-input:focus-visible {
+  .hm-groups :global(.hm-rename-input:focus-visible) {
     outline: none;
   }
 
-  /* Botón de texto (renombrar / borrar / quitar): sin recuadro, hairline visual
-     por hover en color de acento. */
-  .hm-textbtn {
-    padding: 0.25rem 0;
+  /* Botón secundario de gestión (renombrar / borrar / quitar): contorno discreto
+     con hairline var(--border) y texto secundario, menor énfasis que la acción
+     principal de la página (que va en color de acento). */
+  .hm-groups :global(.hm-textbtn) {
+    min-height: 2rem;
+    padding: 0.3rem 0.7rem;
     font-family: var(--font-sans);
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     font-weight: 600;
     letter-spacing: 0.03em;
     color: var(--text-secondary);
     background: transparent;
-    border: none;
+    border: 1px solid var(--border);
+    border-radius: 2px;
     cursor: pointer;
-    transition: color 0.15s ease;
+    transition: color 0.15s ease, border-color 0.15s ease;
   }
-  .hm-textbtn:hover {
-    color: var(--accent);
+  .hm-groups :global(.hm-textbtn:hover) {
+    color: var(--text);
+    border-color: var(--text-secondary);
   }
-  .hm-textbtn:focus-visible {
+  .hm-groups :global(.hm-textbtn:focus-visible) {
     outline: 2px solid var(--accent);
     outline-offset: 2px;
     border-radius: 2px;
   }
 
+  /* Acciones destructivas (borrar colección / quitar resaltado): mismo botón de
+     contorno, pero con un tono de advertencia sutil en hover. El rojo apagado se
+     fija inline (no hay token en themes.css) y se eligió legible en los 3 temas,
+     incluido el negro real del modo oscuro. */
+  .hm-groups :global(.hm-group-actions .hm-textbtn:last-child:hover),
+  .hm-groups :global(.hm-remove:hover) {
+    color: #c1583d;
+    border-color: #c1583d;
+  }
+
   /* ---------- Items (versículos) ---------- */
-  .hm-items {
+  .hm-groups :global(.hm-items) {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  .hm-item {
+  .hm-groups :global(.hm-item) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 0.85rem 1rem;
     flex-wrap: wrap;
-    padding: 0.7rem 0;
+    padding: 0.9rem 0;
     border-bottom: 1px solid var(--border);
   }
-  .hm-item:last-child {
+  .hm-groups :global(.hm-item:last-child) {
     border-bottom: none;
   }
-  .hm-item-empty {
+  .hm-groups :global(.hm-item-empty) {
     padding: 0.7rem 0;
     font-size: 0.9rem;
     font-style: italic;
     color: var(--text-secondary);
   }
 
-  .hm-ref {
+  .hm-groups :global(.hm-ref) {
     font-family: var(--font-display);
     font-size: 1.15rem;
     color: var(--text);
     text-decoration: none;
     transition: color 0.15s ease;
   }
-  .hm-ref:hover {
+  .hm-groups :global(.hm-ref:hover) {
     color: var(--accent);
     text-decoration: underline;
     text-underline-offset: 0.15em;
   }
-  .hm-ref:focus-visible {
+  .hm-groups :global(.hm-ref:focus-visible) {
     outline: 2px solid var(--accent);
     outline-offset: 2px;
     border-radius: 2px;
   }
 
-  .hm-item-controls {
+  .hm-groups :global(.hm-item-controls) {
     display: flex;
     align-items: center;
     gap: 0.75rem;
     flex: none;
   }
-  .hm-select {
-    padding: 0.4rem 0.5rem;
+  /* Select nativo re-estilizado: se conserva el elemento real (accesibilidad),
+     pero se quita el chrome del navegador con appearance:none y se dibuja una
+     flecha propia como SVG de fondo. El gris del chevron se eligió legible en los
+     3 temas; el padding derecho reserva su espacio. */
+  .hm-groups :global(.hm-select) {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 0.45rem 2rem 0.45rem 0.6rem;
     font-family: var(--font-sans);
     font-size: 0.85rem;
     color: var(--text);
-    background: var(--bg);
+    background-color: var(--bg);
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20stroke='%23938f82'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3Cpath%20d='M4%206l4%204%204-4'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.6rem center;
+    background-size: 0.8rem;
     border: 1px solid var(--border);
     border-radius: 2px;
     cursor: pointer;
-    max-width: 11rem;
+    max-width: 12rem;
   }
-  .hm-select:focus-visible {
+  .hm-groups :global(.hm-select:hover) {
+    border-color: var(--text-secondary);
+  }
+  .hm-groups :global(.hm-select:focus-visible) {
     outline: 2px solid var(--accent);
     outline-offset: 1px;
-  }
-  .hm-remove:hover {
-    color: var(--accent);
   }
 
   @media (prefers-reduced-motion: reduce) {
     .hm-btn,
-    .hm-btn-primary,
-    .hm-textbtn,
-    .hm-ref {
+    .hm-btn-primary {
+      transition: none;
+    }
+    .hm-groups :global(.hm-textbtn),
+    .hm-groups :global(.hm-ref) {
       transition: none;
     }
   }
