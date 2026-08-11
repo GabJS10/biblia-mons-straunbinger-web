@@ -21,6 +21,14 @@
   --font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
   --font-body: 'EB Garamond', Georgia, 'Times New Roman', serif;
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Escala del cuerpo de lectura (versículos, notas, prosa de intro/prólogo).
+     La controla el usuario con FontSizeControl (A- / A+); persiste por
+     dispositivo en localStorage['fontScale'] y se aplica antes del primer
+     render vía el script is:inline de Layout.astro. Por defecto 1 (sin escalar).
+     NO afecta la letra capitular (versal), que se mantiene fija por ser
+     decorativa. */
+  --verse-font-scale: 1;
 }
 
 *,

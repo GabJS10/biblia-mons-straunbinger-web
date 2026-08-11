@@ -63,7 +63,9 @@ const firstVerseIndex = items.findIndex((item) => item.kind === 'verse');
   .chapter {
     /* Prosa continua: los versículos fluyen dentro del mismo bloque. */
     font-family: var(--font-body);
-    font-size: 1.25rem;
+    /* El cuerpo escala con la preferencia del usuario (A- / A+). La versal
+       (.dropcap) queda fija en 4rem —ver Verse.astro—, no hereda esta escala. */
+    font-size: calc(1.25rem * var(--verse-font-scale));
     line-height: 1.8;
     color: var(--text);
     text-align: justify;

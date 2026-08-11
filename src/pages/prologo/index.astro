@@ -33,9 +33,11 @@ const title = prologue?.data.title ?? 'Prólogo';
     padding: 2rem 1.5rem 5rem;
   }
 
+  /* Cuerpo de lectura larga: escala con la preferencia del usuario (A- / A+),
+     igual que versículos e introducciones. */
   .prose {
     font-family: var(--font-body);
-    font-size: 1.25rem;
+    font-size: calc(1.25rem * var(--verse-font-scale));
     line-height: 1.8;
     color: var(--text);
   }

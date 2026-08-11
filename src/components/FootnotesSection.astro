@@ -74,7 +74,9 @@ const toSup = (n: number) =>
     display: grid;
     grid-template-columns: auto 1fr auto;
     gap: 0.5rem;
-    font-size: 1.05rem;
+    /* Las notas son cuerpo de lectura: escalan con la misma preferencia del
+       usuario (A- / A+) que los versículos. */
+    font-size: calc(1.05rem * var(--verse-font-scale));
     color: var(--text-secondary);
     scroll-margin-top: 5rem;
     border-radius: 6px;

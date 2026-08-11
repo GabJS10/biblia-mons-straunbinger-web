@@ -47,10 +47,12 @@ const { prev, next } = await getAdjacent(Astro.url.pathname);
     padding: 2rem 1.5rem 5rem;
   }
 
-  /* Cuerpo en serif para lectura prolongada. */
+  /* Cuerpo en serif para lectura prolongada. Escala con la preferencia del
+     usuario (A- / A+), igual que los versículos: es el mismo tipo de contenido
+     de lectura larga. */
   .prose {
     font-family: var(--font-body);
-    font-size: 1.25rem;
+    font-size: calc(1.25rem * var(--verse-font-scale));
     line-height: 1.8;
     color: var(--text);
   }

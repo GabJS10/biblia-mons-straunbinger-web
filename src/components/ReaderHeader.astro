@@ -11,6 +11,7 @@
  * (Paso 6c), que las páginas de capítulo/introducción renderizan aparte.
  */
 import BookPickerModal from './BookPickerModal.astro';
+import FontSizeControl from './FontSizeControl.astro';
 import { getBookCatalog } from '../lib/bookCatalog';
 
 interface Props {
@@ -30,13 +31,16 @@ const books = await getBookCatalog();
         <h1 class="reader-title">{title}</h1>
       </div>
     </div>
-    <a class="btn-home" href="/" aria-label="Ir al inicio">
+    <div class="reader-actions">
+      <a class="btn-home" href="/" aria-label="Ir al inicio">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M3 10.5 12 3l9 7.5" />
           <path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5" />
         </svg>
       </a>
-    <button type="button" class="btn-picker" data-open-picker>Elegir libro</button>
+      <FontSizeControl />
+      <button type="button" class="btn-picker" data-open-picker>Elegir libro</button>
+    </div>
   </div>
 </header>
 
@@ -53,16 +57,30 @@ const books = await getBookCatalog();
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: 1rem;
+    /* Con el control A- / A+ sumado a los otros botones, en anchos intermedios
+       el cluster de acciones puede envolver bajo el encabezado sin apretarse. */
+    flex-wrap: wrap;
   }
 
-  /* En pantallas donde el contenido ocupa casi todo el ancho, el botón "Elegir
-     libro" queda al borde derecho, justo donde flota el ThemeToggle. Se reserva
+  /* En pantallas donde el contenido ocupa casi todo el ancho, las acciones
+     quedan al borde derecho, justo donde flota el ThemeToggle. Se reserva
      espacio a la derecha para que no se solapen. */
   @media (max-width: 48rem) {
     .reader-topline {
       padding-right: 3rem;
     }
+  }
+
+  /* Cluster derecho: inicio + tamaño de texto + elegir libro. Envuelve como
+     bloque en móvil manteniéndose alineado a la derecha. */
+  .reader-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: none;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   /* Cluster izquierdo: botón de inicio + encabezado, agrupados. */
@@ -74,15 +92,15 @@ const books = await getBookCatalog();
     flex: 1 1 auto;
   }
 
-  /* Botón de inicio: ícono de contorno, sin recuadro; área táctil ~44px. El
-     margen negativo alinea ópticamente el ícono con el borde de la columna. */
+  /* Botón de inicio: ícono de contorno, sin recuadro; área táctil ~44px.
+     Vive en el cluster derecho `.reader-actions`, junto al control de tamaño y
+     "Elegir libro". */
   .btn-home {
     flex: none;
     display: inline-grid;
     place-items: center;
     width: 2.75rem;
     height: 2.75rem;
-    margin-left: -0.6rem;
     color: var(--text-secondary);
     transition: color 0.15s ease;
   }

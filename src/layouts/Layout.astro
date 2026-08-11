@@ -25,6 +25,14 @@ const { title = 'Biblia Straubinger' } = Astro.props;
       const t = localStorage.getItem('theme');
       document.documentElement.dataset.theme =
         t === 'light' || t === 'dark' || t === 'reading' ? t : 'light';
+
+      /* Escala del texto de lectura: se aplica ANTES del primer render para que
+         no haya salto de tamaño al cargar. Clave propia ('fontScale'),
+         independiente del tema. Fallback a 1 si no existe o es inválida. */
+      const fs = parseFloat(localStorage.getItem('fontScale'));
+      if (fs >= 0.85 && fs <= 1.45) {
+        document.documentElement.style.setProperty('--verse-font-scale', String(fs));
+      }
     </script>
   </head>
   <body>

@@ -1,0 +1,170 @@
+---
+/**
+ * Control A- / A+ para ajustar el tamaño del cuerpo de lectura (versículos,
+ * notas y prosa de intro/prólogo). Solo se usa en las páginas del lector, vía
+ * `ReaderHeader`.
+ *
+ * Ajusta la variable CSS global `--verse-font-scale` (definida en global.css)
+ * moviéndose entre pasos discretos, y persiste la elección en
+ * `localStorage['fontScale']` — LA MISMA clave que lee el script anti-salto
+ * `is:inline` de `Layout.astro`, que la aplica antes del primer render para
+ * evitar el parpadeo de tamaño al cargar.
+ *
+ * Convive de forma independiente con la lógica de temas: cada uno lee/escribe
+ * su propia clave de localStorage (`theme` vs `fontScale`).
+ *
+ * Los pasos y sus extremos están duplicados en el script inline de Layout como
+ * validación (rango [0.85, 1.45]); si se cambian aquí, ajustar allí también.
+ *
+ * La letra capitular (`.dropcap`, 4rem fijo) NO usa esta variable: es
+ * decorativa, no cuerpo de lectura.
+ */
+---
+
+<div class="font-size-control" role="group" aria-label="Tamaño del texto">
+  <button
+    type="button"
+    class="fs-btn fs-dec"
+    aria-label="Disminuir tamaño de texto"
+    data-font-dec
+  >
+    <span class="fs-a fs-a-sm">A</span><span class="fs-sign" aria-hidden="true">−</span>
+  </button>
+  <button
+    type="button"
+    class="fs-btn fs-inc"
+    aria-label="Aumentar tamaño de texto"
+    data-font-inc
+  >
+    <span class="fs-a fs-a-lg">A</span><span class="fs-sign" aria-hidden="true">+</span>
+  </button>
+</div>
+
+<script>
+  // Pasos permitidos, de menor a mayor. El default (1) está en el medio.
+  const STEPS = [0.85, 1, 1.15, 1.3, 1.45] as const;
+  const DEFAULT = 1;
+
+  const root = document.documentElement;
+  const dec = document.querySelector<HTMLButtonElement>('[data-font-dec]');
+  const inc = document.querySelector<HTMLButtonElement>('[data-font-inc]');
+
+  if (dec && inc) {
+    // Índice del paso más cercano al valor guardado (o al default si no hay/es
+    // inválido). Usa la variable CSS ya aplicada por el script inline como
+    // fuente de verdad, con fallback a localStorage y al default.
+    const readScale = (): number => {
+      const stored = parseFloat(localStorage.getItem('fontScale') ?? '');
+      return stored >= STEPS[0] && stored <= STEPS[STEPS.length - 1] ? stored : DEFAULT;
+    };
+
+    const nearestIndex = (value: number): number => {
+      let best = 0;
+      for (let i = 1; i < STEPS.length; i++) {
+        if (Math.abs(STEPS[i] - value) < Math.abs(STEPS[best] - value)) best = i;
+      }
+      return best;
+    };
+
+    let index = nearestIndex(readScale());
+
+    const apply = () => {
+      const scale = STEPS[index];
+      root.style.setProperty('--verse-font-scale', String(scale));
+      localStorage.setItem('fontScale', String(scale));
+      // Deshabilita (sin ocultar) el botón que llegó al límite.
+      dec.disabled = index === 0;
+      inc.disabled = index === STEPS.length - 1;
+    };
+
+    // Sincroniza estado deshabilitado en la carga (el tamaño ya lo aplicó el
+    // script inline; aquí solo reflejamos los límites en los botones).
+    dec.disabled = index === 0;
+    inc.disabled = index === STEPS.length - 1;
+
+    dec.addEventListener('click', () => {
+      if (index > 0) {
+        index--;
+        apply();
+      }
+    });
+    inc.addEventListener('click', () => {
+      if (index < STEPS.length - 1) {
+        index++;
+        apply();
+      }
+    });
+  }
+</script>
+
+<style>
+  /* Grupo con lenguaje de CONTORNO, coherente con el resto de controles del
+     header (btn-picker, theme-toggle). Dos botones unidos por una hairline. */
+  .font-size-control {
+    display: inline-flex;
+    align-items: stretch;
+    flex: none;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .fs-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.05em;
+    min-width: 2.5rem;
+    min-height: 2.75rem; /* área táctil cómoda en móvil (~44px) */
+    padding: 0 0.55rem;
+    font-family: var(--font-sans);
+    color: var(--text-secondary);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+  }
+  /* Hairline divisoria entre los dos botones. */
+  .fs-inc {
+    border-left: 1px solid var(--border);
+  }
+
+  /* La "A" de cada botón difiere de tamaño para reforzar visualmente
+     disminuir / aumentar, además del signo − / +. */
+  .fs-a {
+    font-weight: 600;
+    line-height: 1;
+  }
+  .fs-a-sm {
+    font-size: 0.8rem;
+  }
+  .fs-a-lg {
+    font-size: 1.1rem;
+  }
+  .fs-sign {
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .fs-btn:hover:not(:disabled) {
+    color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 8%, transparent);
+  }
+  .fs-btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
+  }
+
+  /* Límite alcanzado: atenuado y no interactivo, pero visible (no oculto). */
+  .fs-btn:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fs-btn {
+      transition: none;
+    }
+  }
+</style>
