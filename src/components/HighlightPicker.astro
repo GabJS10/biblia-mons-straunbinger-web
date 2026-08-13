@@ -8,11 +8,16 @@
  *
  * El script también:
  *   - Al cargar el capítulo (con sesión), trae los resaltados de ESE capítulo y
- *     las colecciones del usuario, y pinta `.is-highlighted` en los versículos.
- *   - Delega el click en el contenedor de versículos: abre el picker (con
- *     sesión) o lanza el login de Google (sin sesión), ignorando clicks en las
- *     notas al pie y en la letra capitular.
- *   - Hace upsert/delete optimista contra Supabase, revirtiendo si falla.
+ *     las colecciones del usuario, y pinta `.is-highlighted` en TODOS los
+ *     versículos de cada rango `[verse_start, verse_end]`, marcando cada uno con
+ *     `data-highlight-id` para resolver el tap sin re-consultar.
+ *   - Delega el click en el contenedor de versículos: si el versículo ya está en
+ *     un resaltado (`data-highlight-id`) abre el picker en modo "editar" para
+ *     ESE rango completo; si no, crea uno nuevo de un solo versículo. Sin sesión
+ *     lanza el login de Google. Ignora clicks en notas al pie y letra capitular.
+ *   - Hace insert/update/delete optimista contra Supabase, revirtiendo si falla.
+ *     La creación de rangos de varios versículos por selección de texto llega en
+ *     el Paso 9b; aquí el tap simple crea siempre `verse_start === verse_end`.
  *
  * El contexto (book_slug / chapter / nombre del libro) se lee de los
  * data-attributes que `ChapterReader` pone en `.chapter`.
@@ -56,8 +61,10 @@
     getCollections,
     createCollection,
     getChapterHighlights,
-    upsertHighlight,
+    createHighlight,
+    moveHighlight,
     deleteHighlight,
+    formatReference,
     clearCollectionsCache,
     type Highlight,
   } from '../lib/highlights';
@@ -81,8 +88,17 @@
 
     // Estado de sesión de navegación.
     let userId: string | null = null;
-    let currentVerse: number | null = null;
-    const highlightsByVerse = new Map<number, Highlight>();
+
+    // Resaltados del capítulo (cada uno cubre el rango [verse_start, verse_end]).
+    // El vínculo versículo → resaltado vive en el DOM (data-highlight-id), que el
+    // tap resuelve contra este arreglo sin re-consultar Supabase.
+    let highlights: Highlight[] = [];
+
+    // Objetivo del diálogo abierto: o editamos un resaltado existente (`editing`)
+    // o creamos uno nuevo de un solo versículo (`creatingVerse`). Exactamente uno
+    // está activo mientras el diálogo está abierto.
+    let editing: Highlight | null = null;
+    let creatingVerse: number | null = null;
 
     // ---------- Pintado de versículos ----------
     const verseEl = (n: number) =>
@@ -91,37 +107,67 @@
     function markVerse(n: number, on: boolean) {
       verseEl(n)?.classList.toggle('is-highlighted', on);
     }
+
+    // Quita marca y vínculo de TODOS los versículos (se reconstruye con repaint).
     function clearAllMarks() {
       container!
-        .querySelectorAll('.verse.is-highlighted')
-        .forEach((el) => el.classList.remove('is-highlighted'));
+        .querySelectorAll<HTMLElement>('.verse.is-highlighted')
+        .forEach((el) => {
+          el.classList.remove('is-highlighted');
+          delete el.dataset.highlightId;
+        });
     }
-    function paintFromMap() {
+
+    // Pinta cada versículo de cada rango, vinculándolo (data-highlight-id) al
+    // resaltado que lo cubre. Idempotente: limpia y reconstruye desde cero.
+    function repaint() {
       clearAllMarks();
-      for (const n of highlightsByVerse.keys()) markVerse(n, true);
+      for (const h of highlights) {
+        for (let v = h.verse_start; v <= h.verse_end; v++) {
+          const el = verseEl(v);
+          if (el) {
+            el.classList.add('is-highlighted');
+            el.dataset.highlightId = h.id;
+          }
+        }
+      }
     }
 
     // ---------- Carga de datos del capítulo ----------
     async function loadChapter() {
       try {
-        const [highlights] = await Promise.all([
+        const [rows] = await Promise.all([
           getChapterHighlights(bookSlug, chapterId),
           getCollections(), // calienta el caché de colecciones
         ]);
-        highlightsByVerse.clear();
-        for (const h of highlights) highlightsByVerse.set(h.verse_number, h);
-        paintFromMap();
+        highlights = rows;
+        repaint();
       } catch (err) {
         console.error('No se pudieron cargar los resaltados del capítulo', err);
       }
     }
 
     // ---------- Apertura / poblado del diálogo ----------
-    async function openPicker(n: number, errorMsg?: string) {
-      currentVerse = n;
-      titleEl.textContent = `${bookName} ${chapterId}:${n}`;
+    // Abre para EDITAR un resaltado existente (su rango completo).
+    function openEdit(h: Highlight, errorMsg?: string) {
+      editing = h;
+      creatingVerse = null;
+      return open(
+        formatReference(bookName, chapterId, h.verse_start, h.verse_end),
+        h,
+        errorMsg,
+      );
+    }
 
-      const existing = highlightsByVerse.get(n) ?? null;
+    // Abre para CREAR un resaltado nuevo de un solo versículo.
+    function openCreate(n: number, errorMsg?: string) {
+      editing = null;
+      creatingVerse = n;
+      return open(formatReference(bookName, chapterId, n, n), null, errorMsg);
+    }
+
+    async function open(title: string, existing: Highlight | null, errorMsg?: string) {
+      titleEl.textContent = title;
       removeBtn.hidden = !existing;
 
       if (errorMsg) {
@@ -180,65 +226,68 @@
     }
 
     // ---------- Acciones (optimistas) ----------
+    // Asigna colección: reasigna la del resaltado en edición (update por id) o
+    // crea uno nuevo de un solo versículo (insert). El modo lo fija la apertura.
     async function assign(collectionId: string | null) {
-      if (currentVerse == null || !userId) return;
-      const verse = currentVerse;
-      const prev = highlightsByVerse.get(verse) ?? null;
+      if (editing) return reassign(editing, collectionId);
+      if (creatingVerse != null && userId) return createSingle(creatingVerse, collectionId);
+    }
 
-      // Optimista: marca visual + entrada provisional en el mapa, y cierra.
-      highlightsByVerse.set(verse, {
-        ...(prev ?? ({} as Highlight)),
-        verse_number: verse,
-        collection_id: collectionId,
-      } as Highlight);
-      markVerse(verse, true);
+    // Reasigna la colección de un resaltado existente (no cambia su marca visual).
+    async function reassign(h: Highlight, collectionId: string | null) {
+      const prevCol = h.collection_id;
+      h.collection_id = collectionId; // optimista (misma ref que en `highlights`)
       dialog!.close();
-
       try {
-        const saved = await upsertHighlight({
-          userId,
-          bookSlug,
-          chapter: chapterId,
-          verseNumber: verse,
-          collectionId,
-        });
-        highlightsByVerse.set(verse, saved);
+        const saved = await moveHighlight(h.id, collectionId);
+        h.collection_id = saved.collection_id;
       } catch (err) {
         console.error('No se pudo guardar el resaltado', err);
-        revert(verse, prev);
-        void openPicker(verse, 'No se pudo guardar. Revisa tu conexión e inténtalo de nuevo.');
+        h.collection_id = prevCol;
+        void openEdit(h, 'No se pudo guardar. Revisa tu conexión e inténtalo de nuevo.');
       }
     }
 
+    // Crea un resaltado nuevo de un solo versículo (verse_start === verse_end).
+    async function createSingle(n: number, collectionId: string | null) {
+      markVerse(n, true); // feedback inmediato (aún sin id)
+      dialog!.close();
+      try {
+        const saved = await createHighlight({
+          userId: userId!,
+          bookSlug,
+          chapter: chapterId,
+          verseStart: n,
+          verseEnd: n,
+          collectionId,
+        });
+        highlights.push(saved);
+        repaint(); // fija data-highlight-id sobre el versículo recién creado
+      } catch (err) {
+        console.error('No se pudo guardar el resaltado', err);
+        repaint(); // el provisional no está en `highlights`: queda sin marca
+        void openCreate(n, 'No se pudo guardar. Revisa tu conexión e inténtalo de nuevo.');
+      }
+    }
+
+    // Quita el resaltado en edición completo (todo el rango, no solo un versículo).
     async function removeHighlight() {
-      if (currentVerse == null) return;
-      const verse = currentVerse;
-      const prev = highlightsByVerse.get(verse);
-      if (!prev) {
+      if (!editing) {
         dialog!.close();
         return;
       }
-      highlightsByVerse.delete(verse);
-      markVerse(verse, false);
+      const h = editing;
+      highlights = highlights.filter((x) => x.id !== h.id);
+      repaint(); // despinta su rango (respeta solapes con otros resaltados)
       dialog!.close();
 
       try {
-        await deleteHighlight(prev.id);
+        await deleteHighlight(h.id);
       } catch (err) {
         console.error('No se pudo quitar el resaltado', err);
-        highlightsByVerse.set(verse, prev);
-        markVerse(verse, true);
-        void openPicker(verse, 'No se pudo quitar. Revisa tu conexión e inténtalo de nuevo.');
-      }
-    }
-
-    function revert(verse: number, prev: Highlight | null) {
-      if (prev) {
-        highlightsByVerse.set(verse, prev);
-        markVerse(verse, true);
-      } else {
-        highlightsByVerse.delete(verse);
-        markVerse(verse, false);
+        highlights.push(h);
+        repaint();
+        void openEdit(h, 'No se pudo quitar. Revisa tu conexión e inténtalo de nuevo.');
       }
     }
 
@@ -257,7 +306,15 @@
         void signInWithGoogle(); // sin sesión: mismo login que AuthWidget
         return;
       }
-      void openPicker(n);
+
+      // Ya resaltado: editar el resaltado COMPLETO al que pertenece el versículo.
+      const hid = verse.dataset.highlightId;
+      const existing = hid ? highlights.find((x) => x.id === hid) : undefined;
+      if (existing) {
+        void openEdit(existing);
+      } else {
+        void openCreate(n); // sin resaltar: crea uno nuevo de un versículo
+      }
     });
 
     // Selección de colección / "Sin colección".
@@ -279,7 +336,9 @@
     createForm.addEventListener('submit', async (event) => {
       event.preventDefault();
       const name = nameInput.value.trim();
-      if (!name || currentVerse == null || !userId) return;
+      // Válido en ambos modos: reasignar el resaltado en edición a la colección
+      // nueva, o crear el resaltado nuevo directamente en ella.
+      if (!name || !userId || (!editing && creatingVerse == null)) return;
       try {
         const col = await createCollection(name, userId);
         await assign(col.id); // assign cierra el diálogo y hace el optimista
@@ -296,7 +355,8 @@
     });
     // Al cerrar, limpiar estado efímero (Escape/X/backdrop van todos por aquí).
     dialog.addEventListener('close', () => {
-      currentVerse = null;
+      editing = null;
+      creatingVerse = null;
       errorEl.hidden = true;
     });
 
@@ -306,7 +366,7 @@
       if (uid) {
         void loadChapter();
       } else {
-        highlightsByVerse.clear();
+        highlights = [];
         clearAllMarks();
         clearCollectionsCache();
       }

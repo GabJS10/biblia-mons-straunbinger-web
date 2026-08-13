@@ -66,33 +66,52 @@ export async function getChapterHighlights(
 }
 
 /**
- * Crea o actualiza el resaltado de un versículo (upsert sobre la constraint
- * única `user_id, book_slug, chapter, verse_number`). Sirve tanto para resaltar
- * por primera vez como para reasignar la colección de uno ya existente.
+ * Crea un resaltado nuevo que cubre el rango `[verseStart, verseEnd]` (ambos
+ * dentro del mismo capítulo). Desde el Paso 9a ya NO existe la constraint única
+ * por versículo: se permiten rangos solapados, así que la creación es siempre un
+ * `insert` normal (no un upsert). Reasignar la colección de un resaltado que ya
+ * existe es un `update` por `id` — ver `moveHighlight`.
+ *
+ * El tap simple crea un rango de un solo versículo (`verseStart === verseEnd`);
+ * la selección de texto para rangos de varios versículos llega en el Paso 9b.
  */
-export async function upsertHighlight(input: {
+export async function createHighlight(input: {
   userId: string;
   bookSlug: string;
   chapter: string;
-  verseNumber: number;
+  verseStart: number;
+  verseEnd: number;
   collectionId: string | null;
 }): Promise<Highlight> {
   const { data, error } = await supabase
     .from('highlights')
-    .upsert(
-      {
-        user_id: input.userId,
-        book_slug: input.bookSlug,
-        chapter: input.chapter,
-        verse_number: input.verseNumber,
-        collection_id: input.collectionId,
-      },
-      { onConflict: 'user_id,book_slug,chapter,verse_number' },
-    )
+    .insert({
+      user_id: input.userId,
+      book_slug: input.bookSlug,
+      chapter: input.chapter,
+      verse_start: input.verseStart,
+      verse_end: input.verseEnd,
+      collection_id: input.collectionId,
+    })
     .select()
     .single();
   if (error) throw error;
   return data;
+}
+
+/**
+ * Referencia legible de un resaltado. Un solo versículo → `"Génesis 1:3"`; un
+ * rango → `"Génesis 1:3-5"`. Se usa en todos los sitios donde antes se
+ * construía la referencia a mano (picker del lector y "Mis resaltados").
+ */
+export function formatReference(
+  bookName: string,
+  chapter: string,
+  verseStart: number,
+  verseEnd: number,
+): string {
+  const range = verseStart === verseEnd ? `${verseStart}` : `${verseStart}-${verseEnd}`;
+  return `${bookName} ${chapter}:${range}`;
 }
 
 /** Elimina un resaltado por su id. */

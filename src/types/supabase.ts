@@ -43,7 +43,8 @@ export type Database = {
           created_at: string | null
           id: string
           user_id: string
-          verse_number: number
+          verse_end: number
+          verse_start: number
         }
         Insert: {
           book_slug: string
@@ -52,7 +53,8 @@ export type Database = {
           created_at?: string | null
           id?: string
           user_id: string
-          verse_number: number
+          verse_end: number
+          verse_start: number
         }
         Update: {
           book_slug?: string
@@ -61,7 +63,8 @@ export type Database = {
           created_at?: string | null
           id?: string
           user_id?: string
-          verse_number?: number
+          verse_end?: number
+          verse_start?: number
         }
         Relationships: [
           {
@@ -211,3 +214,4 @@ export const Constants = {
     Enums: {},
   },
 } as const
+

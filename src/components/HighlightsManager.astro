@@ -68,6 +68,7 @@ const { bookNames } = Astro.props;
     deleteCollection,
     moveHighlight,
     deleteHighlight,
+    formatReference,
     type Collection,
     type Highlight,
   } from '../lib/highlights';
@@ -91,10 +92,12 @@ const { bookNames } = Astro.props;
     let collections: Collection[] = [];
     let highlights: Highlight[] = [];
 
+    // Referencia legible: un versículo → "Génesis 1:3"; rango → "Génesis 1:3-5".
     const reference = (h: Highlight) =>
-      `${bookNames[h.book_slug] ?? h.book_slug} ${h.chapter}:${h.verse_number}`;
+      formatReference(bookNames[h.book_slug] ?? h.book_slug, h.chapter, h.verse_start, h.verse_end);
+    // Vuelve al primer versículo del rango en el lector.
     const verseHref = (h: Highlight) =>
-      `/${h.book_slug}/${h.chapter}/#verse-${h.verse_number}`;
+      `/${h.book_slug}/${h.chapter}/#verse-${h.verse_start}`;
 
     type View = 'signedout' | 'loading' | 'error' | 'content';
     function setView(view: View) {
