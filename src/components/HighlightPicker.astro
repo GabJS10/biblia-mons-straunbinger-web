@@ -94,11 +94,13 @@
     // tap resuelve contra este arreglo sin re-consultar Supabase.
     let highlights: Highlight[] = [];
 
-    // Objetivo del diálogo abierto: o editamos un resaltado existente (`editing`)
-    // o creamos uno nuevo de un solo versículo (`creatingVerse`). Exactamente uno
-    // está activo mientras el diálogo está abierto.
+    // Objetivo del diálogo abierto: editamos un resaltado existente (`editing`),
+    // creamos uno nuevo de un solo versículo (`creatingVerse`, tap simple), o
+    // creamos uno de rango (`creatingRange`, selección de texto — Paso 9b).
+    // Exactamente uno de los tres está activo mientras el diálogo está abierto.
     let editing: Highlight | null = null;
     let creatingVerse: number | null = null;
+    let creatingRange: { verseStart: number; verseEnd: number } | null = null;
 
     // ---------- Pintado de versículos ----------
     const verseEl = (n: number) =>
@@ -152,6 +154,7 @@
     function openEdit(h: Highlight, errorMsg?: string) {
       editing = h;
       creatingVerse = null;
+      creatingRange = null;
       return open(
         formatReference(bookName, chapterId, h.verse_start, h.verse_end),
         h,
@@ -159,11 +162,25 @@
       );
     }
 
-    // Abre para CREAR un resaltado nuevo de un solo versículo.
+    // Abre para CREAR un resaltado nuevo de un solo versículo (tap simple).
     function openCreate(n: number, errorMsg?: string) {
       editing = null;
       creatingVerse = n;
+      creatingRange = null;
       return open(formatReference(bookName, chapterId, n, n), null, errorMsg);
+    }
+
+    // Abre para CREAR un resaltado de rango (selección de texto). Si el rango es
+    // de un solo versículo (start === end) equivale a `openCreate`.
+    function openCreateRange(verseStart: number, verseEnd: number, errorMsg?: string) {
+      editing = null;
+      creatingVerse = null;
+      creatingRange = { verseStart, verseEnd };
+      return open(
+        formatReference(bookName, chapterId, verseStart, verseEnd),
+        null,
+        errorMsg,
+      );
     }
 
     async function open(title: string, existing: Highlight | null, errorMsg?: string) {
@@ -227,10 +244,16 @@
 
     // ---------- Acciones (optimistas) ----------
     // Asigna colección: reasigna la del resaltado en edición (update por id) o
-    // crea uno nuevo de un solo versículo (insert). El modo lo fija la apertura.
+    // crea uno nuevo, de un versículo (tap) o de rango (selección). El modo lo
+    // fija la apertura; exactamente uno de los tres punteros está activo.
     async function assign(collectionId: string | null) {
       if (editing) return reassign(editing, collectionId);
-      if (creatingVerse != null && userId) return createSingle(creatingVerse, collectionId);
+      if (creatingRange && userId) {
+        return createNew(creatingRange.verseStart, creatingRange.verseEnd, collectionId);
+      }
+      if (creatingVerse != null && userId) {
+        return createNew(creatingVerse, creatingVerse, collectionId);
+      }
     }
 
     // Reasigna la colección de un resaltado existente (no cambia su marca visual).
@@ -248,25 +271,33 @@
       }
     }
 
-    // Crea un resaltado nuevo de un solo versículo (verse_start === verse_end).
-    async function createSingle(n: number, collectionId: string | null) {
-      markVerse(n, true); // feedback inmediato (aún sin id)
+    // Crea un resaltado nuevo que cubre [verseStart, verseEnd] (un solo versículo
+    // cuando start === end). Insert normal: sin constraint única, los rangos
+    // pueden solaparse.
+    async function createNew(
+      verseStart: number,
+      verseEnd: number,
+      collectionId: string | null,
+    ) {
+      for (let v = verseStart; v <= verseEnd; v++) markVerse(v, true); // feedback inmediato
       dialog!.close();
       try {
         const saved = await createHighlight({
           userId: userId!,
           bookSlug,
           chapter: chapterId,
-          verseStart: n,
-          verseEnd: n,
+          verseStart,
+          verseEnd,
           collectionId,
         });
         highlights.push(saved);
-        repaint(); // fija data-highlight-id sobre el versículo recién creado
+        repaint(); // fija data-highlight-id sobre los versículos recién creados
       } catch (err) {
         console.error('No se pudo guardar el resaltado', err);
         repaint(); // el provisional no está en `highlights`: queda sin marca
-        void openCreate(n, 'No se pudo guardar. Revisa tu conexión e inténtalo de nuevo.');
+        const msg = 'No se pudo guardar. Revisa tu conexión e inténtalo de nuevo.';
+        if (verseStart === verseEnd) void openCreate(verseStart, msg);
+        else void openCreateRange(verseStart, verseEnd, msg);
       }
     }
 
@@ -297,6 +328,13 @@
       const target = event.target as HTMLElement;
       if (target.closest('.footnote-ref')) return; // la nota sigue navegando
       if (target.closest('.dropcap')) return; // la versal no abre el picker
+
+      // Si hay una selección de texto activa, el gesto fue un ARRASTRE, no un
+      // tap: lo gestiona el botón flotante (RangeSelectionToolbar). No abrir el
+      // picker aquí para que ambos mecanismos convivan sin conflicto.
+      const sel = window.getSelection();
+      if (sel && !sel.isCollapsed) return;
+
       const verse = target.closest<HTMLElement>('.verse');
       if (!verse) return;
       const n = Number(verse.id.replace('verse-', ''));
@@ -336,9 +374,9 @@
     createForm.addEventListener('submit', async (event) => {
       event.preventDefault();
       const name = nameInput.value.trim();
-      // Válido en ambos modos: reasignar el resaltado en edición a la colección
-      // nueva, o crear el resaltado nuevo directamente en ella.
-      if (!name || !userId || (!editing && creatingVerse == null)) return;
+      // Válido en cualquier modo: reasignar el resaltado en edición a la colección
+      // nueva, o crear el resaltado nuevo (versículo o rango) directamente en ella.
+      if (!name || !userId || (!editing && creatingVerse == null && !creatingRange)) return;
       try {
         const col = await createCollection(name, userId);
         await assign(col.id); // assign cierra el diálogo y hace el optimista
@@ -357,7 +395,17 @@
     dialog.addEventListener('close', () => {
       editing = null;
       creatingVerse = null;
+      creatingRange = null;
       errorEl.hidden = true;
+    });
+
+    // Apertura en modo rango desde `RangeSelectionToolbar` (isla aparte): se
+    // comunica por CustomEvent en `document` en vez de un global en `window`.
+    // La toolbar solo dispara con sesión iniciada; el rango ya viene calculado.
+    document.addEventListener('highlightpicker:open-range', (event) => {
+      const detail = (event as CustomEvent<{ verseStart: number; verseEnd: number }>).detail;
+      if (!detail || !userId) return;
+      void openCreateRange(detail.verseStart, detail.verseEnd);
     });
 
     // ---------- Sesión ----------

@@ -12,6 +12,7 @@ import ChapterReader from '../../../components/ChapterReader.astro';
 import ChapterNav from '../../../components/ChapterNav.astro';
 import ReaderHeader from '../../../components/ReaderHeader.astro';
 import HighlightPicker from '../../../components/HighlightPicker.astro';
+import RangeSelectionToolbar from '../../../components/RangeSelectionToolbar.astro';
 import { getAdjacent } from '../../../lib/readingSequence';
 
 export async function getStaticPaths() {
@@ -44,8 +45,10 @@ const { prev, next } = await getAdjacent(Astro.url.pathname);
     <ChapterNav prev={prev} next={next} />
   </div>
 
-  {/* Selector de resaltado: una sola instancia por página de capítulo. */}
+  {/* Resaltado: selector (tap/edición) + botón flotante de selección de rango.
+      Una sola instancia de cada uno por página de capítulo. */}
   <HighlightPicker />
+  <RangeSelectionToolbar />
 </Layout>
 
 <style>

@@ -1,0 +1,209 @@
+---
+/**
+ * Botón flotante "Resaltar" para crear un resaltado de RANGO por selección de
+ * texto nativa (Paso 9b). Isla vanilla TypeScript, una sola instancia por página
+ * de capítulo (junto a `HighlightPicker`). Arranca oculto.
+ *
+ * Flujo:
+ *   - Escucha `selectionchange`. Con una selección NO colapsada y CONTENIDA en el
+ *     cuerpo de versículos (`.chapter`, excluyendo la sección de notas), calcula
+ *     qué `.verse` toca (`range.intersectsNode`) y deriva `verseStart`/`verseEnd`
+ *     (mín/máx de los números `id="verse-N"`). Posiciona el botón sobre la
+ *     selección (`getBoundingClientRect`, `position: fixed`).
+ *   - Al hacer click: sin sesión lanza el login de Google; con sesión abre el
+ *     picker en modo rango (CustomEvent `highlightpicker:open-range`), colapsa la
+ *     selección nativa y oculta el botón.
+ *   - Se oculta al colapsar la selección, con Escape, y al hacer scroll/resize
+ *     (para no quedar flotando en una posición obsoleta).
+ *
+ * El tap simple del Paso 9a sigue intacto: un click sin arrastrar no genera una
+ * selección no colapsada, así que no muestra este botón ni interfiere.
+ */
+---
+
+<button type="button" class="range-highlight-btn" data-range-btn hidden aria-label="Resaltar la selección">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M4 20h16" />
+    <path d="M6 15.5 15.5 6l2.5 2.5L8.5 18l-3 .5.5-3z" />
+  </svg>
+  <span>Resaltar</span>
+</button>
+
+<script>
+  import { signInWithGoogle, supabase } from '../lib/supabase';
+
+  const btn = document.querySelector<HTMLButtonElement>('[data-range-btn]');
+  const chapter = document.querySelector<HTMLElement>('.chapter');
+
+  // Solo actúa en páginas de capítulo (donde existe el cuerpo de versículos).
+  if (btn && chapter) {
+    // La sección de notas vive dentro de `.chapter`: una selección que la toque
+    // NO es cuerpo de lectura resaltable, así que se excluye del rango válido.
+    const footnotes = chapter.querySelector<HTMLElement>('.footnotes');
+
+    let userId: string | null = null;
+    // Rango calculado en el momento de la selección; se conserva para el click
+    // aunque la selección se pierda al enfocar el botón.
+    let pending: { verseStart: number; verseEnd: number } | null = null;
+
+    const hide = () => {
+      btn.hidden = true;
+      pending = null;
+    };
+
+    // Deriva el rango de versículos que cubre la selección, o null si no aplica.
+    function rangeVerses(): { verseStart: number; verseEnd: number } | null {
+      const sel = window.getSelection();
+      if (!sel || sel.isCollapsed || sel.rangeCount === 0) return null;
+
+      const range = sel.getRangeAt(0);
+      // Debe estar contenida en el cuerpo del capítulo (no en header, nav, etc.)…
+      if (!chapter!.contains(range.commonAncestorContainer)) return null;
+      // …y no extenderse a la sección de notas.
+      if (footnotes && range.intersectsNode(footnotes)) return null;
+
+      let min = Infinity;
+      let max = -Infinity;
+      for (const el of chapter!.querySelectorAll<HTMLElement>('.verse')) {
+        if (!range.intersectsNode(el)) continue;
+        const n = Number(el.id.replace('verse-', ''));
+        if (!Number.isFinite(n)) continue;
+        if (n < min) min = n;
+        if (n > max) max = n;
+      }
+      if (min === Infinity) return null;
+      return { verseStart: min, verseEnd: max };
+    }
+
+    // Coloca el botón centrado sobre la selección, por encima si hay espacio o
+    // por debajo si no, sin salirse del viewport.
+    function position() {
+      const sel = window.getSelection();
+      if (!sel || sel.rangeCount === 0) return;
+      const rect = sel.getRangeAt(0).getBoundingClientRect();
+
+      const margin = 8;
+      const bw = btn!.offsetWidth;
+      const bh = btn!.offsetHeight;
+
+      let top = rect.top - bh - margin; // preferido: por encima
+      if (top < margin) top = rect.bottom + margin; // sin espacio arriba: debajo
+      top = Math.min(top, window.innerHeight - bh - margin);
+
+      let left = rect.left + rect.width / 2 - bw / 2;
+      left = Math.max(margin, Math.min(left, window.innerWidth - bw - margin));
+
+      btn!.style.top = `${Math.max(margin, top)}px`;
+      btn!.style.left = `${left}px`;
+    }
+
+    function refresh() {
+      // Si el picker está abierto, no interferir con un botón flotante encima.
+      if (document.querySelector<HTMLDialogElement>('#highlight-picker')?.open) {
+        hide();
+        return;
+      }
+      const verses = rangeVerses();
+      if (!verses) {
+        hide();
+        return;
+      }
+      pending = verses;
+      btn!.hidden = false; // visible antes de medir para posicionar bien
+      position();
+    }
+
+    document.addEventListener('selectionchange', refresh);
+
+    // Ocultar al hacer scroll o cambiar el tamaño: la posición fija quedaría
+    // desalineada respecto al texto.
+    window.addEventListener('scroll', hide, { passive: true, capture: true });
+    window.addEventListener('resize', hide);
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') hide();
+    });
+
+    // Preservar la selección: enfocar el botón con el mousedown la colapsaría
+    // (y `selectionchange` ocultaría el botón antes del click). `preventDefault`
+    // evita ese robo de foco; el click igual se dispara en el mouseup.
+    btn.addEventListener('mousedown', (event) => event.preventDefault());
+
+    btn.addEventListener('click', () => {
+      if (!userId) {
+        void signInWithGoogle(); // sin sesión: mismo login que el resto
+        return;
+      }
+      if (!pending) return;
+      document.dispatchEvent(
+        new CustomEvent('highlightpicker:open-range', { detail: pending }),
+      );
+      window.getSelection()?.removeAllRanges();
+      hide();
+    });
+
+    // ---------- Sesión ----------
+    supabase.auth.getSession().then(({ data }) => {
+      userId = data.session?.user?.id ?? null;
+    });
+    supabase.auth.onAuthStateChange((_event, session) => {
+      userId = session?.user?.id ?? null;
+    });
+  }
+</script>
+
+<style>
+  .range-highlight-btn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 60; /* sobre el texto; el picker (dialog/top-layer) queda por encima */
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    min-height: 2.25rem;
+    padding: 0.4rem 0.8rem;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+    /* Fondo OPACO (a diferencia de otros botones de contorno del sitio): flota
+       sobre el párrafo y necesita separarse del texto para ser legible. */
+    background: var(--bg-raised);
+    border: 1px solid var(--accent);
+    border-radius: 2px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.28);
+    cursor: pointer;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+  }
+  .range-highlight-btn[hidden] {
+    display: none;
+  }
+  .range-highlight-btn:hover {
+    background: var(--accent);
+    color: var(--bg);
+  }
+  .range-highlight-btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  .range-highlight-btn svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  /* Aparición suave desde una posición ligeramente desplazada. */
+  @starting-style {
+    .range-highlight-btn {
+      opacity: 0;
+      transform: translateY(4px);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .range-highlight-btn {
+      transition: none;
+    }
+  }
+</style>
