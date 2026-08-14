@@ -13,6 +13,7 @@
  */
 import Layout from '../../layouts/Layout.astro';
 import HighlightsManager from '../../components/HighlightsManager.astro';
+import ShareCardTemplate from '../../components/ShareCardTemplate.astro';
 import { getBookCatalog } from '../../lib/bookCatalog';
 
 const catalog = await getBookCatalog();
@@ -35,6 +36,11 @@ const bookNames: Record<string, string> = Object.fromEntries(
 
     <HighlightsManager bookNames={bookNames} />
   </div>
+
+  {/* Plantilla de la tarjeta compartible: UNA sola instancia por página,
+      fuera de pantalla. HighlightsManager reescribe su contenido y la
+      rasteriza para cada descarga (ver src/lib/shareCard.ts). */}
+  <ShareCardTemplate />
 </Layout>
 
 <style>

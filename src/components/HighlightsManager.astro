@@ -72,6 +72,12 @@ const { bookNames } = Astro.props;
     type Collection,
     type Highlight,
   } from '../lib/highlights';
+  import {
+    getPassageText,
+    generateCardImage,
+    cardFileName,
+    type CardFormat,
+  } from '../lib/shareCard';
 
   const root = document.querySelector<HTMLElement>('[data-hm]');
   if (root) {
@@ -196,10 +202,54 @@ const { bookNames } = Astro.props;
 
       const controls = document.createElement('div');
       controls.className = 'hm-item-controls';
-      controls.append(moveSelect(h), removeButton(h));
+      controls.append(
+        shareButton(h, 'square', 'Cuadrado'),
+        shareButton(h, 'story', 'Historia'),
+        moveSelect(h),
+        removeButton(h),
+      );
 
       li.append(link, controls);
       return li;
+    }
+
+    // Ícono de descarga (mismo trazo de contorno que el resto de la UI).
+    const DOWNLOAD_ICON =
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>';
+
+    // Botón "Descargar cuadrado/historia": genera y descarga el PNG de la
+    // tarjeta del resaltado. Muestra estado de carga (deshabilitado + texto
+    // "Generando…") mientras la imagen se construye, y revierte al terminar o
+    // fallar sin romper el resto de la página.
+    function shareButton(h: Highlight, format: CardFormat, label: string): HTMLButtonElement {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'hm-textbtn hm-share';
+      btn.innerHTML = `${DOWNLOAD_ICON}<span>${label}</span>`;
+      btn.setAttribute('aria-label', `Descargar imagen ${label.toLowerCase()} de ${reference(h)}`);
+
+      btn.addEventListener('click', async () => {
+        const original = btn.innerHTML;
+        btn.disabled = true;
+        btn.innerHTML = `${DOWNLOAD_ICON}<span>Generando…</span>`;
+        try {
+          const text = await getPassageText(h.book_slug, h.chapter, h.verse_start, h.verse_end);
+          if (!text) throw new Error('El pasaje no tiene texto');
+          await generateCardImage({
+            passageText: text,
+            reference: reference(h),
+            format,
+            fileName: cardFileName(h.book_slug, h.chapter, h.verse_start, h.verse_end),
+          });
+        } catch (err) {
+          console.error('No se pudo generar la tarjeta', err);
+          alert('No se pudo generar la imagen. Revisa tu conexión e inténtalo de nuevo.');
+        } finally {
+          btn.disabled = false;
+          btn.innerHTML = original;
+        }
+      });
+      return btn;
     }
 
     function moveSelect(h: Highlight): HTMLSelectElement {
@@ -537,6 +587,24 @@ const { bookNames } = Astro.props;
     outline: 2px solid var(--accent);
     outline-offset: 2px;
     border-radius: 2px;
+  }
+
+  /* Botón de descarga de tarjeta: ícono + texto, mismo contorno que hm-textbtn.
+     El ícono hereda el color del texto (currentColor). Al deshabilitar (mientras
+     genera) baja la opacidad y quita el cursor de acción. */
+  .hm-groups :global(.hm-share) {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  .hm-groups :global(.hm-share svg) {
+    width: 0.9rem;
+    height: 0.9rem;
+    flex: none;
+  }
+  .hm-groups :global(.hm-share:disabled) {
+    opacity: 0.6;
+    cursor: default;
   }
 
   /* Acciones destructivas (borrar colección / quitar resaltado): mismo botón de
