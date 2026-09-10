@@ -30,7 +30,8 @@
 </button>
 
 <script>
-  import { signInWithGoogle, supabase } from '../lib/supabase';
+  import { signInWithGoogle } from '../lib/supabase';
+  import { subscribeUser } from '../lib/authState';
 
   const btn = document.querySelector<HTMLButtonElement>('[data-range-btn]');
   const chapter = document.querySelector<HTMLElement>('.chapter');
@@ -142,11 +143,9 @@
     });
 
     // ---------- Sesión ----------
-    supabase.auth.getSession().then(({ data }) => {
-      userId = data.session?.user?.id ?? null;
-    });
-    supabase.auth.onAuthStateChange((_event, session) => {
-      userId = session?.user?.id ?? null;
+    // Estado de sesión compartido (una sola suscripción entre islas).
+    subscribeUser((uid) => {
+      userId = uid;
     });
   }
 </script>

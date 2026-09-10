@@ -59,7 +59,8 @@ const { bookNames } = Astro.props;
 </section>
 
 <script>
-  import { signInWithGoogle, supabase } from '../lib/supabase';
+  import { signInWithGoogle } from '../lib/supabase';
+  import { subscribeUser } from '../lib/authState';
   import {
     getAllHighlights,
     getCollections,
@@ -404,10 +405,10 @@ const { bookNames } = Astro.props;
       }
     }
 
-    supabase.auth.getSession().then(({ data }) => applySession(data.session?.user?.id ?? null));
-    supabase.auth.onAuthStateChange((_event, session) =>
-      applySession(session?.user?.id ?? null),
-    );
+    // Suscripción única al estado de sesión compartido (una sola carga por
+    // vista, sin la doble ejecución que provocaba el par getSession +
+    // onAuthStateChange).
+    subscribeUser(applySession);
   }
 </script>
 

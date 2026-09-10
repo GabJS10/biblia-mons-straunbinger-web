@@ -45,6 +45,7 @@
 
 <script>
   import { supabase, signInWithGoogle } from '../lib/supabase';
+  import { subscribeSession } from '../lib/authState';
   import type { Session } from '@supabase/supabase-js';
 
   const root = document.querySelector<HTMLElement>('[data-auth]');
@@ -126,9 +127,10 @@
       await supabase.auth.signOut();
     });
 
-    // Estado inicial (lee localStorage) + suscripción a cambios.
-    supabase.auth.getSession().then(({ data }) => render(data.session));
-    supabase.auth.onAuthStateChange((_event, session) => render(session));
+    // Estado de sesión centralizado (una sola suscripción compartida entre
+    // islas): entrega el estado inicial una vez y re-renderiza al cambiar de
+    // usuario.
+    subscribeSession(render);
   }
 </script>
 

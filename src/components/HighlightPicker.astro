@@ -68,7 +68,7 @@
     clearCollectionsCache,
     type Highlight,
   } from '../lib/highlights';
-  import { supabase } from '../lib/supabase';
+  import { subscribeUser } from '../lib/authState';
 
   const container = document.querySelector<HTMLElement>('.chapter');
   const dialog = document.querySelector<HTMLDialogElement>('#highlight-picker');
@@ -420,10 +420,10 @@
       }
     }
 
-    supabase.auth.getSession().then(({ data }) => applySession(data.session?.user?.id ?? null));
-    supabase.auth.onAuthStateChange((_event, session) =>
-      applySession(session?.user?.id ?? null),
-    );
+    // Suscripción única al estado de sesión compartido. `applySession` corre
+    // una sola vez por carga (antes se ejecutaba dos veces, duplicando el
+    // SELECT de resaltados del capítulo).
+    subscribeUser(applySession);
   }
 </script>
 

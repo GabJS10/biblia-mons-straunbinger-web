@@ -19,24 +19,56 @@ import type { Database } from '../types/supabase';
 export type Collection = Database['public']['Tables']['collections']['Row'];
 export type Highlight = Database['public']['Tables']['highlights']['Row'];
 
-// Caché en memoria de las colecciones del usuario (sesión de navegación).
-let collectionsCache: Collection[] | null = null;
+// Caché de colecciones del usuario, respaldado en `sessionStorage`.
+//
+// El sitio es multipágina: un caché en variable de módulo moría en cada
+// navegación, así que `getCollections()` hacía un SELECT por cada capítulo
+// abierto. `sessionStorage` sobrevive a las navegaciones dentro de la misma
+// pestaña, pero no entre pestañas ni tras cerrar el navegador (justo lo que
+// queremos para datos por-sesión). Toda lectura/escritura va con try/catch:
+// si el storage no está disponible (SSR, modo privado), degrada a re-fetch.
+const COLLECTIONS_CACHE_KEY = 'collections:v1';
+
+function readCollectionsCache(): Collection[] | null {
+  try {
+    const raw = sessionStorage.getItem(COLLECTIONS_CACHE_KEY);
+    return raw ? (JSON.parse(raw) as Collection[]) : null;
+  } catch {
+    return null;
+  }
+}
+
+function writeCollectionsCache(collections: Collection[]) {
+  try {
+    sessionStorage.setItem(COLLECTIONS_CACHE_KEY, JSON.stringify(collections));
+  } catch {
+    /* sin storage: se degrada a re-fetch en la próxima llamada */
+  }
+}
 
 /** Colecciones del usuario, cacheadas. `force` re-consulta ignorando el caché. */
 export async function getCollections(force = false): Promise<Collection[]> {
-  if (collectionsCache && !force) return collectionsCache;
+  if (!force) {
+    const cached = readCollectionsCache();
+    if (cached) return cached;
+  }
   const { data, error } = await supabase
     .from('collections')
     .select('*')
     .order('created_at', { ascending: true });
   if (error) throw error;
-  collectionsCache = data ?? [];
-  return collectionsCache;
+  const collections = data ?? [];
+  writeCollectionsCache(collections);
+  return collections;
 }
 
 /** Invalida el caché (p. ej. al cerrar sesión). */
 export function clearCollectionsCache() {
-  collectionsCache = null;
+  try {
+    sessionStorage.removeItem(COLLECTIONS_CACHE_KEY);
+  } catch {
+    /* sin storage: no hay nada que limpiar */
+  }
 }
 
 /** Crea una colección y la añade al caché para que aparezca sin refetch. */
@@ -47,7 +79,9 @@ export async function createCollection(name: string, userId: string): Promise<Co
     .select()
     .single();
   if (error) throw error;
-  if (collectionsCache) collectionsCache.push(data);
+  // Mantener el caché coherente para que aparezca sin re-fetch.
+  const cached = readCollectionsCache();
+  if (cached) writeCollectionsCache([...cached, data]);
   return data;
 }
 
@@ -143,9 +177,9 @@ export async function renameCollection(id: string, name: string): Promise<Collec
     .select()
     .single();
   if (error) throw error;
-  if (collectionsCache) {
-    const cached = collectionsCache.find((c) => c.id === id);
-    if (cached) cached.name = data.name;
+  const cached = readCollectionsCache();
+  if (cached) {
+    writeCollectionsCache(cached.map((c) => (c.id === id ? { ...c, name: data.name } : c)));
   }
   return data;
 }
@@ -158,9 +192,8 @@ export async function renameCollection(id: string, name: string): Promise<Collec
 export async function deleteCollection(id: string): Promise<void> {
   const { error } = await supabase.from('collections').delete().eq('id', id);
   if (error) throw error;
-  if (collectionsCache) {
-    collectionsCache = collectionsCache.filter((c) => c.id !== id);
-  }
+  const cached = readCollectionsCache();
+  if (cached) writeCollectionsCache(cached.filter((c) => c.id !== id));
 }
 
 /**
