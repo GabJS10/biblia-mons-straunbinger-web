@@ -188,6 +188,27 @@ function parseParagraph($, el) {
   // Procesa un <sup>: devuelve true si era un marcador (nota o número de versículo).
   const handleSup = ($sup) => {
     const anchor = $sup.find('a[href^="#footnote-"]').first();
+    // Formato de las páginas por capítulo (p. ej. Tobías, Judit, Ester): el número de
+    // versículo y su nota van en el MISMO <sup>, con la nota anidada:
+    //   <sup>1 <sup><a href="#footnote-3172">[3172]</a></sup></sup>
+    // Si el texto propio del <sup> (sin el <sup> interior) es un número, es versículo + nota.
+    if (anchor.length && $sup.children("sup").length) {
+      const own = collapse(
+        $sup
+          .contents()
+          .filter((_, n) => n.type === "text")
+          .text(),
+      );
+      if (/^\d+$/.test(own)) {
+        push();
+        cur = { number: Number(own), text: "", footnoteRefs: [] };
+        $sup.find('a[href^="#footnote-"]').each((_, a) => {
+          const id = footnoteIdFrom($(a).attr("href"));
+          if (id !== null && !cur.footnoteRefs.includes(id)) cur.footnoteRefs.push(id);
+        });
+        return true;
+      }
+    }
     if (anchor.length) {
       // Marcador de referencia a nota
       const href = anchor.attr("href") || "";
@@ -443,7 +464,14 @@ function parseBook(html, { name, heading, slug, url }) {
       const refs = segs.flatMap((s) => s.footnoteRefs);
       if (!text && !refs.length) return;
       const looksLikeTitle = /^\p{Lu}/u.test(text); // empieza en mayúscula
-      if (ntFormat && looksLikeTitle) addPendingSection(text, refs);
+      // Páginas por capítulo: el subtítulo va como <p><em>Título</em></p> también en el AT.
+      // Se reconoce cuando TODO el contenido del <p> es un único <em>.
+      const kids = $(el)
+        .contents()
+        .toArray()
+        .filter((n) => !(n.type === "text" && !n.data.trim()));
+      const emOnly = kids.length === 1 && kids[0].type === "tag" && kids[0].tagName === "em";
+      if ((ntFormat || emOnly) && looksLikeTitle) addPendingSection(text, refs);
       else appendToVerse(text, refs);
       return;
     }
@@ -531,7 +559,7 @@ function parseBook(html, { name, heading, slug, url }) {
         continue;
       }
 
-      if (tag === "h2" && /Comentarios de Mons/i.test(rawText)) {
+      if (/^h[23]$/.test(tag) && /^Comentarios/i.test(rawText)) {
         inComments = true; // fin del cuerpo bíblico; lo que sigue son las notas
         return;
       }
@@ -613,11 +641,46 @@ function summarize(book) {
   };
 }
 
+/**
+ * El sitio pasó a publicar UNA PÁGINA POR CAPÍTULO: la página del libro (/<slug>/) ya solo
+ * es un índice con enlaces <a class="gb-loop-item … category-<slug>" href="/<slug>-N/">.
+ * Si el índice trae esos enlaces, se descarga y parsea cada capítulo y se combinan; si no
+ * (formato antiguo, todo el libro en una página), se parsea la página del libro tal cual.
+ */
+async function fetchAndParseBook(bookMeta, url) {
+  const indexHtml = await fetchHtml(url);
+  const $ = load(indexHtml);
+  // La categoría no siempre coincide con el slug (Eclesiastés: "eclesiastes-o-qoelet"), así
+  // que se toma la categoría más frecuente entre los enlaces del índice.
+  const byCategory = new Map();
+  $("a.gb-loop-item[href]").each((_, a) => {
+    const href = $(a).attr("href");
+    const cat = /\bcategory-([\w-]+)/.exec($(a).attr("class") || "")?.[1];
+    if (!cat || href.replace(/\/$/, "") === url.replace(/\/$/, "")) return;
+    if (!byCategory.has(cat)) byCategory.set(cat, new Set());
+    byCategory.get(cat).add(href);
+  });
+  const chapterUrls = [
+    ...([...byCategory.values()].sort((a, b) => b.size - a.size)[0] || []),
+  ];
+  if (!chapterUrls.length) return parseBook(indexHtml, { ...bookMeta, url });
+
+  const book = { book: bookMeta.name, slug: bookMeta.slug, source: url, chapters: [], divisions: [], footnotes: {} };
+  for (const chUrl of chapterUrls) {
+    await sleep(REQUEST_DELAY_MS);
+    const part = parseBook(await fetchHtml(chUrl), { ...bookMeta, url: chUrl });
+    book.chapters.push(...part.chapters);
+    book.divisions.push(...part.divisions);
+    Object.assign(book.footnotes, part.footnotes);
+  }
+  book.chapters.sort((a, b) => a.chapter - b.chapter);
+  return book;
+}
+
 async function scrapeBook(bookMeta) {
   const url = `${BASE_URL}/${bookMeta.slug}/`;
   console.log(`\n→ ${bookMeta.name}  (${url})`);
-  const html = await fetchHtml(url);
-  const book = parseBook(html, { ...bookMeta, url });
+  const book = await fetchAndParseBook(bookMeta, url);
   const stats = summarize(book);
   const { orphanRefs, unusedNotes, numberingAnomalies: anoms, ...counts } = stats;
   console.log("  ", JSON.stringify(counts));
