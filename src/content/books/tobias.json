@@ -5,18 +5,62 @@
   "chapters": [
     {
       "chapter": 1,
-      "sections": [],
+      "sections": [
+        {
+          "title": "Tobías permanece fiel a la Ley",
+          "startVerse": 1
+        },
+        {
+          "title": "Su amor al prójimo",
+          "startVerse": 11
+        },
+        {
+          "title": "Conducta heroica de Tobías",
+          "startVerse": 18
+        }
+      ],
       "verses": [
         {
+          "number": 1,
+          "text": "Tobías, de la tribu y ciudad de Neftalí, situada en la Galilea superior, sobre Naasón, detrás del camino que va hacia el Occidente, teniendo a la izquierda la ciudad de Sefet,",
+          "footnoteRefs": [
+            3172
+          ]
+        },
+        {
+          "number": 2,
+          "text": "fue llevado cautivo en tiempo de Salmanasar, rey de los asirios pero a pesar de hallarse en cautiverio no abandonó la senda de la verdad,",
+          "footnoteRefs": [
+            3173
+          ]
+        },
+        {
+          "number": 3,
+          "text": "de suerte que de cuanto tenía, repartía todos los días a los hermanos de su nación, cautivos como él mismo.",
+          "footnoteRefs": [
+            3174
+          ]
+        },
+        {
           "number": 4,
-          "text": "Aunque siendo el más joven de todos los de la tribu de Neftalí, no había nada pueril en sus acciones; de manera que cuando todos iban a los becerros de oro que había hecho Jeroboam, rey de Israel, sólo él huía la compañía de todos los demás;",
+          "text": "Aunque siendo el más joven de todos los de la tribu de Neftalí, no había nada pueril en sus acciones;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 5,
+          "text": "de manera que cuando todos iban a los becerros de oro que había hecho Jeroboam, rey de Israel, sólo él huía la compañía de todos los demás;",
           "footnoteRefs": [
             3175
           ]
         },
         {
           "number": 6,
-          "text": "y se iba a Jerusalén al Templo del Señor, donde adoraba al Señor Dios de Israel, ofreciendo fielmente todas sus primicias y sus diezmos. Cada tercer año repartía a los prosélitos y a los forasteros todo el diezmo.",
+          "text": "y se iba a Jerusalén al Templo del Señor, donde adoraba al Señor Dios de Israel, ofreciendo fielmente todas sus primicias y sus diezmos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "Cada tercer año repartía a los prosélitos y a los forasteros todo el diezmo.",
           "footnoteRefs": [
             3176
           ]
@@ -28,14 +72,24 @@
         },
         {
           "number": 9,
-          "text": "Hombre ya, se casó con una mujer de su tribu, llamada Ana, de la cual tuvo un hijo, a quien puso su nombre, y le enseñó desde la niñez a temer a Dios, y a guardarse de todo pecado. Su amor al prójimo",
+          "text": "Hombre ya, se casó con una mujer de su tribu, llamada Ana, de la cual tuvo un hijo, a quien puso su nombre,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 10,
+          "text": "y le enseñó desde la niñez a temer a Dios, y a guardarse de todo pecado.",
           "footnoteRefs": [
             3177
           ]
         },
         {
           "number": 11,
-          "text": "Por eso, cuando fue llevado cautivo con su mujer e hijo y toda su tribu a la ciudad de Nínive, aunque todos comían de los manjares de los gentiles, Tobías guardó pura su alma, sin contaminarse jamás con sus viandas.",
+          "text": "Por eso, cuando fue llevado cautivo con su mujer e hijo y toda su tribu a la ciudad de Nínive,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 12,
+          "text": "aunque todos comían de los manjares de los gentiles, Tobías guardó pura su alma, sin contaminarse jamás con sus viandas.",
           "footnoteRefs": [
             3178
           ]
@@ -52,14 +106,24 @@
         },
         {
           "number": 15,
-          "text": "Iba, pues, a visitar a todos los que estaban en cautiverio, y les daba consejos saludables. Llegado que hubo a Rages, ciudad de los medos, con diez talentos de plata, procedentes de las remuneraciones que había recibido del rey, y",
+          "text": "Iba, pues, a visitar a todos los que estaban en cautiverio, y les daba consejos saludables.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 16,
+          "text": "Llegado que hubo a Rages, ciudad de los medos, con diez talentos de plata, procedentes de las remuneraciones que había recibido del rey, y",
           "footnoteRefs": [
             3179
           ]
         },
         {
           "number": 17,
-          "text": "viendo en necesidad entre la mucha gente de su nación a Gabelo, de su misma tribu, le prestó dicha suma de dinero contra un recibo firmado de su mano. Conducta heroica de Tobías Al cabo de mucho tiempo, murió el rey Salmanasar, y reinó en su lugar su hijo Senaquerib, que tenía gran odio contra los hijos de Israel.",
+          "text": "viendo en necesidad entre la mucha gente de su nación a Gabelo, de su misma tribu, le prestó dicha suma de dinero contra un recibo firmado de su mano.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 18,
+          "text": "Al cabo de mucho tiempo, murió el rey Salmanasar, y reinó en su lugar su hijo Senaquerib, que tenía gran odio contra los hijos de Israel.",
           "footnoteRefs": [
             3180
           ]
@@ -71,14 +135,24 @@
         },
         {
           "number": 20,
-          "text": "Sustentaba a los hambrientos, vestía a los desnudos, y mostraba gran celo en dar sepultura a los que habían fallecido, o habían sido matados. Cuando el rey Senaquerib, luego que volvió huyendo de Judea a causa de la plaga con que Dios le había castigado por sus blasfemias, mataba en su furor a muchos de los hijos de Israel, Tobías sepultaba sus cadáveres.",
+          "text": "Sustentaba a los hambrientos, vestía a los desnudos, y mostraba gran celo en dar sepultura a los que habían fallecido, o habían sido matados.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 21,
+          "text": "Cuando el rey Senaquerib, luego que volvió huyendo de Judea a causa de la plaga con que Dios le había castigado por sus blasfemias, mataba en su furor a muchos de los hijos de Israel, Tobías sepultaba sus cadáveres.",
           "footnoteRefs": [
             3181
           ]
         },
         {
           "number": 22,
-          "text": "Lo que habiendo llegado a noticia del rey, mandó quitarle la vida y le quitó todos sus bienes. Mas Tobías huyó con su hijo y su mujer, y despojado de todo se escondió, porque tenía muchos amigos.",
+          "text": "Lo que habiendo llegado a noticia del rey, mandó quitarle la vida y le quitó todos sus bienes.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 23,
+          "text": "Mas Tobías huyó con su hijo y su mujer, y despojado de todo se escondió, porque tenía muchos amigos.",
           "footnoteRefs": [
             3182
           ]
@@ -97,18 +171,55 @@
     },
     {
       "chapter": 2,
-      "sections": [],
+      "sections": [
+        {
+          "title": "Dios prueba a Tobías",
+          "startVerse": 1
+        },
+        {
+          "title": "Ceguera de Tobías",
+          "startVerse": 10
+        },
+        {
+          "title": "Probidad de Tobías",
+          "startVerse": 19
+        }
+      ],
       "verses": [
         {
+          "number": 1,
+          "text": "Después de esto, un día festivo del Señor, estando preparada una buena comida en casa de Tobías,",
+          "footnoteRefs": [
+            3183
+          ]
+        },
+        {
+          "number": 2,
+          "text": "dijo éste a su hijo: “Vete y trae acá algunos de nuestra tribu, temerosos de Dios, para que coman con nosotros.”",
+          "footnoteRefs": [
+            3184
+          ]
+        },
+        {
           "number": 3,
-          "text": "Se fue (el hijo), y cuando volvió, contó cómo uno de los hijos de Israel, que había sido matado, yacía en la plaza. Al instante se levantó (Tobías) de la mesa, y dejada la comida, sin probar bocado, fue adonde estaba el cadáver, cargó con él y lo llevó secretamente a su casa, para darle sepultura cautelosamente, después de puesto el sol.",
+          "text": "Se fue (el hijo), y cuando volvió, contó cómo uno de los hijos de Israel, que había sido matado, yacía en la plaza. Al instante se levantó (Tobías) de la mesa, y dejada la comida, sin probar bocado, fue adonde estaba el cadáver,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 4,
+          "text": "cargó con él y lo llevó secretamente a su casa, para darle sepultura cautelosamente, después de puesto el sol.",
           "footnoteRefs": [
             3185
           ]
         },
         {
           "number": 5,
-          "text": "Ocultado el cadáver, comió el pan entre lágrimas y temblando; pues se acordaba de aquellas palabras que el Señor había dicho por el profeta Amós: “Vuestros días festivos se convertirán en lamentos y luto.”",
+          "text": "Ocultado el cadáver, comió el pan entre lágrimas y temblando;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 6,
+          "text": "pues se acordaba de aquellas palabras que el Señor había dicho por el profeta Amós: “Vuestros días festivos se convertirán en lamentos y luto.”",
           "footnoteRefs": [
             3186
           ]
@@ -125,7 +236,7 @@
         },
         {
           "number": 9,
-          "text": "Pero Tobías, temiendo a Dios más qué al rey, robaba los cadáveres de los que habían sido muertos, los escondía en su casa, y a medianoche los enterraba. Ceguera de Tobías",
+          "text": "Pero Tobías, temiendo a Dios más qué al rey, robaba los cadáveres de los que habían sido muertos, los escondía en su casa, y a medianoche los enterraba.",
           "footnoteRefs": []
         },
         {
@@ -135,7 +246,12 @@
         },
         {
           "number": 11,
-          "text": "Mientras dormía, le cayó de un nido de golondrinas estiércol caliente sobre los ojos, y se quedó ciego. El Señor permitió que le sobreviniese esta prueba, para que, como el santo Job, diera a los venideros un ejemplo de paciencia.",
+          "text": "Mientras dormía, le cayó de un nido de golondrinas estiércol caliente sobre los ojos, y se quedó ciego.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 12,
+          "text": "El Señor permitió que le sobreviniese esta prueba, para que, como el santo Job, diera a los venideros un ejemplo de paciencia.",
           "footnoteRefs": [
             3187
           ]
@@ -147,7 +263,12 @@
         },
         {
           "number": 14,
-          "text": "sino que permaneció inquebrantable en el temor de Dios, dándole gracias todos los días de su vida. Así como los reyes insultaban al santo Job, del mismo modo los parientes y los amigos se burlaban de la conducta de Tobías, diciendo:",
+          "text": "sino que permaneció inquebrantable en el temor de Dios, dándole gracias todos los días de su vida.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 15,
+          "text": "Así como los reyes insultaban al santo Job, del mismo modo los parientes y los amigos se burlaban de la conducta de Tobías, diciendo:",
           "footnoteRefs": [
             3188
           ]
@@ -159,7 +280,12 @@
         },
         {
           "number": 17,
-          "text": "Mas Tobías los reprendía, diciendo: “No habléis de esa manera. Porque nosotros somos hijos de santos y esperamos aquella vida que Dios ha de dar a los que le sirven fielmente.” Probidad de Tobías",
+          "text": "Mas Tobías los reprendía, diciendo: “No habléis de esa manera.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 18,
+          "text": "Porque nosotros somos hijos de santos y esperamos aquella vida que Dios ha de dar a los que le sirven fielmente.”",
           "footnoteRefs": [
             3189
           ]
@@ -171,7 +297,12 @@
         },
         {
           "number": 20,
-          "text": "y así sucedió que trajo a casa un cabrito que había recibido. Su marido, al oír el balido del cabrito, dijo: “Mirad que no sea acaso hurtado; restituidlo a sus dueños; porque no nos es lícito comer cosa robada, ni siquiera tocarla.”",
+          "text": "y así sucedió que trajo a casa un cabrito que había recibido.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 21,
+          "text": "Su marido, al oír el balido del cabrito, dijo: “Mirad que no sea acaso hurtado; restituidlo a sus dueños; porque no nos es lícito comer cosa robada, ni siquiera tocarla.”",
           "footnoteRefs": [
             3190
           ]
@@ -190,13 +321,37 @@
     },
     {
       "chapter": 3,
-      "sections": [],
+      "sections": [
+        {
+          "title": "Oración de Tobías",
+          "startVerse": 1
+        },
+        {
+          "title": "Aflicción de Sara",
+          "startVerse": 7
+        },
+        {
+          "title": "Oración de Sara",
+          "startVerse": 11
+        }
+      ],
       "verses": [
         {
           "number": 1,
-          "text": "Entonces, Tobías gimiendo empezó a orar con lágrimas, y dijo: “Justo eres, Señor, y justos son todos tus juicios; todos tus caminos son misericordia, verdad y justicia. Ahora Señor, acuérdate de mí, no tomes venganza de mis pecados, y no traigas a tu memoria mis delitos, ni los de mis padres.",
+          "text": "Entonces, Tobías gimiendo empezó a orar con lágrimas,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 2,
+          "text": "y dijo: “Justo eres, Señor, y justos son todos tus juicios; todos tus caminos son misericordia, verdad y justicia.",
           "footnoteRefs": [
-            3191,
+            3191
+          ]
+        },
+        {
+          "number": 3,
+          "text": "Ahora Señor, acuérdate de mí, no tomes venganza de mis pecados, y no traigas a tu memoria mis delitos, ni los de mis padres.",
+          "footnoteRefs": [
             3192
           ]
         },
@@ -212,7 +367,12 @@
         },
         {
           "number": 6,
-          "text": "Y ahora, Señor, haz conmigo conforme a tu voluntad; y manda que sea recibido en paz mi espíritu; pues mejor me es morir que vivir.” Aflicción de Sara Aquel mismo día aconteció en Rages, ciudad de la Media, que Sara, hija de Ragüel, oyó las injurias de una de las criadas de su padre;",
+          "text": "Y ahora, Señor, haz conmigo conforme a tu voluntad; y manda que sea recibido en paz mi espíritu; pues mejor me es morir que vivir.”",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "Aquel mismo día aconteció en Rages, ciudad de la Media, que Sara, hija de Ragüel, oyó las injurias de una de las criadas de su padre;",
           "footnoteRefs": [
             3193
           ]
@@ -224,7 +384,12 @@
         },
         {
           "number": 9,
-          "text": "Cuando reprendió a la muchacha por una falta, ésta le replicó diciendo: “Nunca jamás veamos sobre la tierra hijo ni hija nacida de ti, homicida que eres de tus maridos. ¿Por ventura quieres matarme también a mí, como has hecho ya con siete maridos?” Oyendo estas palabras subió Sara al cuarto más alto de su casa, donde pasó tres días y tres noches sin comer y beber. Oración de Sara",
+          "text": "Cuando reprendió a la muchacha por una falta, ésta le replicó diciendo: “Nunca jamás veamos sobre la tierra hijo ni hija nacida de ti, homicida que eres de tus maridos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 10,
+          "text": "¿Por ventura quieres matarme también a mí, como has hecho ya con siete maridos?” Oyendo estas palabras subió Sara al cuarto más alto de su casa, donde pasó tres días y tres noches sin comer y beber.",
           "footnoteRefs": [
             3194
           ]
@@ -236,7 +401,12 @@
         },
         {
           "number": 12,
-          "text": "Al tercer día concluyó su oración, y bendiciendo al Señor, dijo: “Bendito sea tu nombre, oh Dios de nuestros padres, que después de haberte enojado usas de misericordia, y en tiempo de la tribulación perdonas los pecados a los que te invocan.",
+          "text": "Al tercer día concluyó su oración, y bendiciendo al Señor,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 13,
+          "text": "dijo: “Bendito sea tu nombre, oh Dios de nuestros padres, que después de haberte enojado usas de misericordia, y en tiempo de la tribulación perdonas los pecados a los que te invocan.",
           "footnoteRefs": [
             3195
           ]
@@ -248,7 +418,12 @@
         },
         {
           "number": 15,
-          "text": "Te ruego, Señor, que me libres del lazo de este oprobio, o que por lo menos me saques de este mundo. Tú sabes, Señor, que nunca he codiciado varón y que he conservado mi alma limpia de toda concupiscencia.",
+          "text": "Te ruego, Señor, que me libres del lazo de este oprobio, o que por lo menos me saques de este mundo.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 16,
+          "text": "Tú sabes, Señor, que nunca he codiciado varón y que he conservado mi alma limpia de toda concupiscencia.",
           "footnoteRefs": [
             3196
           ]
@@ -270,7 +445,12 @@
         },
         {
           "number": 20,
-          "text": "Pues tus designios sobrepujan la capacidad de los hombres. Mas esto es seguro que todo aquel que Te adora y cuya vida ha sido aprobada, será coronado; que en caso de haber sido atribulado será librado, y si el castigo descargare sobre él, podrá acogerse a tu misericordia.",
+          "text": "Pues tus designios sobrepujan la capacidad de los hombres.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 21,
+          "text": "Mas esto es seguro que todo aquel que Te adora y cuya vida ha sido aprobada, será coronado; que en caso de haber sido atribulado será librado, y si el castigo descargare sobre él, podrá acogerse a tu misericordia.",
           "footnoteRefs": [
             3197
           ]
@@ -287,7 +467,12 @@
         },
         {
           "number": 24,
-          "text": "Fueron oídas al mismo tiempo las plegarias de ambos en la presencia de la majestad del soberano Dios; y fue enviado Rafael, el santo ángel del Señor, para que sanase a ambos, cuyas oraciones habían sido presentadas a un tiempo delante del Señor.",
+          "text": "Fueron oídas al mismo tiempo las plegarias de ambos en la presencia de la majestad del soberano Dios;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 25,
+          "text": "y fue enviado Rafael, el santo ángel del Señor, para que sanase a ambos, cuyas oraciones habían sido presentadas a un tiempo delante del Señor.",
           "footnoteRefs": [
             3198
           ]
@@ -296,8 +481,20 @@
     },
     {
       "chapter": 4,
-      "sections": [],
+      "sections": [
+        {
+          "title": "Tobías da consejos a su hijo",
+          "startVerse": 1
+        }
+      ],
       "verses": [
+        {
+          "number": 1,
+          "text": "Creyendo Tobías que Dios había oído su oración en el sentido de que le concediera la muerte, llamó cerca de sí a su hijo Tobías,",
+          "footnoteRefs": [
+            3199
+          ]
+        },
         {
           "number": 2,
           "text": "y le dijo: “Escucha, hijo mío, las palabras de mi boca, y asiéntalas como fundamento en tu corazón.",
@@ -320,7 +517,12 @@
         },
         {
           "number": 6,
-          "text": "Ten a Dios en tu mente todos los días de tu vida, y guárdate de consentir jamás en pecado y de quebrantar los mandamientos del Señor Dios nuestro. Da limosna de tus bienes, y no apartes tu rostro de ningún pobre; así conseguirás que tampoco de ti se aparte el rostro del Señor.",
+          "text": "Ten a Dios en tu mente todos los días de tu vida, y guárdate de consentir jamás en pecado y de quebrantar los mandamientos del Señor Dios nuestro.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "Da limosna de tus bienes, y no apartes tu rostro de ningún pobre; así conseguirás que tampoco de ti se aparte el rostro del Señor.",
           "footnoteRefs": [
             3200
           ]
@@ -352,23 +554,50 @@
         },
         {
           "number": 13,
-          "text": "Guárdate, hijo mío, de toda fornicación, y fuera de tu mujer, nunca cometas el delito (de conocer a otra). No permitas jamás que la soberbia domine en tu corazón o en tus palabras, porque de ella tomó principio toda perdición, A todo aquel que haya trabajado algo por ti, dale en seguida su jornal, y de ningún modo quede en tu poder el salario de tu jornalero. No hagas jamás a otro lo que no quieres que otro te haga a ti.",
+          "text": "Guárdate, hijo mío, de toda fornicación, y fuera de tu mujer, nunca cometas el delito (de conocer a otra).",
+          "footnoteRefs": []
+        },
+        {
+          "number": 14,
+          "text": "No permitas jamás que la soberbia domine en tu corazón o en tus palabras, porque de ella tomó principio toda perdición,",
           "footnoteRefs": [
-            3201,
-            3202,
+            3201
+          ]
+        },
+        {
+          "number": 15,
+          "text": "A todo aquel que haya trabajado algo por ti, dale en seguida su jornal, y de ningún modo quede en tu poder el salario de tu jornalero.",
+          "footnoteRefs": [
+            3202
+          ]
+        },
+        {
+          "number": 16,
+          "text": "No hagas jamás a otro lo que no quieres que otro te haga a ti.",
+          "footnoteRefs": [
             3203
           ]
         },
         {
           "number": 17,
-          "text": "Come tu pan con los hambrientos y menesterosos, y con tus vestidos cubre a los desnudos. Pon tu pan y tu vino sobre el sepulcro del justo, y no comas ni bebas de ello con los pecadores.",
+          "text": "Come tu pan con los hambrientos y menesterosos, y con tus vestidos cubre a los desnudos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 18,
+          "text": "Pon tu pan y tu vino sobre el sepulcro del justo, y no comas ni bebas de ello con los pecadores.",
           "footnoteRefs": [
             3204
           ]
         },
         {
           "number": 19,
-          "text": "Pide siempre consejo al hombre sabio. Alaba al Señor en todo tiempo; y pídele que dirija tus pasos, para que todos tus propósitos tengan en Él su fundamento.",
+          "text": "Pide siempre consejo al hombre sabio.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 20,
+          "text": "Alaba al Señor en todo tiempo; y pídele que dirija tus pasos, para que todos tus propósitos tengan en Él su fundamento.",
           "footnoteRefs": [
             3205
           ]
@@ -392,7 +621,16 @@
     },
     {
       "chapter": 5,
-      "sections": [],
+      "sections": [
+        {
+          "title": "El ángel Rafael compañero de viaje",
+          "startVerse": 1
+        },
+        {
+          "title": "Aflicción de la madre",
+          "startVerse": 23
+        }
+      ],
       "verses": [
         {
           "number": 1,
@@ -411,14 +649,24 @@
         },
         {
           "number": 4,
-          "text": "Mas anda ahora, y búscate algún hombre fiel que vaya contigo, recibiendo en pago un salario correspondiente, para que hagas esta cobranza mientras yo vivo todavía.” Salió Tobías y encontró un gallardo joven, que estaba ya con el vestido ceñido, y como dispuesto a emprender viaje.",
+          "text": "Mas anda ahora, y búscate algún hombre fiel que vaya contigo, recibiendo en pago un salario correspondiente, para que hagas esta cobranza mientras yo vivo todavía.”",
+          "footnoteRefs": []
+        },
+        {
+          "number": 5,
+          "text": "Salió Tobías y encontró un gallardo joven, que estaba ya con el vestido ceñido, y como dispuesto a emprender viaje.",
           "footnoteRefs": [
             3206
           ]
         },
         {
           "number": 6,
-          "text": "Sin saber que era un ángel de Dios, le saludó, y dijo: “¿De dónde eres, buen muchacho?” El respondió: “De los hijos de Israel.” Tobías le replicó: “¿Sabes el camino que va al país de los medos?”",
+          "text": "Sin saber que era un ángel de Dios, le saludó, y dijo: “¿De dónde eres, buen muchacho?”",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "El respondió: “De los hijos de Israel.” Tobías le replicó: “¿Sabes el camino que va al país de los medos?”",
           "footnoteRefs": [
             3207
           ]
@@ -435,7 +683,12 @@
         },
         {
           "number": 10,
-          "text": "Entró entonces Tobías en casa, y se lo dijo todo a su padre. De lo cual admirado el padre, le rogó que entrase en su casa. Entró y saludó a Tobías, diciendo: “Sea siempre contigo la alegría.”",
+          "text": "Entró entonces Tobías en casa, y se lo dijo todo a su padre. De lo cual admirado el padre, le rogó que entrase en su casa.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 11,
+          "text": "Entró y saludó a Tobías, diciendo: “Sea siempre contigo la alegría.”",
           "footnoteRefs": [
             3208
           ]
@@ -462,9 +715,20 @@
         },
         {
           "number": 16,
-          "text": "Tobías le dijo: “Dime, te ruego, ¿de qué familia o de qué tribu eres tú?” Y el ángel le respondió Rafael: “¿Averiguas tú acaso el linaje del jornalero, o la persona del jornalero que ha de ir con tu hijo? Más por no dejarte en inquietud (te digo): yo soy Azarías, hijo de Ananías el grande.”",
+          "text": "Tobías le dijo: “Dime, te ruego, ¿de qué familia o de qué tribu eres tú?”",
+          "footnoteRefs": []
+        },
+        {
+          "number": 17,
+          "text": "Y el ángel le respondió Rafael: “¿Averiguas tú acaso el linaje del jornalero, o la persona del jornalero que ha de ir con tu hijo?",
           "footnoteRefs": [
-            3209,
+            3209
+          ]
+        },
+        {
+          "number": 18,
+          "text": "Más por no dejarte en inquietud (te digo): yo soy Azarías, hijo de Ananías el grande.”",
+          "footnoteRefs": [
             3210
           ]
         },
@@ -475,14 +739,19 @@
         },
         {
           "number": 20,
-          "text": "El ángel le replicó: “Yo llevaré sano a tu hijo, y sano te lo volveré a traer.” Respondió Tobías y dijo: “Id en buena hora; Dios bendiga vuestro viaje, y su ángel vaya en vuestra compañía.”",
+          "text": "El ángel le replicó: “Yo llevaré sano a tu hijo, y sano te lo volveré a traer.”",
+          "footnoteRefs": []
+        },
+        {
+          "number": 21,
+          "text": "Respondió Tobías y dijo: “Id en buena hora; Dios bendiga vuestro viaje, y su ángel vaya en vuestra compañía.”",
           "footnoteRefs": [
             3211
           ]
         },
         {
           "number": 22,
-          "text": "Despues de haber preparado todo lo necesario para el viaje, se despidió Tobías de su padre y de su madre, y los dos se pusieron en camino. Aflicción de la madre",
+          "text": "Despues de haber preparado todo lo necesario para el viaje, se despidió Tobías de su padre y de su madre, y los dos se pusieron en camino.",
           "footnoteRefs": []
         },
         {
@@ -502,7 +771,12 @@
         },
         {
           "number": 26,
-          "text": "Tobías le respondió: “No llores; nuestro hijo llegará salvo, y salvo volverá a nosotros, y tus ojos lo verán; pues creo que un buen ángel de Dios lo acompaña, disponiendo bien de todo lo que le pase, a fin de que vuelva con gozo a nuestra casa.”",
+          "text": "Tobías le respondió: “No llores; nuestro hijo llegará salvo, y salvo volverá a nosotros, y tus ojos lo verán;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 27,
+          "text": "pues creo que un buen ángel de Dios lo acompaña, disponiendo bien de todo lo que le pase, a fin de que vuelva con gozo a nuestra casa.”",
           "footnoteRefs": [
             3212
           ]
@@ -516,11 +790,25 @@
     },
     {
       "chapter": 6,
-      "sections": [],
+      "sections": [
+        {
+          "title": "Tobías es salvado por el ángel",
+          "startVerse": 1
+        },
+        {
+          "title": "Instrucción sobre el matrimonio",
+          "startVerse": 14
+        }
+      ],
       "verses": [
         {
           "number": 1,
-          "text": "Partió Tobías, seguido del perro, e hizo su primera parada junto al río Tigris. Cuando salió para lavarse los pies, he aquí que un pez enorme se lanzó sobre él para devorarlo.",
+          "text": "Partió Tobías, seguido del perro, e hizo su primera parada junto al río Tigris.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 2,
+          "text": "Cuando salió para lavarse los pies, he aquí que un pez enorme se lanzó sobre él para devorarlo.",
           "footnoteRefs": [
             3213
           ]
@@ -537,14 +825,24 @@
         },
         {
           "number": 5,
-          "text": "Entonces le dijo el ángel: “Desentraña ese pez, y guarda su corazón, la hiel y el hígado; pues estas cosas son necesarias para hacer útiles remedios.” Hizo así, y asó (parte de) la carne del pez, que llevaron para el camino. Después salaron el resto para que les sirviese hasta llegar a Rages, ciudad de los medos.",
+          "text": "Entonces le dijo el ángel: “Desentraña ese pez, y guarda su corazón, la hiel y el hígado; pues estas cosas son necesarias para hacer útiles remedios.”",
+          "footnoteRefs": []
+        },
+        {
+          "number": 6,
+          "text": "Hizo así, y asó (parte de) la carne del pez, que llevaron para el camino. Después salaron el resto para que les sirviese hasta llegar a Rages, ciudad de los medos.",
           "footnoteRefs": [
             3214
           ]
         },
         {
           "number": 7,
-          "text": "Entonces Tobías preguntó al ángel diciendo: “Dime, te ruego, hermano mío Azarías, ¿qué virtud curativa tienen estas partes del pez, que me has mandado guardar?” A lo que respondió el ángel, y le dijo: “Si pones sobre las brasas un pedacito del corazón del pez, su humo ahuyenta todo género de demonios, ya sea del hombre, ya de la mujer, de tal manera que no se acercan más a ellos.",
+          "text": "Entonces Tobías preguntó al ángel diciendo: “Dime, te ruego, hermano mío Azarías, ¿qué virtud curativa tienen estas partes del pez, que me has mandado guardar?”",
+          "footnoteRefs": []
+        },
+        {
+          "number": 8,
+          "text": "A lo que respondió el ángel, y le dijo: “Si pones sobre las brasas un pedacito del corazón del pez, su humo ahuyenta todo género de demonios, ya sea del hombre, ya de la mujer, de tal manera que no se acercan más a ellos.",
           "footnoteRefs": [
             3215
           ]
@@ -561,14 +859,19 @@
         },
         {
           "number": 11,
-          "text": "El ángel le respondió: “Aquí vive un hombre llamado Ragüel, pariente tuyo, de tu tribu, el cual tiene una hija llamada Sara, y no tiene otro hijo ni hija fuera de ella. A ti te tocan todos sus bienes, y tú debes tomarla por mujer;",
+          "text": "El ángel le respondió: “Aquí vive un hombre llamado Ragüel, pariente tuyo, de tu tribu, el cual tiene una hija llamada Sara, y no tiene otro hijo ni hija fuera de ella.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 12,
+          "text": "A ti te tocan todos sus bienes, y tú debes tomarla por mujer;",
           "footnoteRefs": [
             3216
           ]
         },
         {
           "number": 13,
-          "text": "pídesela, pues, a su padre, y te la dará por mujer.” Instrucción sobre el matrimonio",
+          "text": "pídesela, pues, a su padre, y te la dará por mujer.”",
           "footnoteRefs": []
         },
         {
@@ -578,14 +881,24 @@
         },
         {
           "number": 15,
-          "text": "Temo que también a mí me suceda lo mismo, y que siendo yo hijo único de mis padres, lleve yo su vejez con dolor al sepulcro.” Entonces le dijo el ángel Rafael: “Óyeme, y te enseñaré cuáles son aquellos sobre quienes tiene potestad el demonio.",
+          "text": "Temo que también a mí me suceda lo mismo, y que siendo yo hijo único de mis padres, lleve yo su vejez con dolor al sepulcro.”",
+          "footnoteRefs": []
+        },
+        {
+          "number": 16,
+          "text": "Entonces le dijo el ángel Rafael: “Óyeme, y te enseñaré cuáles son aquellos sobre quienes tiene potestad el demonio.",
           "footnoteRefs": [
             3217
           ]
         },
         {
           "number": 17,
-          "text": "Son los que abrazan con tal disposición el matrimonio, que apartan de sí y de su mente a Dios, dejándose llevar de su pasión, como el caballo y el mulo que no tienen entendimiento; ésos son sobre quienes tiene poder el demonio. Mas tú, cuando la hubieres tomado por mujer, y hayas entrado en el aposento, no llegues a ella en tres días, y no pienses en otra cosa sino en hacer oración en compañía de ella.",
+          "text": "Son los que abrazan con tal disposición el matrimonio, que apartan de sí y de su mente a Dios, dejándose llevar de su pasión, como el caballo y el mulo que no tienen entendimiento; ésos son sobre quienes tiene poder el demonio.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 18,
+          "text": "Mas tú, cuando la hubieres tomado por mujer, y hayas entrado en el aposento, no llegues a ella en tres días, y no pienses en otra cosa sino en hacer oración en compañía de ella.",
           "footnoteRefs": [
             3218
           ]
@@ -614,7 +927,20 @@
     },
     {
       "chapter": 7,
-      "sections": [],
+      "sections": [
+        {
+          "title": "Tobías en casa de Ragüel",
+          "startVerse": 1
+        },
+        {
+          "title": "Tobías toma a Sara por esposa",
+          "startVerse": 9
+        },
+        {
+          "title": "Celebración del matrimonio",
+          "startVerse": 15
+        }
+      ],
       "verses": [
         {
           "number": 1,
@@ -643,7 +969,12 @@
         },
         {
           "number": 6,
-          "text": "Entonces Ragüel se echó sobre él, le besó con lágrimas; y sollozando sobre su cuello, dijo: “Bendito seas tú, hijo mío, porque eres hijo de un varón bueno, muy bueno.” Lloraron también Ana, su mujer, y Sara, hija de ambos. Tobías toma a Sara por esposa",
+          "text": "Entonces Ragüel se echó sobre él, le besó con lágrimas; y sollozando sobre su cuello,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "dijo: “Bendito seas tú, hijo mío, porque eres hijo de un varón bueno, muy bueno.” Lloraron también Ana, su mujer, y Sara, hija de ambos.",
           "footnoteRefs": [
             3219
           ]
@@ -660,16 +991,32 @@
         },
         {
           "number": 11,
-          "text": "Al oír estas palabras, se pasmó Ragüel, sabiendo lo que había sucedido a los siete maridos que se habían casado con ella; y comenzó a temer que también a éste sucediera lo mismo. Estando perplejo y sin dar respuesta al que preguntaba, dijo el ángel a Ragüel: “No temas dársela; porque a éste que teme a Dios debe darse tu hija por mujer; por eso ningún otro ha podido poseerla”",
+          "text": "Al oír estas palabras, se pasmó Ragüel, sabiendo lo que había sucedido a los siete maridos que se habían casado con ella; y comenzó a temer que también a éste sucediera lo mismo. Estando perplejo y sin dar respuesta al que preguntaba,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 12,
+          "text": "dijo el ángel a Ragüel: “No temas dársela; porque a éste que teme a Dios debe darse tu hija por mujer; por eso ningún otro ha podido poseerla”",
           "footnoteRefs": [
             3220
           ]
         },
         {
           "number": 13,
-          "text": "Dijo entonces Ragüel: “No dudo que Dios ha admitido mis oraciones y lágrimas en su presencia, y creo que por esto os ha traído a mi casa, a fin de que ésta reciba esposo de su parentela, según la Ley de Moisés. No tengas, pues, duda de que te la daré.” Celebración del matrimonio Y tomando la mano derecha de su hija, la puso en la derecha de Tobías, y dijo: “El Dios de Abrahán, el Dios de Isaac y el Dios de Jacob sea con vosotros; Él os junte y cumpla en vosotros su bendición.”",
+          "text": "Dijo entonces Ragüel: “No dudo que Dios ha admitido mis oraciones y lágrimas en su presencia,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 14,
+          "text": "y creo que por esto os ha traído a mi casa, a fin de que ésta reciba esposo de su parentela, según la Ley de Moisés. No tengas, pues, duda de que te la daré.”",
           "footnoteRefs": [
-            3221,
+            3221
+          ]
+        },
+        {
+          "number": 15,
+          "text": "Y tomando la mano derecha de su hija, la puso en la derecha de Tobías, y dijo: “El Dios de Abrahán, el Dios de Isaac y el Dios de Jacob sea con vosotros; Él os junte y cumpla en vosotros su bendición.”",
+          "footnoteRefs": [
             3222
           ]
         },
@@ -690,7 +1037,12 @@
         },
         {
           "number": 19,
-          "text": "Ella introdujo allí a su hija Sara, que se puso a llorar. Mas ella le dijo: “Ten buen ánimo, hija mía El Señor del cielo te llene de gozo, en lugar del disgusto que has sufrido.”",
+          "text": "Ella introdujo allí a su hija Sara, que se puso a llorar.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 20,
+          "text": "Mas ella le dijo: “Ten buen ánimo, hija mía El Señor del cielo te llene de gozo, en lugar del disgusto que has sufrido.”",
           "footnoteRefs": [
             3223
           ]
@@ -699,7 +1051,20 @@
     },
     {
       "chapter": 8,
-      "sections": [],
+      "sections": [
+        {
+          "title": "Conjuración del demonio",
+          "startVerse": 1
+        },
+        {
+          "title": "Salvación milagrosa de los esposos",
+          "startVerse": 11
+        },
+        {
+          "title": "El convite de bodas",
+          "startVerse": 21
+        }
+      ],
       "verses": [
         {
           "number": 1,
@@ -708,10 +1073,27 @@
         },
         {
           "number": 2,
-          "text": "Entonces Tobías, acordándose de las advertencias del ángel, sacó de su alforja un pedazo del hígado, y lo puso sobre unos carbones encendidos. Con eso el ángel Rafael apresó al demonio y le confinó en el desierto del Egipto superior. Tobías, por su parte, exhortó a la doncella, y le dijo: “Levántate, Sara, y hagamos oración a Dios hoy y mañana y pasado mañana; porque estas tres noches nos uniremos con Dios, y pasada la tercera noche haremos vida maridable; pues somos hijos de santos, y no podemos unirnos a manera de los gentiles, que no conocen a Dios.”",
+          "text": "Entonces Tobías, acordándose de las advertencias del ángel, sacó de su alforja un pedazo del hígado, y lo puso sobre unos carbones encendidos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 3,
+          "text": "Con eso el ángel Rafael apresó al demonio y le confinó en el desierto del Egipto superior.",
           "footnoteRefs": [
-            3224,
-            3225,
+            3224
+          ]
+        },
+        {
+          "number": 4,
+          "text": "Tobías, por su parte, exhortó a la doncella, y le dijo: “Levántate, Sara, y hagamos oración a Dios hoy y mañana y pasado mañana; porque estas tres noches nos uniremos con Dios, y pasada la tercera noche haremos vida maridable;",
+          "footnoteRefs": [
+            3225
+          ]
+        },
+        {
+          "number": 5,
+          "text": "pues somos hijos de santos, y no podemos unirnos a manera de los gentiles, que no conocen a Dios.”",
+          "footnoteRefs": [
             3226
           ]
         },
@@ -737,7 +1119,7 @@
         },
         {
           "number": 10,
-          "text": "También Sara oró: “Ten misericordia de nosotros, oh Señor, ten misericordia de nosotros, para que ambos a dos lleguemos sanos a la vejez.” Salvación milagrosa de los esposos",
+          "text": "También Sara oró: “Ten misericordia de nosotros, oh Señor, ten misericordia de nosotros, para que ambos a dos lleguemos sanos a la vejez.”",
           "footnoteRefs": []
         },
         {
@@ -777,14 +1159,24 @@
         },
         {
           "number": 18,
-          "text": "Pues nos has mostrado tu misericordia, echando de nosotros al enemigo que nos perseguía. Has tenido compasión de los dos (hijos) únicos. Haz, Señor, que te bendigan ellos más y más, y te ofrezcan un sacrificio de alabanza por su salud, para que conozca el mundo entero, que Tú solo eres Dios en toda la tierra.”",
+          "text": "Pues nos has mostrado tu misericordia, echando de nosotros al enemigo que nos perseguía.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 19,
+          "text": "Has tenido compasión de los dos (hijos) únicos. Haz, Señor, que te bendigan ellos más y más, y te ofrezcan un sacrificio de alabanza por su salud, para que conozca el mundo entero, que Tú solo eres Dios en toda la tierra.”",
           "footnoteRefs": [
             3227
           ]
         },
         {
           "number": 20,
-          "text": "Al instante mandó Ragüel a sus siervos que antes que amaneciese rellenasen la fosa que habían abierto. El convite de bodas Y dijo a su mujer que preparase un convite y dispusiese todas las provisiones necesarias como para los que emprenden viaje.",
+          "text": "Al instante mandó Ragüel a sus siervos que antes que amaneciese rellenasen la fosa que habían abierto.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 21,
+          "text": "Y dijo a su mujer que preparase un convite y dispusiese todas las provisiones necesarias como para los que emprenden viaje.",
           "footnoteRefs": [
             3228
           ]
@@ -808,13 +1200,33 @@
     },
     {
       "chapter": 9,
-      "sections": [],
+      "sections": [
+        {
+          "title": "El ángel va a Rages para cobrar el dinero",
+          "startVerse": 1
+        },
+        {
+          "title": "Gabelo en casa de Ragüel",
+          "startVerse": 8
+        }
+      ],
       "verses": [
         {
           "number": 1,
-          "text": "Entonces Tobías llamó aparte al ángel a quien tenía por un hombre, y le dijo: “Hermano Azarías, te suplico que oigas mis palabras. Aun cuando yo me diese a ti por esclavo, no podría pagar como debo tu cuidado. Esto no obstante te ruego que tomes caballerías y criados, para ir a Rages, ciudad de los medos, donde devolverás a Gabelo su recibo recobrando de él el dinero, y le convidarás a venir a mis bodas.",
+          "text": "Entonces Tobías llamó aparte al ángel a quien tenía por un hombre, y le dijo: “Hermano Azarías, te suplico que oigas mis palabras.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 2,
+          "text": "Aun cuando yo me diese a ti por esclavo, no podría pagar como debo tu cuidado.",
           "footnoteRefs": [
-            3229,
+            3229
+          ]
+        },
+        {
+          "number": 3,
+          "text": "Esto no obstante te ruego que tomes caballerías y criados, para ir a Rages, ciudad de los medos, donde devolverás a Gabelo su recibo recobrando de él el dinero, y le convidarás a venir a mis bodas.",
+          "footnoteRefs": [
             3230
           ]
         },
@@ -835,9 +1247,20 @@
         },
         {
           "number": 7,
-          "text": "Y le contó todo lo que había pasado con Tobías, hijo de Tobías; y le llevó consigo (para asistir) a las bodas. Gabelo en casa de Ragüel Al llegar (Gabelo) a casa de Ragüel, encontró a Tobías sentado a la mesa; el cual se levantó al punto, y los dos se besaron. Gabelo lloró, y alabando a Dios dijo: “Te bendiga el Dios de Israel, pues eres hijo de un hombre muy bueno, justo, y temeroso de Dios, y que reparte muchas limosnas.",
+          "text": "Y le contó todo lo que había pasado con Tobías, hijo de Tobías; y le llevó consigo (para asistir) a las bodas.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 8,
+          "text": "Al llegar (Gabelo) a casa de Ragüel, encontró a Tobías sentado a la mesa; el cual se levantó al punto, y los dos se besaron. Gabelo lloró, y alabando a Dios",
           "footnoteRefs": [
-            3231,
+            3231
+          ]
+        },
+        {
+          "number": 9,
+          "text": "dijo: “Te bendiga el Dios de Israel, pues eres hijo de un hombre muy bueno, justo, y temeroso de Dios, y que reparte muchas limosnas.",
+          "footnoteRefs": [
             3232
           ]
         },
@@ -860,8 +1283,24 @@
     },
     {
       "chapter": 10,
-      "sections": [],
+      "sections": [
+        {
+          "title": "Ansia de los padres de Tobías",
+          "startVerse": 1
+        },
+        {
+          "title": "Tobías se despide de Ragüel",
+          "startVerse": 8
+        }
+      ],
       "verses": [
+        {
+          "number": 1,
+          "text": "Mas como tardase Tobías, por razón de las bodas, estaba su padre Tobías con ansiedades, y decía: “¿Quién sabe por qué tarda mi hijo, o por qué se ha detenido allí?",
+          "footnoteRefs": [
+            3233
+          ]
+        },
         {
           "number": 2,
           "text": "¿Ha muerto tal vez Gabelo, y no hay quien le devuelva el dinero?”",
@@ -889,7 +1328,7 @@
         },
         {
           "number": 7,
-          "text": "Pero ella no se dejaba consolar, antes saliendo cada día fuera miraba hacia todas partes, y recorría todos los caminos por donde se esperaba que pudiera volver, para verlo venir, si posible fuese, desde lejos. Tobías se despide de Ragüel",
+          "text": "Pero ella no se dejaba consolar, antes saliendo cada día fuera miraba hacia todas partes, y recorría todos los caminos por donde se esperaba que pudiera volver, para verlo venir, si posible fuese, desde lejos.",
           "footnoteRefs": []
         },
         {
@@ -904,14 +1343,24 @@
         },
         {
           "number": 10,
-          "text": "Y después de haber hecho Ragüel repetidas instancias a Tobías, sin que éste en lo más mínimo oyera sus razones, le entregó a Sara, con la mitad de su hacienda en siervos y siervas, en ganados, en camellos, en vacas, y con una gran cantidad de dinero. Así le dejó ir de su casa, sano y gozoso, diciendo: “El santo ángel del Señor os acompañe en vuestro viaje, y os conduzca sanos y salvos. Que halléis en próspero estado todas las cosas en casa de vuestros padres, y puedan ver mis ojos, antes que muera, a vuestros hijos.”",
+          "text": "Y después de haber hecho Ragüel repetidas instancias a Tobías, sin que éste en lo más mínimo oyera sus razones, le entregó a Sara, con la mitad de su hacienda en siervos y siervas, en ganados, en camellos, en vacas, y con una gran cantidad de dinero. Así le dejó ir de su casa, sano y gozoso,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 11,
+          "text": "diciendo: “El santo ángel del Señor os acompañe en vuestro viaje, y os conduzca sanos y salvos. Que halléis en próspero estado todas las cosas en casa de vuestros padres, y puedan ver mis ojos, antes que muera, a vuestros hijos.”",
           "footnoteRefs": [
             3234
           ]
         },
         {
           "number": 12,
-          "text": "Y tomando los padres a su hija, la besaron y la dejaron ir; amonestándola que honrase a sus suegros, amase al marido, cuidase de su familia, gobernase la casa y se portase de un modo irreprensible.",
+          "text": "Y tomando los padres a su hija, la besaron y la dejaron ir;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 13,
+          "text": "amonestándola que honrase a sus suegros, amase al marido, cuidase de su familia, gobernase la casa y se portase de un modo irreprensible.",
           "footnoteRefs": [
             3235
           ]
@@ -920,8 +1369,28 @@
     },
     {
       "chapter": 11,
-      "sections": [],
+      "sections": [
+        {
+          "title": "Vuelta de Tobías a sus padres",
+          "startVerse": 1
+        },
+        {
+          "title": "El hijo cura al padre",
+          "startVerse": 13
+        },
+        {
+          "title": "Llegada de Sara",
+          "startVerse": 18
+        }
+      ],
       "verses": [
+        {
+          "number": 1,
+          "text": "Regresaron y llegaron en once días a Harán, situada a mitad del camino que va a Nínive.",
+          "footnoteRefs": [
+            3236
+          ]
+        },
         {
           "number": 2,
           "text": "Y dijo el ángel: “Hermano Tobías, bien sabes en qué estado has dejado a tu padre.",
@@ -934,21 +1403,36 @@
         },
         {
           "number": 4,
-          "text": "Le pareció bien caminar así; y Rafael dijo a Tobías: “Toma contigo de la hiel del pez, porque será necesaria.” Tomó Tobías de aquella hiel, y se marcharon. Entretanto Ana iba todos los días a sentarse cerca del camino, en la cima de una colina, desde donde podía mirar muy lejos.",
+          "text": "Le pareció bien caminar así; y Rafael dijo a Tobías: “Toma contigo de la hiel del pez, porque será necesaria.” Tomó Tobías de aquella hiel, y se marcharon.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 5,
+          "text": "Entretanto Ana iba todos los días a sentarse cerca del camino, en la cima de una colina, desde donde podía mirar muy lejos.",
           "footnoteRefs": [
             3237
           ]
         },
         {
           "number": 6,
-          "text": "Atalayando una vez desde allí a ver si venía su hijo, lo vio de lejos, y reconociendo inmediatamente que el que venía era su hijo, corrió a dar la noticia a su marido, diciendo: “Mira que viene tu hijo.” Entonces dijo Rafael a Tobías: “Cuando entrares en tu casa, adora en seguida al Señor, Dios tuyo; y dándole gracias, acércate a tu padre y bésalo;",
+          "text": "Atalayando una vez desde allí a ver si venía su hijo, lo vio de lejos, y reconociendo inmediatamente que el que venía era su hijo, corrió a dar la noticia a su marido, diciendo: “Mira que viene tu hijo.”",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "Entonces dijo Rafael a Tobías: “Cuando entrares en tu casa, adora en seguida al Señor, Dios tuyo; y dándole gracias, acércate a tu padre y bésalo;",
           "footnoteRefs": [
             3238
           ]
         },
         {
           "number": 8,
-          "text": "y al instante unge sus ojos con esta hiel del pez, que llevas contigo; pues has de saber que luego se abrirán sus ojos, y verá tu padre la luz del cielo y se alegrará al verte.” En esto el perro que los había acompañado en el viaje, se adelantó corriendo; y como si viniese a traer una nueva, se alegraba haciendo halagos con su cola.",
+          "text": "y al instante unge sus ojos con esta hiel del pez, que llevas contigo; pues has de saber que luego se abrirán sus ojos, y verá tu padre la luz del cielo y se alegrará al verte.”",
+          "footnoteRefs": []
+        },
+        {
+          "number": 9,
+          "text": "En esto el perro que los había acompañado en el viaje, se adelantó corriendo; y como si viniese a traer una nueva, se alegraba haciendo halagos con su cola.",
           "footnoteRefs": [
             3239
           ]
@@ -965,7 +1449,12 @@
         },
         {
           "number": 12,
-          "text": "Después de haber adorado a Dios y dado gracias se sentaron. El hijo cura al padre Entonces Tobías, tomando de la hiel del pez, ungió los ojos de su padre.",
+          "text": "Después de haber adorado a Dios y dado gracias se sentaron.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 13,
+          "text": "Entonces Tobías, tomando de la hiel del pez, ungió los ojos de su padre.",
           "footnoteRefs": [
             3240
           ]
@@ -982,15 +1471,31 @@
         },
         {
           "number": 16,
-          "text": "Y daban gloria a Dios, tanto él como su mujer, y todos sus conocidos. Tobías decía: “Te bendigo, oh Señor Dios de Israel, porque Tú me has castigado, y Tú me has sanado; y he aquí que yo veo ya a mi hijo Tobías.” Llegada de Sara Al cabo de siete días llegó también Sara, mujer de su hijo, con toda la comitiva, en buena salud, y los ganados, los camellos, y el mucho dinero de la mujer, además de la suma cobrada de Gabelo.",
+          "text": "Y daban gloria a Dios, tanto él como su mujer, y todos sus conocidos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 17,
+          "text": "Tobías decía: “Te bendigo, oh Señor Dios de Israel, porque Tú me has castigado, y Tú me has sanado; y he aquí que yo veo ya a mi hijo Tobías.”",
           "footnoteRefs": [
-            3241,
+            3241
+          ]
+        },
+        {
+          "number": 18,
+          "text": "Al cabo de siete días llegó también Sara, mujer de su hijo, con toda la comitiva, en buena salud, y los ganados, los camellos, y el mucho dinero de la mujer, además de la suma cobrada de Gabelo.",
+          "footnoteRefs": [
             3242
           ]
         },
         {
           "number": 19,
-          "text": "Y contó (Tobías) a sus padres todos los beneficios recibidos de parte de Dios por medio de aquel varón que le había guiado. Vinieron después Aquior y Nabat, primos hermanos de Tobías, a alegrarse y congratularse con él por todos los favores que Dios le había hecho.",
+          "text": "Y contó (Tobías) a sus padres todos los beneficios recibidos de parte de Dios por medio de aquel varón que le había guiado.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 20,
+          "text": "Vinieron después Aquior y Nabat, primos hermanos de Tobías, a alegrarse y congratularse con él por todos los favores que Dios le había hecho.",
           "footnoteRefs": [
             3243
           ]
@@ -1004,11 +1509,21 @@
     },
     {
       "chapter": 12,
-      "sections": [],
+      "sections": [
+        {
+          "title": "El ángel se da a conocer",
+          "startVerse": 1
+        }
+      ],
       "verses": [
         {
           "number": 1,
-          "text": "Entonces Tobías llamó aparte a su hijo, y le dijo: “¿Qué podemos dar a este santo varón que ha ido contigo?” Respondiendo Tobías, dijo a su padre: “Oh padre, ¿qué salario le daremos? ¿O qué cosa podría considerarse como equivalente de sus beneficios? Pues él me ha llevado y traído sano, cobró el dinero de Gabelo, me proporcionó esposa y ahuyentó de ella al demonio, causando alegría a sus padres; él me libró del pez que me iba a tragar, a ti te ha hecho ver la luz del cielo, y hemos sido colmados por medio de él de todos los bienes. ¿Qué podremos darle que corresponda a tantos favores?",
+          "text": "Entonces Tobías llamó aparte a su hijo, y le dijo: “¿Qué podemos dar a este santo varón que ha ido contigo?” Respondiendo Tobías, dijo a su padre: “Oh padre, ¿qué salario le daremos? ¿O qué cosa podría considerarse como equivalente de sus beneficios?",
+          "footnoteRefs": []
+        },
+        {
+          "number": 3,
+          "text": "Pues él me ha llevado y traído sano, cobró el dinero de Gabelo, me proporcionó esposa y ahuyentó de ella al demonio, causando alegría a sus padres; él me libró del pez que me iba a tragar, a ti te ha hecho ver la luz del cielo, y hemos sido colmados por medio de él de todos los bienes. ¿Qué podremos darle que corresponda a tantos favores?",
           "footnoteRefs": [
             3244
           ]
@@ -1025,16 +1540,32 @@
         },
         {
           "number": 6,
-          "text": "Entonces el ángel, estando solo con ellos, les dijo: “Bendecid al Dios del cielo, y glorificadle delante de todos los vivientes, pues ha mostrado en vosotros su misericordia. Porque así como es bueno guardar el secreto del rey, así es cosa honorífica revelar y pregonar las obras de Dios.",
+          "text": "Entonces el ángel, estando solo con ellos, les dijo: “Bendecid al Dios del cielo, y glorificadle delante de todos los vivientes, pues ha mostrado en vosotros su misericordia.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "Porque así como es bueno guardar el secreto del rey, así es cosa honorífica revelar y pregonar las obras de Dios.",
           "footnoteRefs": [
             3245
           ]
         },
         {
           "number": 8,
-          "text": "Buena es la oración con el ayuno, y mejor la limosna que acumular tesoros de oro; porque la limosna libra de la muerte, y es ella que borra pecados y hace hallar misericordia y vida eterna. Más los que cometen pecado e iniquidad, son enemigos de su propia alma.",
+          "text": "Buena es la oración con el ayuno, y mejor la limosna que acumular tesoros de oro;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 9,
+          "text": "porque la limosna libra de la muerte, y es ella que borra pecados y hace hallar misericordia y vida eterna.",
           "footnoteRefs": [
-            3246,
+            3246
+          ]
+        },
+        {
+          "number": 10,
+          "text": "Más los que cometen pecado e iniquidad, son enemigos de su propia alma.",
+          "footnoteRefs": [
             3247
           ]
         },
@@ -1045,14 +1576,24 @@
         },
         {
           "number": 12,
-          "text": "Cuando tú orabas con lágrimas y enterrabas a los muertos y dejabas tu comida y escondías de día los muertos en tu casa y los sepultabas de noche, yo presentaba tu oración al Señor. Y por lo mismo que eras acepto a Dios, fue necesario que la tentación te probase.",
+          "text": "Cuando tú orabas con lágrimas y enterrabas a los muertos y dejabas tu comida y escondías de día los muertos en tu casa y los sepultabas de noche, yo presentaba tu oración al Señor.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 13,
+          "text": "Y por lo mismo que eras acepto a Dios, fue necesario que la tentación te probase.",
           "footnoteRefs": [
             3248
           ]
         },
         {
           "number": 14,
-          "text": "Ahora el Señor me envió a sanarte a ti, y a librar del demonio a Sara, mujer de tu hijo. Porque yo soy el ángel Rafael, uno de los siete que asistimos delante del Señor.”",
+          "text": "Ahora el Señor me envió a sanarte a ti, y a librar del demonio a Sara, mujer de tu hijo.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 15,
+          "text": "Porque yo soy el ángel Rafael, uno de los siete que asistimos delante del Señor.”",
           "footnoteRefs": [
             3249
           ]
@@ -1069,7 +1610,12 @@
         },
         {
           "number": 18,
-          "text": "Pues cuando estaba yo con vosotros, estaba por voluntad de Dios. Bendecid a Él y cantad sus alabanzas. Vosotros creíais por cierto que yo comía y bebía con vosotros; más yo me sustento de un manjar invisible y de una bebida que no puede ser vista de los hombres.",
+          "text": "Pues cuando estaba yo con vosotros, estaba por voluntad de Dios. Bendecid a Él y cantad sus alabanzas.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 19,
+          "text": "Vosotros creíais por cierto que yo comía y bebía con vosotros; más yo me sustento de un manjar invisible y de una bebida que no puede ser vista de los hombres.",
           "footnoteRefs": [
             3250
           ]
@@ -1093,8 +1639,20 @@
     },
     {
       "chapter": 13,
-      "sections": [],
+      "sections": [
+        {
+          "title": "Cántico de Tobías",
+          "startVerse": 1
+        }
+      ],
       "verses": [
+        {
+          "number": 1,
+          "text": "Tobías el anciano abrió su boca, y bendiciendo al Señor dijo: “Grande eres Tú, oh Señor, por siempre, y tu reino dura por todos los siglos.",
+          "footnoteRefs": [
+            3251
+          ]
+        },
         {
           "number": 2,
           "text": "Porque Tú castigas y salvas; Tú conduces al sepulcro, y sacas de él, y no hay quien escape de tus manos.",
@@ -1102,9 +1660,20 @@
         },
         {
           "number": 3,
-          "text": "Bendecid al Señor; hijos de Israel, y alabadle ante las naciones. Pues por eso os ha esparcido entre las gentes que no lo conocen, para que contéis sus maravillas, y les enseñéis que fuera de Él no hay otro Dios todopoderoso. Él nos ha castigado por nuestras iniquidades, y Él nos salvará por su misericordia.",
+          "text": "Bendecid al Señor; hijos de Israel, y alabadle ante las naciones.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 4,
+          "text": "Pues por eso os ha esparcido entre las gentes que no lo conocen, para que contéis sus maravillas, y les enseñéis que fuera de Él no hay otro Dios todopoderoso.",
           "footnoteRefs": [
-            3252,
+            3252
+          ]
+        },
+        {
+          "number": 5,
+          "text": "Él nos ha castigado por nuestras iniquidades, y Él nos salvará por su misericordia.",
+          "footnoteRefs": [
             3253
           ]
         },
@@ -1120,24 +1689,57 @@
         },
         {
           "number": 8,
-          "text": "Convertíos oh pecadores, y haced lo que es justo ante Dios, seguros de que os hará misericordia. En cuanto a mí, yo y mi alma en Él nos alegraremos.",
+          "text": "Convertíos oh pecadores, y haced lo que es justo ante Dios, seguros de que os hará misericordia.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 9,
+          "text": "En cuanto a mí, yo y mi alma en Él nos alegraremos.",
           "footnoteRefs": [
             3254
           ]
         },
         {
           "number": 10,
-          "text": "Bendecid al Señor todos sus escogidos, celebrad días de alegría y loadle. Jerusalén, ciudad de Dios, el Señor te ha castigado por lo que has hecho. Glorifica al Señor con tus buenas obras, y bendice al Dios de los siglos, para que reedifique en ti su morada y te restituya todos los cautivos, y te goces por todos los siglos de los siglos. Brillarás con luz esplendorosa, y todos los países de la tierra se prosternarán delante de ti. Vendrán a ti naciones lejanas; trayendo dones adorarán en ti al Señor, y tendrán tu tierra por santuario.",
+          "text": "Bendecid al Señor todos sus escogidos, celebrad días de alegría y loadle.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 11,
+          "text": "Jerusalén, ciudad de Dios, el Señor te ha castigado por lo que has hecho.",
           "footnoteRefs": [
-            3255,
-            3256,
-            3257,
+            3255
+          ]
+        },
+        {
+          "number": 12,
+          "text": "Glorifica al Señor con tus buenas obras, y bendice al Dios de los siglos, para que reedifique en ti su morada y te restituya todos los cautivos, y te goces por todos los siglos de los siglos.",
+          "footnoteRefs": [
+            3256
+          ]
+        },
+        {
+          "number": 13,
+          "text": "Brillarás con luz esplendorosa, y todos los países de la tierra se prosternarán delante de ti.",
+          "footnoteRefs": [
+            3257
+          ]
+        },
+        {
+          "number": 14,
+          "text": "Vendrán a ti naciones lejanas; trayendo dones adorarán en ti al Señor, y tendrán tu tierra por santuario.",
+          "footnoteRefs": [
             3258
           ]
         },
         {
           "number": 15,
-          "text": "Porque dentro de ti invocarán el gran Nombre. Malditos los que te desprecian; serán condenados todos los que te blasfemaren y benditos los que te reedifiquen.",
+          "text": "Porque dentro de ti invocarán el gran Nombre.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 16,
+          "text": "Malditos los que te desprecian; serán condenados todos los que te blasfemaren y benditos los que te reedifiquen.",
           "footnoteRefs": [
             3259
           ]
@@ -1149,14 +1751,24 @@
         },
         {
           "number": 18,
-          "text": "Dichosos todos los que te aman y se regocijan por tu paz. Alma mía, bendice al Señor; pues Él, el Señor Dios nuestro, ha librado a Jerusalén, su ciudad, de todas sus tribulaciones.",
+          "text": "Dichosos todos los que te aman y se regocijan por tu paz.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 19,
+          "text": "Alma mía, bendice al Señor; pues Él, el Señor Dios nuestro, ha librado a Jerusalén, su ciudad, de todas sus tribulaciones.",
           "footnoteRefs": [
             3260
           ]
         },
         {
           "number": 20,
-          "text": "Dichoso seré yo, si quedaren reliquias de mi linaje para ver el esplendor de Jerusalén. De zafiros y de esmeraldas se harán las puertas de Jerusalén, y de piedras preciosas todo el circuito de sus muros.",
+          "text": "Dichoso seré yo, si quedaren reliquias de mi linaje para ver el esplendor de Jerusalén.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 21,
+          "text": "De zafiros y de esmeraldas se harán las puertas de Jerusalén, y de piedras preciosas todo el circuito de sus muros.",
           "footnoteRefs": [
             3261
           ]
@@ -1175,7 +1787,16 @@
     },
     {
       "chapter": 14,
-      "sections": [],
+      "sections": [
+        {
+          "title": "Últimos años de Tobías",
+          "startVerse": 1
+        },
+        {
+          "title": "Conclusión",
+          "startVerse": 14
+        }
+      ],
       "verses": [
         {
           "number": 1,
@@ -1189,7 +1810,12 @@
         },
         {
           "number": 3,
-          "text": "Porque a los cincuenta y seis años perdió la vista, y a los sesenta la recobró. Pasó en gozo el resto de su vida; y habiendo hecho grandes progresos en el temor de Dios, vino a descansar en paz.",
+          "text": "Porque a los cincuenta y seis años perdió la vista, y a los sesenta la recobró.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 4,
+          "text": "Pasó en gozo el resto de su vida; y habiendo hecho grandes progresos en el temor de Dios, vino a descansar en paz.",
           "footnoteRefs": [
             3262
           ]
@@ -1201,9 +1827,20 @@
         },
         {
           "number": 6,
-          "text": "“La ruina de Nínive está cerca; pues la palabra del Señor no dejará de cumplirse; nuestros hermanos que están dispersos fuera de la tierra de Israel, volverán a ella; será repoblada toda su tierra desierta, y reedificada de nuevo la casa de Dios, que fue allí entregada a las llamas. Volverán allá todos los que temen a Dios; los gentiles abandonarán sus ídolos y vendrán a Jerusalén para morar en ella.",
+          "text": "“La ruina de Nínive está cerca; pues la palabra del Señor no dejará de cumplirse; nuestros hermanos que están dispersos fuera de la tierra de Israel, volverán a ella;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "será repoblada toda su tierra desierta, y reedificada de nuevo la casa de Dios, que fue allí entregada a las llamas. Volverán allá todos los que temen a Dios;",
           "footnoteRefs": [
-            3263,
+            3263
+          ]
+        },
+        {
+          "number": 8,
+          "text": "los gentiles abandonarán sus ídolos y vendrán a Jerusalén para morar en ella.",
+          "footnoteRefs": [
             3264
           ]
         },
@@ -1229,7 +1866,7 @@
         },
         {
           "number": 13,
-          "text": "Porque yo veo que la iniquidad llevará a esta (ciudad) a la ruina.” Conclusión",
+          "text": "Porque yo veo que la iniquidad llevará a esta (ciudad) a la ruina.”",
           "footnoteRefs": []
         },
         {
@@ -1239,7 +1876,12 @@
         },
         {
           "number": 15,
-          "text": "a los cuales halló sanos y salvos, en dichosa vejez. Cuidó de ellos, y el mismo les cerró los ojos. Recibió toda la herencia de la casa de Ragüel, y vio a los hijos de sus hijos hasta la quinta generación. Después que hubo cumplido noventa y nueve años en el temor del Señor, le sepultaron con alegría.",
+          "text": "a los cuales halló sanos y salvos, en dichosa vejez. Cuidó de ellos, y el mismo les cerró los ojos. Recibió toda la herencia de la casa de Ragüel, y vio a los hijos de sus hijos hasta la quinta generación.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 16,
+          "text": "Después que hubo cumplido noventa y nueve años en el temor del Señor, le sepultaron con alegría.",
           "footnoteRefs": [
             3265
           ]

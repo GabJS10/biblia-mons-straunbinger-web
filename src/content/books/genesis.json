@@ -4690,7 +4690,12 @@
         },
         {
           "number": 18,
-          "text": "el cual entró donde estaba su padre, y dijo “Padre mío”, a lo que éste respondió: “Heme aquí; ¿quién eres, hijo mío?” “Yo soy tu primogénito Esaú”, dijo Jacob a su padre. “He hecho como me dijiste; levántate, te ruego, siéntate, y come de mi caza, para que me bendiga tu alma.”",
+          "text": "el cual entró donde estaba su padre, y dijo “Padre mío”, a lo que éste respondió: “Heme aquí; ¿quién eres, hijo mío?”",
+          "footnoteRefs": []
+        },
+        {
+          "number": 19,
+          "text": "“Yo soy tu primogénito Esaú”, dijo Jacob a su padre. “He hecho como me dijiste; levántate, te ruego, siéntate, y come de mi caza, para que me bendiga tu alma.”",
           "footnoteRefs": [
             240
           ]

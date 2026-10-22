@@ -8,7 +8,7 @@
       "sections": [
         {
           "title": "Arfaxad y Nabucodonosor",
-          "startVerse": 2
+          "startVerse": 1
         },
         {
           "title": "Mensaje de Nabucodonosor",
@@ -16,6 +16,13 @@
         }
       ],
       "verses": [
+        {
+          "number": 1,
+          "text": "Arfaxad, rey de los medos, después de haber subyugado a su imperio muchas naciones, edificó una ciudad sumamente fuerte, a la que dio el nombre de Ecbátana.",
+          "footnoteRefs": [
+            3266
+          ]
+        },
         {
           "number": 2,
           "text": "(La edificó) de piedras labradas a escuadra, dándole murallas que tenían setenta codos de anchura y treinta de altura, y levantó sus torres hasta cien codos de altura.",
@@ -28,7 +35,12 @@
         },
         {
           "number": 4,
-          "text": "Entonces se jactaba, como si fuese invencible, de la fuerza de sus ejércitos y de la magnificencia de sus carros. Pero Nabucodonosor, rey de los asirios, que reinaba en Nínive, la gran ciudad, hizo guerra contra Arfaxad el año duodécimo de su reinado, y le venció",
+          "text": "Entonces se jactaba, como si fuese invencible, de la fuerza de sus ejércitos y de la magnificencia de sus carros.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 5,
+          "text": "Pero Nabucodonosor, rey de los asirios, que reinaba en Nínive, la gran ciudad, hizo guerra contra Arfaxad el año duodécimo de su reinado, y le venció",
           "footnoteRefs": [
             3267
           ]
@@ -40,9 +52,20 @@
         },
         {
           "number": 7,
-          "text": "Entonces se ensalzó el rey Nabucodonosor, y engriéndose en su corazón despachó mensajeros a todos los habitantes de la Cilicia, de Damasco y del Líbano, a los pueblos del Carmelo y de Cedar, a los habitantes de Galilea y de la gran llanura de Esdrelón, a todos los que moraban en Samaría y en la otra parte del Jordán, hasta Jerusalén, y a toda la tierra de Jesé hasta las fronteras de Etiopía.",
+          "text": "Entonces se ensalzó el rey Nabucodonosor, y engriéndose en su corazón despachó mensajeros a todos los habitantes de la Cilicia, de Damasco y del Líbano,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 8,
+          "text": "a los pueblos del Carmelo y de Cedar, a los habitantes de Galilea y de la gran llanura de Esdrelón,",
           "footnoteRefs": [
-            3268,
+            3268
+          ]
+        },
+        {
+          "number": 9,
+          "text": "a todos los que moraban en Samaría y en la otra parte del Jordán, hasta Jerusalén, y a toda la tierra de Jesé hasta las fronteras de Etiopía.",
+          "footnoteRefs": [
             3269
           ]
         },
@@ -53,7 +76,12 @@
         },
         {
           "number": 11,
-          "text": "pero todos a una rechazaron a los mensajeros, despachándolos con las manos vacías, y los echaron con desprecio. Con esto el rey Nabucodonosor se indignó contra todos estos países y juró por su trono y por su reino que se vengaría de todas esas regiones.",
+          "text": "pero todos a una rechazaron a los mensajeros, despachándolos con las manos vacías, y los echaron con desprecio.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 12,
+          "text": "Con esto el rey Nabucodonosor se indignó contra todos estos países y juró por su trono y por su reino que se vengaría de todas esas regiones.",
           "footnoteRefs": [
             3270
           ]
@@ -80,14 +108,24 @@
         },
         {
           "number": 2,
-          "text": "Convocó a todos los ancianos, a todos sus capitanes y guerreros y tuvo con ellos un consejo secreto. Les dijo que su designio era subyugar toda la tierra a su imperio.",
+          "text": "Convocó a todos los ancianos, a todos sus capitanes y guerreros y tuvo con ellos un consejo secreto.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 3,
+          "text": "Les dijo que su designio era subyugar toda la tierra a su imperio.",
           "footnoteRefs": [
             3271
           ]
         },
         {
           "number": 4,
-          "text": "Siendo tal decisión aprobada por todos, llamó el rey Nabucodonosor a Holofernes, jefe de su ejército. Y le dijo: “Sal a campaña contra todos los reinos del Occidente, y principalmente contra los que menospreciaron mi dominación.",
+          "text": "Siendo tal decisión aprobada por todos, llamó el rey Nabucodonosor a Holofernes, jefe de su ejército.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 5,
+          "text": "Y le dijo: “Sal a campaña contra todos los reinos del Occidente, y principalmente contra los que menospreciaron mi dominación.",
           "footnoteRefs": [
             3272
           ]
@@ -119,16 +157,38 @@
         },
         {
           "number": 11,
-          "text": "Después se puso en marcha, él y todo el ejército, con los carros, la caballería y los flecheros, que cubrieron la superficie de la tierra como langostas. Habiendo pasado la frontera de Asiria, llegó a las grandes montañas de Ange, situadas a la izquierda de la Cilicia, subió a todos sus castillos y se apoderó de todas las plazas fuertes. Conquistó la famosísima ciudad de Meloti, y saqueó a todos los habitantes de Tarsis, como también a los hijos de Ismael, que moraban enfrente del desierto, al mediodía del país de Celón. Pasó el Éufrates y llegó a Mesopotamia, donde tomó todas las ciudades fuertes que había allí, desde el arroyo de Mambré hasta el mar.",
+          "text": "Después se puso en marcha, él y todo el ejército, con los carros, la caballería y los flecheros, que cubrieron la superficie de la tierra como langostas.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 12,
+          "text": "Habiendo pasado la frontera de Asiria, llegó a las grandes montañas de Ange, situadas a la izquierda de la Cilicia, subió a todos sus castillos y se apoderó de todas las plazas fuertes.",
           "footnoteRefs": [
-            3273,
-            3274,
+            3273
+          ]
+        },
+        {
+          "number": 13,
+          "text": "Conquistó la famosísima ciudad de Meloti, y saqueó a todos los habitantes de Tarsis, como también a los hijos de Ismael, que moraban enfrente del desierto, al mediodía del país de Celón.",
+          "footnoteRefs": [
+            3274
+          ]
+        },
+        {
+          "number": 14,
+          "text": "Pasó el Éufrates y llegó a Mesopotamia, donde tomó todas las ciudades fuertes que había allí, desde el arroyo de Mambré hasta el mar.",
+          "footnoteRefs": [
             3275
           ]
         },
         {
           "number": 15,
-          "text": "Se hizo también dueño de todo el país desde Cilicia hasta el territorio de Jafet, que se extiende hacia el mediodía. Y se llevó toda la gente de Madián, robó todas sus riquezas y paso a filo de espada a todos los que le resistían.",
+          "text": "Se hizo también dueño de todo el país desde Cilicia hasta el territorio de Jafet, que se extiende hacia el mediodía.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 16,
+          "text": "Y se llevó toda la gente de Madián, robó todas sus riquezas y paso a filo de espada a todos los que le resistían.",
           "footnoteRefs": [
             3276
           ]
@@ -150,10 +210,17 @@
       "sections": [
         {
           "title": "Rendición de los pueblos",
-          "startVerse": 2
+          "startVerse": 1
         }
       ],
       "verses": [
+        {
+          "number": 1,
+          "text": "Entonces los reyes y los príncipes de todas las ciudades y provincias, es a saber, de la Siria de Mesopotamia y de la Siria de Sobal, de Libia y de Cilicia, enviaron sus embajadores, que se presentaron a Holofernes y le dijeron:",
+          "footnoteRefs": [
+            3277
+          ]
+        },
         {
           "number": 2,
           "text": "“Cese tu indignación para con nosotros, porque vale más vivir sirviendo al gran rey Nabucodonosor y someternos a ti, que morir y con nuestra ruina sufrir los males de nuestra esclavitud.",
@@ -201,10 +268,27 @@
         },
         {
           "number": 11,
-          "text": "Pero aun haciendo todo esto no pudieron mitigar la ferocidad de aquel corazón. Porque siguió destruyendo sus ciudades y talando sus árboles sagrados, por cuanto el rey Nabucodonosor le había dado orden de exterminar todos los dioses de la tierra, para que él sólo fuese llamado dios por aquellas naciones que el poder de Holofernes pudiese subyugarle. Habiendo atravesado la Siria de Sobal, toda la Apamea y toda la Mesopotamia, llegó a los idumeos, al país de Gabaá,",
+          "text": "Pero aun haciendo todo esto no pudieron mitigar la ferocidad de aquel corazón.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 12,
+          "text": "Porque siguió destruyendo sus ciudades y talando sus árboles sagrados,",
           "footnoteRefs": [
-            3278,
-            3279,
+            3278
+          ]
+        },
+        {
+          "number": 13,
+          "text": "por cuanto el rey Nabucodonosor le había dado orden de exterminar todos los dioses de la tierra, para que él sólo fuese llamado dios por aquellas naciones que el poder de Holofernes pudiese subyugarle.",
+          "footnoteRefs": [
+            3279
+          ]
+        },
+        {
+          "number": 14,
+          "text": "Habiendo atravesado la Siria de Sobal, toda la Apamea y toda la Mesopotamia, llegó a los idumeos, al país de Gabaá,",
+          "footnoteRefs": [
             3280
           ]
         },
@@ -230,7 +314,12 @@
       "verses": [
         {
           "number": 1,
-          "text": "Cuando los hijos de Israel, habitantes de la tierra de Judá, supieron esto, temieron sobremanera su llegada. Invadió sus corazones el terror y el espanto, porque temían que hiciese con Jerusalén y con el Templo del Señor lo que había perpetrado en las otras ciudades y sus templos.",
+          "text": "Cuando los hijos de Israel, habitantes de la tierra de Judá, supieron esto, temieron sobremanera su llegada.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 2,
+          "text": "Invadió sus corazones el terror y el espanto, porque temían que hiciese con Jerusalén y con el Templo del Señor lo que había perpetrado en las otras ciudades y sus templos.",
           "footnoteRefs": [
             3281
           ]
@@ -242,7 +331,12 @@
         },
         {
           "number": 4,
-          "text": "cercaron de muros sus aldeas y almacenaron granos, preparándose para la guerra. Asimismo el sacerdote Eliaquim escribió a todos los que habitaban enfrente de Esdrelón, ante la gran llanura cerca de Dotain, y a todos los lugares por los cuales (el enemigo) podía pasar,",
+          "text": "cercaron de muros sus aldeas y almacenaron granos, preparándose para la guerra.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 5,
+          "text": "Asimismo el sacerdote Eliaquim escribió a todos los que habitaban enfrente de Esdrelón, ante la gran llanura cerca de Dotain, y a todos los lugares por los cuales (el enemigo) podía pasar,",
           "footnoteRefs": [
             3282
           ]
@@ -254,7 +348,12 @@
         },
         {
           "number": 7,
-          "text": "Los hijos de Israel hicieron conforme se lo había ordenado Eliaquim, sacerdote del Señor. Todo el pueblo invocó al Señor con grandes instancias, y humillaron sus almas con ayunos y oraciones, así ellos como sus mujeres.",
+          "text": "Los hijos de Israel hicieron conforme se lo había ordenado Eliaquim, sacerdote del Señor.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 8,
+          "text": "Todo el pueblo invocó al Señor con grandes instancias, y humillaron sus almas con ayunos y oraciones, así ellos como sus mujeres.",
           "footnoteRefs": [
             3283
           ]
@@ -271,7 +370,12 @@
         },
         {
           "number": 11,
-          "text": "Entonces Eliaquim, Sumo Sacerdote del Señor, recorrió todo (el país de) Israel, y les habló en estos términos: “Tened por cierto que el Señor oirá vuestras plegarias si perseverareis constantemente en ayunos y oraciones delante del Señor.",
+          "text": "Entonces Eliaquim, Sumo Sacerdote del Señor, recorrió todo (el país de) Israel, y les habló",
+          "footnoteRefs": []
+        },
+        {
+          "number": 12,
+          "text": "en estos términos: “Tened por cierto que el Señor oirá vuestras plegarias si perseverareis constantemente en ayunos y oraciones delante del Señor.",
           "footnoteRefs": [
             3284
           ]
@@ -318,7 +422,12 @@
       "verses": [
         {
           "number": 1,
-          "text": "Holofernes, jefe del ejército asirio, recibió la noticia de que los hijos de; Israel se preparaban para resistirle y que tenían cerrados los pasos de los montes. Entonces, montando en cólera, e irritándose sobremanera, hizo venir a todos los príncipes de Moab, y a los capitanes de los ammonitas,",
+          "text": "Holofernes, jefe del ejército asirio, recibió la noticia de que los hijos de; Israel se preparaban para resistirle y que tenían cerrados los pasos de los montes.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 2,
+          "text": "Entonces, montando en cólera, e irritándose sobremanera, hizo venir a todos los príncipes de Moab, y a los capitanes de los ammonitas,",
           "footnoteRefs": [
             3285
           ]
@@ -330,9 +439,20 @@
         },
         {
           "number": 4,
-          "text": "¿Por qué estos, entre todos los que moran en el oriente, nos han menospreciado y no han venido a nuestro encuentro para recibirnos como amigos?” Entonces Aquior, jefe de todos los ammonitas, le respondió y dijo: “Si te dignas escucharme, diré, señor mío, en tu presencia la verdad acerca de ese pueblo que habita en las montañas, y no saldrá de mi boca palabra falsa, Ese pueblo es del linaje de los caldeos.",
+          "text": "¿Por qué estos, entre todos los que moran en el oriente, nos han menospreciado y no han venido a nuestro encuentro para recibirnos como amigos?”",
+          "footnoteRefs": []
+        },
+        {
+          "number": 5,
+          "text": "Entonces Aquior, jefe de todos los ammonitas, le respondió y dijo: “Si te dignas escucharme, diré, señor mío, en tu presencia la verdad acerca de ese pueblo que habita en las montañas, y no saldrá de mi boca palabra falsa,",
           "footnoteRefs": [
-            3286,
+            3286
+          ]
+        },
+        {
+          "number": 6,
+          "text": "Ese pueblo es del linaje de los caldeos.",
+          "footnoteRefs": [
             3287
           ]
         },
@@ -373,7 +493,12 @@
         },
         {
           "number": 14,
-          "text": "Salidos del Mar Rojo ocuparon los desiertos del monte Sinaí, donde jamás hombre alguno pudo habitar, ni descansar persona alguna. Allí las fuentes amargas se les convirtieron en dulces, a fin de que pudiesen beber, y por espacio de cuarenta años recibieron el manjar del cielo.",
+          "text": "Salidos del Mar Rojo ocuparon los desiertos del monte Sinaí, donde jamás hombre alguno pudo habitar, ni descansar persona alguna.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 15,
+          "text": "Allí las fuentes amargas se les convirtieron en dulces, a fin de que pudiesen beber, y por espacio de cuarenta años recibieron el manjar del cielo.",
           "footnoteRefs": [
             3288
           ]
@@ -405,7 +530,12 @@
         },
         {
           "number": 21,
-          "text": "Mientras no pecaron contra su Dios, les fue bien, porque su Dios aborrece la iniquidad. Pocos años hace, se desviaron del camino que Dios les había señalado para que anduviesen por él, y fueron destruidos en batallas por muchas naciones y llevados cautivos muchísimos de ellos a tierra extraña",
+          "text": "Mientras no pecaron contra su Dios, les fue bien, porque su Dios aborrece la iniquidad.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 22,
+          "text": "Pocos años hace, se desviaron del camino que Dios les había señalado para que anduviesen por él, y fueron destruidos en batallas por muchas naciones y llevados cautivos muchísimos de ellos a tierra extraña",
           "footnoteRefs": [
             3289
           ]
@@ -456,7 +586,7 @@
         },
         {
           "title": "Aquior en medio de los israelitas",
-          "startVerse": 11
+          "startVerse": 10
         }
       ],
       "verses": [
@@ -502,7 +632,12 @@
         },
         {
           "number": 9,
-          "text": "por lo que declinando hacia un lado del monte amarraron a Aquior de pies y manos a un árbol; y así atado con cuerdas lo dejaron, volviéndose a su señor. Los hijos de Israel descendieron de Betulia, y llegados a él, lo desataron y lo condujeron a Betulia, donde lo pusieron en medio del pueblo y le preguntaron cuál era la causa de haberlo atado los asirios.",
+          "text": "por lo que declinando hacia un lado del monte amarraron a Aquior de pies y manos a un árbol; y así atado con cuerdas lo dejaron, volviéndose a su señor.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 10,
+          "text": "Los hijos de Israel descendieron de Betulia, y llegados a él, lo desataron y lo condujeron a Betulia, donde lo pusieron en medio del pueblo y le preguntaron cuál era la causa de haberlo atado los asirios.",
           "footnoteRefs": [
             3290
           ]
@@ -524,7 +659,12 @@
         },
         {
           "number": 14,
-          "text": "Explicadas todas estas cosas por Aquior, todo el pueblo se postró sobre su rostro para adorar al Señor, y con gemidos y llanto general derramaron unánimes sus plegarias ante el Señor, diciendo: “Señor Dios del cielo y de la tierra, mira la soberbia de ellos y contempla nuestra humillación; considera el semblante de tus santos y muestra que no abandonas a los que confían en Ti, y que humillas a los que presumen de sí mismos y se jactan de su poder.”",
+          "text": "Explicadas todas estas cosas por Aquior, todo el pueblo se postró sobre su rostro para adorar al Señor, y con gemidos y llanto general derramaron unánimes sus plegarias ante el Señor,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 15,
+          "text": "diciendo: “Señor Dios del cielo y de la tierra, mira la soberbia de ellos y contempla nuestra humillación; considera el semblante de tus santos y muestra que no abandonas a los que confían en Ti, y que humillas a los que presumen de sí mismos y se jactan de su poder.”",
           "footnoteRefs": [
             3291
           ]
@@ -581,7 +721,12 @@
         },
         {
           "number": 2,
-          "text": "Tenía ciento veinte mil soldados de infantería y veinte y dos mil de caballería, sin contar a los que había adiestrado de entre los cautivos, y toda la juventud que por fuerza se había llevado de las provincias y ciudades. Todos a un tiempo se prepararon para combatir a los hijos de Israel, y avanzaron por la ladera del monte hasta la altura que mira a Dotain, (acampando) desde el lugar llamado Belma, hasta Celmón, situado enfrente de Esdrelón.",
+          "text": "Tenía ciento veinte mil soldados de infantería y veinte y dos mil de caballería, sin contar a los que había adiestrado de entre los cautivos, y toda la juventud que por fuerza se había llevado de las provincias y ciudades.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 3,
+          "text": "Todos a un tiempo se prepararon para combatir a los hijos de Israel, y avanzaron por la ladera del monte hasta la altura que mira a Dotain, (acampando) desde el lugar llamado Belma, hasta Celmón, situado enfrente de Esdrelón.",
           "footnoteRefs": [
             3292
           ]
@@ -613,7 +758,12 @@
         },
         {
           "number": 9,
-          "text": "Ahora bien, si quieres vencerlos sin venir a las manos, pon guardias en los manantiales, para impedir que saquen agua de ellos, y los matarás sin espada, o a lo menos, fatigados entregarán su ciudad, que creen inexpugnable por cuanto está situada en los montes.” Este consejo pareció bueno a Holofernes y a sus oficiales, por lo cual puso cien hombres de guardia alrededor de cada manantial.",
+          "text": "Ahora bien, si quieres vencerlos sin venir a las manos, pon guardias en los manantiales, para impedir que saquen agua de ellos, y los matarás sin espada, o a lo menos, fatigados entregarán su ciudad, que creen inexpugnable por cuanto está situada en los montes.”",
+          "footnoteRefs": []
+        },
+        {
+          "number": 10,
+          "text": "Este consejo pareció bueno a Holofernes y a sus oficiales, por lo cual puso cien hombres de guardia alrededor de cada manantial.",
           "footnoteRefs": [
             3293
           ]
@@ -635,7 +785,12 @@
         },
         {
           "number": 14,
-          "text": "y por lo mismo no hay quien nos socorra ahora que desfallecemos por la sed y la suma miseria, a vista de los enemigos. Convóquense, pues, inmediatamente todos los que se hallan en la ciudad, para que nos entreguemos todos voluntariamente a la gente de Holofernes;",
+          "text": "y por lo mismo no hay quien nos socorra ahora que desfallecemos por la sed y la suma miseria, a vista de los enemigos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 15,
+          "text": "Convóquense, pues, inmediatamente todos los que se hallan en la ciudad, para que nos entreguemos todos voluntariamente a la gente de Holofernes;",
           "footnoteRefs": [
             3294
           ]
@@ -672,7 +827,12 @@
         },
         {
           "number": 22,
-          "text": "Cuando fatigados de tanto clamar y llorar, quedaron en silencio, se levantó Ocias y bañado en lágrimas, dijo: “Tened buen ánimo, hermanos míos, y esperemos durante cinco días la misericordia del Señor; porque quizá pondrá fin a su indignación y glorificará su nombre.",
+          "text": "Cuando fatigados de tanto clamar y llorar, quedaron en silencio,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 23,
+          "text": "se levantó Ocias y bañado en lágrimas, dijo: “Tened buen ánimo, hermanos míos, y esperemos durante cinco días la misericordia del Señor; porque quizá pondrá fin a su indignación y glorificará su nombre.",
           "footnoteRefs": [
             3295
           ]
@@ -697,7 +857,7 @@
         },
         {
           "title": "Exhortaciones de Judit",
-          "startVerse": 22
+          "startVerse": 21
         },
         {
           "title": "Proyecto de Judit",
@@ -737,14 +897,24 @@
         },
         {
           "number": 7,
-          "text": "Era hermosa en extremo, y su marido le había dejado muchas riquezas, muchos criados y posesiones llenas de vacadas y de rebaños de ovejas. Todos la estimaban muchísimo, porque era temerosa de Dios, y no había quien hablase de ella en sentido desfavorable.",
+          "text": "Era hermosa en extremo, y su marido le había dejado muchas riquezas, muchos criados y posesiones llenas de vacadas y de rebaños de ovejas.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 8,
+          "text": "Todos la estimaban muchísimo, porque era temerosa de Dios, y no había quien hablase de ella en sentido desfavorable.",
           "footnoteRefs": [
             3296
           ]
         },
         {
           "number": 9,
-          "text": "Ésta, cuando oyó que Ocias había prometido que pasados cinco días entregaría la ciudad, envió a llamar a los ancianos Cabri y Carmi. Venidos a ella, les dijo: “¿Cómo Ocias ha podido consentir en entregar la ciudad a los asirios, si dentro de cinco días no viene socorro?",
+          "text": "Ésta, cuando oyó que Ocias había prometido que pasados cinco días entregaría la ciudad, envió a llamar a los ancianos Cabri y Carmi.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 10,
+          "text": "Venidos a ella, les dijo: “¿Cómo Ocias ha podido consentir en entregar la ciudad a los asirios, si dentro de cinco días no viene socorro?",
           "footnoteRefs": [
             3297
           ]
@@ -766,14 +936,24 @@
         },
         {
           "number": 14,
-          "text": "Mas, puesto que el Señor es sufrido, arrepintámonos de esto mismo, y derramando lágrimas imploremos su indulgencia; porque no son las amenazas de Dios como las de los hombres, ni se enciende su cólera a la manera de los hijos de los hombres.",
+          "text": "Mas, puesto que el Señor es sufrido, arrepintámonos de esto mismo, y derramando lágrimas imploremos su indulgencia;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 15,
+          "text": "porque no son las amenazas de Dios como las de los hombres, ni se enciende su cólera a la manera de los hijos de los hombres.",
           "footnoteRefs": [
             3298
           ]
         },
         {
           "number": 16,
-          "text": "Por tanto, humillemos delante de Él nuestras almas, y poseídos de un espíritu de humildad, como conviene a siervos suyos, pidamos con lágrimas al Señor, para que según su voluntad use con nosotros de su misericordia, y para que así como la soberbia de los enemigos ha turbado nuestro corazón, así también nuestra humillación resulte un motivo de gloria.",
+          "text": "Por tanto, humillemos delante de Él nuestras almas, y poseídos de un espíritu de humildad, como conviene a siervos suyos,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 17,
+          "text": "pidamos con lágrimas al Señor, para que según su voluntad use con nosotros de su misericordia, y para que así como la soberbia de los enemigos ha turbado nuestro corazón, así también nuestra humillación resulte un motivo de gloria.",
           "footnoteRefs": [
             3299
           ]
@@ -785,9 +965,20 @@
         },
         {
           "number": 19,
-          "text": "por cuya maldad fueron entregados a la espada y al saqueo y al escarnio de sus enemigos. Nosotros, empero, no conocemos otro Dios que a Él. Esperemos humildemente su consolación; Él vengará nuestra sangre de los enemigos que nos afligen, y humillará a todas las naciones que se levantan contra nosotros; el Señor Dios nuestro las cubrirá de ignominia. Ahora, pues, hermanos, ya que vosotros sois los ancianos en el pueblo de Dios, y de vosotros depende la vida de ellos, alentad con vuestras palabras sus corazones, para que recuerden que nuestros padres han sido tentados, a fin de ser probados si de veras honraban a su Dios.",
+          "text": "por cuya maldad fueron entregados a la espada y al saqueo y al escarnio de sus enemigos. Nosotros, empero, no conocemos otro Dios que a Él.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 20,
+          "text": "Esperemos humildemente su consolación; Él vengará nuestra sangre de los enemigos que nos afligen, y humillará a todas las naciones que se levantan contra nosotros; el Señor Dios nuestro las cubrirá de ignominia.",
           "footnoteRefs": [
-            3300,
+            3300
+          ]
+        },
+        {
+          "number": 21,
+          "text": "Ahora, pues, hermanos, ya que vosotros sois los ancianos en el pueblo de Dios, y de vosotros depende la vida de ellos, alentad con vuestras palabras sus corazones, para que recuerden que nuestros padres han sido tentados, a fin de ser probados si de veras honraban a su Dios.",
+          "footnoteRefs": [
             3301
           ]
         },
@@ -798,14 +989,24 @@
         },
         {
           "number": 23,
-          "text": "Así Isaac, así Jacob, así Moisés y todos los que agradaron a Dios, pasaron por muchas tribulaciones, manteniéndose siempre fieles. Más aquellos que no aceptaron las pruebas con temor del Señor, sino que a causa de su impaciencia profirieron injuriosas murmuraciones contra el Señor,",
+          "text": "Así Isaac, así Jacob, así Moisés y todos los que agradaron a Dios, pasaron por muchas tribulaciones, manteniéndose siempre fieles.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 24,
+          "text": "Más aquellos que no aceptaron las pruebas con temor del Señor, sino que a causa de su impaciencia profirieron injuriosas murmuraciones contra el Señor,",
           "footnoteRefs": [
             3302
           ]
         },
         {
           "number": 25,
-          "text": "fueron exterminados por el exterminador y perecieron mordidos de las serpientes. Por tanto, no nos dejemos llevar a la impaciencia por lo que padecemos;",
+          "text": "fueron exterminados por el exterminador y perecieron mordidos de las serpientes.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 26,
+          "text": "Por tanto, no nos dejemos llevar a la impaciencia por lo que padecemos;",
           "footnoteRefs": [
             3303
           ]
@@ -863,7 +1064,12 @@
       "verses": [
         {
           "number": 1,
-          "text": "Después que éstos se hubieron retirado, entró Judit en su oratorio, y vistiéndose de cilicio, esparció ceniza sobre su cabeza, y postrada ante el Señor clamaba a Él, diciendo: “Señor Dios de mi padre Simeón, que le diste una espada para castigar aquellos extranjeros que por una impura pasión violaron y deshonraron una virgen, llenándola de afrenta;",
+          "text": "Después que éstos se hubieron retirado, entró Judit en su oratorio, y vistiéndose de cilicio, esparció ceniza sobre su cabeza, y postrada ante el Señor clamaba a Él, diciendo:",
+          "footnoteRefs": []
+        },
+        {
+          "number": 2,
+          "text": "“Señor Dios de mi padre Simeón, que le diste una espada para castigar aquellos extranjeros que por una impura pasión violaron y deshonraron una virgen, llenándola de afrenta;",
           "footnoteRefs": [
             3304
           ]
@@ -885,7 +1091,12 @@
         },
         {
           "number": 6,
-          "text": "Vuelve ahora la vista sobre el campamento de los asirios, como te dignaste en otra ocasión volverla sobre el de los egipcios, cuando armados perseguían a tus siervos, confiando en sus carros, en su caballería y en la muchedumbre de los guerreros. Más Tú tendiste la vista sobre el campamento y las tinieblas les quitaron la fuerza;",
+          "text": "Vuelve ahora la vista sobre el campamento de los asirios, como te dignaste en otra ocasión volverla sobre el de los egipcios, cuando armados perseguían a tus siervos, confiando en sus carros, en su caballería y en la muchedumbre de los guerreros.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "Más Tú tendiste la vista sobre el campamento y las tinieblas les quitaron la fuerza;",
           "footnoteRefs": [
             3305
           ]
@@ -912,14 +1123,24 @@
         },
         {
           "number": 12,
-          "text": "Haz, Señor, que con su propia espada sea cortada su soberbia. Sean los ojos (de Holofernes), fijados en mí, el lazo en que quede preso, e hiérelo Tú con las dulces palabras de mi boca.",
+          "text": "Haz, Señor, que con su propia espada sea cortada su soberbia.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 13,
+          "text": "Sean los ojos (de Holofernes), fijados en mí, el lazo en que quede preso, e hiérelo Tú con las dulces palabras de mi boca.",
           "footnoteRefs": [
             3306
           ]
         },
         {
           "number": 14,
-          "text": "Pon firmeza en mi corazón para despreciarlo, y valor para destruirlo; porque será un monumento en honor de tu nombre cuando la mano de una mujer lo derribare.",
+          "text": "Pon firmeza en mi corazón para despreciarlo, y valor para destruirlo;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 15,
+          "text": "porque será un monumento en honor de tu nombre cuando la mano de una mujer lo derribare.",
           "footnoteRefs": [
             3307
           ]
@@ -971,7 +1192,12 @@
         },
         {
           "number": 3,
-          "text": "Luego lavó su cuerpo, se ungió con ungüento preciosísimo, aderezó el cabello de su cabeza, sobre el cual se puso un turbante, se atavió con los vestidos de fiesta, se calzó las sandalias, tomó sus brazaletes, el collar, los zarcillos y las sortijas, y se adornó de todos sus atavíos. Además le añadió el Señor belleza, porque toda esta compostura no provenía de lasciva pasión, sino de virtud; y por eso el Señor dio mayor realce a su hermosura, de modo que a los ojos de todos parecía de una incomparable belleza.",
+          "text": "Luego lavó su cuerpo, se ungió con ungüento preciosísimo, aderezó el cabello de su cabeza, sobre el cual se puso un turbante, se atavió con los vestidos de fiesta, se calzó las sandalias, tomó sus brazaletes, el collar, los zarcillos y las sortijas, y se adornó de todos sus atavíos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 4,
+          "text": "Además le añadió el Señor belleza, porque toda esta compostura no provenía de lasciva pasión, sino de virtud; y por eso el Señor dio mayor realce a su hermosura, de modo que a los ojos de todos parecía de una incomparable belleza.",
           "footnoteRefs": [
             3308
           ]
@@ -1008,7 +1234,12 @@
         },
         {
           "number": 11,
-          "text": "Bajando por el monte, al rayar el día, le salieron al paso los centinelas de los asirios, que la detuvieron, diciendo: “¿De dónde vienes? ¿Y adónde vas?” “Soy una de las hijas de los hebreos, respondió, y he huido de ellos, porque sé que han de ser presa vuestra; por cuanto menospreciándoos no han querido entregarse voluntariamente para hallar misericordia delante de vosotros.",
+          "text": "Bajando por el monte, al rayar el día, le salieron al paso los centinelas de los asirios, que la detuvieron, diciendo: “¿De dónde vienes? ¿Y adónde vas?”",
+          "footnoteRefs": []
+        },
+        {
+          "number": 12,
+          "text": "“Soy una de las hijas de los hebreos, respondió, y he huido de ellos, porque sé que han de ser presa vuestra; por cuanto menospreciándoos no han querido entregarse voluntariamente para hallar misericordia delante de vosotros.",
           "footnoteRefs": [
             3309
           ]
@@ -1025,14 +1256,24 @@
         },
         {
           "number": 15,
-          "text": "Y le dijeron: “Has salvado tu vida, tomando la resolución de venir a nuestro señor; pues ten por cierto que al presentarte delante de él, te tratará bien y serás muy agradable a su corazón.” Con esto la condujeron al pabellón de Holofernes, dándole noticia de ella.",
+          "text": "Y le dijeron: “Has salvado tu vida, tomando la resolución de venir a nuestro señor;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 16,
+          "text": "pues ten por cierto que al presentarte delante de él, te tratará bien y serás muy agradable a su corazón.” Con esto la condujeron al pabellón de Holofernes, dándole noticia de ella.",
           "footnoteRefs": [
             3310
           ]
         },
         {
           "number": 17,
-          "text": "Apenas estuvo ella en su presencia, quedó Holofernes inmediatamente preso de sus ojos. Y le dijeron sus oficiales: “¿Quién podrá menospreciar al pueblo de los hebreos, que tiene mujeres tan bellas? ¿No merecen éstas más bien que les hagamos la guerra para adquirirlas?”",
+          "text": "Apenas estuvo ella en su presencia, quedó Holofernes inmediatamente preso de sus ojos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 18,
+          "text": "Y le dijeron sus oficiales: “¿Quién podrá menospreciar al pueblo de los hebreos, que tiene mujeres tan bellas? ¿No merecen éstas más bien que les hagamos la guerra para adquirirlas?”",
           "footnoteRefs": [
             3311
           ]
@@ -1060,14 +1301,24 @@
       "verses": [
         {
           "number": 1,
-          "text": "Entonces Holofernes le dijo: “Ten buen ánimo y destierra de tu corazón todo temor; porque nunca hice mal a nadie que haya querido servir al rey Nabucodonosor. Si tu pueblo no me hubiese despreciado, no habría alzado mi lanza contra él.",
+          "text": "Entonces Holofernes le dijo: “Ten buen ánimo y destierra de tu corazón todo temor; porque nunca hice mal a nadie que haya querido servir al rey Nabucodonosor.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 2,
+          "text": "Si tu pueblo no me hubiese despreciado, no habría alzado mi lanza contra él.",
           "footnoteRefs": [
             3312
           ]
         },
         {
           "number": 3,
-          "text": "Mas ahora dime: ¿Por qué los has abandonado a ellos, prefiriendo venir a nosotros?” Judit le respondió: “Escucha benignamente las palabras de tu sierva; pues si sigues los consejos de tu sierva, el Señor dará cumplimiento a tu empresa.",
+          "text": "Mas ahora dime: ¿Por qué los has abandonado a ellos, prefiriendo venir a nosotros?”",
+          "footnoteRefs": []
+        },
+        {
+          "number": 4,
+          "text": "Judit le respondió: “Escucha benignamente las palabras de tu sierva; pues si sigues los consejos de tu sierva, el Señor dará cumplimiento a tu empresa.",
           "footnoteRefs": [
             3313
           ]
@@ -1099,7 +1350,12 @@
         },
         {
           "number": 10,
-          "text": "Además de esto, sufren hambre, y por falta de agua están ya como muertos. Para colmo han resuelto matar sus bestias, para beberse la sangre de las mismas.",
+          "text": "Además de esto, sufren hambre, y por falta de agua están ya como muertos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 11,
+          "text": "Para colmo han resuelto matar sus bestias, para beberse la sangre de las mismas.",
           "footnoteRefs": [
             3314
           ]
@@ -1111,7 +1367,12 @@
         },
         {
           "number": 13,
-          "text": "Lo cual conociendo yo, sierva tuya, hui de ellos, y el Señor me ha mandado darte aviso de esto mismo. Pues yo, tu sierva, adoro a Dios, aun ahora que estoy en tu poder; por eso saldrá tu sierva a hacer oración a Dios,",
+          "text": "Lo cual conociendo yo, sierva tuya, hui de ellos, y el Señor me ha mandado darte aviso de esto mismo.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 14,
+          "text": "Pues yo, tu sierva, adoro a Dios, aun ahora que estoy en tu poder; por eso saldrá tu sierva a hacer oración a Dios,",
           "footnoteRefs": [
             3315
           ]
@@ -1193,14 +1454,24 @@
         },
         {
           "number": 6,
-          "text": "Dió, pues, Holofernes orden a sus camareros que durante tres días la dejasen salir y entrar para adorar a su Dios como ella quisiese. De modo que salía por las noches al valle de Betulia, para lavarse en una fuente de agua.",
+          "text": "Dió, pues, Holofernes orden a sus camareros que durante tres días la dejasen salir y entrar para adorar a su Dios como ella quisiese.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "De modo que salía por las noches al valle de Betulia, para lavarse en una fuente de agua.",
           "footnoteRefs": [
             3316
           ]
         },
         {
           "number": 8,
-          "text": "Cuando volvía oraba al Señor, Dios de Israel, para que enderezase su camino, a fin de librar a su pueblo. Y volviéndose a su pabellón permanecía allí purificada hasta que al anochecer tomaba su alimento.",
+          "text": "Cuando volvía oraba al Señor, Dios de Israel, para que enderezase su camino, a fin de librar a su pueblo.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 9,
+          "text": "Y volviéndose a su pabellón permanecía allí purificada hasta que al anochecer tomaba su alimento.",
           "footnoteRefs": [
             3317
           ]
@@ -1217,7 +1488,12 @@
         },
         {
           "number": 12,
-          "text": "Entonces Vagao entró donde estaba Judit, y le dijo: “No vacile esta hermosa sierva en venir a casa de mi señor, para ser honrada en su presencia, comer con él y beber vino con alegría.” Judit le respondió: “¿Quién soy yo para oponerme a mi señor?",
+          "text": "Entonces Vagao entró donde estaba Judit, y le dijo: “No vacile esta hermosa sierva en venir a casa de mi señor, para ser honrada en su presencia, comer con él y beber vino con alegría.”",
+          "footnoteRefs": []
+        },
+        {
+          "number": 13,
+          "text": "Judit le respondió: “¿Quién soy yo para oponerme a mi señor?",
           "footnoteRefs": [
             3318
           ]
@@ -1272,7 +1548,7 @@
         },
         {
           "title": "El pueblo da gracias a Dios",
-          "startVerse": 23
+          "startVerse": 22
         },
         {
           "title": "Aquior bendice a Judit",
@@ -1307,7 +1583,12 @@
         },
         {
           "number": 6,
-          "text": "Entonces Judit, estando de pie delante de la cama, oró con lágrimas, y moviendo apenas los labios, dijo: “Dame valor, Señor, Dios de Israel, y echa en esta hora una mirada propicia sobre la obra de mis manos, para que ensalces, como lo tienes prometido, tu ciudad de Jerusalén; y ponga yo por obra lo que he pensado ejecutar con tu asistencia.”",
+          "text": "Entonces Judit, estando de pie delante de la cama, oró con lágrimas, y moviendo apenas los labios,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "dijo: “Dame valor, Señor, Dios de Israel, y echa en esta hora una mirada propicia sobre la obra de mis manos, para que ensalces, como lo tienes prometido, tu ciudad de Jerusalén; y ponga yo por obra lo que he pensado ejecutar con tu asistencia.”",
           "footnoteRefs": [
             3319
           ]
@@ -1369,14 +1650,24 @@
         },
         {
           "number": 19,
-          "text": "Y sacando del talego la cabeza de Holofernes, se la mostró, diciendo: “Ved aquí la cabeza de Holofernes, jefe del ejército de los asirios, y he aquí el cortinaje dentro del cual estaba acostado en su embriaguez, y donde el Señor, nuestro Dios, le ha degollado por mano de una mujer. Os juro por el mismo Señor que su ángel me ha guardado, así al ir de aquí, como estando allí, y al volver de allá para acá; ni ha permitido el Señor que yo, su sierva, fuese amancillada, sino que me ha restituido a vosotros sin mancha de pecado, gozosa por su victoria, por mi salvación y por vuestra liberación.",
+          "text": "Y sacando del talego la cabeza de Holofernes, se la mostró, diciendo: “Ved aquí la cabeza de Holofernes, jefe del ejército de los asirios, y he aquí el cortinaje dentro del cual estaba acostado en su embriaguez, y donde el Señor, nuestro Dios, le ha degollado por mano de una mujer.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 20,
+          "text": "Os juro por el mismo Señor que su ángel me ha guardado, así al ir de aquí, como estando allí, y al volver de allá para acá; ni ha permitido el Señor que yo, su sierva, fuese amancillada, sino que me ha restituido a vosotros sin mancha de pecado, gozosa por su victoria, por mi salvación y por vuestra liberación.",
           "footnoteRefs": [
             3320
           ]
         },
         {
           "number": 21,
-          "text": "Alabadle todos por su bondad, porque es eterna su misericordia.” Entonces todos, adorando al Señor, dijeron a Judit: “El Señor te ha bendecido, dándote su poder; pues por medio de ti ha aniquilado a nuestros enemigos.”",
+          "text": "Alabadle todos por su bondad, porque es eterna su misericordia.”",
+          "footnoteRefs": []
+        },
+        {
+          "number": 22,
+          "text": "Entonces todos, adorando al Señor, dijeron a Judit: “El Señor te ha bendecido, dándote su poder; pues por medio de ti ha aniquilado a nuestros enemigos.”",
           "footnoteRefs": [
             3321
           ]
@@ -1453,14 +1744,24 @@
         },
         {
           "number": 3,
-          "text": "Entonces los centinelas, necesariamente correrán a despertar a su comandante para el combate; y cuando los capitanes concurran al pabellón de Holofernes, y hallen a éste sin cabeza, revolcado en su propia sangre, el pavor se va a apoderar de ellos.",
+          "text": "Entonces los centinelas, necesariamente correrán a despertar a su comandante para el combate;",
+          "footnoteRefs": []
+        },
+        {
+          "number": 4,
+          "text": "y cuando los capitanes concurran al pabellón de Holofernes, y hallen a éste sin cabeza, revolcado en su propia sangre, el pavor se va a apoderar de ellos.",
           "footnoteRefs": [
             3322
           ]
         },
         {
           "number": 5,
-          "text": "Vosotros, empero, cuando advirtáis que huyen, perseguidlos sin temor, porque el Señor los aplastará debajo de vuestros pies.” Entonces Aquior, viendo el prodigio que Dios había hecho en favor de Israel, abandonó los ritos de los gentiles, creyó en Dios, y se incorporó, por medio de la circuncisión al pueblo de Israel, y toda su descendencia hasta hoy día.",
+          "text": "Vosotros, empero, cuando advirtáis que huyen, perseguidlos sin temor, porque el Señor los aplastará debajo de vuestros pies.”",
+          "footnoteRefs": []
+        },
+        {
+          "number": 6,
+          "text": "Entonces Aquior, viendo el prodigio que Dios había hecho en favor de Israel, abandonó los ritos de los gentiles, creyó en Dios, y se incorporó, por medio de la circuncisión al pueblo de Israel, y toda su descendencia hasta hoy día.",
           "footnoteRefs": [
             3323
           ]
@@ -1487,7 +1788,12 @@
         },
         {
           "number": 11,
-          "text": "Acudieron sus generales y tribunos, y todos los oficiales mayores del ejército del rey de los asirios, y dijeron a los camareros: “Entrad y despertadlo, porque han salido los ratones de sus agujeros, y han tenido la osadía de provocarnos a batalla.”",
+          "text": "Acudieron sus generales y tribunos, y todos los oficiales mayores del ejército del rey de los asirios, y dijeron a los camareros:",
+          "footnoteRefs": []
+        },
+        {
+          "number": 12,
+          "text": "“Entrad y despertadlo, porque han salido los ratones de sus agujeros, y han tenido la osadía de provocarnos a batalla.”",
           "footnoteRefs": [
             3324
           ]
@@ -1533,7 +1839,7 @@
         },
         {
           "title": "El sumo sacerdote llega a Betulia",
-          "startVerse": 12
+          "startVerse": 9
         }
       ],
       "verses": [
@@ -1544,7 +1850,12 @@
         },
         {
           "number": 2,
-          "text": "Sin hablar ninguno con su compañero, cabizbajos, abandonándolo todo, se daban prisa a escapar de los hebreos, que oían venir armados sobre ellos, y a huir a través de los campos y por los senderos de los collados. Los israelitas, viéndolos huir, siguieron a su alcance, y bajaron, tocando las trompetas y dando grandes gritos en pos de ellos.",
+          "text": "Sin hablar ninguno con su compañero, cabizbajos, abandonándolo todo, se daban prisa a escapar de los hebreos, que oían venir armados sobre ellos, y a huir a través de los campos y por los senderos de los collados.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 3,
+          "text": "Los israelitas, viéndolos huir, siguieron a su alcance, y bajaron, tocando las trompetas y dando grandes gritos en pos de ellos.",
           "footnoteRefs": [
             3325
           ]
@@ -1571,10 +1882,27 @@
         },
         {
           "number": 8,
-          "text": "Por su parte, los que victoriosos del enemigo regresaron a Betulia, trajeron consigo todo lo que había sido de los asirios, en tanta abundancia, que no podían contarse los ganados, ni las bestias de carga, ni todos los demás objetos; y así todos quedaron ricos, desde el menor hasta el mayor, con los despojos de ellos. También Joaquim, el Sumo Sacerdote, vino de Jerusalén a Betulia con todos sus ancianos, para ver a Judit; y habiendo salido ella a recibirlo, todos a una voz la bendijeron, diciendo: “Tú eres la gloria de Jerusalén, tú la alegría de Israel, tú la honra de nuestro pueblo. Porque te has portado varonilmente, y tu corazón ha sido fuerte. Pues has amado la castidad y después de tu marido no has conocido otro varón; por esto la mano del Señor te ha confortado, y por lo mismo serás bendita para siempre.”",
+          "text": "Por su parte, los que victoriosos del enemigo regresaron a Betulia, trajeron consigo todo lo que había sido de los asirios, en tanta abundancia, que no podían contarse los ganados, ni las bestias de carga, ni todos los demás objetos; y así todos quedaron ricos, desde el menor hasta el mayor, con los despojos de ellos.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 9,
+          "text": "También Joaquim, el Sumo Sacerdote, vino de Jerusalén a Betulia con todos sus ancianos, para ver a Judit;",
           "footnoteRefs": [
-            3326,
-            3327,
+            3326
+          ]
+        },
+        {
+          "number": 10,
+          "text": "y habiendo salido ella a recibirlo, todos a una voz la bendijeron, diciendo: “Tú eres la gloria de Jerusalén, tú la alegría de Israel, tú la honra de nuestro pueblo.",
+          "footnoteRefs": [
+            3327
+          ]
+        },
+        {
+          "number": 11,
+          "text": "Porque te has portado varonilmente, y tu corazón ha sido fuerte. Pues has amado la castidad y después de tu marido no has conocido otro varón; por esto la mano del Señor te ha confortado, y por lo mismo serás bendita para siempre.”",
+          "footnoteRefs": [
             3328
           ]
         },
@@ -1605,7 +1933,7 @@
       "sections": [
         {
           "title": "Cántico de Judit",
-          "startVerse": 2
+          "startVerse": 1
         },
         {
           "title": "Acción de gracias en Jerusalén",
@@ -1617,6 +1945,13 @@
         }
       ],
       "verses": [
+        {
+          "number": 1,
+          "text": "Entonces Judit cantó al Señor este cántico, diciendo:",
+          "footnoteRefs": [
+            3329
+          ]
+        },
         {
           "number": 2,
           "text": "Entonad un himno al Señor al son de tamboriles, cantad al Señor con címbalos, cantad en honor suyo un salmo nuevo; ensalzad y aclamad su nombre.",
@@ -1639,9 +1974,20 @@
         },
         {
           "number": 6,
-          "text": "Quería él abrasar mi país, pasar a cuchillo mi juventud, dar en presa mis niños, y llevarse cautivas mis vírgenes. Más el Señor Todopoderoso le hirió, entregándolo en manos de una mujer que le quitó la vida. Porque no por manos de jóvenes cayó su caudillo, ni lo destruyeron titanes, ni le asaltaron altos gigantes. Judit, hija de Merarí, le derribó con la belleza de su rostro.",
+          "text": "Quería él abrasar mi país, pasar a cuchillo mi juventud, dar en presa mis niños, y llevarse cautivas mis vírgenes.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 7,
+          "text": "Más el Señor Todopoderoso le hirió, entregándolo en manos de una mujer que le quitó la vida.",
           "footnoteRefs": [
-            3330,
+            3330
+          ]
+        },
+        {
+          "number": 8,
+          "text": "Porque no por manos de jóvenes cayó su caudillo, ni lo destruyeron titanes, ni le asaltaron altos gigantes. Judit, hija de Merarí, le derribó con la belleza de su rostro.",
+          "footnoteRefs": [
             3331
           ]
         },
@@ -1672,9 +2018,20 @@
         },
         {
           "number": 14,
-          "text": "Hijos de madres jóvenes los acuchillaron, los mataron como a niños que huyen. Perecieron en la batalla, delante del Señor mi Dios. Cantemos un himno al Señor; un himno nuevo a nuestro Dios. Adonai, Señor, Tú eres grande y muy glorioso en tu poder; nadie puede sobrepujarte.",
+          "text": "Hijos de madres jóvenes los acuchillaron, los mataron como a niños que huyen. Perecieron en la batalla, delante del Señor mi Dios.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 15,
+          "text": "Cantemos un himno al Señor; un himno nuevo a nuestro Dios.",
           "footnoteRefs": [
-            3332,
+            3332
+          ]
+        },
+        {
+          "number": 16,
+          "text": "Adonai, Señor, Tú eres grande y muy glorioso en tu poder; nadie puede sobrepujarte.",
+          "footnoteRefs": [
             3333
           ]
         },
@@ -1690,7 +2047,12 @@
         },
         {
           "number": 19,
-          "text": "Mas los que te temen, son grandes delante de Ti, en todas las cosas. ¡Ay de la nación que se levante contra mi pueblo! porque el Señor Todopoderoso tomará de ella venganza, la visitará en el día del juicio;",
+          "text": "Mas los que te temen, son grandes delante de Ti, en todas las cosas.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 20,
+          "text": "¡Ay de la nación que se levante contra mi pueblo! porque el Señor Todopoderoso tomará de ella venganza, la visitará en el día del juicio;",
           "footnoteRefs": [
             3334
           ]
@@ -1702,7 +2064,12 @@
         },
         {
           "number": 22,
-          "text": "Después de esto, conseguida la victoria, todo el pueblo fue a Jerusalén a adorar al Señor; y luego que se purificaron, ofrecieron todos sus holocaustos y cumplieron sus votos y promesas. Judit ofreció, en anatema de olvido, todos los instrumentos bélicos de Holofernes, que el pueblo le había dado, y aquel cortinaje que ella misma había quitado de su cama.",
+          "text": "Después de esto, conseguida la victoria, todo el pueblo fue a Jerusalén a adorar al Señor; y luego que se purificaron, ofrecieron todos sus holocaustos y cumplieron sus votos y promesas.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 23,
+          "text": "Judit ofreció, en anatema de olvido, todos los instrumentos bélicos de Holofernes, que el pueblo le había dado, y aquel cortinaje que ella misma había quitado de su cama.",
           "footnoteRefs": [
             3335
           ]
@@ -1729,14 +2096,24 @@
         },
         {
           "number": 28,
-          "text": "Permaneció en la casa de su marido ciento cinco años, y dio la libertad a su sierva. Cuando murió fue sepultada con su marido en Betulia, llorándola todo el pueblo por espacio de siete días.",
+          "text": "Permaneció en la casa de su marido ciento cinco años, y dio la libertad a su sierva. Cuando murió fue sepultada con su marido en Betulia,",
+          "footnoteRefs": []
+        },
+        {
+          "number": 29,
+          "text": "llorándola todo el pueblo por espacio de siete días.",
           "footnoteRefs": [
             3336
           ]
         },
         {
           "number": 30,
-          "text": "Durante toda su vida y muchos años después de su muerte no hubo quien turbase (la paz) de Israel. El día de la fiesta de esta victoria es contado por los hebreos en el número de los días santos y es celebrado por los judíos desde aquel tiempo hasta el presente.",
+          "text": "Durante toda su vida y muchos años después de su muerte no hubo quien turbase (la paz) de Israel.",
+          "footnoteRefs": []
+        },
+        {
+          "number": 31,
+          "text": "El día de la fiesta de esta victoria es contado por los hebreos en el número de los días santos y es celebrado por los judíos desde aquel tiempo hasta el presente.",
           "footnoteRefs": [
             3337
           ]

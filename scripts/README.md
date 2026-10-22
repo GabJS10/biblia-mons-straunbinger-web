@@ -77,7 +77,6 @@ Anomalías conocidas en Génesis (defectos del origen, verificados contra el HTM
 | ---- | ------------------------------------------- |
 | 17   | salta 24 → 26 (falta marcador del v25)      |
 | 24   | v48 mal etiquetado como "49" (49 duplicado) |
-| 27   | salta 18 → 20 (falta v19)                   |
 | 39   | v18 mal etiquetado como "16"                |
 | 42   | salta 31 → 33 (falta v32)                   |
 | 43   | salta 13 → 15 (falta v14)                   |
@@ -85,6 +84,20 @@ Anomalías conocidas en Génesis (defectos del origen, verificados contra el HTM
 Conviene cotejar estos casos con el PDF original antes de publicar.
 
 ## Notas de implementación
+
+- **Una página por capítulo (formato actual del sitio)**: la página del libro (`/<slug>/`)
+  ya solo es un índice con enlaces `<a class="gb-loop-item … category-<cat>">` a cada
+  capítulo (`/tobias-1/`, …). El scraper toma la categoría más frecuente del índice (no
+  siempre coincide con el slug: Eclesiastés es `eclesiastes-o-qoelet`), descarga cada
+  capítulo y los combina. Si el índice no trae esos enlaces, parsea la página como libro
+  completo (formato antiguo). Salmos aún da 404 en el formato nuevo. En estas páginas:
+  · el número de versículo y su nota comparten `<sup>`, con la nota anidada
+    (`<sup>1 <sup><a href="#footnote-N">…</a></sup></sup>`) — antes se perdía el número y el
+    versículo se pegaba al anterior (Tobías, Judit, Ester);
+  · los subtítulos van como `<p><em>Título</em></p>` también en el AT;
+  · las notas empiezan tras `<h3>Comentarios</h3>`;
+  · no aparecen las divisiones en romanos (`<h3>`), por eso `src/content/books` las conserva
+    de la extracción anterior y solo se reemplazan los capítulos corregidos.
 
 El HTML del origen es "malformado" (`<p>` y `<h2>` sin cerrar) e **inconsistente entre
 libros**. Cheerio (parse5) lo normaliza de forma predecible, y el parser cubre las
