@@ -121,21 +121,44 @@ const { bookNames } = Astro.props;
       emptyEl.hidden = hasAny;
       if (!hasAny) return;
 
+      // `highlights` ya viene del más reciente al más antiguo; los grupos se
+      // ordenan por su resaltado más reciente (colecciones vacías al final).
+      const groups: { el: HTMLElement; latest: number }[] = [];
+      const latestOf = (items: Highlight[]) =>
+        items.length ? Date.parse(items[0].created_at ?? '') || 0 : -Infinity;
       for (const c of collections) {
         const items = highlights.filter((h) => h.collection_id === c.id);
-        groupsEl.appendChild(renderCollection(c, items));
+        groups.push({ el: renderCollection(c, items), latest: latestOf(items) });
       }
       const loose = highlights.filter((h) => h.collection_id === null);
       if (loose.length > 0) {
-        groupsEl.appendChild(renderLoose(loose));
+        groups.push({ el: renderLoose(loose), latest: latestOf(loose) });
       }
+      groups.sort((a, b) => b.latest - a.latest);
+      for (const g of groups) groupsEl.appendChild(g.el);
     }
 
-    function renderCollection(collection: Collection, items: Highlight[]): HTMLElement {
-      const section = document.createElement('section');
-      section.className = 'hm-group';
+    // Grupos plegables (<details> nativo). Se recuerda qué grupos plegó el
+    // usuario para que render() (al mover/quitar) no los vuelva a abrir.
+    const collapsed = new Set<string>();
+    function collapsible(key: string, summary: HTMLElement, level: string): HTMLDetailsElement {
+      const details = document.createElement('details');
+      details.className = `hm-fold hm-fold--${level}`;
+      details.open = !collapsed.has(key);
+      details.addEventListener('toggle', () => {
+        if (details.open) collapsed.delete(key);
+        else collapsed.add(key);
+      });
+      details.appendChild(summary);
+      return details;
+    }
 
-      const header = document.createElement('div');
+    // Evita que un clic en un control dentro del <summary> pliegue el grupo.
+    const noToggle = (el: HTMLElement) => el.addEventListener('click', (e) => e.preventDefault());
+
+    function renderCollection(collection: Collection, items: Highlight[]): HTMLElement {
+      const key = `c:${collection.id}`;
+      const header = document.createElement('summary');
       header.className = 'hm-group-header';
 
       const title = document.createElement('h2');
@@ -149,47 +172,87 @@ const { bookNames } = Astro.props;
       renameBtn.type = 'button';
       renameBtn.className = 'hm-textbtn';
       renameBtn.textContent = 'Renombrar';
+      noToggle(renameBtn);
       renameBtn.addEventListener('click', () => startRename(collection, title));
 
       const deleteBtn = document.createElement('button');
       deleteBtn.type = 'button';
       deleteBtn.className = 'hm-textbtn';
       deleteBtn.textContent = 'Borrar colección';
+      noToggle(deleteBtn);
       deleteBtn.addEventListener('click', () => void removeCollection(collection));
 
       actions.append(renameBtn, deleteBtn);
       header.append(title, actions);
-      section.appendChild(header);
-      section.appendChild(renderItems(items));
+      const section = collapsible(key, header, 'group');
+      section.classList.add('hm-group');
+      section.appendChild(renderItems(items, key));
       return section;
     }
 
     function renderLoose(items: Highlight[]): HTMLElement {
-      const section = document.createElement('section');
-      section.className = 'hm-group';
-      const header = document.createElement('div');
+      const key = 'c:none';
+      const header = document.createElement('summary');
       header.className = 'hm-group-header';
       const title = document.createElement('h2');
       title.className = 'hm-group-title hm-group-title--loose';
       title.textContent = 'Sin colección';
       header.appendChild(title);
-      section.appendChild(header);
-      section.appendChild(renderItems(items));
+      const section = collapsible(key, header, 'group');
+      section.classList.add('hm-group');
+      section.appendChild(renderItems(items, key));
       return section;
     }
 
-    function renderItems(items: Highlight[]): HTMLElement {
-      const list = document.createElement('ul');
-      list.className = 'hm-items';
+    // Agrupa conservando el orden de aparición (= más reciente primero).
+    function groupBy(items: Highlight[], by: (h: Highlight) => string) {
+      const map = new Map<string, Highlight[]>();
+      for (const h of items) {
+        const k = by(h);
+        const list = map.get(k);
+        if (list) list.push(h);
+        else map.set(k, [h]);
+      }
+      return map;
+    }
+
+    function foldSummary(text: string, count: number): HTMLElement {
+      const summary = document.createElement('summary');
+      summary.className = 'hm-fold-summary';
+      summary.textContent = text;
+      const badge = document.createElement('span');
+      badge.className = 'hm-fold-count';
+      badge.textContent = String(count);
+      summary.appendChild(badge);
+      return summary;
+    }
+
+    // Colección → libro → capítulo → versículos.
+    function renderItems(items: Highlight[], key: string): HTMLElement {
       if (items.length === 0) {
+        const list = document.createElement('ul');
+        list.className = 'hm-items';
         const empty = document.createElement('li');
         empty.className = 'hm-item-empty';
         empty.textContent = 'Sin versículos todavía.';
         list.appendChild(empty);
         return list;
       }
-      for (const h of items) list.appendChild(renderItem(h));
-      return list;
+      const books = document.createElement('div');
+      for (const [slug, bookItems] of groupBy(items, (h) => h.book_slug)) {
+        const bookKey = `${key}/b:${slug}`;
+        const book = collapsible(bookKey, foldSummary(bookNames[slug] ?? slug, bookItems.length), 'book');
+        for (const [chapter, chItems] of groupBy(bookItems, (h) => h.chapter)) {
+          const ch = collapsible(`${bookKey}/ch:${chapter}`, foldSummary(`Capítulo ${chapter}`, chItems.length), 'chapter');
+          const list = document.createElement('ul');
+          list.className = 'hm-items';
+          for (const h of chItems) list.appendChild(renderItem(h));
+          ch.appendChild(list);
+          book.appendChild(ch);
+        }
+        books.appendChild(book);
+      }
+      return books;
     }
 
     function renderItem(h: Highlight): HTMLElement {
@@ -210,7 +273,13 @@ const { bookNames } = Astro.props;
         removeButton(h),
       );
 
-      li.append(link, controls);
+      const text = document.createElement('p');
+      text.className = 'hm-text';
+      getPassageText(h.book_slug, h.chapter, h.verse_start, h.verse_end)
+        .then((t) => (text.textContent = t))
+        .catch(() => text.remove());
+
+      li.append(link, controls, text);
       return li;
     }
 
@@ -306,6 +375,11 @@ const { bookNames } = Astro.props;
       input.className = 'hm-rename-input';
       input.value = collection.name;
       input.maxLength = 80;
+      noToggle(input);
+      // Firefox pliega el <details> con la barra espaciadora dentro del summary.
+      input.addEventListener('keyup', (e) => {
+        if (e.key === ' ') e.preventDefault();
+      });
       titleEl.replaceWith(input);
       input.focus();
       input.select();
@@ -529,6 +603,69 @@ const { bookNames } = Astro.props;
     padding-bottom: 0.75rem;
     border-bottom: 1px solid var(--border);
   }
+  /* ---------- Plegables (colección / libro / capítulo) ---------- */
+  .hm-groups :global(summary) {
+    cursor: pointer;
+    list-style: none;
+  }
+  .hm-groups :global(summary::-webkit-details-marker) {
+    display: none;
+  }
+  /* Chevron propio: apunta a la derecha plegado, abajo desplegado. */
+  .hm-groups :global(summary::before) {
+    content: '';
+    flex: none;
+    width: 0.45rem;
+    height: 0.45rem;
+    margin-right: 0.15rem;
+    border-right: 1.5px solid var(--text-secondary);
+    border-bottom: 1.5px solid var(--text-secondary);
+    transform: rotate(-45deg);
+    transition: transform 0.15s ease;
+  }
+  .hm-groups :global(details[open] > summary::before) {
+    transform: rotate(45deg);
+  }
+  .hm-groups :global(summary:focus-visible) {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  .hm-groups :global(.hm-group:not([open]) > .hm-group-header) {
+    margin-bottom: 0;
+  }
+  .hm-groups :global(.hm-group-header) {
+    justify-content: flex-start;
+  }
+  .hm-groups :global(.hm-group-actions) {
+    margin-left: auto;
+  }
+  .hm-groups :global(.hm-fold-summary) {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 0;
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .hm-groups :global(.hm-fold--chapter) {
+    padding-left: 1.1rem;
+  }
+  .hm-groups :global(.hm-fold--chapter > .hm-fold-summary) {
+    font-size: 1rem;
+    color: var(--text-secondary);
+  }
+  .hm-groups :global(.hm-fold--chapter > .hm-items) {
+    padding-left: 1.1rem;
+  }
+  .hm-groups :global(.hm-fold-count) {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+  }
+
   .hm-groups :global(.hm-group-title) {
     margin: 0;
     font-family: var(--font-display);
@@ -659,6 +796,18 @@ const { bookNames } = Astro.props;
     outline: 2px solid var(--accent);
     outline-offset: 2px;
     border-radius: 2px;
+  }
+
+  .hm-groups :global(.hm-text) {
+    flex-basis: 100%;
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+  }
+  .hm-groups :global(.hm-text:empty) {
+    display: none;
   }
 
   .hm-groups :global(.hm-item-controls) {

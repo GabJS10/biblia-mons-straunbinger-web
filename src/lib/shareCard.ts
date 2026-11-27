@@ -19,6 +19,9 @@ const CARD_SIZE: Record<CardFormat, { width: number; height: number }> = {
   story: { width: 1080, height: 1920 },
 };
 
+// Una sola petición por capítulo aunque haya varios resaltados en él.
+const chapterCache = new Map<string, Promise<{ verses: { number: number; text: string }[] }>>();
+
 /**
  * Texto de los versículos del rango `[verseStart, verseEnd]` de un capítulo,
  * unidos con un espacio como prosa continua (SIN números de versículo: la
@@ -34,11 +37,17 @@ export async function getPassageText(
   verseEnd: number,
 ): Promise<string> {
   const url = `/api/verses/${encodeURIComponent(bookSlug)}/${encodeURIComponent(chapter)}.json`;
-  const res = await fetch(url);
-  if (!res.ok) {
-    throw new Error(`No se pudo obtener el texto (${res.status})`);
+  let req = chapterCache.get(url);
+  if (!req) {
+    req = fetch(url).then((res) => {
+      if (!res.ok) throw new Error(`No se pudo obtener el texto (${res.status})`);
+      return res.json() as Promise<{ verses: { number: number; text: string }[] }>;
+    });
+    // Si falla, se olvida para poder reintentar.
+    req.catch(() => chapterCache.delete(url));
+    chapterCache.set(url, req);
   }
-  const data = (await res.json()) as { verses: { number: number; text: string }[] };
+  const data = await req;
   return data.verses
     .filter((v) => v.number >= verseStart && v.number <= verseEnd)
     .map((v) => v.text)

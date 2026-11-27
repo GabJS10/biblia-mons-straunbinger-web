@@ -51,6 +51,31 @@ const { prev, next } = await getAdjacent(Astro.url.pathname);
   <RangeSelectionToolbar />
 </Layout>
 
+<script>
+  // Recuerda el capítulo y el primer versículo visible para "Continuar leyendo"
+  // en la portada. shortcut: solo localStorage (por dispositivo), sincronizar
+  // con Supabase si se quiere entre dispositivos.
+  const title = document.title.split(' — ')[0];
+  const verses = Array.from(document.querySelectorAll<HTMLElement>('.verse[id^="verse-"]'));
+  function save() {
+    const top = verses.find((v) => v.getBoundingClientRect().bottom > 80);
+    try {
+      localStorage.setItem(
+        'lastRead',
+        JSON.stringify({ path: location.pathname, verse: top?.id ?? null, title }),
+      );
+    } catch {
+      /* sin storage: no se recuerda */
+    }
+  }
+  let timer: number | undefined;
+  addEventListener('scroll', () => {
+    clearTimeout(timer);
+    timer = window.setTimeout(save, 300);
+  }, { passive: true });
+  save();
+</script>
+
 <style>
   .reader {
     max-width: 44rem;
