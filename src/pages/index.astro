@@ -21,6 +21,7 @@ const books = await getBookCatalog();
 </p> 
 
     <div class="actions">
+      <a class="btn-primary" data-continue hidden>Continuar leyendo</a>
       <button type="button" class="btn-primary" data-open-picker>Elegir libro</button>
       <a class="link-secondary" href="/prologo/">Prólogo</a>
     </div>
@@ -28,6 +29,21 @@ const books = await getBookCatalog();
 
   <BookPickerModal books={books} />
 </Layout>
+
+<script>
+  // Lo guarda la página de capítulo (ver src/pages/[slug]/[capitulo]/index.astro).
+  const link = document.querySelector<HTMLAnchorElement>('[data-continue]');
+  try {
+    const last = JSON.parse(localStorage.getItem('lastRead') ?? 'null');
+    if (link && last?.path?.startsWith('/')) {
+      link.href = last.path + (last.verse ? `#${last.verse}` : '');
+      link.textContent = `Continuar leyendo: ${last.title}`;
+      link.hidden = false;
+    }
+  } catch {
+    /* sin storage o dato corrupto: no se muestra */
+  }
+</script>
 
 <style>
   .home {
@@ -76,6 +92,12 @@ const books = await getBookCatalog();
     padding: 0.85rem 2.5rem;
     cursor: pointer;
     transition: background 0.15s ease, color 0.15s ease;
+  }
+  a.btn-primary {
+    text-decoration: none;
+  }
+  .btn-primary[hidden] {
+    display: none;
   }
   .btn-primary:hover {
     background: var(--accent);
